@@ -1,0 +1,286 @@
+/SCSS/
+.class {
+   .one {
+       color: red;
+   }
+}
+/CSS/
+.class .one {
+ color: red; }
+
+
+/SCSS/
+.another {
+   border-style: dashed;
+ 
+   .one {
+       background: blue;   
+   }
+}
+/CSS/
+.another {
+   border-style: dashed;
+}
+.another .one {
+   background: blue;
+}
+
+/SCSS/
+.block__one {
+   width: 100px;
+   height: 50px;
+   background: red;
+ 
+   &:hover {
+       background: blue;
+   }
+ 
+   &:after {
+       content: "Я элемент after";   
+   }
+   & + .block__one {
+       background: green;
+   }
+}
+
+/CSS/
+.block__one {
+   width: 100px;
+   height: 50px;
+   background: red;
+}
+.block__one:hover {
+   background: blue;
+}
+.block__one:after {
+   content: "Я элемент after";
+}
+.block__one +.block__one{
+    background: green;
+}
+
+/SCSS/
+.block {
+   height: 100px;
+   border: 1px solid #000;
+ 
+   &__one {
+       width: 100px;
+       height: 50px;
+       background: red;
+  
+       &:hover {
+           background: blue;
+       }
+  
+       &:after {
+           content: "Я элемент after";   
+       }
+  
+       & + .block__one {
+           background: green;
+       }
+   }
+}
+
+/CSS/
+.block {
+ height: 100px;
+ border: 1px solid #000; }
+ 
+ .block__one {
+   width: 100px;
+   height: 50px;
+   background: red; }
+ 
+   .block__one:hover {
+     background: blue; }
+ 
+   .block__one:after {
+     content: "Я элемент after"; }
+ 
+   .block__one + .block__one {
+     background: green; }
+
+
+/SCSS/
+$variable: 100px;
+$color: #000;
+ 
+.block {
+   width: 50%;
+   background: $color;
+   height: $variable;
+}
+
+
+/SCSS/
+$blue: #2c7b89;
+ 
+.block {
+   width: 50%;
+   height: 50px;
+   border-bottom: 1px solid black;
+}
+ 
+.one {
+   background: $blue;
+}
+ 
+.two {
+   $blue: orange;
+ 
+   background: $blue;
+}
+ 
+.three {
+   $blue: red;
+   background: $blue;
+}
+
+/SCSS/
+.two {
+   $blue: orange;
+ 
+   background: $blue;
+ 
+   &:after {
+       $blue: green;
+      
+       content: "";
+       display: block;
+       width: 50px;
+       height: 50px;
+       background: $blue;
+   }
+}
+
+/SCSS/
+@mixin input($width: 300px) {
+   display: block;
+   border: 1px solid #ccc;
+   margin-bottom: 20px;
+   padding: 5px;
+   border-radius: 5px;
+   width: $width;
+}
+
+.input {
+   @include input;
+}
+ 
+.input-short {
+   @include input(100px);
+}
+
+/SCSS/
+@mixin input($width: 300px, $bg: #fff) {
+   display: block;
+   border: 1px solid #ccc;
+   margin-bottom: 20px;
+   padding: 5px;
+   border-radius: 5px;
+   width: $width;
+   background: $bg;
+ 
+   @if $width == 100px {
+       text-align: right;
+   } @else {
+       text-align: center;
+   }
+   @if $bg == #2c3e50 {
+    color: #fff;
+        } @else if $bg == #bdc3c7 {
+            color: green;
+    }
+}
+ 
+.input {
+   @include input;
+}
+ 
+.input-short {
+   @include input(100px);
+}
+
+
+/SCSS/
+
+.input {
+   display: block;
+   border: 1px solid #ccc;
+   margin-bottom: 20px;
+   padding: 5px;
+   border-radius: 5px;
+   width: 300px;
+}
+.input-short {
+   @extend .input;
+   width: 100px;
+}
+ 
+.input-long {
+   @extend .input-short;
+}
+
+/   SCSS/
+@each $social in (fb, vk, tw) {
+   .class {
+       content: #{$social};
+   }
+}
+
+/CSS/
+.class {
+ content: fb; }
+ 
+.class {
+ content: vk; }
+ 
+.class {
+ content: tw; }
+
+ /SCSS/
+ .social {
+   display: block;
+   margin-bottom: 20px;
+   width: 30px;
+   height: 30px;
+}
+
+ @each $social in (fb, vk, tw) {
+   .social_#{$social} {
+       background: url('/img/#{$social}.png') center center no-repeat;
+ 
+       &:hover {
+           background: url('/img/#{$social}-hover.png') center center no-repeat;    
+       }
+   }
+}
+
+/CSS/
+.social_fb {
+   background: url('/img/fb.png') center center no-repeat;
+}
+ 
+.social_fb:hover {
+   background: url('/img/fb-hover.png') center center no-repeat;
+}
+ 
+ 
+.social_tw {
+   background: url('/img/tw.png') center center no-repeat;
+}
+ 
+.social_tw:hover {
+   background: url('/img/tw-hover.png') center center no-repeat;
+}
+ 
+ 
+.social_vk {
+   background: url('/img/vk.png') center center no-repeat;
+}
+ 
+.social_vk:hover {
+   background: url('/img/vk.png') center center no-repeat;
+}
