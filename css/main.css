@@ -46,11 +46,12 @@ ul li {
   background-color: #61C4D9;
 }
 .hero__container {
-  background: url("../../img/pics/comp/Ягоды1.png") right 15% center no-repeat, url("../../img/pics/comp/Лист1.png") right center no-repeat, url("../../img/pics/comp/Chocolates.png") right center no-repeat, url("../../img/background/big-leaf.png") right bottom no-repeat, url("../../img/pics/comp/Лист2.png") left center no-repeat, url("../../img/pics/comp/Ягода2.png") left center no-repeat;
+  padding: 24px 80px 0;
+  background: url("../../img/pics/comp/Ягоды1.png") right 29% top 103% no-repeat, url("../../img/pics/comp/Лист1.png") right 1% bottom 16% no-repeat, url("../../img/pics/comp/Chocolates.png") right 5% bottom 30% no-repeat, url("../../img/background/big-leaf.png") right top no-repeat, url("../../img/pics/comp/Лист2.png") left center no-repeat, url("../../img/pics/comp/Ягода2.png") left center no-repeat;
 }
 .hero__content {
   margin-top: 84px;
-  margin-bottom: 64px;
+  margin-bottom: 83px;
 }
 .hero__title {
   font-weight: bold;
@@ -60,7 +61,7 @@ ul li {
   width: 371px;
   word-wrap: break-word;
   text-transform: uppercase;
-  margin-bottom: 17px;
+  margin-bottom: 21px;
 }
 .hero__text {
   width: 371px;
@@ -68,26 +69,30 @@ ul li {
   font-size: 21px;
   line-height: 25px;
   color: #FFFFFF;
-  margin-bottom: 32px;
+  margin-bottom: 50px;
 }
 
 .container {
   min-height: 100%;
-  padding: 24px 80px 0;
 }
 
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
 }
 
+.navBar {
+  padding: 0 0 0 38px;
+}
 .navBar__list {
   display: flex;
-  flex-direction: row;
 }
 .navBar__item {
-  margin-right: 27px;
+  margin-right: 28px;
+}
+.navBar__item:last-child {
+  margin-right: 0;
 }
 .navBar__link {
   line-height: 30px;
@@ -96,9 +101,7 @@ ul li {
 }
 
 .btn {
-  padding: 21px 41px;
-  width: 156px;
-  height: 60px;
+  padding: 21px 39px;
   font-weight: bold;
   font-size: 16px;
   line-height: 18px;
@@ -137,7 +140,99 @@ ul li {
 .infoItem__text {
   font-weight: normal;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 19px;
   color: #FFFFFF;
   padding-right: 40px;
+}
+
+.contacts {
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+}
+.contacts__tel {
+  margin-left: 6px;
+}
+.contacts__phone {
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+
+.section {
+  min-height: 642px;
+  background: url("/img/background/узор лист 1.png") left center no-repeat;
+}
+.section__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 9%;
+}
+.section__headline {
+  text-align: center;
+  margin-bottom: 49px;
+}
+.section__content {
+  margin: 0 82px;
+}
+.section__item {
+  margin-right: 55px;
+}
+.section__item:last-child {
+  margin-right: 0;
+}
+.section__title {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 58px;
+  color: #292929;
+  text-transform: uppercase;
+}
+.section__subtitle {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #666666;
+  width: 436px;
+  text-align: center;
+  margin: 20px 0 0;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+}
+
+.single-feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 276px;
+}
+.single-feature__icon {
+  width: 128px;
+  height: 128px;
+  background: #F2F5F4;
+  border-radius: 50%;
+  margin-bottom: 22px;
+}
+.single-feature__title {
+  font-weight: bold;
+  font-size: 27px;
+  line-height: 32px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+.single-feature__img {
+  margin: 25% auto;
+}
+.single-feature__text p {
+  text-align: center;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #666666;
 }

@@ -1,9 +1,14 @@
 .navBar{
+    padding: 0 0 0 38px;
     &__list{
     display: flex;
-    flex-direction: row;}
+}
     &__item{
-    margin-right: 27px;}
+    margin-right: 28px;
+    &:last-child{
+        margin-right: 0;
+    }
+}
     &__link{
         line-height: 30px;
         color: $light;

@@ -13,7 +13,7 @@
         margin-right: 11px;
     }
     &__text{
-        @include baseFont(16px, 18px, $color: $light);
+        @include baseFont(16px, 19px, $color: $light);
         padding-right: 40px;
     }
 }

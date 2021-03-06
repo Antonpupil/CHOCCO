@@ -5,6 +5,13 @@
     color: $color;
 }
 
+@mixin H2font ($font-size: 27px, $line-height: 32px, $font-weight: bold, $color: $black) {
+    font-weight: $font-weight;
+    font-size: $font-size;
+    line-height: $line-height;
+    color: $color;
+}
+
 @mixin baseFont ($font-size: 18px, $line-height: 22px, $font-weight: normal, $color: $light) {
     font-weight: $font-weight;
     font-size: $font-size;

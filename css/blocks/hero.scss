@@ -3,18 +3,19 @@
     background-color: $firstBgrColor;
 
     &__container{
+        padding: 24px 80px 0;
        background:
-        url("../../img/pics/comp/Ягоды1.png") right 15% center no-repeat,
-        url("../../img/pics/comp/Лист1.png") right center no-repeat,
-        url("../../img/pics/comp/Chocolates.png") right center no-repeat,
-        url("../../img/background/big-leaf.png") right bottom no-repeat,
+        url("../../img/pics/comp/Ягоды1.png") right 29% top 103% no-repeat,
+        url("../../img/pics/comp/Лист1.png") right 1% bottom 16% no-repeat,
+        url("../../img/pics/comp/Chocolates.png") right 5% bottom 30% no-repeat,
+        url("../../img/background/big-leaf.png") right top no-repeat,
         url("../../img/pics/comp/Лист2.png") left center no-repeat,
         url("../../img/pics/comp/Ягода2.png") left center no-repeat; 
     }
     
     &__content {
         margin-top: 84px;
-        margin-bottom: 64px;
+        margin-bottom: 83px;
     }
 
     &__title {
@@ -22,12 +23,12 @@
         width: 371px;
         word-wrap: break-word;
         text-transform: uppercase;
-        margin-bottom: 17px;
+        margin-bottom: 21px;
     }
 
     &__text {
         width: 371px;
         @include baseFont(21px, 25px);
-        margin-bottom: 32px;
+        margin-bottom: 50px;
     }
 }

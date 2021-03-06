@@ -1,0 +1,29 @@
+.single-feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 276px;
+
+    &__icon {
+        width: 128px;
+        height: 128px;
+        background: $thirdBgrColor;
+        border-radius: 50%;
+        margin-bottom: 22px;
+    }
+
+    &__title {
+        @include H2font;
+        margin-bottom: 20px;
+    }
+    &__img{
+        margin: 25% auto;
+    }
+
+    &__text {
+        p {
+            text-align: center;
+            @include baseFont($color: $baseFontColor);
+        }
+    }
+}
