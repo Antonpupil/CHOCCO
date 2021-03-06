@@ -12,26 +12,26 @@ $ThirdBgrColor:#F2F5F4;
 $ForthBgrColor:#F8FAF9;
 
 // normalize
-@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
 
 //reset
-@import "../css/layout/reset.css";
+@import url("../css/layout/reset.css");
 
 //layout
-@import "./layout/layout.css";
-@import "/css/layout/base.css";
+@import url("./layout/layout.css");
+@import url("/css/layout/base.css");
 
 //font
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700&display=swap');
 
 
 //blocks
-@import "/css/layout/mixins.css";
-@import "/css/layout/variables.css";
-@import "/css/blocks/container.css";
-@import "/css/blocks/hero.css";
-@import "/css/blocks/header.css";
-@import "/css/blocks/navBar.css";
-@import "/css/blocks/btn.css";
-@import "/css/blocks/icons.css";
-@import "/css/blocks/infoItem.css";
+@import url("/css/layout/mixins.css");
+@import url("/css/layout/variables.css");
+@import url("/css/blocks/container.css");
+@import url("/css/blocks/hero.css");
+@import url("/css/blocks/header.css");
+@import url("/css/blocks/navBar.css");
+@import url("/css/blocks/btn.css");
+@import url("/css/blocks/icons.css");
+@import url("/css/blocks/infoItem.css");
