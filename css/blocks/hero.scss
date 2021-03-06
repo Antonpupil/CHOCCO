@@ -27,7 +27,7 @@ $ForthBgrColor:#F8FAF9;
 
 .hero {
     min-height: 652px;
-    background: url("../../img/pics/comp/Ягоды1.png") right 15% center no-repeat, url("../../img/pics/comp/Лист1.png") right center no-repeat, url("../../img/pics/comp/Chocolates.png") right center no-repeat, url("../../img/background/big-leaf.png") right bottom no-repeat, url("../../img/pics/comp/Лист2.png") left center no-repeat, url("../../img/pics/comp/Ягода2.png") left center no-repeat;
+    background: url("/img/pics/comp/Ягоды1.png") right 15% center no-repeat, url("./../../img/pics/comp/Лист1.png") right center no-repeat, url("../../img/pics/comp/Chocolates.png") right center no-repeat, url("../../img/background/big-leaf.png") right bottom no-repeat, url("../../img/pics/comp/Лист2.png") left center no-repeat, url("../../img/pics/comp/Ягода2.png") left center no-repeat;
     background-color: $FirstBgrColor;
 
     &__content {
