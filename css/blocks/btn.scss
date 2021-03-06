@@ -1,30 +1,3 @@
-$containerWidth: 1100px;
-$baseFontSize: 18px;
-$baseFontColor:#666666;
-$BtnColorDark: #497870;
-$BtnColorLight: #365A49;
-$CirclesBgrColor:#DADADA;
-$Dark: #292929;
-$Light:#FFFFFF;
-$FirstBgrColor:#61C4D9;
-$SecondBgrColor:#86C3D7;
-$ThirdBgrColor:#F2F5F4;
-$ForthBgrColor:#F8FAF9;
-
-@mixin Hfont ($font-size: 48px, $line-height: 58px, $font-weight: bold, $color: $Light) {
-    font-weight: $font-weight;
-    font-size: $font-size;
-    line-height: $line-height;
-    color: $color;
-}
-
-@mixin baseFont ($font-size: 18px, $line-height: 22px, $font-weight: normal, $color: $Light) {
-    font-weight: $font-weight;
-    font-size: $font-size;
-    line-height: $line-height;
-    color: $color;
-}
-
 .btn {
     padding: 21px 41px;
     width: 156px;
@@ -34,8 +7,12 @@ $ForthBgrColor:#F8FAF9;
     text-decoration: none;
 
     &__theme_light {
-        @extend .btn;
-        @include baseFont($color: $BtnColorLight);
-        background-color: $Light;
+        @include baseFont($color: $btnColorLight);
+        background-color: $light;
+        
+        &:hover{
+        color: $btnColorDark;
+        }
     }
+    
 }

@@ -16,3 +16,6 @@
   color: #365A49;
   background-color: #FFFFFF;
 }
+.btn__theme_light:hover {
+  color: #497870;
+}

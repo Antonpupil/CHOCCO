@@ -1,37 +1,26 @@
-$containerWidth: 1100px;
-$baseFontSize: 18px;
-$baseFontColor:#666666;
-$BtnColorDark: #497870;
-$BtnColorLight: #365A49;
-$CirclesBgrColor:#DADADA;
-$Dark: #292929;
-$Light:#FFFFFF;
-$FirstBgrColor:#61C4D9;
-$SecondBgrColor:#86C3D7;
-$ThirdBgrColor:#F2F5F4;
-$ForthBgrColor:#F8FAF9;
-
 // normalize
 @import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
 
 //reset
-@import url("../css/layout/reset.css");
+@import "./layout/reset.css";
+
+//scss
+@import "./layout/variables.scss";
+@import "./layout/mixins.scss";
 
 //layout
-@import url("./layout/layout.css");
-@import url("/css/layout/base.css");
+@import "./layout/layout.scss";
+@import "./layout/base.scss";
 
 //font
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700&display=swap');
 
 
 //blocks
-@import url("/css/layout/mixins.css");
-@import url("/css/layout/variables.css");
-@import url("/css/blocks/container.css");
-@import url("/css/blocks/hero.css");
-@import url("/css/blocks/header.css");
-@import url("/css/blocks/navBar.css");
-@import url("/css/blocks/btn.css");
-@import url("/css/blocks/icons.css");
-@import url("/css/blocks/infoItem.css");
+@import "./blocks/hero.scss";
+@import "./blocks/container.scss";
+@import "./blocks/header.scss";
+@import "./blocks/navBar.scss";
+@import "./blocks/btn.scss";
+@import "./blocks/icons.scss";
+@import "./blocks/infoItem.scss";

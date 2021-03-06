@@ -1,10 +1,11 @@
-@mixin Hfont($font-size: 48px, $line-height: 58px, $font-weight: bold) {
+@mixin Hfont ($font-size: 48px, $line-height: 58px, $font-weight: bold, $color: $light) {
     font-weight: $font-weight;
     font-size: $font-size;
     line-height: $line-height;
+    color: $color;
 }
 
-@mixin baseFont ($font-size: 18px, $line-height: 22px, $font-weight: normal, $color: $Light) {
+@mixin baseFont ($font-size: 18px, $line-height: 22px, $font-weight: normal, $color: $light) {
     font-weight: $font-weight;
     font-size: $font-size;
     line-height: $line-height;
