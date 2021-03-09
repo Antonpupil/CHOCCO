@@ -18,3 +18,23 @@
     line-height: $line-height;
     color: $color;
 }
+
+@mixin flexRow-JCfs-ALIc ($display: flex, $justify-content: flex-start, $align-items: center) {
+    display: $display;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
+@mixin flexCol-JCsb-ALIfs ($display: flex, $flex-direction: column, $justify-content: space-between, $align-items: flex-start) {
+    display: $display;
+    flex-direction: $flex-direction;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
+@mixin textOverflow3 ($display: inline-flex, $-webkit-line-clamp: 3, $-webkit-box-orient: vertical, $overflow: hidden) {
+    display: $display;
+    -webkit-line-clamp: $-webkit-line-clamp;
+    -webkit-box-orient: $-webkit-box-orient;
+    overflow: $overflow;
+}

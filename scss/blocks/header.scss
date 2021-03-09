@@ -1,5 +1,9 @@
 .header{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    @include flexRow-JCfs-ALIc;
+    &__logo{
+        margin-right: 40px;
+    }
+    &__navbar{
+        margin-right: 40px;
+    }
 }

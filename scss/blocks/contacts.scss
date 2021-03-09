@@ -1,12 +1,11 @@
 .contacts {
     display: flex;
     align-items: center;
-    padding-left: 40px;
-
-    &__tel{
-        margin-left: 6px;
+    &__img{
+        margin-right: 8px;
     }
-
+    &__tel{
+    }
     &__phone {
         @include baseFont (22px, 18px);
     }

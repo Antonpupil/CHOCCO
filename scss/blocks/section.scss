@@ -1,6 +1,7 @@
 .section{
-    min-height: 642px;
+    min-height: 652px;
     background: url("/img/background/узор\ лист\ 1.png") left center no-repeat;
+    background: url("/img/background/малина\ 1.png") left bottom -104px no-repeat;
 
     &__container{
         display: flex;
@@ -30,6 +31,6 @@
         @include baseFont($color: $baseFontColor);
         width: 436px;
         text-align: center;
-        margin: 20px 0 0;
+        margin: 19px 0 0;
     }
 }
