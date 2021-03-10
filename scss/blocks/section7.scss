@@ -1,0 +1,23 @@
+.section7 {
+    background-color: $firstBgrColor;
+    color: $btnColorDark;
+
+    &__container {
+        position: relative;
+        padding: 55px 81px 0px;
+        @include flexCol-JCsb-ALIfs($justify-content: flex-start, $align-items: center);
+
+        &::before {
+            content: url(../../img/pics/decor/Ежевика_фото1.png);
+            right: 0;
+            top: -26%;
+            position: absolute;
+        }
+    }
+
+    &__title {
+        @include H2font ($color: $btnColorLight);
+        text-transform: uppercase;
+        margin-bottom: 58px;  
+    }
+}

@@ -145,26 +145,45 @@ ul li {
   padding: 19px 39px;
   border-radius: 30px;
   text-decoration: none;
-  font-weight: bold;
-  font-size: 10px;
-  line-height: 18px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
   color: #FFFFFF;
   display: inline-flex;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  display: inline-flex;
+  max-width: 340px;
+  border: none;
+  cursor: pointer;
+  -webkit-user-select: none;
+          user-select: none;
 }
 .btn__theme_light {
   font-weight: normal;
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 16px;
+  line-height: 18px;
   color: #365A49;
   background-color: #FFFFFF;
-  display: inline-flex;
-  max-width: 340px;
 }
 .btn__theme_light:hover {
   color: #497870;
+}
+.btn__theme_dark {
+  background-color: #365A49;
+  color: #FFFFFF;
+}
+.btn__theme_dark:hover {
+  background-color: #2E4E3F;
+  color: #FFFFFF;
+}
+.btn__theme_transparent {
+  background-color: transparent;
+  color: .btn__theme_transparent btnColorDark;
+}
+.btn__theme_transparent:hover {
+  color: #000000;
 }
 
 .icons {
@@ -215,9 +234,9 @@ ul li {
 
 .section1 {
   min-height: 652px;
-  position: relative;
 }
 .section1__container {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -225,7 +244,7 @@ ul li {
   padding: 91px 0 112px;
   background: url(../../img/background/узор-лист-1.png) left top 51% no-repeat;
 }
-.section1::before {
+.section1__container::before {
   content: url(../../img/background/малина-1.png);
   left: 0;
   bottom: -16.5%;
@@ -321,7 +340,7 @@ ul li {
 
 .section5 {
   position: relative;
-  background: url(../../img/pics/decor/Ягода-3.png) top 7% right 2% no-repeat, #FFFFFF;
+  background: #FFFFFF;
 }
 .section5__container {
   position: relative;
@@ -332,12 +351,6 @@ ul li {
   align-items: center;
 }
 .section5__container::before {
-  content: url(../../img/pics/decor/Ягоды2.png);
-  left: 0;
-  bottom: -13.5%;
-  position: absolute;
-}
-.section5::before {
   content: url(../../img/pics/decor/Узор1.png);
   top: 74%;
   left: 0%;
@@ -350,9 +363,29 @@ ul li {
   color: #292929;
   margin-bottom: 25px;
   text-transform: uppercase;
+  position: relative;
+}
+.section5__title::before {
+  content: url(../../img/pics/decor/Ягода-3.png);
+  top: -39%;
+  right: -234%;
+  position: absolute;
 }
 .section5__content {
   margin-bottom: 15px;
+  overflow: hidden;
+  position: relative;
+}
+.section5__content::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 83px;
+  height: 83px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  left: 45%;
+  top: -14%;
 }
 
 .feedback {
@@ -367,6 +400,15 @@ ul li {
   margin-right: 38px;
   width: 253px;
   height: 264px;
+}
+.feedback__paginator {
+  position: relative;
+}
+.feedback__paginator::before {
+  content: url(../../img/pics/decor/Ягоды2.png);
+  left: -185%;
+  bottom: -207.5%;
+  position: absolute;
 }
 .feedback__img {
   width: 100%;
@@ -421,4 +463,188 @@ ul li {
 }
 .interactive-avatar__img {
   object-fit: cover;
+}
+
+.section6__container {
+  min-height: 652px;
+}
+
+.section7 {
+  background-color: #61C4D9;
+  color: #497870;
+}
+.section7__container {
+  position: relative;
+  padding: 55px 81px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.section7__container::before {
+  content: url(../../img/pics/decor/Ежевика_фото1.png);
+  right: 0;
+  top: -26%;
+  position: absolute;
+}
+.section7__title {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 58px;
+  color: #365A49;
+  text-transform: uppercase;
+  margin-bottom: 58px;
+}
+
+.form {
+  display: flex;
+  position: relative;
+}
+.form::before {
+  content: url(../../img/background/ягода_1.png);
+  left: -3%;
+  bottom: -6%;
+  position: absolute;
+}
+.form__col {
+  flex: 1;
+  margin-right: 25px;
+}
+.form__col:last-child {
+  margin-right: 0;
+}
+.form__row {
+  display: flex;
+  margin-bottom: 14px;
+}
+.form__block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex: 1;
+  margin-right: 16px;
+}
+.form__block:last-child {
+  margin-right: 0;
+}
+.form__input {
+  width: 100%;
+  border: 3px solid transparent;
+  padding: 13px;
+  border-radius: 4px;
+  background: #FFFFFF;
+}
+.form__input:focus {
+  border: 3px solid #DEE2BD;
+  outline: none;
+}
+.form__input-textarea {
+  height: 156px;
+  resize: none;
+  padding: 0;
+}
+.form__controll {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 36px;
+}
+.form__btn {
+  margin-top: 10px;
+  position: relative;
+}
+.form__btn:first-child {
+  margin-right: -20px;
+}
+.form__btn:last-child {
+  margin-right: 0;
+}
+.form__btn::before {
+  content: url(../../img/background/лист-3_1.png);
+  right: -16%;
+  top: -174%;
+  position: absolute;
+}
+
+.radio {
+  display: flex;
+  margin-right: 24px;
+  margin-bottom: 16px;
+  cursor: pointer;
+  -webkit-user-select: none;
+          user-select: none;
+}
+.radio:last-child {
+  margin-right: 0;
+  margin-bottom: 0;
+}
+.radio__checkbox .radio__visible {
+  border-radius: 4px;
+}
+.radio__checkbox .radio__visible::before {
+  content: "";
+  background: url(../../img/icons/checkmark.png) center center no-repeat;
+  background-size: cover;
+}
+.radio__element {
+  display: none;
+}
+.radio__element:checked ~ .radio__visible::before {
+  display: block;
+}
+.radio__visible {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.radio__visible:last-child {
+  margin-right: 0;
+}
+.radio__visible::before {
+  content: "";
+  display: none;
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  background: #365A49;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.fixed-menu {
+  position: fixed;
+  top: 48%;
+  right: 4%;
+  z-index: 100;
+}
+.fixed-menu__item {
+  margin-bottom: 7px;
+}
+.fixed-menu__item_active .fixed-menu__link {
+  border-color: #FFFFFF;
+}
+.fixed-menu__link {
+  width: 18px;
+  height: 19px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  display: block;
+  position: relative;
+}
+.fixed-menu__link::before {
+  content: "";
+  display: block;
+  width: 9px;
+  height: 9px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

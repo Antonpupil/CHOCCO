@@ -1,0 +1,81 @@
+.form {
+    display: flex;
+    position: relative;
+
+    &::before {
+        content: url(../../img/background/ягода_1.png);
+        left: -3%;
+        bottom: -6%;
+        position: absolute;
+    }
+
+    &__col {
+        flex: 1;
+        margin-right: 25px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__row {
+        display: flex;
+        margin-bottom: 14px;
+    }
+
+    &__block {
+        @include flexCol-JCsb-ALIfs;
+        flex: 1;
+        margin-right: 16px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__input {
+        width: 100%;
+        border: 3px solid transparent;
+        padding: 13px;
+        border-radius: 4px;
+        background: $light;
+
+        &:focus {
+            border: 3px solid $borderColor;
+            outline: none;
+        }
+    }
+
+    &__input-textarea {
+        height: 156px;
+        resize: none;
+        padding: 0;
+    }
+
+    &__controll {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 36px;
+    }
+
+    &__btn {
+        margin-top: 10px;
+        position: relative;
+
+        &:first-child {
+            margin-right: -20px;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &::before {
+            content: url(../../img/background/лист-3_1.png);
+            right: -16%;
+            top: -174%;
+            position: absolute;
+        }
+
+    }
+}

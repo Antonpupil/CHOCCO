@@ -1,18 +1,20 @@
 .section1 {
     min-height: 652px;
-    position: relative;
 
     &__container {
+        position: relative;
         @include flexCol-JCc-ALIfs($align-items: center);
         padding: 91px 0 112px;
         background: url(../../img/background/узор-лист-1.png) left top 51% no-repeat;
+
+        &::before{
+            content: url(../../img/background/малина-1.png);
+            left:0;
+            bottom: -16.5%;
+            position: absolute;
+        }
     }
-    &::before{
-        content: url(../../img/background/малина-1.png);
-        left:0;
-        bottom: -16.5%;
-        position: absolute;
-    }
+    
 
     &__headline {
         text-align: center;
@@ -22,6 +24,7 @@
     &__content {
         margin: 0 82px;
     }
+    
 
     &__item {
         margin-right: 55px;
