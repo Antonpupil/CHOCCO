@@ -393,7 +393,7 @@ ul li {
   justify-content: flex-start;
   align-items: flex-start;
   min-width: 940px;
-  background: url(../../img/background/layer2-1.png) right top 14% no-repeat, #F8FAF9;
+  background: url(../../../CHOCCO/img/background/layer2-1.png) right top 14% no-repeat, #F8FAF9;
   padding: 46px 42px;
 }
 .feedback__icon {
