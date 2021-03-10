@@ -1,6 +1,7 @@
 .hero {
     min-height: 652px;
     background-color: $firstBgrColor;
+    position: relative;
 
     &__header {
         margin-bottom: 84px;
@@ -8,27 +9,39 @@
 
     &__btn {
         position: absolute;
-        top: 32.5%;
+        top: 64.5%;
         display: inline-block;
     }
 
     &__container {
+        position: relative;
         @include flexCol-JCsb-ALIfs;
-        padding: 21px 80px 50px;
+        padding: 21px 80px 52px;
         background: url(../../img/pics/comp/Ягоды1.png) right 29% top 91% no-repeat,
-        url(../../img/pics/comp/Лист1.png) right 1% bottom 25% no-repeat,
-        url(../../img/pics/comp/Chocolates.png) right 5% bottom 57% no-repeat,
-        url(../../img/background/big-leaf.png) right top no-repeat,
-        url(../../img/pics/comp/Лист2.png) left 71% bottom -6% no-repeat,
-        url(../../img/pics/comp/Ягода2.png) left 91% bottom -9% no-repeat;
+            url(../../img/pics/comp/Chocolates.png) right 5% bottom 59% no-repeat,
+            url(../../img/background/big-leaf.png) right top no-repeat,
+            url(../../img/pics/comp/Лист1.png) right 1% bottom 25% no-repeat;
+        
+        &::before {
+            content: url(../../img/pics/comp/Лист1.png);
+            position: absolute;
+            top: 51%;
+            left: 78%;
+        }
     }
 
     &__content {
         height: 402px;
+        &::before {
+            content: url(../../img/pics/comp/Лист2.png);
+            position: absolute;
+            top: 88.8%;
+            left: 62%;
+        }
     }
 
     &__title {
-        @include Hfont($line-height: 59px);
+        @include H2font($line-height: 59px);
         width: 38%;
         text-transform: uppercase;
         margin-bottom: 20px;
@@ -37,5 +50,16 @@
     &__text {
         width: 371px;
         @include baseFont(21px, 25px);
+    }
+
+    &__icons {
+        position: relative;
+
+        &::before {
+            content: url(../../img/pics/comp/Ягода2.png);
+            position: absolute;
+            top: 79%;
+            right: -81%;
+        }
     }
 }

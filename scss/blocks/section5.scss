@@ -1,0 +1,30 @@
+.section5{
+    position: relative;
+    background: url(../../img/pics/decor/Ягода-3.png) top 7% right 2%  no-repeat, $light;
+    &__container{
+        position: relative;
+        padding: 59px 79px 67px;
+        @include flexCol-JCsb-ALIfs($align-items: center);
+
+        &::before{
+            content: url(../../img/pics/decor/Ягоды2.png);
+            left:0;
+            bottom: -13.5%;
+            position: absolute;
+        }
+    }
+    &::before{
+        content: url(../../img/pics/decor/Узор1.png);
+        top: 74%;
+        left: 0%;
+        position: absolute;
+    }
+    &__title{
+        @include H2font($color: $dark);
+        margin-bottom: 25px;
+        text-transform: uppercase;
+    }
+    &__content{
+        margin-bottom: 15px;
+    }
+}

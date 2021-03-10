@@ -13,10 +13,11 @@
     }
 
     &__title {
-        @include H2font;
+        @include H3font;
         margin-bottom: 18px;
     }
-    &__img{
+
+    &__img {
         margin: 25% auto;
     }
 

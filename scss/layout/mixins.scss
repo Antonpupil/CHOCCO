@@ -1,11 +1,11 @@
-@mixin Hfont ($font-size: 48px, $line-height: 58px, $font-weight: bold, $color: $light) {
+@mixin H2font ($font-size: 48px, $line-height: 58px, $font-weight: bold, $color: $light) {
     font-weight: $font-weight;
     font-size: $font-size;
     line-height: $line-height;
     color: $color;
 }
 
-@mixin H2font ($font-size: 27px, $line-height: 32px, $font-weight: bold, $color: $black) {
+@mixin H3font ($font-size: 27px, $line-height: 32px, $font-weight: bold, $color: $black) {
     font-weight: $font-weight;
     font-size: $font-size;
     line-height: $line-height;
@@ -26,6 +26,12 @@
 }
 
 @mixin flexCol-JCsb-ALIfs ($display: flex, $flex-direction: column, $justify-content: space-between, $align-items: flex-start) {
+    display: $display;
+    flex-direction: $flex-direction;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+@mixin flexCol-JCc-ALIfs ($display: flex, $flex-direction: column, $justify-content: center, $align-items: flex-start) {
     display: $display;
     flex-direction: $flex-direction;
     justify-content: $justify-content;

@@ -44,25 +44,39 @@ ul li {
 .hero {
   min-height: 652px;
   background-color: #61C4D9;
+  position: relative;
 }
 .hero__header {
   margin-bottom: 84px;
 }
 .hero__btn {
   position: absolute;
-  top: 32.5%;
+  top: 64.5%;
   display: inline-block;
 }
 .hero__container {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 21px 80px 50px;
-  background: url(../../img/pics/comp/Ягоды1.png) right 29% top 91% no-repeat, url(../../img/pics/comp/Лист1.png) right 1% bottom 25% no-repeat, url(../../img/pics/comp/Chocolates.png) right 5% bottom 57% no-repeat, url(../../img/background/big-leaf.png) right top no-repeat, url(../../img/pics/comp/Лист2.png) left 71% bottom -6% no-repeat, url(../../img/pics/comp/Ягода2.png) left 91% bottom -9% no-repeat;
+  padding: 21px 80px 52px;
+  background: url(../../img/pics/comp/Ягоды1.png) right 29% top 91% no-repeat, url(../../img/pics/comp/Chocolates.png) right 5% bottom 59% no-repeat, url(../../img/background/big-leaf.png) right top no-repeat, url(../../img/pics/comp/Лист1.png) right 1% bottom 25% no-repeat;
+}
+.hero__container::before {
+  content: url(../../img/pics/comp/Лист1.png);
+  position: absolute;
+  top: 51%;
+  left: 78%;
 }
 .hero__content {
   height: 402px;
+}
+.hero__content::before {
+  content: url(../../img/pics/comp/Лист2.png);
+  position: absolute;
+  top: 88.8%;
+  left: 62%;
 }
 .hero__title {
   font-weight: bold;
@@ -80,9 +94,20 @@ ul li {
   line-height: 25px;
   color: #FFFFFF;
 }
+.hero__icons {
+  position: relative;
+}
+.hero__icons::before {
+  content: url(../../img/pics/comp/Ягода2.png);
+  position: absolute;
+  top: 79%;
+  right: -81%;
+}
 
 .container {
   min-height: 100%;
+  width: 1100px;
+  min-height: 652px;
 }
 
 .header {
@@ -144,6 +169,13 @@ ul li {
 
 .icons {
   display: flex;
+  position: relative;
+}
+.icons::before {
+  content: url(../../img/background/leaf3.png);
+  position: absolute;
+  top: 48%;
+  left: -8%;
 }
 
 .infoItem {
@@ -181,39 +213,55 @@ ul li {
   color: #FFFFFF;
 }
 
-.section {
+.section1 {
   min-height: 652px;
-  background: url("/img/background/узор лист 1.png") left center no-repeat;
-  background: url("/img/background/малина 1.png") left bottom -104px no-repeat;
+  position: relative;
 }
-.section__container {
+.section1__container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  justify-content: flex-start;
-  padding-top: 9%;
+  padding: 91px 0 112px;
+  background: url(../../img/background/узор-лист-1.png) left top 51% no-repeat;
 }
-.section__headline {
+.section1::before {
+  content: url(../../img/background/малина-1.png);
+  left: 0;
+  bottom: -16.5%;
+  position: absolute;
+}
+.section1__headline {
   text-align: center;
   margin-bottom: 49px;
 }
-.section__content {
+.section1__content {
   margin: 0 82px;
 }
-.section__item {
+.section1__item {
   margin-right: 55px;
+  position: relative;
 }
-.section__item:last-child {
+.section1__item::before {
+  content: url(../../img/icons/features/Combined-shape-2204.png);
+  position: absolute;
+  top: 23%;
+  right: -22%;
+}
+.section1__item:last-child {
   margin-right: 0;
 }
-.section__title {
+.section1__item:last-child::before {
+  display: none;
+}
+.section1__title {
   font-weight: bold;
   font-size: 48px;
   line-height: 58px;
   color: #292929;
   text-transform: uppercase;
 }
-.section__subtitle {
+.section1__subtitle {
   font-weight: normal;
   font-size: 18px;
   line-height: 22px;
@@ -257,4 +305,120 @@ ul li {
   font-size: 18px;
   line-height: 22px;
   color: #666666;
+}
+
+.section2__container {
+  min-height: 642px;
+}
+
+.section3__container {
+  min-height: 652px;
+}
+
+.section4__container {
+  min-height: 652px;
+}
+
+.section5 {
+  position: relative;
+  background: url(../../img/pics/decor/Ягода-3.png) top 7% right 2% no-repeat, #FFFFFF;
+}
+.section5__container {
+  position: relative;
+  padding: 59px 79px 67px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.section5__container::before {
+  content: url(../../img/pics/decor/Ягоды2.png);
+  left: 0;
+  bottom: -13.5%;
+  position: absolute;
+}
+.section5::before {
+  content: url(../../img/pics/decor/Узор1.png);
+  top: 74%;
+  left: 0%;
+  position: absolute;
+}
+.section5__title {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 58px;
+  color: #292929;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+.section5__content {
+  margin-bottom: 15px;
+}
+
+.feedback {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  min-width: 940px;
+  background: url(../../img/background/layer2-1.png) right top 14% no-repeat, #F8FAF9;
+  padding: 46px 42px;
+}
+.feedback__icon {
+  margin-right: 38px;
+  width: 253px;
+  height: 264px;
+}
+.feedback__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.feedback__content {
+  flex: 1;
+  padding-top: 28px;
+  width: 463px;
+  padding-right: 125px;
+}
+.feedback__title {
+  font-weight: bold;
+  font-size: 27px;
+  line-height: 32px;
+  color: #000000;
+  margin-bottom: 15px;
+}
+.feedback__text {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #666666;
+  margin-bottom: 28px;
+}
+.feedback__caption {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #292929;
+}
+.feedback__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.interactive-avatar {
+  width: 74px;
+  height: 74px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 6px;
+  border: 4px solid transparent;
+}
+.interactive-avatar:hover {
+  border: 4px solid #365A49;
+}
+.interactive-avatar:last-child {
+  margin-right: 0;
+}
+.interactive-avatar__img {
+  object-fit: cover;
 }

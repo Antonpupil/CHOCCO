@@ -1,0 +1,57 @@
+.section1 {
+    min-height: 652px;
+    position: relative;
+
+    &__container {
+        @include flexCol-JCc-ALIfs($align-items: center);
+        padding: 91px 0 112px;
+        background: url(../../img/background/узор-лист-1.png) left top 51% no-repeat;
+    }
+    &::before{
+        content: url(../../img/background/малина-1.png);
+        left:0;
+        bottom: -16.5%;
+        position: absolute;
+    }
+
+    &__headline {
+        text-align: center;
+        margin-bottom: 49px;
+    }
+
+    &__content {
+        margin: 0 82px;
+    }
+
+    &__item {
+        margin-right: 55px;
+        position: relative;
+
+        &::before {
+            content: url(../../img/icons/features/Combined-shape-2204.png);
+            position: absolute;
+            top: 23%;
+            right: -22%;
+        }
+
+        &:last-child {
+            margin-right: 0;
+
+            &::before {
+                display: none;
+            }
+        }
+    }
+
+    &__title {
+        @include H2font($color: $dark);
+        text-transform: uppercase;
+    }
+
+    &__subtitle {
+        @include baseFont($color: $baseFontColor);
+        width: 436px;
+        text-align: center;
+        margin: 19px 0 0;
+    }
+}
