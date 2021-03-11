@@ -8,7 +8,7 @@
         @include flexCol-JCsb-ALIfs($align-items: center);
 
         &::before {
-            content: url(../../img/pics/decor/Узор1.png);
+            content: url(../../../CHOCCO/img/pics/decor/Узор1.png);
             top: 74%;
             left: 0%;
             position: absolute;
@@ -23,7 +23,7 @@
         position: relative;
 
         &::before {
-            content: url(../../img/pics/decor/Ягода-3.png);
+            content: url(../../../CHOCCO/img/pics/decor/Ягода-3.png);
             top: -39%;
             right: -234%;
             position: absolute;
