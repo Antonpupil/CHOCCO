@@ -583,7 +583,7 @@ ul li {
 }
 .radio__checkbox .radio__visible::before {
   content: "";
-  background: url(../../img/icons/checkmark.png) center center no-repeat;
+  background: url(../../../CHOCCO/img/icons/checkmark.png) center center no-repeat;
   background-size: cover;
 }
 .radio__element {
