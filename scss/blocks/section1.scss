@@ -5,10 +5,10 @@
         position: relative;
         @include flexCol-JCc-ALIfs($align-items: center);
         padding: 91px 0 112px;
-        background: url(../../../CHOCCO/img/background/узор-лист-1.png) left top 51% no-repeat;
+        background: url(../../img/background/узор-лист-1.png) left top 51% no-repeat;
 
         &::before{
-            content: url(../../../CHOCCO/img/background/малина-1.png);
+            content: url(../../img/background/малина-1.png);
             left:0;
             bottom: -16.5%;
             position: absolute;
@@ -31,7 +31,7 @@
         position: relative;
 
         &::before {
-            content: url(../../../CHOCCO/img/icons/features/Combined-shape-2204.png);
+            content: url(../../img/icons/features/Combined-shape-2204.png);
             position: absolute;
             top: 23%;
             right: -22%;
