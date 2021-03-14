@@ -1,0 +1,12 @@
+.navBar__list {
+  display: flex;
+  flex-direction: row;
+}
+.navBar__item {
+  margin-right: 27px;
+}
+.navBar__link {
+  line-height: 30px;
+  color: #FFFFFF;
+  text-decoration: none;
+}

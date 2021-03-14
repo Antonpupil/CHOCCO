@@ -1,0 +1,26 @@
+$containerWidth: 1100px;
+$baseFontSize: 18px;
+$baseFontColor:#666666;
+$BtnColorDark: #497870;
+$BtnColorLight: #365A49;
+$CirclesBgrColor:#DADADA;
+$Dark: #292929;
+$Light:#FFFFFF;
+$FirstBgrColor:#61C4D9;
+$SecondBgrColor:#86C3D7;
+$ThirdBgrColor:#F2F5F4;
+$ForthBgrColor:#F8FAF9;
+
+
+
+.navBar{
+    &__list{
+    display: flex;
+    flex-direction: row;}
+    &__item{
+    margin-right: 27px;}
+    &__link{
+        line-height: 30px;
+        color: $Light;
+        text-decoration: none;}
+    }
