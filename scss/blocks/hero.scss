@@ -17,13 +17,13 @@
         position: relative;
         @include flexCol-JCsb-ALIfs;
         padding: 21px 80px 52px;
-        background: url(../../../CHOCCO/img/pics/comp/Ягоды1.png) right 29% top 91% no-repeat,
-            url(../../../CHOCCO/img/pics/comp/Chocolates.png) right 5% bottom 59% no-repeat,
-            url(../../../CHOCCO/img/background/big-leaf.png) right top no-repeat,
-            url(../../../CHOCCO/img/pics/comp/Лист1.png) right 1% bottom 25% no-repeat;
+        background: url(../../img/pics/comp/Ягоды1.png) right 29% top 91% no-repeat,
+            url(../../img/pics/comp/Chocolates.png) right 5% bottom 59% no-repeat,
+            url(../../img/background/big-leaf.png) right top no-repeat,
+            url(../../img/pics/comp/Лист1.png) right 1% bottom 25% no-repeat;
         
         &::before {
-            content: url(../../../CHOCCO/img/pics/comp/Лист1.png);
+            content: url(../../img/pics/comp/Лист1.png);
             position: absolute;
             top: 51%;
             left: 78%;
@@ -33,7 +33,7 @@
     &__content {
         height: 402px;
         &::before {
-            content: url(../../../CHOCCO/img/pics/comp/Лист2.png);
+            content: url(../../img/pics/comp/Лист2.png);
             position: absolute;
             top: 88.8%;
             left: 62%;
@@ -56,7 +56,7 @@
         position: relative;
 
         &::before {
-            content: url(../../../CHOCCO/img/pics/comp/Ягода2.png);
+            content: url(../../img/pics/comp/Ягода2.png);
             position: absolute;
             top: 79%;
             right: -81%;

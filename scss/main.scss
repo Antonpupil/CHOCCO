@@ -7,6 +7,8 @@
 //scss
 @import "./layout/variables.scss";
 @import "./layout/mixins.scss";
+@import "./layout/media.scss";
+
 
 //layout
 @import "./layout/layout.scss";
@@ -17,6 +19,7 @@
 
 
 //blocks
+@import "./blocks/wrapper.scss";
 @import "./blocks/hero.scss";
 @import "./blocks/container.scss";
 @import "./blocks/header.scss";
