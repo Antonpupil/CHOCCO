@@ -51,12 +51,11 @@ ul li {
   .hero__header {
     min-height: 5.0555555556rem;
     margin-bottom: 26.7777777778rem;
-    padding-left: 1.6666666667rem;
+    padding: 0 2rem 0 1.6666666667rem;
   }
 }
 @media screen and (max-width: 480px) {
   .hero__header {
-    min-height: 5.0555555556rem;
     margin-bottom: 20.5rem;
     padding-left: 0.5555555556rem;
   }
@@ -68,12 +67,12 @@ ul li {
 }
 @media screen and (max-width: 768px) {
   .hero__btn {
-    top: 79%;
+    top: 77%;
   }
 }
 @media screen and (max-width: 480px) {
   .hero__btn {
-    top: 105%;
+    top: 81%;
   }
 }
 .hero__container {
@@ -87,8 +86,13 @@ ul li {
 }
 @media screen and (max-width: 768px) {
   .hero__container {
-    background: none;
+    background: url(../../img/background/big-leaf768.png) right top 27% no-repeat;
     padding: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .hero__container {
+    background: url(../../img/background/big-leaf480.png) right top 17% no-repeat;
   }
 }
 .hero__container::before {
@@ -101,7 +105,7 @@ ul li {
   .hero__container::before {
     content: url(../../img/pics/comp/comp768.png);
     position: absolute;
-    top: 18%;
+    top: 17.5%;
     left: 19%;
     padding: 0 2.8888888889rem;
   }
@@ -156,7 +160,7 @@ ul li {
 @media screen and (max-width: 768px) {
   .hero__title {
     width: auto;
-    margin: 0;
+    margin-bottom: 0.2777777778rem;
   }
 }
 @media screen and (max-width: 480px) {
@@ -174,6 +178,11 @@ ul li {
   font-size: 1.1666666667rem;
   line-height: 25px;
   color: #FFFFFF;
+}
+@media screen and (max-width: 768px) {
+  .hero__text {
+    margin-bottom: 14.2222222222rem;
+  }
 }
 @media screen and (max-width: 480px) {
   .hero__text {
@@ -214,6 +223,7 @@ ul li {
 }
 
 .header {
+  width: 100%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -221,6 +231,18 @@ ul li {
 @media screen and (max-width: 768px) {
   .header {
     min-height: 5.0555555556rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .header {
+    padding-right: 0.5555555556rem;
   }
 }
 .header__logo {
@@ -256,6 +278,35 @@ ul li {
   text-decoration: none;
 }
 
+.burger {
+  justify-self: flex-end;
+  align-self: baseline;
+  margin-top: 1.1111111111rem;
+}
+.burger__link {
+  width: 26px;
+  height: 24px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .burger__link {
+    display: inline-flex;
+  }
+}
+@media screen and (max-width: 480px) {
+  .burger__link {
+    display: inline-flex;
+  }
+}
+.burger__plank {
+  height: 4.5px;
+  background: #FFFFFF;
+  border-radius: 10px;
+}
+
 .btn {
   min-width: 8.6666666667rem;
   text-align: center;
@@ -278,11 +329,6 @@ ul li {
   -webkit-user-select: none;
           user-select: none;
 }
-@media screen and (max-width: 768px) {
-  .btn {
-    min-width: 0;
-  }
-}
 .btn__theme_light {
   font-weight: normal;
   font-size: 0.8888888889rem;
@@ -292,6 +338,14 @@ ul li {
 }
 .btn__theme_light:hover {
   color: #497870;
+}
+@media screen and (max-width: 768px) {
+  .btn__theme_light {
+    font-weight: 800;
+    font-size: 0.8888888889rem;
+    line-height: 1rem;
+    color: #FFFFFF;
+  }
 }
 @media screen and (max-width: 480px) {
   .btn__theme_light {
@@ -366,6 +420,11 @@ ul li {
 .section1 {
   min-height: 36.2222222222rem;
 }
+@media screen and (max-width: 480px) {
+  .section1 {
+    min-height: 39.2777777778rem;
+  }
+}
 .section1__container {
   position: relative;
   display: flex;
@@ -381,9 +440,20 @@ ul li {
   bottom: -16.5%;
   position: absolute;
 }
+@media screen and (max-width: 480px) {
+  .section1__container {
+    box-sizing: border-box;
+    padding: 2.9444444444rem 0;
+  }
+}
 .section1__headline {
   text-align: center;
   margin-bottom: 2.7222222222rem;
+}
+@media screen and (max-width: 480px) {
+  .section1__headline {
+    margin-bottom: 2.9444444444rem;
+  }
 }
 .section1__content {
   margin: 0 4.5555555556rem;
@@ -411,6 +481,14 @@ ul li {
   color: #292929;
   text-transform: uppercase;
 }
+@media screen and (max-width: 480px) {
+  .section1__title {
+    font-weight: bold;
+    font-size: 2.2222222222rem;
+    line-height: 2rem;
+    color: #000000;
+  }
+}
 .section1__subtitle {
   font-weight: normal;
   font-size: 1rem;
@@ -419,6 +497,11 @@ ul li {
   width: 24.2222222222rem;
   text-align: center;
   margin: 1.0555555556rem 0 0;
+}
+@media screen and (max-width: 480px) {
+  .section1__subtitle {
+    margin: 0.6666666667rem 0 0;
+  }
 }
 
 .features {

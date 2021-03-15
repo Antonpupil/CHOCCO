@@ -9,11 +9,10 @@
         @include tablet {
             min-height: rem(91px);
             margin-bottom: rem(482px);
-            padding-left: rem(30px);
+            padding: 0 rem(36px) 0 rem(30px);
         }
 
         @include phone {
-            min-height: rem(91px);
             margin-bottom: rem(369px);
             padding-left: rem(10px);
         }
@@ -25,11 +24,11 @@
         display: inline-block;
 
         @include tablet {
-            top: 79%;
+            top: 77%;
         }
 
         @include phone {
-            top: 105%;
+            top: 81%;
         }
     }
 
@@ -42,8 +41,11 @@
             url(../../img/background/big-leaf.png) right top no-repeat;
 
         @include tablet {
-            background: none;
+            background: url(../../img/background/big-leaf768.png) right top 27% no-repeat;
             padding: 0;
+        }
+        @include phone {
+            background: url(../../img/background/big-leaf480.png) right top 17% no-repeat;
         }
 
         &::before {
@@ -55,7 +57,7 @@
             @include tablet {
                 content: url(../../img/pics/comp/comp768.png);
                 position: absolute;
-                top: 18%;
+                top: 17.5%;
                 left: 19%;
                 padding: 0 rem(52px);
             }
@@ -107,7 +109,7 @@
 
         @include tablet {
             width: auto;
-            margin: 0;
+            margin-bottom: rem(5px);
         }
 
         @include phone {
@@ -119,6 +121,10 @@
     &__text {
         width: rem(371px);
         @include baseFont(rem(21px), 25px);
+
+        @include tablet {
+            margin-bottom: rem(256px);
+        }
 
         @include phone {
             @include baseFont($line-height: rem(20px));

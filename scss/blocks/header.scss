@@ -1,9 +1,16 @@
 .header {
+    width: 100%;
     @include flexRow-JCfs-ALIc;
     @include tablet{
         min-height: rem(91px);
-        
     }
+    @include tablet {
+        @include flexRow-JCfs-ALIc ($justify-content: space-between);
+    }
+    @include phone {
+        padding-right: rem(10px);
+    }
+
 
     &__logo {
         margin-right: rem(40px);
