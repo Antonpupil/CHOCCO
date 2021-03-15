@@ -40,7 +40,7 @@ ul li {
 }
 
 .hero {
-  min-height: 55.5555555556rem;
+  min-height: 36.2222222222rem;
   background-color: #61C4D9;
   position: relative;
 }
@@ -49,8 +49,16 @@ ul li {
 }
 @media screen and (max-width: 768px) {
   .hero__header {
+    min-height: 5.0555555556rem;
     margin-bottom: 26.7777777778rem;
     padding-left: 1.6666666667rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .hero__header {
+    min-height: 5.0555555556rem;
+    margin-bottom: 20.5rem;
+    padding-left: 0.5555555556rem;
   }
 }
 .hero__btn {
@@ -61,6 +69,11 @@ ul li {
 @media screen and (max-width: 768px) {
   .hero__btn {
     top: 79%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .hero__btn {
+    top: 105%;
   }
 }
 .hero__container {
@@ -86,15 +99,24 @@ ul li {
 }
 @media screen and (max-width: 768px) {
   .hero__container::before {
-    content: url(../../img/pics/comp/comp768.png) "";
+    content: url(../../img/pics/comp/comp768.png);
     position: absolute;
     top: 18%;
     left: 19%;
     padding: 0 2.8888888889rem;
   }
 }
+@media screen and (max-width: 480px) {
+  .hero__container::before {
+    content: url(../../img/pics/comp/comp480.png);
+    position: absolute;
+    top: 12%;
+    left: 5%;
+    padding: 0 2.8888888889rem;
+  }
+}
 .hero__content {
-  height: 22.3333333333rem;
+  min-height: 22.3333333333rem;
 }
 .hero__content::before {
   content: url(../../img/pics/comp/Лист2.png);
@@ -117,10 +139,15 @@ ul li {
     text-align: center;
   }
 }
+@media screen and (max-width: 480px) {
+  .hero__content {
+    min-height: auto;
+  }
+}
 .hero__title {
   font-weight: bold;
   font-size: 2.6666666667rem;
-  line-height: 59px;
+  line-height: 3.2777777778rem;
   color: #FFFFFF;
   width: 38%;
   text-transform: uppercase;
@@ -132,12 +159,31 @@ ul li {
     margin: 0;
   }
 }
+@media screen and (max-width: 480px) {
+  .hero__title {
+    font-weight: bold;
+    font-size: 2.2222222222rem;
+    line-height: 2rem;
+    color: #FFFFFF;
+    margin-bottom: 0.4444444444rem;
+  }
+}
 .hero__text {
   width: 20.6111111111rem;
   font-weight: normal;
   font-size: 1.1666666667rem;
   line-height: 25px;
   color: #FFFFFF;
+}
+@media screen and (max-width: 480px) {
+  .hero__text {
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.1111111111rem;
+    color: #FFFFFF;
+    padding: 0 1.5555555556rem;
+    margin-bottom: 10.1666666667rem;
+  }
 }
 .hero__icons {
   position: relative;
@@ -246,6 +292,14 @@ ul li {
 }
 .btn__theme_light:hover {
   color: #497870;
+}
+@media screen and (max-width: 480px) {
+  .btn__theme_light {
+    font-weight: 800;
+    font-size: 1.0555555556rem;
+    line-height: 1rem;
+    color: #497870;
+  }
 }
 .btn__theme_dark {
   background-color: #365A49;

@@ -1,5 +1,5 @@
 .hero {
-    min-height: rem(1000px);
+    min-height: rem(652px);
     background-color: $firstBgrColor;
     position: relative;
 
@@ -7,8 +7,15 @@
         margin-bottom: rem(84px);
 
         @include tablet {
+            min-height: rem(91px);
             margin-bottom: rem(482px);
             padding-left: rem(30px);
+        }
+
+        @include phone {
+            min-height: rem(91px);
+            margin-bottom: rem(369px);
+            padding-left: rem(10px);
         }
     }
 
@@ -19,6 +26,10 @@
 
         @include tablet {
             top: 79%;
+        }
+
+        @include phone {
+            top: 105%;
         }
     }
 
@@ -42,10 +53,18 @@
             left: 78%;
 
             @include tablet {
-                content: url(../../img/pics/comp/comp768.png)"";
+                content: url(../../img/pics/comp/comp768.png);
                 position: absolute;
                 top: 18%;
                 left: 19%;
+                padding: 0 rem(52px);
+            }
+
+            @include phone {
+                content: url(../../img/pics/comp/comp480.png);
+                position: absolute;
+                top: 12%;
+                left: 5%;
                 padding: 0 rem(52px);
             }
         }
@@ -53,7 +72,7 @@
     }
 
     &__content {
-        height: rem(402px);
+        min-height: rem(402px);
 
         &::before {
             content: url(../../img/pics/comp/Лист2.png);
@@ -74,10 +93,14 @@
             align-items: center;
             text-align: center;
         }
+
+        @include phone {
+            min-height: auto;
+        }
     }
 
     &__title {
-        @include H2font($line-height: 59px);
+        @include H2font($line-height: rem(59px));
         width: 38%;
         text-transform: uppercase;
         margin-bottom: rem(20px);
@@ -86,11 +109,22 @@
             width: auto;
             margin: 0;
         }
+
+        @include phone {
+            @include H2font($font-size: rem(40px), $line-height: rem(36px));
+            margin-bottom: rem(8px);
+        }
     }
 
     &__text {
         width: rem(371px);
         @include baseFont(rem(21px), 25px);
+
+        @include phone {
+            @include baseFont($line-height: rem(20px));
+            padding: 0 rem(28px);
+            margin-bottom: rem(183px);
+        }
     }
 
     &__icons {

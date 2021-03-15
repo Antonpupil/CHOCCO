@@ -12,16 +12,22 @@
     border: none;
     cursor: pointer;
     user-select: none;
-    @include tablet{
+
+    @include tablet {
         min-width: 0;
     }
 
+    
+    
     &__theme_light {
         @include baseFont($font-size: rem(16px), $line-height: rem(18px), $color: $btnColorLight);
         background-color: $light;
 
         &:hover {
             color: $btnColorDark;
+        }
+        @include phone {
+            @include baseFont($font-size: rem(19px), $line-height: rem(18px), $font-weight: 800, $color: $btnColorDark);
         }
     }
 
