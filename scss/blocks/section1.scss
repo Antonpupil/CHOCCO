@@ -1,10 +1,10 @@
 .section1 {
-    min-height: 652px;
+    min-height: rem(652px);
 
     &__container {
         position: relative;
         @include flexCol-JCc-ALIfs($align-items: center);
-        padding: 91px 0 112px;
+        padding: rem(91px) 0 rem(112px);
         background: url(../../img/background/узор-лист-1.png) left top 51% no-repeat;
 
         &::before{
@@ -18,16 +18,16 @@
 
     &__headline {
         text-align: center;
-        margin-bottom: 49px;
+        margin-bottom: rem(49px);
     }
 
     &__content {
-        margin: 0 82px;
+        margin: 0 rem(82px);
     }
     
 
     &__item {
-        margin-right: 55px;
+        margin-right: rem(55px);
         position: relative;
 
         &::before {
@@ -53,8 +53,8 @@
 
     &__subtitle {
         @include baseFont($color: $baseFontColor);
-        width: 436px;
+        width: rem(436px);
         text-align: center;
-        margin: 19px 0 0;
+        margin: rem(19px) 0 0;
     }
 }

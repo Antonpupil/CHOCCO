@@ -1,18 +1,18 @@
-@mixin H2font ($font-size: 48px, $line-height: 58px, $font-weight: bold, $color: $light) {
+@mixin H2font ($font-size: rem(48px), $line-height: rem(58px), $font-weight: bold, $color: $light) {
     font-weight: $font-weight;
     font-size: $font-size;
     line-height: $line-height;
     color: $color;
 }
 
-@mixin H3font ($font-size: 27px, $line-height: 32px, $font-weight: bold, $color: $black) {
+@mixin H3font ($font-size: rem(27px), $line-height: rem(32px), $font-weight: bold, $color: $black) {
     font-weight: $font-weight;
     font-size: $font-size;
     line-height: $line-height;
     color: $color;
 }
 
-@mixin baseFont ($font-size: 18px, $line-height: 22px, $font-weight: normal, $color: $light) {
+@mixin baseFont ($font-size: rem(18px), $line-height: rem(22px), $font-weight: normal, $color: $light) {
     font-weight: $font-weight;
     font-size: $font-size;
     line-height: $line-height;
@@ -43,4 +43,15 @@
     -webkit-line-clamp: $-webkit-line-clamp;
     -webkit-box-orient: $-webkit-box-orient;
     overflow: $overflow;
+}
+
+@mixin tablet {
+    @media screen and (max-width: $tablet) {
+        @content;
+    }
+}
+@mixin phone {
+    @media screen and (max-width: $phone) {
+        @content;
+    }
 }

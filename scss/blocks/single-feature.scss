@@ -2,19 +2,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 276px;
+    width: rem(276px);
 
     &__icon {
-        width: 128px;
-        height: 128px;
+        width: rem(128px);
+        height: rem(128px);
         background: $thirdBgrColor;
         border-radius: 50%;
-        margin-bottom: 22px;
+        margin-bottom: rem(22px);
     }
 
     &__title {
         @include H3font;
-        margin-bottom: 18px;
+        margin-bottom: rem(18px);
     }
 
     &__img {

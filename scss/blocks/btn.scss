@@ -1,20 +1,23 @@
 .btn {
-    min-width: 156px;
+    min-width: rem(156px);
     text-align: center;
     display: inline-flex;
-    padding: 19px 39px;
-    border-radius: 30px;
+    padding: rem(19px) rem(39px);
+    border-radius: rem(30px);
     text-decoration: none;
     @include baseFont;
     @include textOverflow3;
     display: inline-flex;
-    max-width: 340px;
+    max-width: rem(340px);
     border: none;
     cursor: pointer;
     user-select: none;
+    @include tablet{
+        min-width: 0;
+    }
 
     &__theme_light {
-        @include baseFont($font-size: 16px, $line-height: 18px, $color: $btnColorLight);
+        @include baseFont($font-size: rem(16px), $line-height: rem(18px), $color: $btnColorLight);
         background-color: $light;
 
         &:hover {

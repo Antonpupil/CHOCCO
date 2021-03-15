@@ -1,9 +1,25 @@
-.header{
+.header {
     @include flexRow-JCfs-ALIc;
-    &__logo{
-        margin-right: 40px;
+    @include tablet{
+        min-height: rem(91px);
+        
     }
-    &__navbar{
-        margin-right: 40px;
+
+    &__logo {
+        margin-right: rem(40px);
+    }
+
+    &__navbar {
+        margin-right: rem(40px);
+
+        @include tablet {
+            display: none;
+        }
+    }
+
+    &>.contacts {
+        @include tablet {
+            display: none;
+        }
     }
 }
