@@ -50,6 +50,7 @@ ul li {
 @media screen and (max-width: 768px) {
   .hero__header {
     margin-bottom: 26.7777777778rem;
+    padding-left: 1.6666666667rem;
   }
 }
 .hero__btn {
@@ -59,7 +60,7 @@ ul li {
 }
 @media screen and (max-width: 768px) {
   .hero__btn {
-    top: 77.5%;
+    top: 79%;
   }
 }
 .hero__container {
@@ -71,6 +72,12 @@ ul li {
   padding: 1.1666666667rem 4.4444444444rem 2.8888888889rem;
   background: url(../../img/pics/comp/Ягоды1.png) right 29% top 91% no-repeat, url(../../img/pics/comp/Chocolates.png) right 5% bottom 59% no-repeat, url(../../img/background/big-leaf.png) right top no-repeat;
 }
+@media screen and (max-width: 768px) {
+  .hero__container {
+    background: none;
+    padding: 0;
+  }
+}
 .hero__container::before {
   content: url(../../img/pics/comp/Лист1.png);
   position: absolute;
@@ -78,7 +85,11 @@ ul li {
   left: 78%;
 }
 @media screen and (max-width: 768px) {
-  .hero__container {
+  .hero__container::before {
+    content: url(../../img/pics/comp/comp768.png) "";
+    position: absolute;
+    top: 18%;
+    left: 19%;
     padding: 0 2.8888888889rem;
   }
 }
@@ -90,6 +101,11 @@ ul li {
   position: absolute;
   top: 88.8%;
   left: 62%;
+}
+@media screen and (max-width: 768px) {
+  .hero__content::before {
+    content: "";
+  }
 }
 @media screen and (max-width: 768px) {
   .hero__content {

@@ -5,8 +5,10 @@
 
     &__header {
         margin-bottom: rem(84px);
-        @include tablet{
+
+        @include tablet {
             margin-bottom: rem(482px);
+            padding-left: rem(30px);
         }
     }
 
@@ -14,9 +16,10 @@
         position: absolute;
         top: 64.5%;
         display: inline-block;
-        @include tablet{
-            top: 77.5%;
-        }            
+
+        @include tablet {
+            top: 79%;
+        }
     }
 
     &__container {
@@ -26,27 +29,44 @@
         background: url(../../img/pics/comp/Ягоды1.png) right 29% top 91% no-repeat,
             url(../../img/pics/comp/Chocolates.png) right 5% bottom 59% no-repeat,
             url(../../img/background/big-leaf.png) right top no-repeat;
-        
+
+        @include tablet {
+            background: none;
+            padding: 0;
+        }
+
         &::before {
             content: url(../../img/pics/comp/Лист1.png);
             position: absolute;
             top: 51%;
             left: 78%;
+
+            @include tablet {
+                content: url(../../img/pics/comp/comp768.png)"";
+                position: absolute;
+                top: 18%;
+                left: 19%;
+                padding: 0 rem(52px);
+            }
         }
-        @include tablet{
-            padding: 0 rem(52px);
-        }
+
     }
 
     &__content {
         height: rem(402px);
+
         &::before {
             content: url(../../img/pics/comp/Лист2.png);
             position: absolute;
             top: 88.8%;
             left: 62%;
+
+            @include tablet {
+                content: "";
+            }
         }
-        @include tablet{
+
+        @include tablet {
             width: 100%;
             display: flex;
             flex-direction: column;
@@ -61,8 +81,9 @@
         width: 38%;
         text-transform: uppercase;
         margin-bottom: rem(20px);
-        @include tablet{
-            width:auto;
+
+        @include tablet {
+            width: auto;
             margin: 0;
         }
     }
@@ -81,6 +102,7 @@
             top: 79%;
             right: -81%;
         }
+
         @include tablet {
             display: none;
         }
