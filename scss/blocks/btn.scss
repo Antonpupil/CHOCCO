@@ -1,13 +1,13 @@
 .btn {
     min-width: rem(156px);
     text-align: center;
-    display: inline-flex;
     padding: rem(19px) rem(39px);
     border-radius: rem(30px);
     text-decoration: none;
-    @include baseFont;
+    @include baseFont($font-size: rem(16px), $line-height: rem(18px), $font-weight: 800);
     @include textOverflow3;
     display: inline-flex;
+    justify-content: center;
     max-width: rem(340px);
     border: none;
     cursor: pointer;
@@ -15,25 +15,23 @@
 
 
     &__theme_light {
-        @include baseFont($font-size: rem(16px), $line-height: rem(18px), $color: $btnColorLight);
+        @include baseFont($font-size: rem(16px), $line-height: rem(18px), $font-weight: 800, $color: $btnColorLight);
         background-color: $light;
+        text-transform: uppercase;
 
         &:hover {
             color: $btnColorDark;
         }
 
-        @include tablet {
-            @include baseFont($font-size: rem(16px), $line-height: rem(18px), $font-weight: 800);
-        }
-
         @include phone {
-            @include baseFont($font-size: rem(19px), $line-height: rem(18px), $font-weight: 800, $color: $btnColorDark);
+            @include baseFont($font-size: rem(19px), $color: $btnColorDark);
         }
     }
 
     &__theme_dark {
+        @include baseFont($font-size: rem(16px), $line-height: rem(18px), $font-weight: 800, $color: $light);
         background-color: $btnColorLight;
-        color: $light;
+        text-transform: uppercase;
 
         &:hover {
             background-color: $fifthBgrColor;
@@ -42,8 +40,10 @@
     }
 
     &__theme_transparent {
+        @include baseFont($color: $btnColorDark);
         background-color: transparent;
-        color: $btnColorDark;
+        padding: rem(19px) rem(22px);
+        justify-content: flex-start;
 
         &:hover {
             color: $black;

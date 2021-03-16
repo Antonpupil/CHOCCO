@@ -4,17 +4,29 @@
     align-items: center;
     width: rem(276px);
 
+    @include tablet {
+        width: rem(258px);
+    }
+
     &__icon {
         width: rem(128px);
         height: rem(128px);
         background: $thirdBgrColor;
         border-radius: 50%;
         margin-bottom: rem(22px);
+
+        @include tablet {
+            margin-bottom: rem(20px);
+        }
     }
 
     &__title {
         @include H3font;
         margin-bottom: rem(18px);
+
+        @include tablet {
+            margin-bottom: rem(8px);
+        }
     }
 
     &__img {
@@ -25,6 +37,12 @@
         p {
             text-align: center;
             @include baseFont($color: $baseFontColor);
+
+            @include tablet {
+                @include baseFont($font-weight: 300, $color: $baseFontColor);
+                padding: 0 15px;
+                margin-bottom: rem(36px);
+            }
         }
     }
 }

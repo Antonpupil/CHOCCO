@@ -12,7 +12,7 @@
     color: $color;
 }
 
-@mixin baseFont ($font-size: rem(18px), $line-height: rem(22px), $font-weight: normal, $color: $light) {
+@mixin baseFont ($font-size: rem(18px), $line-height: rem(22px), $font-weight: 400, $color: $light) {
     font-weight: $font-weight;
     font-size: $font-size;
     line-height: $line-height;

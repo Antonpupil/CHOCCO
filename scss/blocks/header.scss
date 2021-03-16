@@ -1,6 +1,6 @@
 .header {
     width: 100%;
-    @include flexRow-JCfs-ALIc;
+    @include flexRow-JCfs-ALIc($align-items: flex-start);
     @include tablet{
         min-height: rem(91px);
     }
@@ -25,6 +25,9 @@
     }
 
     &>.contacts {
+        justify-content: flex-end;
+        white-space: nowrap;
+        padding-top: 9px;
         @include tablet {
             display: none;
         }

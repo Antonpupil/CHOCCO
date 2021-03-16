@@ -20,7 +20,7 @@
 
     &__btn {
         position: absolute;
-        top: 64.5%;
+        top: 65%;
         display: inline-block;
 
         @include tablet {
@@ -35,7 +35,7 @@
     &__container {
         position: relative;
         @include flexCol-JCsb-ALIfs;
-        padding: rem(21px) rem(80px) rem(52px);
+        padding: rem(23px) rem(80px) rem(52px);
         background: url(../../img/pics/comp/Ягоды1.png) right 29% top 91% no-repeat,
             url(../../img/pics/comp/Chocolates.png) right 5% bottom 59% no-repeat,
             url(../../img/background/big-leaf.png) right top no-repeat;

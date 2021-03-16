@@ -52,15 +52,21 @@
         padding: 0;
     }
 
-    &__controll {
+    &__controlls {
         display: flex;
         flex-wrap: wrap;
         margin-top: rem(36px);
+        padding-left: 8px;
+    }
+    &__controll {
+        display: flex;
+        flex-wrap: wrap;
     }
 
     &__btn {
-        margin-top: rem(10px);
+        margin-top: rem(48px);
         position: relative;
+        display: flex;
 
         &:first-child {
             margin-right: rem(-20px);
