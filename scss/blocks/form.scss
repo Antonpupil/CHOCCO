@@ -15,7 +15,7 @@
 
     &__col {
         flex: 1;
-        margin-right: rem(25px);
+        margin-right: 25px;
 
         @include tablet {
             margin: 0;
@@ -29,7 +29,10 @@
 
     &__row {
         display: flex;
-        margin-bottom: 8px;
+        margin-bottom: 12px;
+        @include tablet {
+            margin-bottom: 8px;
+        }
     }
 
     &__block {
