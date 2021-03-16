@@ -4,20 +4,35 @@
 
     &__container {
         position: relative;
-        padding: rem(55px) rem(81px) rem(0px);
+        padding: 57px 81px 84px;
         @include flexCol-JCsb-ALIfs($justify-content: flex-start, $align-items: center);
+
+        @include tablet {
+            padding: 173px 147px 180px;
+        }
 
         &::before {
             content: url(../../img/pics/decor/Ежевика_фото1.png);
             right: 0;
             top: -26%;
             position: absolute;
+
+            @include tablet {
+                content: url(../../img/pics/decor/Ежевика_фото1_768.png);
+            right: 0;
+            top: -11.5%;
+            position: absolute;
+            }
         }
     }
 
     &__title {
         @include H2font ($color: $btnColorLight);
         text-transform: uppercase;
-        margin-bottom: rem(58px);  
+        margin-bottom: rem(58px);
+
+        @include tablet {
+            margin-bottom: rem(32px);
+        }
     }
 }
