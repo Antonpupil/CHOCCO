@@ -1,6 +1,6 @@
 .section4{
 
-    min-height: $sectionHeight;
+    min-height: $sectionHeight +10px;
 
     @include tablet {
         min-height: rem(908px);

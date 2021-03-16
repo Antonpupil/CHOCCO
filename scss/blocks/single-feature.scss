@@ -3,9 +3,21 @@
     flex-direction: column;
     align-items: center;
     width: rem(276px);
+    position: relative;
 
     @include tablet {
         width: rem(258px);
+    }
+
+    @include phone {
+        flex-direction: row;
+        width: auto;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    &__description{
+        text-align: center;
     }
 
     &__icon {
@@ -14,9 +26,14 @@
         background: $thirdBgrColor;
         border-radius: 50%;
         margin-bottom: rem(22px);
+        position: relative;
 
         @include tablet {
             margin-bottom: rem(20px);
+        }
+
+        @include phone {
+            margin: 0 12px 0 0;
         }
     }
 
@@ -27,10 +44,30 @@
         @include tablet {
             margin-bottom: rem(8px);
         }
+
+        @include phone {
+            @include H3font($color: $dark);
+        }
     }
 
     &__img {
         margin: 25% auto;
+
+        @include phone {
+            display: none;
+        }
+
+        &480 {
+            display: none;
+
+            @include phone {
+                display: block;
+                margin: 25% auto;
+            }
+
+        }
+
+
     }
 
     &__text {
@@ -42,6 +79,13 @@
                 @include baseFont($font-weight: 300, $color: $baseFontColor);
                 padding: 0 15px;
                 margin-bottom: rem(36px);
+            }
+
+            @include phone {
+                @include baseFont($color: $baseFontColor);
+                padding: 0;
+                margin-bottom: 0;
+                text-align: left;
             }
         }
     }
