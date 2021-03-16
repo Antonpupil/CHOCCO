@@ -5,10 +5,4 @@
     @include tablet {
         min-height: rem(1000px);
     }
-
-    @include phone {
-    }
-
-    &__container{
-    }
 }

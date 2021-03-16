@@ -12,7 +12,7 @@
     &__container {
         position: relative;
         @include flexCol-JCc-ALIfs($align-items: center);
-        padding: rem(91px) 0 rem(112px);
+        padding: 97px 0 112px;
         background: url(../../img/background/узор-лист-1.png) left top 51% no-repeat;
 
         @include tablet {
@@ -26,7 +26,7 @@
         &::before {
             content: url(../../img/background/малина-1.png);
             left: 0;
-            bottom: -16.5%;
+            bottom: -18.5%;
             position: absolute;
 
             @include tablet {
@@ -116,7 +116,7 @@
         @include baseFont($color: $baseFontColor);
         width: rem(436px);
         text-align: center;
-        margin: rem(19px) 0 0;
+        margin: 20px 0 0;
 
         @include tablet {
             margin: rem(4px) 0 0;

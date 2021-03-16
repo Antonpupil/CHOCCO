@@ -449,7 +449,7 @@ ul li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 5.0555555556rem 0 6.2222222222rem;
+  padding: 97px 0 112px;
   background: url(../../img/background/узор-лист-1.png) left top 51% no-repeat;
 }
 @media screen and (max-width: 768px) {
@@ -465,7 +465,7 @@ ul li {
 .section1__container::before {
   content: url(../../img/background/малина-1.png);
   left: 0;
-  bottom: -16.5%;
+  bottom: -18.5%;
   position: absolute;
 }
 @media screen and (max-width: 768px) {
@@ -566,7 +566,7 @@ ul li {
   color: #666666;
   width: 24.2222222222rem;
   text-align: center;
-  margin: 1.0555555556rem 0 0;
+  margin: 20px 0 0;
 }
 @media screen and (max-width: 768px) {
   .section1__subtitle {
@@ -712,6 +712,7 @@ ul li {
     min-height: 55.5555555556rem;
   }
 }
+
 .section4 {
   min-height: 652px;
 }
@@ -882,7 +883,7 @@ ul li {
 }
 .feedback__content {
   flex: 1;
-  padding-top: 1.5555555556rem;
+  padding-top: 30px;
   width: 25.7222222222rem;
   padding-right: 6.9444444444rem;
 }
@@ -991,7 +992,7 @@ ul li {
 }
 
 .section6__container {
-  min-height: 652px;
+  min-height: 650px;
 }
 
 .section7 {
