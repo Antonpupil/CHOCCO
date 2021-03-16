@@ -11,6 +11,10 @@
         left: -3%;
         bottom: -6%;
         position: absolute;
+
+        @include tablet {
+            content:"";
+        }
     }
 
     &__col {
@@ -120,6 +124,10 @@
             right: -16%;
             top: -174%;
             position: absolute;
+
+            @include tablet {
+                content:"";
+            }
         }
 
     }

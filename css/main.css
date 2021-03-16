@@ -1060,6 +1060,11 @@ ul li {
   bottom: -6%;
   position: absolute;
 }
+@media screen and (max-width: 768px) {
+  .form::before {
+    content: "";
+  }
+}
 .form__col {
   flex: 1;
   margin-right: 25px;
@@ -1172,6 +1177,11 @@ ul li {
   right: -16%;
   top: -174%;
   position: absolute;
+}
+@media screen and (max-width: 768px) {
+  .form__btn::before {
+    content: "";
+  }
 }
 
 .radio {
