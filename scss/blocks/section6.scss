@@ -1,5 +1,8 @@
 .section6{
     &__container{
         min-height: $sectionHeight +10px;
+        @include tablet {
+            min-height: $sectionHeight768;
+        }
     }
 }

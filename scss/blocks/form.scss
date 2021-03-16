@@ -20,7 +20,6 @@
         @include tablet {
             margin: 0;
             @include baseFont ($color: $btnColorDark);
-
         }
 
         &:last-child {
@@ -30,7 +29,7 @@
 
     &__row {
         display: flex;
-        margin-bottom: rem(14px);
+        margin-bottom: 8px;
     }
 
     &__block {
@@ -44,6 +43,7 @@
     }
 
     &__input {
+        box-sizing: border-box;
         width: 100%;
         border: rem(3px) solid transparent;
         padding: rem(13px);
@@ -51,8 +51,8 @@
         background: $light;
 
         @include tablet {
-            padding: 5px;
-            
+            padding: 9px 7px;
+            @include baseFont ($font-size: 18px, $line-height: 20px, $color: $black);
         }
 
         &:focus {
@@ -65,6 +65,10 @@
         height: rem(156px);
         resize: none;
         padding: 0;
+
+        @include tablet {
+            height: rem(82px);
+        }
     }
 
     &__controlls {
@@ -72,17 +76,33 @@
         flex-wrap: wrap;
         margin-top: rem(36px);
         padding-left: 8px;
+
+        @include tablet {
+            margin-top: 28px;
+            padding-left: 0;
+        }
     }
 
     &__controll {
         display: flex;
         flex-wrap: wrap;
+
+        @include tablet {
+            margin-bottom: 24px;
+        }
     }
 
     &__btn {
         margin-top: rem(48px);
         position: relative;
         display: flex;
+
+        @include tablet {
+            margin-top: 13px;
+            display: flex;
+            justify-content: center;
+            margin-left: 55px;
+        }
 
         &:first-child {
             margin-right: rem(-20px);

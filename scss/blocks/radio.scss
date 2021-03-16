@@ -5,6 +5,10 @@
     cursor: pointer;
     user-select: none;
 
+    @include tablet {
+        margin-bottom: 0;
+    }
+
     &:last-child {
         margin-right: 0;
         margin-bottom: 0;

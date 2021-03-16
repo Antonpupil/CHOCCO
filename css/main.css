@@ -994,6 +994,11 @@ ul li {
 .section6__container {
   min-height: 652px;
 }
+@media screen and (max-width: 768px) {
+  .section6__container {
+    min-height: 606px;
+  }
+}
 
 .section7 {
   background-color: #61C4D9;
@@ -1022,7 +1027,7 @@ ul li {
   .section7__container::before {
     content: url(../../img/pics/decor/Ежевика_фото1_768.png);
     right: 0;
-    top: -11.5%;
+    top: -8.5%;
     position: absolute;
   }
 }
@@ -1073,7 +1078,7 @@ ul li {
 }
 .form__row {
   display: flex;
-  margin-bottom: 0.7777777778rem;
+  margin-bottom: 8px;
 }
 .form__block {
   display: flex;
@@ -1087,6 +1092,7 @@ ul li {
   margin-right: 0;
 }
 .form__input {
+  box-sizing: border-box;
   width: 100%;
   border: 0.1666666667rem solid transparent;
   padding: 0.7222222222rem;
@@ -1095,7 +1101,11 @@ ul li {
 }
 @media screen and (max-width: 768px) {
   .form__input {
-    padding: 5px;
+    padding: 9px 7px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    color: #000000;
   }
 }
 .form__input:focus {
@@ -1107,20 +1117,44 @@ ul li {
   resize: none;
   padding: 0;
 }
+@media screen and (max-width: 768px) {
+  .form__input-textarea {
+    height: 4.5555555556rem;
+  }
+}
 .form__controlls {
   display: flex;
   flex-wrap: wrap;
   margin-top: 2rem;
   padding-left: 8px;
 }
+@media screen and (max-width: 768px) {
+  .form__controlls {
+    margin-top: 28px;
+    padding-left: 0;
+  }
+}
 .form__controll {
   display: flex;
   flex-wrap: wrap;
+}
+@media screen and (max-width: 768px) {
+  .form__controll {
+    margin-bottom: 24px;
+  }
 }
 .form__btn {
   margin-top: 2.6666666667rem;
   position: relative;
   display: flex;
+}
+@media screen and (max-width: 768px) {
+  .form__btn {
+    margin-top: 13px;
+    display: flex;
+    justify-content: center;
+    margin-left: 55px;
+  }
 }
 .form__btn:first-child {
   margin-right: -1.1111111111rem;
@@ -1142,6 +1176,11 @@ ul li {
   cursor: pointer;
   -webkit-user-select: none;
           user-select: none;
+}
+@media screen and (max-width: 768px) {
+  .radio {
+    margin-bottom: 0;
+  }
 }
 .radio:last-child {
   margin-right: 0;
