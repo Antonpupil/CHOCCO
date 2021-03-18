@@ -7,8 +7,6 @@
     }
 
     @include phone {
-    }
-
-    &__container{
+        min-height: rem(634px);
     }
 }

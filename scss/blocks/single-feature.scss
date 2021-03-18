@@ -12,17 +12,22 @@
     @include phone {
         flex-direction: row;
         width: auto;
-        justify-content: flex-start;
-        align-items: flex-start;
+        align-items: flex-end;
     }
 
     &__description{
         text-align: center;
+
+        @include phone {
+            text-align: left;
+            padding-bottom: 20px;
+            padding-right: 32px;
+        }
     }
 
     &__icon {
-        width: rem(128px);
-        height: rem(128px);
+        min-width: rem(128px);
+        min-height: rem(128px);
         background: $thirdBgrColor;
         border-radius: 50%;
         margin-bottom: rem(22px);
@@ -33,7 +38,7 @@
         }
 
         @include phone {
-            margin: 0 12px 0 0;
+            margin: 0 12px 0 8px;
         }
     }
 
@@ -47,6 +52,7 @@
 
         @include phone {
             @include H3font($color: $dark);
+            margin-bottom: rem(12px);
         }
     }
 
@@ -62,7 +68,8 @@
 
             @include phone {
                 display: block;
-                margin: 25% auto;
+                margin: 24% auto;
+                padding-left: 8px;
             }
 
         }
@@ -82,7 +89,7 @@
             }
 
             @include phone {
-                @include baseFont($color: $baseFontColor);
+                @include baseFont( $line-height: rem(20px), $color: $baseFontColor);
                 padding: 0;
                 margin-bottom: 0;
                 text-align: left;

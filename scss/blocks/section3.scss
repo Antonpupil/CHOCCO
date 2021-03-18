@@ -5,4 +5,8 @@
     @include tablet {
         min-height: rem(1000px);
     }
+
+    @include phone {
+        min-height: rem(756px);
+    }
 }

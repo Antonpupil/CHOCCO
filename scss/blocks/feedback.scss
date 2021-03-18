@@ -10,7 +10,11 @@
         @include flexCol-JCsb-ALIfs ($justify-content: flex-start, $align-items: center);
         padding: rem(56px) rem(23px) rem(24px);
         background: url(../../img/background/layer2-1_768.png) right top 3% no-repeat, #F8FAF9;
+    }
 
+    @include phone {
+        padding: 56px 33px 8px 25px;
+        background: url(../../img/background/layer2-1_480.png) right  top 7% no-repeat, #F8FAF9;
     }
 
 
@@ -24,6 +28,10 @@
             height: rem(130px);
             margin: 0 0 rem(33px);
         }
+
+        @include phone {
+            margin: 0 0 rem(16px);
+        }
     }
 
     &__paginator {
@@ -34,6 +42,10 @@
             left: -185%;
             bottom: -207.5%;
             position: absolute;
+        }
+
+        @include phone {
+            width: 224px;
         }
     }
 
@@ -90,6 +102,11 @@
             @include H3font;
             margin-bottom: rem(14px);
         }
+
+        @include phone {
+            padding: 0 43px;
+            margin-bottom: 10px;
+        }
     }
 
     &__text {
@@ -108,6 +125,11 @@
             display: block;
             @include baseFont ($color: $baseFontColor);
             margin-bottom: rem(17px);
+        }
+
+        @include phone {
+            margin-bottom: rem(12px);
+            line-height: 23px;
         }
     }
 
@@ -130,6 +152,11 @@
 
     &__list {
         @include flexRow-JCfs-ALIc ($justify-content: center);
+
+        @include phone {
+            margin-left: 10px;
+            @include flexRow-JCfs-ALIc ($justify-content: space-between);
+        }
     }
 
 }

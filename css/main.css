@@ -211,6 +211,7 @@ ul li {
 
 .container {
   width: 100%;
+  max-width: 1100px;
   /* min-height: $sectionHeight; */
   margin: 0 auto;
   position: relative;
@@ -380,6 +381,11 @@ ul li {
   padding: 1.0555555556rem 1.2222222222rem;
   justify-content: flex-start;
 }
+@media screen and (max-width: 480px) {
+  .btn__theme_transparent {
+    padding: 19px 33px;
+  }
+}
 .btn__theme_transparent:hover {
   color: #000000;
 }
@@ -460,6 +466,7 @@ ul li {
 @media screen and (max-width: 480px) {
   .section1__container {
     background: none;
+    padding: 97px 0 112px;
   }
 }
 .section1__container::before {
@@ -519,7 +526,7 @@ ul li {
 }
 @media screen and (max-width: 480px) {
   .section1__item {
-    margin-bottom: 31px;
+    margin-bottom: 36px;
   }
 }
 .section1__item::before {
@@ -540,6 +547,11 @@ ul li {
 }
 .section1__item:last-child {
   margin-right: 0;
+}
+@media screen and (max-width: 480px) {
+  .section1__item:last-child {
+    margin-bottom: 0;
+  }
 }
 .section1__item:last-child::before {
   display: none;
@@ -605,16 +617,22 @@ ul li {
   .single-feature {
     flex-direction: row;
     width: auto;
-    justify-content: flex-start;
-    align-items: flex-start;
+    align-items: flex-end;
   }
 }
 .single-feature__description {
   text-align: center;
 }
+@media screen and (max-width: 480px) {
+  .single-feature__description {
+    text-align: left;
+    padding-bottom: 20px;
+    padding-right: 32px;
+  }
+}
 .single-feature__icon {
-  width: 7.1111111111rem;
-  height: 7.1111111111rem;
+  min-width: 7.1111111111rem;
+  min-height: 7.1111111111rem;
   background: #F2F5F4;
   border-radius: 50%;
   margin-bottom: 1.2222222222rem;
@@ -627,7 +645,7 @@ ul li {
 }
 @media screen and (max-width: 480px) {
   .single-feature__icon {
-    margin: 0 12px 0 0;
+    margin: 0 12px 0 8px;
   }
 }
 .single-feature__title {
@@ -648,6 +666,7 @@ ul li {
     font-size: 1.5rem;
     line-height: 1.7777777778rem;
     color: #292929;
+    margin-bottom: 0.6666666667rem;
   }
 }
 .single-feature__img {
@@ -664,7 +683,8 @@ ul li {
 @media screen and (max-width: 480px) {
   .single-feature__img480 {
     display: block;
-    margin: 25% auto;
+    margin: 24% auto;
+    padding-left: 8px;
   }
 }
 .single-feature__text p {
@@ -688,7 +708,7 @@ ul li {
   .single-feature__text p {
     font-weight: 400;
     font-size: 1rem;
-    line-height: 1.2222222222rem;
+    line-height: 1.1111111111rem;
     color: #666666;
     padding: 0;
     margin-bottom: 0;
@@ -712,6 +732,11 @@ ul li {
     min-height: 55.5555555556rem;
   }
 }
+@media screen and (max-width: 480px) {
+  .section3 {
+    min-height: 42rem;
+  }
+}
 
 .section4 {
   min-height: 652px;
@@ -721,6 +746,12 @@ ul li {
     min-height: 50.4444444444rem;
   }
 }
+@media screen and (max-width: 480px) {
+  .section4 {
+    min-height: 35.2222222222rem;
+  }
+}
+
 .section5 {
   position: relative;
   background: #FFFFFF;
@@ -731,10 +762,22 @@ ul li {
   }
   .section5::before {
     content: url(../../img/pics/decor/Ягоды2_768.png);
-    top: 86.5%;
-    right: 88%;
+    top: 90%;
+    right: 80%;
     position: absolute;
     z-index: 1;
+  }
+}
+@media screen and (max-width: 768px) and (max-width: 480px) {
+  .section5::before {
+    content: url(../../img/pics/decor/Ягоды2_480.png);
+    top: 89.5%;
+    right: 80%;
+  }
+}
+@media screen and (max-width: 768px) and (max-width: 480px) {
+  .section5 {
+    min-height: 44.4444444444rem;
   }
 }
 @media screen and (max-width: 480px) {
@@ -755,6 +798,11 @@ ul li {
     padding: 10.0555555556rem 1.2222222222rem;
   }
 }
+@media screen and (max-width: 480px) {
+  .section5__container {
+    padding: 5.3333333333rem 0.5555555556rem 4.5555555556rem;
+  }
+}
 .section5__container::before {
   content: url(../../img/pics/decor/Узор1.png);
   top: 74%;
@@ -765,6 +813,14 @@ ul li {
   .section5__container::before {
     content: url(../../img/pics/decor/Узор1_768.png);
     top: 81%;
+    left: 0%;
+    position: absolute;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section5__container::before {
+    content: url(../../img/pics/decor/Узор1-480.png);
+    top: 84%;
     left: 0%;
     position: absolute;
   }
@@ -783,6 +839,15 @@ ul li {
     margin-bottom: 1.8333333333rem;
   }
 }
+@media screen and (max-width: 480px) {
+  .section5__title {
+    font-weight: bold;
+    font-size: 2.2222222222rem;
+    line-height: 2rem;
+    color: #000000;
+    margin-bottom: 1.4444444444rem;
+  }
+}
 .section5__title::before {
   content: url(../../img/pics/decor/Ягода-3.png);
   top: -39%;
@@ -794,6 +859,14 @@ ul li {
     content: url(../../img/pics/decor/Ягода-3__768.png);
     top: -300%;
     right: -157%;
+    position: absolute;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section5__title::before {
+    content: url(../../img/pics/decor/Ягода-3__480.png);
+    top: -220%;
+    right: -106%;
     position: absolute;
   }
 }
@@ -818,6 +891,11 @@ ul li {
     margin-bottom: 1.7777777778rem;
   }
 }
+@media screen and (max-width: 480px) {
+  .section5__content {
+    margin-bottom: 41px;
+  }
+}
 
 .feedback {
   display: flex;
@@ -839,6 +917,12 @@ ul li {
     background: url(../../img/background/layer2-1_768.png) right top 3% no-repeat, #F8FAF9;
   }
 }
+@media screen and (max-width: 480px) {
+  .feedback {
+    padding: 56px 33px 8px 25px;
+    background: url(../../img/background/layer2-1_480.png) right top 7% no-repeat, #F8FAF9;
+  }
+}
 .feedback__icon {
   margin-right: 2.1111111111rem;
   width: 14.0555555556rem;
@@ -851,6 +935,11 @@ ul li {
     margin: 0 0 1.8333333333rem;
   }
 }
+@media screen and (max-width: 480px) {
+  .feedback__icon {
+    margin: 0 0 0.8888888889rem;
+  }
+}
 .feedback__paginator {
   position: relative;
 }
@@ -859,6 +948,11 @@ ul li {
   left: -185%;
   bottom: -207.5%;
   position: absolute;
+}
+@media screen and (max-width: 480px) {
+  .feedback__paginator {
+    width: 224px;
+  }
 }
 .feedback__img {
   width: 100%;
@@ -919,6 +1013,12 @@ ul li {
     margin-bottom: 0.7777777778rem;
   }
 }
+@media screen and (max-width: 480px) {
+  .feedback__title768 {
+    padding: 0 43px;
+    margin-bottom: 10px;
+  }
+}
 .feedback__text {
   font-weight: 400;
   font-size: 1rem;
@@ -942,6 +1042,12 @@ ul li {
     line-height: 1.2222222222rem;
     color: #666666;
     margin-bottom: 0.9444444444rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .feedback__text768 {
+    margin-bottom: 0.6666666667rem;
+    line-height: 23px;
   }
 }
 .feedback__caption {
@@ -972,6 +1078,14 @@ ul li {
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 480px) {
+  .feedback__list {
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 
 .interactive-avatar {
   width: 4.1111111111rem;
@@ -981,6 +1095,26 @@ ul li {
   margin-right: 0.3333333333rem;
   border: 0.2222222222rem solid transparent;
 }
+@media screen and (max-width: 480px) {
+  .interactive-avatar {
+    width: 64px;
+    height: 64px;
+    margin-right: 0;
+    border: none;
+  }
+  .interactive-avatar:nth-of-type(1) {
+    order: 2;
+  }
+  .interactive-avatar:nth-of-type(2) {
+    order: 1;
+  }
+  .interactive-avatar:nth-of-type(3) {
+    order: 3;
+  }
+  .interactive-avatar:hover {
+    border: 0.2222222222rem solid #365A49;
+  }
+}
 .interactive-avatar:hover {
   border: 0.2222222222rem solid #365A49;
 }
@@ -988,21 +1122,33 @@ ul li {
   margin-right: 0;
 }
 .interactive-avatar__img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
-.section6__container {
+.section6 {
   min-height: 652px;
 }
 @media screen and (max-width: 768px) {
-  .section6__container {
+  .section6 {
     min-height: 606px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section6 {
+    min-height: 518px;
   }
 }
 
 .section7 {
   background-color: #61C4D9;
   color: #497870;
+}
+@media screen and (max-width: 480px) {
+  .section7 {
+    min-height: 766px;
+  }
 }
 .section7__container {
   position: relative;
@@ -1015,6 +1161,11 @@ ul li {
 @media screen and (max-width: 768px) {
   .section7__container {
     padding: 173px 147px 180px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section7__container {
+    padding: 87px 10px 81px;
   }
 }
 .section7__container::before {
@@ -1031,6 +1182,14 @@ ul li {
     position: absolute;
   }
 }
+@media screen and (max-width: 480px) {
+  .section7__container::before {
+    content: url(../../img/pics/decor/Ежевика_фото1_480.png);
+    right: 0;
+    top: -11%;
+    position: absolute;
+  }
+}
 .section7__title {
   font-weight: bold;
   font-size: 2.6666666667rem;
@@ -1042,6 +1201,15 @@ ul li {
 @media screen and (max-width: 768px) {
   .section7__title {
     margin-bottom: 1.7777777778rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section7__title {
+    font-weight: bold;
+    font-size: 2.2222222222rem;
+    line-height: 2rem;
+    color: #365A49;
+    margin-bottom: 39px;
   }
 }
 
@@ -1118,6 +1286,15 @@ ul li {
     color: #000000;
   }
 }
+@media screen and (max-width: 480px) {
+  .form__input {
+    padding: 9px 8px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+  }
+}
 .form__input:focus {
   border: 0.1666666667rem solid #DEE2BD;
   outline: none;
@@ -1144,6 +1321,11 @@ ul li {
     padding-left: 0;
   }
 }
+@media screen and (max-width: 480px) {
+  .form__controlls {
+    justify-content: flex-start;
+  }
+}
 .form__controll {
   display: flex;
   flex-wrap: wrap;
@@ -1151,6 +1333,11 @@ ul li {
 @media screen and (max-width: 768px) {
   .form__controll {
     margin-bottom: 24px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .form__controll {
+    margin-left: 52px;
   }
 }
 .form__btn {
@@ -1164,6 +1351,11 @@ ul li {
     display: flex;
     justify-content: center;
     margin-left: 55px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .form__btn {
+    margin-left: 62px;
   }
 }
 .form__btn:first-child {
@@ -1186,8 +1378,8 @@ ul li {
 
 .radio {
   display: flex;
-  margin-right: 1.3333333333rem;
-  margin-bottom: 1rem;
+  margin-right: 24px;
+  margin-bottom: 18px;
   cursor: pointer;
   -webkit-user-select: none;
           user-select: none;
@@ -1195,6 +1387,11 @@ ul li {
 @media screen and (max-width: 768px) {
   .radio {
     margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .radio {
+    margin-right: 21px;
   }
 }
 .radio:last-child {
@@ -1208,6 +1405,11 @@ ul li {
   content: "";
   background: url(../../img/icons/checkmark.png) center center no-repeat;
   background-size: cover;
+}
+@media screen and (max-width: 480px) {
+  .radio__checkbox {
+    margin-left: 96px;
+  }
 }
 .radio__element {
   display: none;

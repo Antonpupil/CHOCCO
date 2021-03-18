@@ -4,12 +4,23 @@
 
     @include tablet {
         min-height: rem(976px);
+
         &::before {
             content: url(../../img/pics/decor/Ягоды2_768.png);
-            top: 86.5%;
-            right: 88%;
+            top: 90%;
+            right: 80%;
             position: absolute;
             z-index: 1;
+
+            @include phone {
+                content: url(../../img/pics/decor/Ягоды2_480.png);
+                top: 89.5%;
+                right: 80%;
+            }
+        }
+
+        @include phone {
+            min-height: rem(800px);
         }
     }
 
@@ -26,6 +37,10 @@
             padding: rem(181px) rem(22px);
         }
 
+        @include phone {
+            padding: rem(96px) rem(10px) rem(82px);
+        }
+
         &::before {
             content: url(../../img/pics/decor/Узор1.png);
             top: 74%;
@@ -35,6 +50,13 @@
             @include tablet {
                 content: url(../../img/pics/decor/Узор1_768.png);
                 top: 81%;
+                left: 0%;
+                position: absolute;
+            }
+
+            @include phone {
+                content: url(../../img/pics/decor/Узор1-480.png);
+                top: 84%;
                 left: 0%;
                 position: absolute;
             }
@@ -53,6 +75,11 @@
 
         }
 
+        @include phone {
+            @include H2font($font-size: rem(40px), $line-height: rem(36px), $color: $black);
+            margin-bottom: rem(26px);
+        }
+
         &::before {
             content: url(../../img/pics/decor/Ягода-3.png);
             top: -39%;
@@ -63,6 +90,13 @@
                 content: url(../../img/pics/decor/Ягода-3__768.png);
                 top: -300%;
                 right: -157%;
+                position: absolute;
+            }
+
+            @include phone {
+                content: url(../../img/pics/decor/Ягода-3__480.png);
+                top: -220%;
+                right: -106%;
                 position: absolute;
             }
         }
@@ -76,6 +110,11 @@
         @include tablet {
             margin-bottom: rem(32px);
         }
+
+        @include phone {
+            margin-bottom: 41px;
+        }
+
 
         /* &::before {
             content: "";
