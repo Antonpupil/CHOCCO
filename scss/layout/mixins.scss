@@ -12,7 +12,15 @@
     color: $color;
 }
 
+<<<<<<< HEAD
 @mixin baseFont ($font-size: rem(18px), $line-height: rem(22px), $font-weight: 400, $color: $light) {
+=======
+<<<<<<< HEAD
+@mixin baseFont ($font-size: rem(18px), $line-height: rem(22px), $font-weight: normal, $color: $light) {
+=======
+@mixin baseFont ($font-size: rem(18px), $line-height: rem(22px), $font-weight: 400, $color: $light) {
+>>>>>>> 316a6c0433bdf45a286706a98358afa6b197b204
+>>>>>>> 782bc70fd202b69eb5fe9ae388ad98ec33a9e90e
     font-weight: $font-weight;
     font-size: $font-size;
     line-height: $line-height;

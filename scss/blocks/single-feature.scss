@@ -3,6 +3,7 @@
     flex-direction: column;
     align-items: center;
     width: rem(276px);
+<<<<<<< HEAD
     position: relative;
 
     @include tablet {
@@ -31,6 +32,45 @@
         background: $thirdBgrColor;
         border-radius: 50%;
         margin-bottom: rem(22px);
+=======
+<<<<<<< HEAD
+
+    &__icon {
+        width: rem(128px);
+        height: rem(128px);
+        background: $thirdBgrColor;
+        border-radius: 50%;
+        margin-bottom: rem(22px);
+=======
+    position: relative;
+
+    @include tablet {
+        width: rem(258px);
+    }
+
+    @include phone {
+        flex-direction: row;
+        width: auto;
+        align-items: flex-end;
+    }
+
+    &__description{
+        text-align: center;
+
+        @include phone {
+            text-align: left;
+            padding-bottom: 20px;
+            padding-right: 32px;
+        }
+    }
+
+    &__icon {
+        min-width: rem(128px);
+        min-height: rem(128px);
+        background: $thirdBgrColor;
+        border-radius: 50%;
+        margin-bottom: rem(22px);
+>>>>>>> 782bc70fd202b69eb5fe9ae388ad98ec33a9e90e
         position: relative;
 
         @include tablet {
@@ -40,11 +80,20 @@
         @include phone {
             margin: 0 12px 0 8px;
         }
+<<<<<<< HEAD
+=======
+>>>>>>> 316a6c0433bdf45a286706a98358afa6b197b204
+>>>>>>> 782bc70fd202b69eb5fe9ae388ad98ec33a9e90e
     }
 
     &__title {
         @include H3font;
         margin-bottom: rem(18px);
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 782bc70fd202b69eb5fe9ae388ad98ec33a9e90e
 
         @include tablet {
             margin-bottom: rem(8px);
@@ -54,6 +103,10 @@
             @include H3font($color: $dark);
             margin-bottom: rem(12px);
         }
+<<<<<<< HEAD
+=======
+>>>>>>> 316a6c0433bdf45a286706a98358afa6b197b204
+>>>>>>> 782bc70fd202b69eb5fe9ae388ad98ec33a9e90e
     }
 
     &__img {

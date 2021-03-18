@@ -19,7 +19,12 @@
 
     &__col {
         flex: 1;
-        margin-right: 25px;
+        margin-right: rem(25px);
+
+        @include tablet {
+            margin: 0;
+            @include baseFont ($color: $btnColorDark);
+        }
 
         @include tablet {
             margin: 0;
@@ -33,11 +38,21 @@
 
     &__row {
         display: flex;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+        margin-bottom: rem(14px);
+=======
+>>>>>>> 782bc70fd202b69eb5fe9ae388ad98ec33a9e90e
         margin-bottom: 12px;
 
         @include tablet {
             margin-bottom: 8px;
         }
+<<<<<<< HEAD
+=======
+>>>>>>> 316a6c0433bdf45a286706a98358afa6b197b204
+>>>>>>> 782bc70fd202b69eb5fe9ae388ad98ec33a9e90e
     }
 
     &__block {
@@ -103,6 +118,7 @@
     &__controll {
         display: flex;
         flex-wrap: wrap;
+<<<<<<< HEAD
 
         @include tablet {
             margin-bottom: 24px;
@@ -115,6 +131,28 @@
 
     &__btn {
         margin-top: rem(48px);
+=======
+<<<<<<< HEAD
+        margin-top: rem(36px);
+    }
+
+    &__btn {
+        margin-top: rem(10px);
+=======
+
+        @include tablet {
+            margin-bottom: 24px;
+        }
+
+        @include phone {
+            margin-left: 52px;
+        }
+    }
+
+    &__btn {
+        margin-top: rem(48px);
+>>>>>>> 316a6c0433bdf45a286706a98358afa6b197b204
+>>>>>>> 782bc70fd202b69eb5fe9ae388ad98ec33a9e90e
         position: relative;
         display: flex;
 
