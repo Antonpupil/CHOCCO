@@ -2,11 +2,11 @@
     display: flex;
     align-items: center;
     &__img{
-        margin-right: 8px;
+        margin-right: rem(8px);
     }
     &__tel{
     }
     &__phone {
-        @include baseFont (22px, 18px);
+        @include baseFont (rem(22px), 18px);
     }
 }

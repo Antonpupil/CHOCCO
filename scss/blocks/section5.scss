@@ -4,7 +4,7 @@
 
     &__container {
         position: relative;
-        padding: 59px 79px 67px;
+        padding: rem(59px) rem(79px) rem(67px);
         @include flexCol-JCsb-ALIfs($align-items: center);
 
         &::before {
@@ -18,7 +18,7 @@
 
     &__title {
         @include H2font($color: $dark);
-        margin-bottom: 25px;
+        margin-bottom: rem(25px);
         text-transform: uppercase;
         position: relative;
 
@@ -31,7 +31,7 @@
     }
 
     &__content {
-        margin-bottom: 15px;
+        margin-bottom: rem(15px);
         overflow: hidden;
         position: relative;
 
@@ -39,8 +39,8 @@
             content: "";
             display: block;
             position: absolute;
-            width: 83px;
-            height: 83px;
+            width: rem(83px);
+            height: rem(83px);
             background: $light;
             border-radius: 50%;
             left: 45%;

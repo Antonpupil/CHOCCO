@@ -1,7 +1,7 @@
 .infoItem {
     display: flex;
-    margin-right: 8px;
-    width: 166px;
+    margin-right: rem(8px);
+    width: rem(166px);
     justify-content: flex-start;
     align-items: flex-start;
 
@@ -10,10 +10,10 @@
     }
 
     &__img {
-        margin-right: 11px;
+        margin-right: rem(11px);
     }
     &__text{
-        @include baseFont(16px, 19px, $color: $light);
-        padding-right: 40px;
+        @include baseFont(rem(16px), rem(19px), $color: $light);
+        padding-right: rem(40px);
     }
 }

@@ -1,12 +1,12 @@
 .feedback {
     @include flexRow-JCfs-ALIc($align-items: flex-start);
-    min-width: 940px;
+    min-width: rem(940px);
     background: url(../../img/background/layer2-1.png) right top 14% no-repeat, $forthBgrColor;
-    padding: 46px 42px;
+    padding: rem(46px) rem(42px);
     &__icon {
-        margin-right: 38px;
-        width: 253px;
-        height: 264px;
+        margin-right: rem(38px);
+        width: rem(253px);
+        height: rem(264px);
     }
 
     &__paginator {
@@ -28,23 +28,23 @@
 
     &__content {
         flex: 1;
-        padding-top: 28px;
-        width: 463px;
-        padding-right: 125px;
+        padding-top: rem(28px);
+        width: rem(463px);
+        padding-right: rem(125px);
     }
 
     &__title {
         @include H3font;
-        margin-bottom: 15px;
+        margin-bottom: rem(15px);
     }
 
     &__text {
         @include baseFont($color: $baseFontColor);
-        margin-bottom: 28px;
+        margin-bottom: rem(28px);
     }
 
     &__caption {
-        @include baseFont ($line-height: 24px, $font-weight: 500, $color: $dark)
+        @include baseFont ($line-height: rem(24px), $font-weight: 500, $color: $dark)
     }
 
     &__list {
