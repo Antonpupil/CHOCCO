@@ -1,11 +1,10 @@
 .fixed-menu {
     position: fixed;
-    top: 48%;
+    top: 65%;
     right: 4%;
     z-index: $z-fixed-menu;
 
     &__item {
-        margin-bottom: rem(7px);
 
         &_active {
             .fixed-menu__link {

@@ -1,7 +1,9 @@
 .features{
     display: flex;
     justify-content: space-around;
+    position: relative;
 
+    
     @include phone {
         flex-direction: column;
     }
