@@ -1,0 +1,30 @@
+.burger {
+    justify-self: flex-end;
+    align-self: baseline;
+    margin-top: rem(20px);
+
+    &__link {
+        width: 26px;
+        height: 24px;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: space-between;
+        display: none;
+
+        @include tablet {
+            display: inline-flex;
+        }
+
+        @include phone {
+            display: inline-flex;
+        }
+
+    }
+
+
+    &__plank {
+        height: 4.5px;
+        background: $light;
+        border-radius: 10px;
+    }
+}

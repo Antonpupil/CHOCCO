@@ -1,39 +1,62 @@
 .btn {
     min-width: rem(156px);
     text-align: center;
-    display: inline-flex;
     padding: rem(19px) rem(39px);
     border-radius: rem(30px);
     text-decoration: none;
-    @include baseFont;
+    @include baseFont($font-size: rem(16px), $line-height: rem(18px), $font-weight: 800);
     @include textOverflow3;
     display: inline-flex;
+<<<<<<< HEAD
+=======
+    justify-content: center;
+>>>>>>> 316a6c0433bdf45a286706a98358afa6b197b204
     max-width: rem(340px);
     border: none;
     cursor: pointer;
-        user-select: none;
+    user-select: none;
+
 
     &__theme_light {
+<<<<<<< HEAD
         @include baseFont($font-size: rem(16px), $line-height: rem(18px), $color: $btnColorLight);
+=======
+        @include baseFont($font-size: rem(16px), $line-height: rem(18px), $font-weight: 800, $color: $btnColorLight);
+>>>>>>> 316a6c0433bdf45a286706a98358afa6b197b204
         background-color: $light;
+        text-transform: uppercase;
 
         &:hover {
             color: $btnColorDark;
         }
+
+        @include phone {
+            @include baseFont($font-size: rem(19px), $color: $btnColorDark);
+        }
     }
-    &__theme_dark{
+
+    &__theme_dark {
+        @include baseFont($font-size: rem(16px), $line-height: rem(18px), $font-weight: 800, $color: $light);
         background-color: $btnColorLight;
-        color: $light;
-        &:hover{
+        text-transform: uppercase;
+
+        &:hover {
             background-color: $fifthBgrColor;
             color: $light;
         }
     }
 
-    &__theme_transparent{
+    &__theme_transparent {
+        @include baseFont($color: $btnColorDark);
         background-color: transparent;
-        color: &btnColorDark;
-        &:hover{
+        padding: rem(19px) rem(22px);
+        justify-content: flex-start;
+
+        @include phone {
+            padding: 19px 33px;
+        }
+
+        &:hover {
             color: $black;
         }
     }

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .header{
     @include flexRow-JCfs-ALIc;
     &__logo{
@@ -5,5 +6,40 @@
     }
     &__navbar{
         margin-right: rem(40px);
+=======
+.header {
+    width: 100%;
+    @include flexRow-JCfs-ALIc($align-items: flex-start);
+    @include tablet{
+        min-height: rem(91px);
+    }
+    @include tablet {
+        @include flexRow-JCfs-ALIc ($justify-content: space-between);
+>>>>>>> 316a6c0433bdf45a286706a98358afa6b197b204
+    }
+    @include phone {
+        padding-right: rem(10px);
+    }
+
+
+    &__logo {
+        margin-right: rem(40px);
+    }
+
+    &__navbar {
+        margin-right: rem(40px);
+
+        @include tablet {
+            display: none;
+        }
+    }
+
+    &>.contacts {
+        justify-content: flex-end;
+        white-space: nowrap;
+        padding-top: 9px;
+        @include tablet {
+            display: none;
+        }
     }
 }

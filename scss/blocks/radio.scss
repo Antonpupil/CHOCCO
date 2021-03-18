@@ -1,9 +1,22 @@
 .radio {
     display: flex;
+<<<<<<< HEAD
     margin-right: rem(24px);
     margin-bottom: rem(16px);
+=======
+    margin-right: 24px;
+    margin-bottom: 18px;
+>>>>>>> 316a6c0433bdf45a286706a98358afa6b197b204
     cursor: pointer;
     user-select: none;
+
+    @include tablet {
+        margin-bottom: 0;
+    }
+
+    @include phone {
+        margin-right: 21px;
+    }
 
     &:last-child {
         margin-right: 0;
@@ -18,6 +31,10 @@
                 background: url(../../img/icons/checkmark.png) center center no-repeat;
                 background-size: cover;
             }
+        }
+
+        @include phone {
+            margin-left: 96px;
         }
     }
 

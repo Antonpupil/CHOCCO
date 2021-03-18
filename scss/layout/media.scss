@@ -1,4 +1,8 @@
 @function rem($px) {
+<<<<<<< HEAD
     @return $px/$baseFontSize+0rem;
 
+=======
+    @return $px / $baseFontSize + 0rem;
+>>>>>>> 316a6c0433bdf45a286706a98358afa6b197b204
 }

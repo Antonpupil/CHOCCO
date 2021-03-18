@@ -12,7 +12,11 @@
     color: $color;
 }
 
+<<<<<<< HEAD
 @mixin baseFont ($font-size: rem(18px), $line-height: rem(22px), $font-weight: normal, $color: $light) {
+=======
+@mixin baseFont ($font-size: rem(18px), $line-height: rem(22px), $font-weight: 400, $color: $light) {
+>>>>>>> 316a6c0433bdf45a286706a98358afa6b197b204
     font-weight: $font-weight;
     font-size: $font-size;
     line-height: $line-height;
@@ -43,4 +47,15 @@
     -webkit-line-clamp: $-webkit-line-clamp;
     -webkit-box-orient: $-webkit-box-orient;
     overflow: $overflow;
+}
+
+@mixin tablet {
+    @media screen and (max-width: $tablet) {
+        @content;
+    }
+}
+@mixin phone {
+    @media screen and (max-width: $phone) {
+        @content;
+    }
 }

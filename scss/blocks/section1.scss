@@ -1,9 +1,21 @@
 .section1 {
     min-height: rem(652px);
+<<<<<<< HEAD
+=======
+
+    @include tablet {
+        min-height: rem(1000px);
+    }
+
+    @include phone {
+        min-height: rem(707px);
+    }
+>>>>>>> 316a6c0433bdf45a286706a98358afa6b197b204
 
     &__container {
         position: relative;
         @include flexCol-JCc-ALIfs($align-items: center);
+<<<<<<< HEAD
         padding: rem(91px) 0 rem(112px);
         background: url(../../img/background/узор-лист-1.png) left top 51% no-repeat;
 
@@ -11,34 +23,105 @@
             content: url(../../img/background/малина-1.png);
             left:0;
             bottom: -16.5%;
+=======
+        padding: 97px 0 112px;
+        background: url(../../img/background/узор-лист-1.png) left top 51% no-repeat;
+
+        @include tablet {
+            background: url(../../img/background/узор-лист-1.png) left -1% top 12% no-repeat;
+        }
+
+        @include phone {
+            background: none;
+            padding: 97px 0 112px;
+        }
+
+        &::before {
+            content: url(../../img/background/малина-1.png);
+            left: 0;
+            bottom: -18.5%;
+>>>>>>> 316a6c0433bdf45a286706a98358afa6b197b204
             position: absolute;
+
+            @include tablet {
+                bottom: -11.5%;
+                content: "";
+            }
+            @include phone {
+                content:"";
+            }
+        }
+
+        @include tablet {
+            padding: rem(279px) 0 rem(257px);
+        }
+
+        @include phone {
+            box-sizing: border-box;
+            padding: rem(53px) 0;
         }
     }
-    
+
 
     &__headline {
         text-align: center;
         margin-bottom: rem(49px);
+<<<<<<< HEAD
+=======
+
+        @include phone {
+            margin-bottom: rem(53px);
+        }
+>>>>>>> 316a6c0433bdf45a286706a98358afa6b197b204
     }
 
     &__content {
         margin: 0 rem(82px);
+<<<<<<< HEAD
+=======
+        @include tablet {
+            margin: 0;
+        }
+>>>>>>> 316a6c0433bdf45a286706a98358afa6b197b204
     }
-    
+
 
     &__item {
         margin-right: rem(55px);
+<<<<<<< HEAD
+=======
+        flex: 1;
+>>>>>>> 316a6c0433bdf45a286706a98358afa6b197b204
         position: relative;
+
+        @include tablet {
+            margin-right: 0;
+        }
+
+        @include phone {
+            margin-bottom: 36px;
+        }
 
         &::before {
             content: url(../../img/icons/features/Combined-shape-2204.png);
             position: absolute;
             top: 23%;
             right: -22%;
+
+            @include tablet {
+                content: "";
+            }
+    
+            @include phone {
+                content: "";
+            }
         }
 
         &:last-child {
             margin-right: 0;
+            @include phone {
+                margin-bottom: 0;
+            }
 
             &::before {
                 display: none;
@@ -49,12 +132,28 @@
     &__title {
         @include H2font($color: $dark);
         text-transform: uppercase;
+
+        @include phone {
+            @include H2font($font-size: rem(40px), $line-height: rem(36px), $color: $black);
+        }
     }
 
     &__subtitle {
         @include baseFont($color: $baseFontColor);
         width: rem(436px);
         text-align: center;
+<<<<<<< HEAD
         margin: rem(19px) 0 0;
+=======
+        margin: 20px 0 0;
+
+        @include tablet {
+            margin: rem(4px) 0 0;
+        }
+
+        @include phone {
+            margin: rem(12px) 0 0;
+        }
+>>>>>>> 316a6c0433bdf45a286706a98358afa6b197b204
     }
 }

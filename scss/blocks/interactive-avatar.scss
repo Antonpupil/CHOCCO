@@ -5,6 +5,24 @@
     overflow: hidden;
     margin-right: rem(6px);
     border: rem(4px) solid transparent;
+<<<<<<< HEAD
+=======
+
+    @include phone {
+        width: 64px;
+        height: 64px;
+        margin-right: 0;
+        border: none;
+        &:nth-of-type(1) { order: 2; }
+        &:nth-of-type(2) { order: 1; }
+        &:nth-of-type(3) { order: 3; }
+
+        &:hover {
+            border: rem(4px) solid $btnColorLight;
+
+        }
+    }
+>>>>>>> 316a6c0433bdf45a286706a98358afa6b197b204
 
     &:hover {
         border: rem(4px) solid $btnColorLight;
@@ -15,6 +33,8 @@
     }
 
     &__img {
+        width: 100%;
+        height: 100%;
         object-fit: cover;
     }
 }

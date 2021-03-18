@@ -1,7 +1,21 @@
 .container{
+<<<<<<< HEAD
     min-height: 100%;
     max-width: $containerWidth;
     width: 100;
     padding: rem(10px);
     position: relative;
+=======
+    width: 100%;
+    max-width: $containerWidth;
+    /* min-height: $sectionHeight; */
+    margin: 0 auto;
+    position: relative;
+    @include tablet{
+        width: 100%;
+        min-height: 100%;
+    }
+        
+
+>>>>>>> 316a6c0433bdf45a286706a98358afa6b197b204
 }

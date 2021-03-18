@@ -1,5 +1,17 @@
 .section2{
+    min-height: rem(642px);
+
+    @include tablet {
+        min-height: rem(816px);
+    }
+
+    @include phone {
+    }
+
     &__container{
+<<<<<<< HEAD
         min-height: rem(642px);
+=======
+>>>>>>> 316a6c0433bdf45a286706a98358afa6b197b204
     }
 }

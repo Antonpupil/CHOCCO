@@ -1,6 +1,13 @@
+<<<<<<< HEAD
 $sectionHeight: rem(652px);
 $containerWidth: rem(1100px);
 $baseFontSize: rem(18px);
+=======
+$sectionHeight: 642px;
+$sectionHeight768: 606px;
+$containerWidth: 1100px;
+$baseFontSize: 18px;
+>>>>>>> 316a6c0433bdf45a286706a98358afa6b197b204
 $baseFontColor:#666666;
 $btnColorDark: #497870;
 $btnColorLight: #365A49;
@@ -16,4 +23,7 @@ $black:#000000;
 $borderColor:#DEE2BD;
 
 $z-fixed-menu:100;
+
+$tablet: 768px;
+$phone: 480px;
 

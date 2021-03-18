@@ -1,5 +1,11 @@
-.section6{
-    &__container{
-        min-height: $sectionHeight;
+.section6 {
+    min-height: $sectionHeight +10px;
+
+    @include tablet {
+        min-height: $sectionHeight768;
+    }
+
+    @include phone {
+        min-height: 518px;
     }
 }

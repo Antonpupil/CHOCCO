@@ -5,51 +5,154 @@
 
     &__header {
         margin-bottom: rem(84px);
+<<<<<<< HEAD
+=======
+
+        @include tablet {
+            min-height: rem(91px);
+            margin-bottom: rem(482px);
+            padding: 0 rem(36px) 0 rem(30px);
+        }
+
+        @include phone {
+            margin-bottom: rem(369px);
+            padding-left: rem(10px);
+        }
+>>>>>>> 316a6c0433bdf45a286706a98358afa6b197b204
     }
 
     &__btn {
         position: absolute;
-        top: 64.5%;
+        top: 65%;
         display: inline-block;
+
+        @include tablet {
+            top: 77%;
+        }
+
+        @include phone {
+            top: 81%;
+        }
     }
 
     &__container {
         position: relative;
         @include flexCol-JCsb-ALIfs;
+<<<<<<< HEAD
         padding: rem(21px) rem(80px) rem(52px);
         background: url(../../img/pics/comp/Ягоды1.png) right 29% top 91% no-repeat,
             url(../../img/pics/comp/Chocolates.png) right 5% bottom 59% no-repeat,
             url(../../img/background/big-leaf.png) right top no-repeat,
             url(../../img/pics/comp/Лист1.png) right 1% bottom 25% no-repeat;
         
+=======
+        padding: rem(23px) rem(80px) rem(52px);
+        background: url(../../img/pics/comp/Ягоды1.png) right 29% top 91% no-repeat,
+            url(../../img/pics/comp/Chocolates.png) right 5% bottom 59% no-repeat,
+            url(../../img/background/big-leaf.png) right top no-repeat;
+
+        @include tablet {
+            background: url(../../img/background/big-leaf768.png) right top 27% no-repeat;
+            padding: 0;
+        }
+        @include phone {
+            background: url(../../img/background/big-leaf480.png) right top 17% no-repeat;
+        }
+
+>>>>>>> 316a6c0433bdf45a286706a98358afa6b197b204
         &::before {
             content: url(../../img/pics/comp/Лист1.png);
             position: absolute;
             top: 51%;
             left: 78%;
+
+            @include tablet {
+                content: url(../../img/pics/comp/comp768.png);
+                position: absolute;
+                top: 17.5%;
+                left: 19%;
+                padding: 0 rem(52px);
+            }
+
+            @include phone {
+                content: url(../../img/pics/comp/comp480.png);
+                position: absolute;
+                top: 12%;
+                left: 5%;
+                padding: 0 rem(52px);
+            }
         }
+
     }
 
     &__content {
+<<<<<<< HEAD
         height: rem(402px);
+=======
+        min-height: rem(402px);
+
+>>>>>>> 316a6c0433bdf45a286706a98358afa6b197b204
         &::before {
             content: url(../../img/pics/comp/Лист2.png);
             position: absolute;
             top: 88.8%;
             left: 62%;
+
+            @include tablet {
+                content: "";
+            }
+        }
+
+        @include tablet {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            text-align: center;
+        }
+
+        @include phone {
+            min-height: auto;
         }
     }
 
     &__title {
-        @include H2font($line-height: 59px);
+        @include H2font($line-height: rem(59px));
         width: 38%;
         text-transform: uppercase;
         margin-bottom: rem(20px);
+<<<<<<< HEAD
+=======
+
+        @include tablet {
+            width: auto;
+            margin-bottom: rem(5px);
+        }
+
+        @include phone {
+            @include H2font($font-size: rem(40px), $line-height: rem(36px));
+            margin-bottom: rem(8px);
+        }
+>>>>>>> 316a6c0433bdf45a286706a98358afa6b197b204
     }
 
     &__text {
         width: rem(371px);
         @include baseFont(rem(21px), 25px);
+<<<<<<< HEAD
+=======
+
+        @include tablet {
+            margin-bottom: rem(256px);
+        }
+
+        @include phone {
+            @include baseFont($line-height: rem(20px));
+            padding: 0 rem(28px);
+            margin-bottom: rem(183px);
+        }
+>>>>>>> 316a6c0433bdf45a286706a98358afa6b197b204
     }
 
     &__icons {
@@ -60,6 +163,10 @@
             position: absolute;
             top: 79%;
             right: -81%;
+        }
+
+        @include tablet {
+            display: none;
         }
     }
 }

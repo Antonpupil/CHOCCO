@@ -8,22 +8,27 @@
 @import "./layout/variables.scss";
 @import "./layout/mixins.scss";
 @import "./layout/media.scss";
+<<<<<<< HEAD
 
+=======
+>>>>>>> 316a6c0433bdf45a286706a98358afa6b197b204
 
 //layout
 @import "./layout/layout.scss";
 @import "./layout/base.scss";
 
 //font
-@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700;800&display=swap');
 
 
 //blocks
 @import "./blocks/wrapper.scss";
 @import "./blocks/hero.scss";
 @import "./blocks/container.scss";
+/* @import "./blocks/section.scss"; */
 @import "./blocks/header.scss";
 @import "./blocks/navBar.scss";
+@import "./blocks/burger.scss";
 @import "./blocks/btn.scss";
 @import "./blocks/icons.scss";
 @import "./blocks/infoItem.scss";

@@ -1,12 +1,19 @@
 .navBar {
+<<<<<<< HEAD
     min-width: rem(641px);
+=======
+    padding-top: 5px;
+    /* min-width: rem(641px); */
+>>>>>>> 316a6c0433bdf45a286706a98358afa6b197b204
 
     &__list {
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
+        flex-wrap: wrap;
     }
 
     &__item {
+        margin-right: 28px;
         &:last-child {
             margin-right: 0;
         }
