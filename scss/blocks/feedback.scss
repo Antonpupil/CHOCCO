@@ -8,7 +8,7 @@
     @include tablet {
         min-width: 100%;
         @include flexCol-JCsb-ALIfs ($justify-content: flex-start, $align-items: center);
-        padding: rem(56px) rem(23px) rem(24px);
+        padding: 56px 23px 26px;
         background: url(../../img/background/layer2-1_768.png) right top 3% no-repeat, #F8FAF9;
     }
 

@@ -17,11 +17,13 @@
 
         @include tablet {
             background: url(../../img/background/узор-лист-1.png) left -1% top 12% no-repeat;
+            padding: 279px 0 252px;
         }
 
         @include phone {
             background: none;
-            padding: 97px 0 112px;
+            box-sizing: border-box;
+            padding: rem(53px) 0;
         }
 
         &::before {
@@ -34,18 +36,10 @@
                 bottom: -11.5%;
                 content: "";
             }
+
             @include phone {
-                content:"";
+                content: "";
             }
-        }
-
-        @include tablet {
-            padding: rem(279px) 0 rem(257px);
-        }
-
-        @include phone {
-            box-sizing: border-box;
-            padding: rem(53px) 0;
         }
     }
 
@@ -61,6 +55,7 @@
 
     &__content {
         margin: 0 rem(82px);
+
         @include tablet {
             margin: 0;
         }
@@ -89,7 +84,7 @@
             @include tablet {
                 content: "";
             }
-    
+
             @include phone {
                 content: "";
             }
@@ -97,6 +92,7 @@
 
         &:last-child {
             margin-right: 0;
+
             @include phone {
                 margin-bottom: 0;
             }

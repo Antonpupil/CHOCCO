@@ -45,6 +45,10 @@
         padding: rem(19px) rem(22px);
         justify-content: flex-start;
 
+        @include tablet {
+            padding: 18px 33px;
+        }
+
         @include phone {
             padding: 19px 33px;
         }

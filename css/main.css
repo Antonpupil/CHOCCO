@@ -381,6 +381,11 @@ ul li {
   padding: 1.0555555556rem 1.2222222222rem;
   justify-content: flex-start;
 }
+@media screen and (max-width: 768px) {
+  .btn__theme_transparent {
+    padding: 18px 33px;
+  }
+}
 @media screen and (max-width: 480px) {
   .btn__theme_transparent {
     padding: 19px 33px;
@@ -461,12 +466,14 @@ ul li {
 @media screen and (max-width: 768px) {
   .section1__container {
     background: url(../../img/background/узор-лист-1.png) left -1% top 12% no-repeat;
+    padding: 279px 0 252px;
   }
 }
 @media screen and (max-width: 480px) {
   .section1__container {
     background: none;
-    padding: 97px 0 112px;
+    box-sizing: border-box;
+    padding: 2.9444444444rem 0;
   }
 }
 .section1__container::before {
@@ -484,17 +491,6 @@ ul li {
 @media screen and (max-width: 480px) {
   .section1__container::before {
     content: "";
-  }
-}
-@media screen and (max-width: 768px) {
-  .section1__container {
-    padding: 15.5rem 0 14.2777777778rem;
-  }
-}
-@media screen and (max-width: 480px) {
-  .section1__container {
-    box-sizing: border-box;
-    padding: 2.9444444444rem 0;
   }
 }
 .section1__headline {
@@ -762,8 +758,8 @@ ul li {
   }
   .section5::before {
     content: url(../../img/pics/decor/Ягоды2_768.png);
-    top: 90%;
-    right: 80%;
+    top: 86.5%;
+    right: 88%;
     position: absolute;
     z-index: 1;
   }
@@ -795,7 +791,7 @@ ul li {
 }
 @media screen and (max-width: 768px) {
   .section5__container {
-    padding: 10.0555555556rem 1.2222222222rem;
+    padding: 180px 1.2222222222rem;
   }
 }
 @media screen and (max-width: 480px) {
@@ -812,7 +808,7 @@ ul li {
 @media screen and (max-width: 768px) {
   .section5__container::before {
     content: url(../../img/pics/decor/Узор1_768.png);
-    top: 81%;
+    top: 82%;
     left: 0%;
     position: absolute;
   }
@@ -913,7 +909,7 @@ ul li {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding: 3.1111111111rem 1.2777777778rem 1.3333333333rem;
+    padding: 56px 23px 26px;
     background: url(../../img/background/layer2-1_768.png) right top 3% no-repeat, #F8FAF9;
   }
 }

@@ -7,8 +7,8 @@
 
         &::before {
             content: url(../../img/pics/decor/Ягоды2_768.png);
-            top: 90%;
-            right: 80%;
+            top: 86.5%;
+            right: 88%;
             position: absolute;
             z-index: 1;
 
@@ -34,7 +34,7 @@
         @include flexCol-JCsb-ALIfs($align-items: center);
 
         @include tablet {
-            padding: rem(181px) rem(22px);
+            padding: 180px rem(22px);
         }
 
         @include phone {
@@ -49,7 +49,7 @@
 
             @include tablet {
                 content: url(../../img/pics/decor/Узор1_768.png);
-                top: 81%;
+                top: 82%;
                 left: 0%;
                 position: absolute;
             }
