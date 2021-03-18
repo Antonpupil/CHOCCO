@@ -7,10 +7,7 @@
     @include baseFont($font-size: rem(16px), $line-height: rem(18px), $font-weight: 800);
     @include textOverflow3;
     display: inline-flex;
-<<<<<<< HEAD
-=======
     justify-content: center;
->>>>>>> 316a6c0433bdf45a286706a98358afa6b197b204
     max-width: rem(340px);
     border: none;
     cursor: pointer;
@@ -18,11 +15,7 @@
 
 
     &__theme_light {
-<<<<<<< HEAD
-        @include baseFont($font-size: rem(16px), $line-height: rem(18px), $color: $btnColorLight);
-=======
         @include baseFont($font-size: rem(16px), $line-height: rem(18px), $font-weight: 800, $color: $btnColorLight);
->>>>>>> 316a6c0433bdf45a286706a98358afa6b197b204
         background-color: $light;
         text-transform: uppercase;
 
