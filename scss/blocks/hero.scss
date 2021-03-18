@@ -52,8 +52,8 @@
             content: url(../../img/pics/comp/Лист1.png);
             position: absolute;
             top: 51%;
-            left: 78%;
-
+            right: 0;
+            
             @include tablet {
                 content: url(../../img/pics/comp/comp768.png);
                 position: absolute;
@@ -85,6 +85,13 @@
             @include tablet {
                 content: "";
             }
+        }
+
+        &::after {
+            content: url(../../img/pics/comp/Ягода2.png);
+            position: absolute;
+            top: 79%;
+            right: -81%;
         }
 
         @include tablet {
@@ -135,14 +142,7 @@
 
     &__icons {
         position: relative;
-
-        &::before {
-            content: url(../../img/pics/comp/Ягода2.png);
-            position: absolute;
-            top: 79%;
-            right: -81%;
-        }
-
+        
         @include tablet {
             display: none;
         }

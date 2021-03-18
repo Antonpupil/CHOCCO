@@ -42,7 +42,7 @@
         }
 
         &::before {
-            content: url(../../img/pics/decor/Узор1.png);
+            content: url(../../img/pics/decor/Узор1_1100.png);
             top: 74%;
             left: 0%;
             position: absolute;
@@ -62,6 +62,13 @@
             }
         }
 
+        &::after {
+            content: url(../../img/pics/decor/Ягоды2_1100.png);
+            left: -185%;
+            bottom: -207.5%;
+            position: absolute;
+        }
+
     }
 
     &__title {
@@ -69,6 +76,8 @@
         margin-bottom: rem(25px);
         text-transform: uppercase;
         position: relative;
+        width: 100%;
+        text-align: center;
 
         @include tablet {
             margin-bottom: rem(33px);
@@ -82,8 +91,8 @@
 
         &::before {
             content: url(../../img/pics/decor/Ягода-3.png);
-            top: -39%;
-            right: -234%;
+            top: -33%;
+    right: -6%;
             position: absolute;
 
             @include tablet {
