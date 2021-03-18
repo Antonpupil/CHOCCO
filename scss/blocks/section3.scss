@@ -1,5 +1,12 @@
 .section3{
-    &__container{
-        min-height: $sectionHeight;
+    min-height: $sectionHeight+10px;
+    
+
+    @include tablet {
+        min-height: rem(1000px);
+    }
+
+    @include phone {
+        min-height: rem(756px);
     }
 }

@@ -2,22 +2,57 @@
     background-color: $firstBgrColor;
     color: $btnColorDark;
 
+    @include phone {
+        min-height: 766px;
+    }
+
     &__container {
         position: relative;
-        padding: rem(55px) rem(81px) rem(0px);
+        padding: 57px 81px 84px;
         @include flexCol-JCsb-ALIfs($justify-content: flex-start, $align-items: center);
+
+        @include tablet {
+            padding: 173px 147px 180px;
+        }
+
+        @include phone {
+            padding: 87px 10px 81px;
+        }
 
         &::before {
             content: url(../../img/pics/decor/Ежевика_фото1.png);
             right: 0;
             top: -26%;
             position: absolute;
+
+            @include tablet {
+                content: url(../../img/pics/decor/Ежевика_фото1_768.png);
+                right: 0;
+                top: -8.5%;
+                position: absolute;
+            }
+
+            @include phone {
+                content: url(../../img/pics/decor/Ежевика_фото1_480.png);
+                right: 0;
+                top: -11%;
+                position: absolute;
+            }
         }
     }
 
     &__title {
         @include H2font ($color: $btnColorLight);
         text-transform: uppercase;
-        margin-bottom: rem(58px);  
+        margin-bottom: rem(58px);
+
+        @include tablet {
+            margin-bottom: rem(32px);
+        }
+
+        @include phone {
+            @include H2font ($font-size: rem(40px), $line-height: rem(36px), $color: $btnColorLight);
+            margin-bottom: 39px;
+        }
     }
 }

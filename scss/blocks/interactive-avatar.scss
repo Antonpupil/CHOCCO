@@ -6,6 +6,21 @@
     margin-right: rem(6px);
     border: rem(4px) solid transparent;
 
+    @include phone {
+        width: 64px;
+        height: 64px;
+        margin-right: 0;
+        border: none;
+        &:nth-of-type(1) { order: 2; }
+        &:nth-of-type(2) { order: 1; }
+        &:nth-of-type(3) { order: 3; }
+
+        &:hover {
+            border: rem(4px) solid $btnColorLight;
+
+        }
+    }
+
     &:hover {
         border: rem(4px) solid $btnColorLight;
     }
@@ -15,6 +30,8 @@
     }
 
     &__img {
+        width: 100%;
+        height: 100%;
         object-fit: cover;
     }
 }

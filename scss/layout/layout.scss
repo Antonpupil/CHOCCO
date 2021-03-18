@@ -1,6 +1,8 @@
+html{
+    font-size: $baseFontSize;
+}
 body {
     font-family: 'Alegreya Sans', Arial, Helvetica, sans-serif;
-    font-size: $baseFontSize;
     color: $baseFontColor;
     position: relative;
     -webkit-font-smoothing: antialiased;
@@ -10,4 +12,11 @@ body {
 html,
 body {
     height: 100%;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
 }

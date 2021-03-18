@@ -3,10 +3,35 @@
     min-width: rem(940px);
     background: url(../../img/background/layer2-1.png) right top 14% no-repeat, $forthBgrColor;
     padding: rem(46px) rem(42px);
+    position: relative;
+
+    @include tablet {
+        min-width: 100%;
+        @include flexCol-JCsb-ALIfs ($justify-content: flex-start, $align-items: center);
+        padding: rem(56px) rem(23px) rem(24px);
+        background: url(../../img/background/layer2-1_768.png) right top 3% no-repeat, #F8FAF9;
+    }
+
+    @include phone {
+        padding: 56px 33px 8px 25px;
+        background: url(../../img/background/layer2-1_480.png) right  top 7% no-repeat, #F8FAF9;
+    }
+
+
     &__icon {
         margin-right: rem(38px);
         width: rem(253px);
         height: rem(264px);
+
+        @include tablet {
+            width: rem(130px);
+            height: rem(130px);
+            margin: 0 0 rem(33px);
+        }
+
+        @include phone {
+            margin: 0 0 rem(16px);
+        }
     }
 
     &__paginator {
@@ -18,37 +43,120 @@
             bottom: -207.5%;
             position: absolute;
         }
+
+        @include phone {
+            width: 224px;
+        }
     }
 
     &__img {
         width: 100%;
         height: 100%;
         object-fit: cover;
+
+        @include tablet {
+            display: none;
+        }
+
+        &768 {
+            display: none;
+
+            @include tablet {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+
     }
 
     &__content {
         flex: 1;
-        padding-top: rem(28px);
+        padding-top: 30px;
         width: rem(463px);
         padding-right: rem(125px);
+
+        @include tablet {
+            padding: 0;
+            width: auto;
+            text-align: center;
+        }
     }
 
     &__title {
         @include H3font;
         margin-bottom: rem(15px);
+
+        @include tablet {
+            display: none;
+        }
+    }
+
+    &__title768 {
+        display: none;
+
+        @include tablet {
+            display: block;
+            @include H3font;
+            margin-bottom: rem(14px);
+        }
+
+        @include phone {
+            padding: 0 43px;
+            margin-bottom: 10px;
+        }
     }
 
     &__text {
         @include baseFont($color: $baseFontColor);
         margin-bottom: rem(28px);
+
+        @include tablet {
+            display: none;
+        }
+    }
+
+    &__text768 {
+        display: none;
+
+        @include tablet {
+            display: block;
+            @include baseFont ($color: $baseFontColor);
+            margin-bottom: rem(17px);
+        }
+
+        @include phone {
+            margin-bottom: rem(12px);
+            line-height: 23px;
+        }
     }
 
     &__caption {
-        @include baseFont ($line-height: rem(24px), $font-weight: 500, $color: $dark)
+        @include baseFont ($line-height: rem(24px), $font-weight: 500, $color: $dark);
+
+        @include tablet {
+            display: none;
+        }
+    }
+
+    &__caption768 {
+        display: none;
+
+        @include tablet {
+            display: block;
+            @include baseFont ($line-height: rem(24px), $font-weight: 500, $color: $black)
+        }
     }
 
     &__list {
         @include flexRow-JCfs-ALIc ($justify-content: center);
+
+        @include phone {
+            margin-left: 10px;
+            @include flexRow-JCfs-ALIc ($justify-content: space-between);
+        }
     }
 
 }
