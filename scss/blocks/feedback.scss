@@ -3,11 +3,6 @@
     min-width: rem(940px);
     background: url(../../img/background/layer2-1.png) right top 14% no-repeat, $forthBgrColor;
     padding: rem(46px) rem(42px);
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 782bc70fd202b69eb5fe9ae388ad98ec33a9e90e
     position: relative;
 
     @include tablet {
@@ -23,19 +18,10 @@
     }
 
 
-<<<<<<< HEAD
-=======
->>>>>>> 316a6c0433bdf45a286706a98358afa6b197b204
->>>>>>> 782bc70fd202b69eb5fe9ae388ad98ec33a9e90e
     &__icon {
         margin-right: rem(38px);
         width: rem(253px);
         height: rem(264px);
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 782bc70fd202b69eb5fe9ae388ad98ec33a9e90e
 
         @include tablet {
             width: rem(130px);
@@ -46,10 +32,6 @@
         @include phone {
             margin: 0 0 rem(16px);
         }
-<<<<<<< HEAD
-=======
->>>>>>> 316a6c0433bdf45a286706a98358afa6b197b204
->>>>>>> 782bc70fd202b69eb5fe9ae388ad98ec33a9e90e
     }
 
     &__paginator {
@@ -92,14 +74,6 @@
 
     &__content {
         flex: 1;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-        padding-top: rem(28px);
-        width: rem(463px);
-        padding-right: rem(125px);
-=======
->>>>>>> 782bc70fd202b69eb5fe9ae388ad98ec33a9e90e
         padding-top: 30px;
         width: rem(463px);
         padding-right: rem(125px);
@@ -109,20 +83,11 @@
             width: auto;
             text-align: center;
         }
-<<<<<<< HEAD
-=======
->>>>>>> 316a6c0433bdf45a286706a98358afa6b197b204
->>>>>>> 782bc70fd202b69eb5fe9ae388ad98ec33a9e90e
     }
 
     &__title {
         @include H3font;
         margin-bottom: rem(15px);
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 782bc70fd202b69eb5fe9ae388ad98ec33a9e90e
 
         @include tablet {
             display: none;
@@ -142,24 +107,11 @@
             padding: 0 43px;
             margin-bottom: 10px;
         }
-<<<<<<< HEAD
-=======
->>>>>>> 316a6c0433bdf45a286706a98358afa6b197b204
->>>>>>> 782bc70fd202b69eb5fe9ae388ad98ec33a9e90e
     }
 
     &__text {
         @include baseFont($color: $baseFontColor);
         margin-bottom: rem(28px);
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-    }
-
-    &__caption {
-        @include baseFont ($line-height: rem(24px), $font-weight: 500, $color: $dark)
-=======
->>>>>>> 782bc70fd202b69eb5fe9ae388ad98ec33a9e90e
 
         @include tablet {
             display: none;
@@ -196,10 +148,6 @@
             display: block;
             @include baseFont ($line-height: rem(24px), $font-weight: 500, $color: $black)
         }
-<<<<<<< HEAD
-=======
->>>>>>> 316a6c0433bdf45a286706a98358afa6b197b204
->>>>>>> 782bc70fd202b69eb5fe9ae388ad98ec33a9e90e
     }
 
     &__list {

@@ -5,11 +5,6 @@
 
     &__header {
         margin-bottom: rem(84px);
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 782bc70fd202b69eb5fe9ae388ad98ec33a9e90e
 
         @include tablet {
             min-height: rem(91px);
@@ -21,10 +16,6 @@
             margin-bottom: rem(369px);
             padding-left: rem(10px);
         }
-<<<<<<< HEAD
-=======
->>>>>>> 316a6c0433bdf45a286706a98358afa6b197b204
->>>>>>> 782bc70fd202b69eb5fe9ae388ad98ec33a9e90e
     }
 
     &__btn {
@@ -44,23 +35,9 @@
     &__container {
         position: relative;
         @include flexCol-JCsb-ALIfs;
-<<<<<<< HEAD
         padding: rem(23px) rem(80px) rem(52px);
         background: url(../../img/pics/comp/Ягоды1.png) right 29% top 91% no-repeat,
             url(../../img/pics/comp/Chocolates.png) right 5% bottom 59% no-repeat,
-=======
-<<<<<<< HEAD
-        padding: rem(21px) rem(80px) rem(52px);
-        background: url(../../img/pics/comp/Ягоды1.png) right 29% top 91% no-repeat,
-            url(../../img/pics/comp/Chocolates.png) right 5% bottom 59% no-repeat,
-            url(../../img/background/big-leaf.png) right top no-repeat,
-            url(../../img/pics/comp/Лист1.png) right 1% bottom 25% no-repeat;
-        
-=======
-        padding: rem(23px) rem(80px) rem(52px);
-        background: url(../../img/pics/comp/Ягоды1.png) right 29% top 91% no-repeat,
-            url(../../img/pics/comp/Chocolates.png) right 5% bottom 59% no-repeat,
->>>>>>> 782bc70fd202b69eb5fe9ae388ad98ec33a9e90e
             url(../../img/background/big-leaf.png) right top no-repeat;
 
         @include tablet {
@@ -71,10 +48,6 @@
             background: url(../../img/background/big-leaf480.png) right top 17% no-repeat;
         }
 
-<<<<<<< HEAD
-=======
->>>>>>> 316a6c0433bdf45a286706a98358afa6b197b204
->>>>>>> 782bc70fd202b69eb5fe9ae388ad98ec33a9e90e
         &::before {
             content: url(../../img/pics/comp/Лист1.png);
             position: absolute;
@@ -101,17 +74,8 @@
     }
 
     &__content {
-<<<<<<< HEAD
         min-height: rem(402px);
 
-=======
-<<<<<<< HEAD
-        height: rem(402px);
-=======
-        min-height: rem(402px);
-
->>>>>>> 316a6c0433bdf45a286706a98358afa6b197b204
->>>>>>> 782bc70fd202b69eb5fe9ae388ad98ec33a9e90e
         &::before {
             content: url(../../img/pics/comp/Лист2.png);
             position: absolute;
@@ -142,11 +106,6 @@
         width: 38%;
         text-transform: uppercase;
         margin-bottom: rem(20px);
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 782bc70fd202b69eb5fe9ae388ad98ec33a9e90e
 
         @include tablet {
             width: auto;
@@ -157,20 +116,11 @@
             @include H2font($font-size: rem(40px), $line-height: rem(36px));
             margin-bottom: rem(8px);
         }
-<<<<<<< HEAD
-=======
->>>>>>> 316a6c0433bdf45a286706a98358afa6b197b204
->>>>>>> 782bc70fd202b69eb5fe9ae388ad98ec33a9e90e
     }
 
     &__text {
         width: rem(371px);
         @include baseFont(rem(21px), 25px);
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 782bc70fd202b69eb5fe9ae388ad98ec33a9e90e
 
         @include tablet {
             margin-bottom: rem(256px);
@@ -181,10 +131,6 @@
             padding: 0 rem(28px);
             margin-bottom: rem(183px);
         }
-<<<<<<< HEAD
-=======
->>>>>>> 316a6c0433bdf45a286706a98358afa6b197b204
->>>>>>> 782bc70fd202b69eb5fe9ae388ad98ec33a9e90e
     }
 
     &__icons {

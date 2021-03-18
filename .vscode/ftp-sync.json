@@ -1,0 +1,27 @@
+{
+    "remotePath": "./y96510u2.beget.tech/public_html/chocco/",
+    "host": "y96510u2.beget.tech",
+    "username": "y96510u2",
+    "password": "&fynjirF120!",
+    "port": 21,
+    "secure": false,
+    "protocol": "ftp",
+    "uploadOnSave": false,
+    "passive": false,
+    "debug": false,
+    "privateKeyPath": null,
+    "passphrase": null,
+    "agent": null,
+    "allow": [],
+    "ignore": [
+        "\\.vscode",
+        "\\.git",
+        "\\.DS_Store"
+    ],
+    "generatedFiles": {
+        "extensionsToInclude": [
+            ""
+        ],
+        "path": ""
+    }
+}

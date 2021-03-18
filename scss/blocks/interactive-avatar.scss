@@ -5,11 +5,6 @@
     overflow: hidden;
     margin-right: rem(6px);
     border: rem(4px) solid transparent;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 782bc70fd202b69eb5fe9ae388ad98ec33a9e90e
 
     @include phone {
         width: 64px;
@@ -25,10 +20,6 @@
 
         }
     }
-<<<<<<< HEAD
-=======
->>>>>>> 316a6c0433bdf45a286706a98358afa6b197b204
->>>>>>> 782bc70fd202b69eb5fe9ae388ad98ec33a9e90e
 
     &:hover {
         border: rem(4px) solid $btnColorLight;

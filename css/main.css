@@ -19,11 +19,6 @@ body {
   height: 100%;
 }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 782bc70fd202b69eb5fe9ae388ad98ec33a9e90e
 .wrapper {
   position: relative;
   width: 100%;
@@ -31,10 +26,6 @@ body {
   overflow: hidden;
 }
 
-<<<<<<< HEAD
-=======
->>>>>>> 316a6c0433bdf45a286706a98358afa6b197b204
->>>>>>> 782bc70fd202b69eb5fe9ae388ad98ec33a9e90e
 a {
   color: inherit;
 }
@@ -90,13 +81,6 @@ ul li {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-  padding: 21px 80px 52px;
-  background: url(../../img/pics/comp/Ягоды1.png) right 29% top 91% no-repeat, url(../../img/pics/comp/Chocolates.png) right 5% bottom 59% no-repeat, url(../../img/background/big-leaf.png) right top no-repeat, url(../../img/pics/comp/Лист1.png) right 1% bottom 25% no-repeat;
-=======
->>>>>>> 782bc70fd202b69eb5fe9ae388ad98ec33a9e90e
   padding: 1.2777777778rem 4.4444444444rem 2.8888888889rem;
   background: url(../../img/pics/comp/Ягоды1.png) right 29% top 91% no-repeat, url(../../img/pics/comp/Chocolates.png) right 5% bottom 59% no-repeat, url(../../img/background/big-leaf.png) right top no-repeat;
 }
@@ -110,10 +94,6 @@ ul li {
   .hero__container {
     background: url(../../img/background/big-leaf480.png) right top 17% no-repeat;
   }
-<<<<<<< HEAD
-=======
->>>>>>> 316a6c0433bdf45a286706a98358afa6b197b204
->>>>>>> 782bc70fd202b69eb5fe9ae388ad98ec33a9e90e
 }
 .hero__container::before {
   content: url(../../img/pics/comp/Лист1.png);
@@ -230,29 +210,11 @@ ul li {
 }
 
 .container {
-<<<<<<< HEAD
-  width: 100%;
-=======
-<<<<<<< HEAD
-  min-height: 100%;
->>>>>>> 782bc70fd202b69eb5fe9ae388ad98ec33a9e90e
-  max-width: 1100px;
-  /* min-height: $sectionHeight; */
-  margin: 0 auto;
-  position: relative;
-=======
   width: 100%;
   max-width: 1100px;
   /* min-height: $sectionHeight; */
   margin: 0 auto;
   position: relative;
-}
-@media screen and (max-width: 768px) {
-  .container {
-    width: 100%;
-    min-height: 100%;
-  }
->>>>>>> 316a6c0433bdf45a286706a98358afa6b197b204
 }
 @media screen and (max-width: 768px) {
   .container {
@@ -939,18 +901,8 @@ ul li {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-<<<<<<< HEAD
   min-width: 52.2222222222rem;
   background: url(../../img/background/layer2-1.png) right top 14% no-repeat, #F8FAF9;
-=======
-<<<<<<< HEAD
-  min-width: 940px;
-  background: url(../../img/background/layer2-1.png) right top 14% no-repeat, #F8FAF9;
-  padding: 46px 42px;
-=======
-  min-width: 52.2222222222rem;
-  background: url(../../img/background/layer2-1.png) right top 14% no-repeat, #F8FAF9;
->>>>>>> 782bc70fd202b69eb5fe9ae388ad98ec33a9e90e
   padding: 2.5555555556rem 2.3333333333rem;
   position: relative;
 }
@@ -970,10 +922,6 @@ ul li {
     padding: 56px 33px 8px 25px;
     background: url(../../img/background/layer2-1_480.png) right top 7% no-repeat, #F8FAF9;
   }
-<<<<<<< HEAD
-=======
->>>>>>> 316a6c0433bdf45a286706a98358afa6b197b204
->>>>>>> 782bc70fd202b69eb5fe9ae388ad98ec33a9e90e
 }
 .feedback__icon {
   margin-right: 2.1111111111rem;

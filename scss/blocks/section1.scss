@@ -1,10 +1,5 @@
 .section1 {
     min-height: rem(652px);
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 782bc70fd202b69eb5fe9ae388ad98ec33a9e90e
 
     @include tablet {
         min-height: rem(1000px);
@@ -13,40 +8,10 @@
     @include phone {
         min-height: rem(707px);
     }
-<<<<<<< HEAD
-=======
->>>>>>> 316a6c0433bdf45a286706a98358afa6b197b204
->>>>>>> 782bc70fd202b69eb5fe9ae388ad98ec33a9e90e
 
     &__container {
         position: relative;
         @include flexCol-JCc-ALIfs($align-items: center);
-<<<<<<< HEAD
-        padding: 97px 0 112px;
-=======
-<<<<<<< HEAD
-        padding: rem(91px) 0 rem(112px);
->>>>>>> 782bc70fd202b69eb5fe9ae388ad98ec33a9e90e
-        background: url(../../img/background/узор-лист-1.png) left top 51% no-repeat;
-
-        @include tablet {
-            background: url(../../img/background/узор-лист-1.png) left -1% top 12% no-repeat;
-        }
-
-        @include phone {
-            background: none;
-            padding: 97px 0 112px;
-        }
-
-        &::before {
-            content: url(../../img/background/малина-1.png);
-<<<<<<< HEAD
-            left: 0;
-            bottom: -18.5%;
-=======
-            left:0;
-            bottom: -16.5%;
-=======
         padding: 97px 0 112px;
         background: url(../../img/background/узор-лист-1.png) left top 51% no-repeat;
 
@@ -63,8 +28,6 @@
             content: url(../../img/background/малина-1.png);
             left: 0;
             bottom: -18.5%;
->>>>>>> 316a6c0433bdf45a286706a98358afa6b197b204
->>>>>>> 782bc70fd202b69eb5fe9ae388ad98ec33a9e90e
             position: absolute;
 
             @include tablet {
@@ -90,48 +53,23 @@
     &__headline {
         text-align: center;
         margin-bottom: rem(49px);
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 782bc70fd202b69eb5fe9ae388ad98ec33a9e90e
 
         @include phone {
             margin-bottom: rem(53px);
         }
-<<<<<<< HEAD
-=======
->>>>>>> 316a6c0433bdf45a286706a98358afa6b197b204
->>>>>>> 782bc70fd202b69eb5fe9ae388ad98ec33a9e90e
     }
 
     &__content {
         margin: 0 rem(82px);
-<<<<<<< HEAD
         @include tablet {
             margin: 0;
         }
-=======
-<<<<<<< HEAD
-=======
-        @include tablet {
-            margin: 0;
-        }
->>>>>>> 316a6c0433bdf45a286706a98358afa6b197b204
->>>>>>> 782bc70fd202b69eb5fe9ae388ad98ec33a9e90e
     }
 
 
     &__item {
         margin-right: rem(55px);
-<<<<<<< HEAD
         flex: 1;
-=======
-<<<<<<< HEAD
-=======
-        flex: 1;
->>>>>>> 316a6c0433bdf45a286706a98358afa6b197b204
->>>>>>> 782bc70fd202b69eb5fe9ae388ad98ec33a9e90e
         position: relative;
 
         @include tablet {
@@ -182,12 +120,6 @@
         @include baseFont($color: $baseFontColor);
         width: rem(436px);
         text-align: center;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-        margin: rem(19px) 0 0;
-=======
->>>>>>> 782bc70fd202b69eb5fe9ae388ad98ec33a9e90e
         margin: 20px 0 0;
 
         @include tablet {
@@ -197,9 +129,5 @@
         @include phone {
             margin: rem(12px) 0 0;
         }
-<<<<<<< HEAD
-=======
->>>>>>> 316a6c0433bdf45a286706a98358afa6b197b204
->>>>>>> 782bc70fd202b69eb5fe9ae388ad98ec33a9e90e
     }
 }
