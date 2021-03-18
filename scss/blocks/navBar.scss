@@ -1,5 +1,5 @@
 .navBar {
-    min-width: 641px;
+    min-width: rem(641px);
 
     &__list {
         display: flex;
@@ -13,7 +13,7 @@
     }
 
     &__link {
-        line-height: 30px;
+        line-height: rem(30px);
         color: $light;
         text-decoration: none;
     }

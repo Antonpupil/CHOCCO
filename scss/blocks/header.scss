@@ -1,9 +1,9 @@
 .header{
     @include flexRow-JCfs-ALIc;
     &__logo{
-        margin-right: 40px;
+        margin-right: rem(40px);
     }
     &__navbar{
-        margin-right: 40px;
+        margin-right: rem(40px);
     }
 }

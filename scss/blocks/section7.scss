@@ -4,7 +4,7 @@
 
     &__container {
         position: relative;
-        padding: 55px 81px 0px;
+        padding: rem(55px) rem(81px) rem(0px);
         @include flexCol-JCsb-ALIfs($justify-content: flex-start, $align-items: center);
 
         &::before {
@@ -18,6 +18,6 @@
     &__title {
         @include H2font ($color: $btnColorLight);
         text-transform: uppercase;
-        margin-bottom: 58px;  
+        margin-bottom: rem(58px);  
     }
 }
