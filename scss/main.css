@@ -40,12 +40,12 @@ ul li {
 }
 
 .hero {
-  min-height: 36.2222222222rem;
+  max-height: 36.2222222222rem;
   background-color: #61C4D9;
   position: relative;
 }
 .hero__header {
-  margin-bottom: 54px;
+  margin-bottom: 85px;
 }
 @media screen and (max-width: 768px) {
   .hero__header {
@@ -82,7 +82,7 @@ ul li {
   justify-content: space-between;
   align-items: flex-start;
   padding: 1.2777777778rem 4.4444444444rem 2.8888888889rem;
-  background: url(../../img/pics/comp/Ягоды1.png) right 40% top 91% no-repeat, url(../../img/pics/comp/Chocolates.png) right 25% bottom 57% no-repeat, url(../../img/background/big-leaf.png) right 21% top 50% no-repeat;
+  background: url(../../img/pics/comp/Ягоды1.png) right 29% top 91% no-repeat, url(../../img/pics/comp/Chocolates.png) right 5% bottom 58% no-repeat, url(../../img/background/big-leaf.png) right top 50% no-repeat;
 }
 @media screen and (max-width: 768px) {
   .hero__container {
@@ -99,7 +99,7 @@ ul li {
   content: url(../../img/pics/comp/Лист1.png);
   position: absolute;
   top: 51%;
-  right: 13.5%;
+  right: 1%;
 }
 @media screen and (max-width: 768px) {
   .hero__container::before {
@@ -126,7 +126,7 @@ ul li {
   content: url(../../img/pics/comp/Лист2.png);
   position: absolute;
   top: 88%;
-  left: 54%;
+  left: 62%;
 }
 @media screen and (max-width: 768px) {
   .hero__content::before {
@@ -137,7 +137,7 @@ ul li {
   content: url(../../img/pics/comp/Ягода2.png);
   position: absolute;
   top: 90%;
-  left: 71%;
+  left: 82%;
 }
 @media screen and (max-width: 768px) {
   .hero__content {
@@ -202,7 +202,6 @@ ul li {
 }
 .hero__icons {
   position: relative;
-  margin-top: 30px;
 }
 @media screen and (max-width: 768px) {
   .hero__icons {
@@ -461,7 +460,7 @@ ul li {
   justify-content: center;
   align-items: center;
   padding: 98px 0 80px;
-  background: url(../../img/background/узор-лист-1.png) left top 53% no-repeat;
+  background: url(../../img/background/узор-лист-1.png) left top 58% no-repeat;
 }
 @media screen and (max-width: 768px) {
   .section1__container {
@@ -479,7 +478,7 @@ ul li {
 .section1__container::before {
   content: url(../../img/background/малина-1.png);
   left: 0;
-  bottom: -20.5%;
+  bottom: -24.5%;
   position: absolute;
 }
 @media screen and (max-width: 768px) {
@@ -538,10 +537,12 @@ ul li {
     margin-bottom: 36px;
   }
 }
+.section1__item-img {
+  max-width: none;
+}
 .section1__item-icon {
   flex: 0;
   margin: 0;
-  z-index: 1;
   padding-top: 65px;
 }
 @media screen and (max-width: 768px) {
@@ -598,8 +599,9 @@ ul li {
 
 .features {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   position: relative;
+  background: red;
 }
 @media screen and (max-width: 480px) {
   .features {
@@ -641,7 +643,7 @@ ul li {
   min-height: 7.1111111111rem;
   background: #F2F5F4;
   border-radius: 50%;
-  margin-bottom: 14px;
+  margin-bottom: 21px;
   position: relative;
   text-align: center;
 }
@@ -762,7 +764,6 @@ ul li {
 .section5 {
   position: relative;
   background: #FFFFFF;
-  height: 36.2222222222rem;
 }
 @media screen and (max-width: 768px) {
   .section5 {
@@ -796,7 +797,7 @@ ul li {
   }
 }
 .section5__container {
-  box-sizing: border-box;
+  height: 36.2222222222rem;
   position: relative;
   padding: 59px 79px 67px;
   display: flex;
@@ -922,7 +923,7 @@ ul li {
   align-items: flex-start;
   width: 100%;
   background: url(../../img/background/layer2-1.png) right top 14% no-repeat, #F8FAF9;
-  padding: 2.5555555556rem 2.3333333333rem;
+  padding: 2.5555555556rem 0 46px 42px;
   position: relative;
 }
 @media screen and (max-width: 768px) {
@@ -992,7 +993,7 @@ ul li {
   flex: 1;
   padding-top: 30px;
   width: 25.7222222222rem;
-  padding-right: 6.9444444444rem;
+  padding-right: 7.1666666667rem;
 }
 @media screen and (max-width: 768px) {
   .feedback__content {

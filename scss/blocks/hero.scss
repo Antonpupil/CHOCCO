@@ -1,10 +1,10 @@
 .hero {
-    min-height: rem(652px);
+    max-height: rem(652px);
     background-color: $firstBgrColor;
     position: relative;
 
     &__header {
-        margin-bottom: 54px;
+        margin-bottom: 85px;
 
         @include tablet {
             min-height: rem(91px);
@@ -36,9 +36,9 @@
         position: relative;
         @include flexCol-JCsb-ALIfs;
         padding: rem(23px) rem(80px) rem(52px);
-        background: url(../../img/pics/comp/Ягоды1.png) right 40% top 91% no-repeat,
-            url(../../img/pics/comp/Chocolates.png) right 25% bottom 57% no-repeat,
-            url(../../img/background/big-leaf.png) right 21% top 50% no-repeat;
+        background: url(../../img/pics/comp/Ягоды1.png) right 29% top 91% no-repeat,
+            url(../../img/pics/comp/Chocolates.png) right 5% bottom 58% no-repeat,
+            url(../../img/background/big-leaf.png) right top 50% no-repeat;
 
         @include tablet {
             background: url(../../img/background/big-leaf768.png) right top 27% no-repeat;
@@ -53,7 +53,7 @@
             content: url(../../img/pics/comp/Лист1.png);
             position: absolute;
             top: 51%;
-            right: 13.5%;
+            right: 1%;
 
             @include tablet {
                 content: url(../../img/pics/comp/comp768.png);
@@ -81,7 +81,7 @@
             content: url(../../img/pics/comp/Лист2.png);
             position: absolute;
             top: 88%;
-            left: 54%;
+            left: 62%;
 
             @include tablet {
                 content: "";
@@ -92,7 +92,7 @@
             content: url(../../img/pics/comp/Ягода2.png);
             position: absolute;
             top: 90%;
-            left: 71%;
+            left: 82%;
         }
 
         @include tablet {
@@ -143,7 +143,6 @@
 
     &__icons {
         position: relative;
-        margin-top: 30px;
 
         @include tablet {
             display: none;
