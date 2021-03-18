@@ -1,8 +1,7 @@
 .btn {
-    min-width: rem(156px);
     text-align: center;
-    padding: rem(19px) rem(39px);
-    border-radius: rem(30px);
+    padding: 21px 41px;
+    border-radius: 30px;
     text-decoration: none;
     @include baseFont($font-size: rem(16px), $line-height: rem(18px), $font-weight: 800);
     @include textOverflow3;

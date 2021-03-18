@@ -1,19 +1,19 @@
 .section1 {
-    min-height: rem(652px);
+    height: rem(652px);
 
     @include tablet {
-        min-height: rem(1000px);
+        height: rem(1000px);
     }
 
     @include phone {
-        min-height: rem(707px);
+        height: rem(707px);
     }
 
     &__container {
         position: relative;
         @include flexCol-JCc-ALIfs($align-items: center);
-        padding: 97px 0 112px;
-        background: url(../../img/background/узор-лист-1.png) left top 51% no-repeat;
+        padding: 98px 0 80px;
+        background: url(../../img/background/узор-лист-1.png) left top 53% no-repeat;
 
         @include tablet {
             background: url(../../img/background/узор-лист-1.png) left -1% top 12% no-repeat;
@@ -29,7 +29,7 @@
         &::before {
             content: url(../../img/background/малина-1.png);
             left: 0;
-            bottom: -18.5%;
+            bottom: -20.5%;
             position: absolute;
 
             @include tablet {
@@ -46,7 +46,7 @@
 
     &__headline {
         text-align: center;
-        margin-bottom: rem(49px);
+        margin-bottom: 46px;
 
         @include phone {
             margin-bottom: rem(53px);
@@ -63,7 +63,6 @@
 
 
     &__item {
-        margin-right: rem(55px);
         flex: 1;
         position: relative;
 
@@ -75,7 +74,18 @@
             margin-bottom: 36px;
         }
 
-        &::before {
+        &-icon{
+            flex: 0;
+            margin: 0;
+            z-index: 1;
+            padding-top: 65px;
+
+            @include tablet {
+                display: none;
+            }
+        }
+
+        /* &::before {
             content: url(../../img/icons/features/Combined-shape-2204.png);
             position: absolute;
             top: 23%;
@@ -88,7 +98,7 @@
             @include phone {
                 content: "";
             }
-        }
+        } */
 
         &:last-child {
             margin-right: 0;
@@ -106,6 +116,7 @@
     &__title {
         @include H2font($color: $dark);
         text-transform: uppercase;
+        margin: 0 0 20px 0;
 
         @include phone {
             @include H2font($font-size: rem(40px), $line-height: rem(36px), $color: $black);

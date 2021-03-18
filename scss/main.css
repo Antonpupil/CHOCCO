@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
-@import "./layout/reset.css";
+@import "./../css/reset.css";
 @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700;800&display=swap");
 html {
   font-size: 18px;
@@ -45,7 +45,7 @@ ul li {
   position: relative;
 }
 .hero__header {
-  margin-bottom: 4.6666666667rem;
+  margin-bottom: 54px;
 }
 @media screen and (max-width: 768px) {
   .hero__header {
@@ -62,7 +62,7 @@ ul li {
 }
 .hero__btn {
   position: absolute;
-  top: 65%;
+  top: 64.5%;
   display: inline-block;
 }
 @media screen and (max-width: 768px) {
@@ -82,7 +82,7 @@ ul li {
   justify-content: space-between;
   align-items: flex-start;
   padding: 1.2777777778rem 4.4444444444rem 2.8888888889rem;
-  background: url(../../img/pics/comp/Ягоды1.png) right 29% top 91% no-repeat, url(../../img/pics/comp/Chocolates.png) right 5% bottom 59% no-repeat, url(../../img/background/big-leaf.png) right top no-repeat;
+  background: url(../../img/pics/comp/Ягоды1.png) right 40% top 91% no-repeat, url(../../img/pics/comp/Chocolates.png) right 25% bottom 57% no-repeat, url(../../img/background/big-leaf.png) right 21% top 50% no-repeat;
 }
 @media screen and (max-width: 768px) {
   .hero__container {
@@ -99,7 +99,7 @@ ul li {
   content: url(../../img/pics/comp/Лист1.png);
   position: absolute;
   top: 51%;
-  right: 0;
+  right: 13.5%;
 }
 @media screen and (max-width: 768px) {
   .hero__container::before {
@@ -125,8 +125,8 @@ ul li {
 .hero__content::before {
   content: url(../../img/pics/comp/Лист2.png);
   position: absolute;
-  top: 88.8%;
-  left: 62%;
+  top: 88%;
+  left: 54%;
 }
 @media screen and (max-width: 768px) {
   .hero__content::before {
@@ -136,8 +136,8 @@ ul li {
 .hero__content::after {
   content: url(../../img/pics/comp/Ягода2.png);
   position: absolute;
-  top: 79%;
-  right: -81%;
+  top: 90%;
+  left: 71%;
 }
 @media screen and (max-width: 768px) {
   .hero__content {
@@ -161,7 +161,7 @@ ul li {
   color: #FFFFFF;
   width: 38%;
   text-transform: uppercase;
-  margin-bottom: 1.1111111111rem;
+  margin-bottom: 18px;
 }
 @media screen and (max-width: 768px) {
   .hero__title {
@@ -202,6 +202,7 @@ ul li {
 }
 .hero__icons {
   position: relative;
+  margin-top: 30px;
 }
 @media screen and (max-width: 768px) {
   .hero__icons {
@@ -320,10 +321,9 @@ ul li {
 }
 
 .btn {
-  min-width: 8.6666666667rem;
   text-align: center;
-  padding: 1.0555555556rem 2.1666666667rem;
-  border-radius: 1.6666666667rem;
+  padding: 21px 41px;
+  border-radius: 30px;
   text-decoration: none;
   font-weight: 800;
   font-size: 0.8888888889rem;
@@ -402,8 +402,8 @@ ul li {
 .icons::before {
   content: url(../../img/background/leaf3.png);
   position: absolute;
-  top: 48%;
-  left: -8%;
+  top: 45%;
+  left: -9%;
 }
 
 .infoItem {
@@ -442,16 +442,16 @@ ul li {
 }
 
 .section1 {
-  min-height: 36.2222222222rem;
+  height: 36.2222222222rem;
 }
 @media screen and (max-width: 768px) {
   .section1 {
-    min-height: 55.5555555556rem;
+    height: 55.5555555556rem;
   }
 }
 @media screen and (max-width: 480px) {
   .section1 {
-    min-height: 39.2777777778rem;
+    height: 39.2777777778rem;
   }
 }
 .section1__container {
@@ -460,8 +460,8 @@ ul li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 97px 0 112px;
-  background: url(../../img/background/узор-лист-1.png) left top 51% no-repeat;
+  padding: 98px 0 80px;
+  background: url(../../img/background/узор-лист-1.png) left top 53% no-repeat;
 }
 @media screen and (max-width: 768px) {
   .section1__container {
@@ -479,7 +479,7 @@ ul li {
 .section1__container::before {
   content: url(../../img/background/малина-1.png);
   left: 0;
-  bottom: -18.5%;
+  bottom: -20.5%;
   position: absolute;
 }
 @media screen and (max-width: 768px) {
@@ -495,7 +495,7 @@ ul li {
 }
 .section1__headline {
   text-align: center;
-  margin-bottom: 2.7222222222rem;
+  margin-bottom: 46px;
 }
 @media screen and (max-width: 480px) {
   .section1__headline {
@@ -511,9 +511,22 @@ ul li {
   }
 }
 .section1__item {
-  margin-right: 3.0555555556rem;
   flex: 1;
   position: relative;
+  /* &::before {
+      content: url(../../img/icons/features/Combined-shape-2204.png);
+      position: absolute;
+      top: 23%;
+      right: -22%;
+
+      @include tablet {
+          content: "";
+      }
+
+      @include phone {
+          content: "";
+      }
+  } */
 }
 @media screen and (max-width: 768px) {
   .section1__item {
@@ -525,20 +538,15 @@ ul li {
     margin-bottom: 36px;
   }
 }
-.section1__item::before {
-  content: url(../../img/icons/features/Combined-shape-2204.png);
-  position: absolute;
-  top: 23%;
-  right: -22%;
+.section1__item-icon {
+  flex: 0;
+  margin: 0;
+  z-index: 1;
+  padding-top: 65px;
 }
 @media screen and (max-width: 768px) {
-  .section1__item::before {
-    content: "";
-  }
-}
-@media screen and (max-width: 480px) {
-  .section1__item::before {
-    content: "";
+  .section1__item-icon {
+    display: none;
   }
 }
 .section1__item:last-child {
@@ -558,6 +566,7 @@ ul li {
   line-height: 3.2222222222rem;
   color: #292929;
   text-transform: uppercase;
+  margin: 0 0 20px 0;
 }
 @media screen and (max-width: 480px) {
   .section1__title {
@@ -590,6 +599,7 @@ ul li {
 .features {
   display: flex;
   justify-content: space-around;
+  position: relative;
 }
 @media screen and (max-width: 480px) {
   .features {
@@ -631,8 +641,9 @@ ul li {
   min-height: 7.1111111111rem;
   background: #F2F5F4;
   border-radius: 50%;
-  margin-bottom: 1.2222222222rem;
+  margin-bottom: 14px;
   position: relative;
+  text-align: center;
 }
 @media screen and (max-width: 768px) {
   .single-feature__icon {
@@ -685,7 +696,7 @@ ul li {
 }
 .single-feature__text p {
   text-align: center;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 1rem;
   line-height: 1.2222222222rem;
   color: #666666;
@@ -751,39 +762,43 @@ ul li {
 .section5 {
   position: relative;
   background: #FFFFFF;
+  height: 36.2222222222rem;
 }
 @media screen and (max-width: 768px) {
   .section5 {
-    min-height: 54.2222222222rem;
+    height: 54.2222222222rem;
   }
+}
+@media screen and (max-width: 480px) {
+  .section5 {
+    height: 44.4444444444rem;
+  }
+}
+.section5::before {
+  content: url(../../img/pics/decor/Ягоды2_1100.png);
+  top: 83.5%;
+  right: 87.5%;
+  position: absolute;
+  z-index: 1;
+}
+@media screen and (max-width: 768px) {
   .section5::before {
     content: url(../../img/pics/decor/Ягоды2_768.png);
     top: 86.5%;
     right: 88%;
-    position: absolute;
-    z-index: 1;
   }
 }
-@media screen and (max-width: 768px) and (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .section5::before {
     content: url(../../img/pics/decor/Ягоды2_480.png);
     top: 89.5%;
     right: 80%;
   }
 }
-@media screen and (max-width: 768px) and (max-width: 480px) {
-  .section5 {
-    min-height: 44.4444444444rem;
-  }
-}
-@media screen and (max-width: 480px) {
-  .section5 {
-    min-height: 39.2777777778rem;
-  }
-}
 .section5__container {
+  box-sizing: border-box;
   position: relative;
-  padding: 3.2777777778rem 4.3888888889rem 3.7222222222rem;
+  padding: 59px 79px 67px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1441,12 +1456,9 @@ ul li {
 
 .fixed-menu {
   position: fixed;
-  top: 48%;
+  top: 65%;
   right: 4%;
   z-index: 100;
-}
-.fixed-menu__item {
-  margin-bottom: 0.3888888889rem;
 }
 .fixed-menu__item_active .fixed-menu__link {
   border-color: #FFFFFF;

@@ -30,8 +30,9 @@
         min-height: rem(128px);
         background: $thirdBgrColor;
         border-radius: 50%;
-        margin-bottom: rem(22px);
+        margin-bottom: 14px;
         position: relative;
+        text-align: center;
 
         @include tablet {
             margin-bottom: rem(20px);
@@ -80,7 +81,7 @@
     &__text {
         p {
             text-align: center;
-            @include baseFont($color: $baseFontColor);
+            @include baseFont($font-weight: 300, $color: $baseFontColor);
 
             @include tablet {
                 @include baseFont($font-weight: 300, $color: $baseFontColor);
