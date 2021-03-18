@@ -39,6 +39,13 @@ ul li {
   list-style: none;
 }
 
+.wrapper {
+  position: relative;
+  min-height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
 .hero {
   min-height: 36.2222222222rem;
   background-color: #61C4D9;
