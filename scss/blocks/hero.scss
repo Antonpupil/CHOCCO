@@ -3,11 +3,18 @@
     background-color: $firstBgrColor;
     position: relative;
 
+    @include tablet {
+        max-height: rem(1000px);
+    }
+
+    @include phone {
+        margin-bottom: rem(800px);
+    }
+
     &__header {
         margin-bottom: 85px;
 
         @include tablet {
-            min-height: rem(91px);
             margin-bottom: rem(482px);
             padding: 0 rem(36px) 0 rem(30px);
         }
@@ -41,7 +48,7 @@
             url(../../img/background/big-leaf.png) right top 50% no-repeat;
 
         @include tablet {
-            background: url(../../img/background/big-leaf768.png) right top 27% no-repeat;
+            background: url(../../img/background/big-leaf768.png) right top 26% no-repeat;
             padding: 0;
         }
 
@@ -93,6 +100,10 @@
             position: absolute;
             top: 90%;
             left: 82%;
+
+            @include tablet {
+                display: none;
+            }            
         }
 
         @include tablet {
@@ -117,7 +128,7 @@
 
         @include tablet {
             width: auto;
-            margin-bottom: rem(5px);
+            margin-bottom: rem(4px);
         }
 
         @include phone {

@@ -9,7 +9,7 @@
         min-width: 100%;
         @include flexCol-JCsb-ALIfs ($justify-content: flex-start, $align-items: center);
         padding: 56px 23px 26px;
-        background: url(../../img/background/layer2-1_768.png) right top 3% no-repeat, #F8FAF9;
+        background: url(../../img/background/layer2-1_768.png) right top 5% no-repeat, #F8FAF9;
     }
 
     @include phone {
@@ -93,7 +93,7 @@
         @include tablet {
             display: block;
             @include H3font;
-            margin-bottom: rem(14px);
+            margin-bottom: rem(17px);
         }
 
         @include phone {

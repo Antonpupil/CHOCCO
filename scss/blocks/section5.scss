@@ -101,16 +101,14 @@
 
             @include tablet {
                 content: url(../../img/pics/decor/Ягода-3__768.png);
-                top: -300%;
-                right: -157%;
-                position: absolute;
+                top: -289%;
+                right: -3%;
             }
 
             @include phone {
                 content: url(../../img/pics/decor/Ягода-3__480.png);
                 top: -220%;
                 right: -106%;
-                position: absolute;
             }
         }
     }
