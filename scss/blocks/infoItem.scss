@@ -1,7 +1,7 @@
 .infoItem {
     display: flex;
     margin-right: rem(8px);
-    width: rem(166px);
+    max-width: rem(166px);
     justify-content: flex-start;
     align-items: flex-start;
 
@@ -11,8 +11,26 @@
 
     &__img {
         margin-right: rem(11px);
+
+        /* &_listWhite {
+            width: 64px;
+            height: 37px;
+            fill: $heroSpriteColor;
+        }
+        &_truckWhite {
+            width: 40px;
+            height: 32px;
+            fill: $heroSpriteColor;
+        }
+        &_tapeWhite {
+            width: 37px;
+            height: 37px;
+            fill: $heroSpriteColor;
+        } */
+
     }
-    &__text{
+
+    &__text {
         @include baseFont(rem(16px), rem(19px), $color: $light);
         padding-right: rem(40px);
     }

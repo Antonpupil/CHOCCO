@@ -13,7 +13,10 @@
 
 
     &__logo {
+        fill: $light;
         margin-right: rem(40px);
+        width: 52.6px;
+        height: 38px;        
     }
 
     &__navbar {

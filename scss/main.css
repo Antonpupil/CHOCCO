@@ -261,7 +261,10 @@ ul li {
   }
 }
 .header__logo {
+  fill: #FFFFFF;
   margin-right: 2.2222222222rem;
+  width: 52.6px;
+  height: 38px;
 }
 .header__navbar {
   margin-right: 2.2222222222rem;
@@ -420,7 +423,7 @@ ul li {
 .infoItem {
   display: flex;
   margin-right: 0.4444444444rem;
-  width: 9.2222222222rem;
+  max-width: 9.2222222222rem;
   justify-content: flex-start;
   align-items: flex-start;
 }
@@ -429,6 +432,21 @@ ul li {
 }
 .infoItem__img {
   margin-right: 0.6111111111rem;
+  /* &_listWhite {
+      width: 64px;
+      height: 37px;
+      fill: $heroSpriteColor;
+  }
+  &_truckWhite {
+      width: 40px;
+      height: 32px;
+      fill: $heroSpriteColor;
+  }
+  &_tapeWhite {
+      width: 37px;
+      height: 37px;
+      fill: $heroSpriteColor;
+  } */
 }
 .infoItem__text {
   font-weight: 400;
@@ -444,6 +462,9 @@ ul li {
 }
 .contacts__img {
   margin-right: 0.4444444444rem;
+  width: 14px;
+  height: 15px;
+  fill: #FFFFFF;
 }
 .contacts__phone {
   font-weight: 400;
@@ -1201,7 +1222,7 @@ ul li {
 .section7__container::before {
   content: url(../../../CHOCCO/img/pics/decor/Ежевика_фото1.png);
   right: 0;
-  top: -26%;
+  top: -25%;
   position: absolute;
 }
 @media screen and (max-width: 768px) {
@@ -1397,7 +1418,7 @@ ul li {
 .form__btn::before {
   content: url(../../../CHOCCO/img/background/лист-3_1.png);
   right: -16%;
-  top: -174%;
+  top: -173%;
   position: absolute;
 }
 @media screen and (max-width: 768px) {

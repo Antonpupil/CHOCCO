@@ -3,6 +3,9 @@
     align-items: center;
     &__img{
         margin-right: rem(8px);
+        width: 14px;
+        height: 15px;
+        fill: $light;
     }
     &__tel{
     }
