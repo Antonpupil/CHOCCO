@@ -43,27 +43,27 @@
         position: relative;
         @include flexCol-JCsb-ALIfs;
         padding: rem(23px) rem(80px) rem(52px);
-        background: url(../../img/pics/comp/Ягоды1.png) right 29% top 91% no-repeat,
-            url(../../img/pics/comp/Chocolates.png) right 5% bottom 58% no-repeat,
-            url(../../img/background/big-leaf.png) right top 50% no-repeat;
+        background: url(../../../CHOCCO/img/pics/comp/Ягоды1.png) right 29% top 91% no-repeat,
+            url(../../../CHOCCO/img/pics/comp/Chocolates.png) right 5% bottom 58% no-repeat,
+            url(../../../CHOCCO/img/background/big-leaf.png) right top 50% no-repeat;
 
         @include tablet {
-            background: url(../../img/background/big-leaf768.png) right top 26% no-repeat;
+            background: url(../../../CHOCCO/img/background/big-leaf768.png) right top 26% no-repeat;
             padding: 0;
         }
 
         @include phone {
-            background: url(../../img/background/big-leaf480.png) right top 17% no-repeat;
+            background: url(../../../CHOCCO/img/background/big-leaf480.png) right top 17% no-repeat;
         }
 
         &::before {
-            content: url(../../img/pics/comp/Лист1.png);
+            content: url(../../../CHOCCO/img/pics/comp/Лист1.png);
             position: absolute;
             top: 51%;
             right: 1%;
 
             @include tablet {
-                content: url(../../img/pics/comp/comp768.png);
+                content: url(../../../CHOCCO/img/pics/comp/comp768.png);
                 position: absolute;
                 top: 17.5%;
                 left: 19%;
@@ -71,7 +71,7 @@
             }
 
             @include phone {
-                content: url(../../img/pics/comp/comp480.png);
+                content: url(../../../CHOCCO/img/pics/comp/comp480.png);
                 position: absolute;
                 top: 12%;
                 left: 5%;
@@ -85,7 +85,7 @@
         min-height: rem(402px);
 
         &::before {
-            content: url(../../img/pics/comp/Лист2.png);
+            content: url(../../../CHOCCO/img/pics/comp/Лист2.png);
             position: absolute;
             top: 88%;
             left: 62%;
@@ -96,7 +96,7 @@
         }
 
         &::after {
-            content: url(../../img/pics/comp/Ягода2.png);
+            content: url(../../../CHOCCO/img/pics/comp/Ягода2.png);
             position: absolute;
             top: 90%;
             left: 82%;

@@ -13,10 +13,10 @@
         position: relative;
         @include flexCol-JCc-ALIfs($align-items: center);
         padding: rem(98px) 0 rem(80px);
-        background: url(../../img/background/узор-лист-1.png) left top 58% no-repeat;
+        background: url(../../../CHOCCO/img/background/узор-лист-1.png) left top 58% no-repeat;
 
         @include tablet {
-            background: url(../../img/background/узор-лист-1.png) left -1% top 12% no-repeat;
+            background: url(../../../CHOCCO/img/background/узор-лист-1.png) left -1% top 12% no-repeat;
             padding: rem(279px) 0 rem(252px);
         }
 
@@ -27,13 +27,13 @@
         }
 
         &::before {
-            content: url(../../img/background/малина-1.png);
+            content: url(../../../CHOCCO/img/background/малина-1.png);
             left: 0;
             bottom: -24.5%;
             position: absolute;
 
             @include tablet {
-                content: url(../../img/background/малина-1_768.png);
+                content: url(../../../CHOCCO/img/background/малина-1_768.png);
                 bottom: -8%;
             }
 
@@ -89,7 +89,7 @@
         }
 
         /* &::before {
-            content: url(../../img/icons/features/Combined-shape-2204.png);
+            content: url(../../../CHOCCO/img/icons/features/Combined-shape-2204.png);
             position: absolute;
             top: 23%;
             right: -22%;
