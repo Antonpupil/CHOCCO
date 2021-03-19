@@ -1,7 +1,7 @@
 .btn {
     text-align: center;
-    padding: 21px 41px;
-    border-radius: 30px;
+    padding: rem(21px) rem(41px);
+    border-radius: rem(30px);
     text-decoration: none;
     @include baseFont($font-size: rem(16px), $line-height: rem(18px), $font-weight: 800);
     @include textOverflow3;
@@ -23,7 +23,7 @@
         }
 
         @include phone {
-            @include baseFont($font-size: rem(19px), $color: $btnColorDark);
+            @include baseFont($font-size: rem(19px), $line-height: rem(18px), $font-weight: 800, $color: $btnColorLight);
         }
     }
 
@@ -45,11 +45,11 @@
         justify-content: flex-start;
 
         @include tablet {
-            padding: 18px 33px;
+            padding: rem(18px) rem(33px);
         }
 
         @include phone {
-            padding: 19px 33px;
+            padding: rem(19px) rem(33px);
         }
 
         &:hover {

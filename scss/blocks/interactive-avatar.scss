@@ -7,8 +7,8 @@
     border: rem(4px) solid transparent;
 
     @include phone {
-        width: 64px;
-        height: 64px;
+        width: rem(64px);
+        height: rem(64px);
         margin-right: 0;
         border: none;
         &:nth-of-type(1) { order: 2; }

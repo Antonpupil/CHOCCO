@@ -8,11 +8,11 @@
     }
 
     @include phone {
-        margin-bottom: rem(800px);
+        margin-bottom: 0;
     }
 
     &__header {
-        margin-bottom: 85px;
+        margin-bottom: rem(85px);
 
         @include tablet {
             margin-bottom: rem(482px);
@@ -35,7 +35,7 @@
         }
 
         @include phone {
-            top: 81%;
+            top: 80.5%;
         }
     }
 
@@ -124,7 +124,7 @@
         @include H2font($line-height: rem(59px));
         width: 38%;
         text-transform: uppercase;
-        margin-bottom: 18px;
+        margin-bottom: rem(18px);
 
         @include tablet {
             width: auto;

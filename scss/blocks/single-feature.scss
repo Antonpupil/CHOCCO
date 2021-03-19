@@ -13,6 +13,7 @@
         flex-direction: row;
         width: auto;
         align-items: flex-end;
+        max-width: none;
     }
 
     &__description{
@@ -20,8 +21,8 @@
 
         @include phone {
             text-align: left;
-            padding-bottom: 20px;
-            padding-right: 32px;
+            padding-bottom: rem(20px);
+            padding-right: rem(32px);
         }
     }
 
@@ -30,7 +31,7 @@
         min-height: rem(128px);
         background: $thirdBgrColor;
         border-radius: 50%;
-        margin-bottom: 21px;
+        margin-bottom: rem(21px);
         position: relative;
         text-align: center;
 
@@ -39,7 +40,7 @@
         }
 
         @include phone {
-            margin: 0 12px 0 8px;
+            margin: 0 rem(13px) 0 rem(8px);
         }
     }
 
@@ -70,7 +71,7 @@
             @include phone {
                 display: block;
                 margin: 24% auto;
-                padding-left: 8px;
+                padding-left: rem(8px);
             }
 
         }
@@ -85,7 +86,7 @@
 
             @include tablet {
                 @include baseFont($font-weight: 300, $color: $baseFontColor);
-                padding: 0 15px;
+                padding: 0 rem(15px);
                 margin-bottom: rem(36px);
             }
 

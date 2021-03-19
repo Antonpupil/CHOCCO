@@ -27,7 +27,7 @@
     &>.contacts {
         justify-content: flex-end;
         white-space: nowrap;
-        padding-top: 9px;
+        padding-top: rem(9px);
         @include tablet {
             display: none;
         }

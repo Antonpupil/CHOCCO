@@ -6,6 +6,6 @@
     }
 
     @include phone {
-        min-height: 518px;
+        min-height: rem(518px);
     }
 }

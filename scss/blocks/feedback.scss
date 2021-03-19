@@ -2,18 +2,18 @@
     @include flexRow-JCfs-ALIc($align-items: flex-start);
     width: 100%;
     background: url(../../img/background/layer2-1.png) right top 14% no-repeat, $forthBgrColor;
-    padding: rem(46px)  0 46px 42px;
+    padding: rem(46px)  0 rem(46px) rem(42px);
     position: relative;
 
     @include tablet {
         min-width: 100%;
         @include flexCol-JCsb-ALIfs ($justify-content: flex-start, $align-items: center);
-        padding: 56px 23px 26px;
-        background: url(../../img/background/layer2-1_768.png) right top 5% no-repeat, #F8FAF9;
+        padding: rem(56px) rem(23px) rem(26px);
+        background: url(../../../CHOCCO/img/background/layer2-1_768.png) right top 5% no-repeat, #F8FAF9;
     }
 
     @include phone {
-        padding: 56px 33px 8px 25px;
+        padding: rem(56px) rem(33px) rem(8px) rem(25px);
         background: url(../../img/background/layer2-1_480.png) right  top 7% no-repeat, #F8FAF9;
     }
 
@@ -38,7 +38,7 @@
         position: relative;
 
         @include phone {
-            width: 224px;
+            width: rem(224px);
         }
     }
 
@@ -67,7 +67,7 @@
 
     &__content {
         flex: 1;
-        padding-top: 30px;
+        padding-top: rem(30px);
         width: rem(463px);
         padding-right: rem(129px);
 
@@ -97,8 +97,8 @@
         }
 
         @include phone {
-            padding: 0 43px;
-            margin-bottom: 10px;
+            padding: 0 rem(43px);
+            margin-bottom: rem(10px);
         }
     }
 
@@ -122,7 +122,7 @@
 
         @include phone {
             margin-bottom: rem(12px);
-            line-height: 23px;
+            line-height: rem(23px);
         }
     }
 
@@ -147,7 +147,7 @@
         @include flexRow-JCfs-ALIc ($justify-content: center);
 
         @include phone {
-            margin-left: 10px;
+            margin-left: rem(10px);
             @include flexRow-JCfs-ALIc ($justify-content: space-between);
         }
     }

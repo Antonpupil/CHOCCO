@@ -1,7 +1,7 @@
 .radio {
     display: flex;
-    margin-right: 24px;
-    margin-bottom: 18px;
+    margin-right: rem(24px);
+    margin-bottom: rem(18px);
     cursor: pointer;
     user-select: none;
 
@@ -10,7 +10,7 @@
     }
 
     @include phone {
-        margin-right: 21px;
+        margin-right: rem(21px);
     }
 
     &:last-child {
@@ -29,7 +29,7 @@
         }
 
         @include phone {
-            margin-left: 96px;
+            margin-left: rem(96px);
         }
     }
 

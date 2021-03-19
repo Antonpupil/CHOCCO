@@ -1,5 +1,5 @@
 .navBar {
-    padding-top: 5px;
+    padding-top: rem(5px);
     /* min-width: rem(641px); */
 
     &__list {
@@ -9,7 +9,7 @@
     }
 
     &__item {
-        margin-right: 28px;
+        margin-right: rem(28px);
         &:last-child {
             margin-right: 0;
         }

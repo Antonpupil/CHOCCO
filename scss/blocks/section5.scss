@@ -34,11 +34,11 @@
     &__container {
         height: rem(652px);
         position: relative;
-        padding: 59px 79px 67px;
+        padding: rem(59px) rem(79px) rem(67px);
         @include flexCol-JCsb-ALIfs($align-items: center);
 
         @include tablet {
-            padding: 180px rem(22px);
+            padding: rem(180px) rem(22px);
         }
 
         @include phone {
@@ -107,8 +107,8 @@
 
             @include phone {
                 content: url(../../img/pics/decor/Ягода-3__480.png);
-                top: -220%;
-                right: -106%;
+                top: -214%;
+                right: -2%;
             }
         }
     }
@@ -123,7 +123,7 @@
         }
 
         @include phone {
-            margin-bottom: 41px;
+            margin-bottom: rem(41px);
         }
 
 

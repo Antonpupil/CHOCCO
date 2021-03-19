@@ -12,12 +12,12 @@
     &__container {
         position: relative;
         @include flexCol-JCc-ALIfs($align-items: center);
-        padding: 98px 0 80px;
+        padding: rem(98px) 0 rem(80px);
         background: url(../../img/background/узор-лист-1.png) left top 58% no-repeat;
 
         @include tablet {
             background: url(../../img/background/узор-лист-1.png) left -1% top 12% no-repeat;
-            padding: 279px 0 252px;
+            padding: rem(279px) 0 rem(252px);
         }
 
         @include phone {
@@ -46,7 +46,7 @@
 
     &__headline {
         text-align: center;
-        margin-bottom: 46px;
+        margin-bottom: rem(46px);
 
         @include phone {
             margin-bottom: rem(53px);
@@ -71,7 +71,7 @@
         }
 
         @include phone {
-            margin-bottom: 36px;
+            margin-bottom: rem(36px);
         }
 
         &-img{
@@ -81,7 +81,7 @@
         &-icon{
             flex: 0;
             margin: 0;
-            padding-top: 65px;
+            padding-top: rem(65px);
 
             @include tablet {
                 display: none;
@@ -119,7 +119,7 @@
     &__title {
         @include H2font($color: $dark);
         text-transform: uppercase;
-        margin: 0 0 20px 0;
+        margin: 0 0 rem(20px) 0;
 
         @include tablet {
             margin: 0;
@@ -134,10 +134,10 @@
         @include baseFont($color: $baseFontColor);
         width: rem(436px);
         text-align: center;
-        margin: 20px 0 0;
+        margin: rem(20px) 0 0;
 
         @include tablet {
-            margin: 6px 0 0;
+            margin: rem(6px) 0 0;
         }
 
         @include phone {

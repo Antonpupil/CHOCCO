@@ -19,7 +19,7 @@
 
     &__col {
         flex: 1;
-        margin-right: 25px;
+        margin-right: rem(25px);
 
         @include tablet {
             margin: 0;
@@ -33,10 +33,10 @@
 
     &__row {
         display: flex;
-        margin-bottom: 12px;
+        margin-bottom: rem(12px);
 
         @include tablet {
-            margin-bottom: 8px;
+            margin-bottom: rem(8px);
         }
     }
 
@@ -59,13 +59,13 @@
         background: $light;
 
         @include tablet {
-            padding: 9px 7px;
-            @include baseFont ($font-size: 18px, $line-height: 20px, $color: $black);
+            padding: rem(9px) rem(7px);
+            @include baseFont ($font-size: rem(18px), $line-height: rem(20px), $color: $black);
         }
 
         @include phone {
-            padding: 9px 8px;
-            @include baseFont ($font-size: 14px, $line-height: 20px);
+            padding: rem(9px) rem(8px);
+            @include baseFont ($font-size: rem(14px), $line-height: 20px);
         }
 
         &:focus {
@@ -88,10 +88,10 @@
         display: flex;
         flex-wrap: wrap;
         margin-top: rem(36px);
-        padding-left: 8px;
+        padding-left: rem(8px);
 
         @include tablet {
-            margin-top: 28px;
+            margin-top: rem(28px);
             padding-left: 0;
         }
 
@@ -105,11 +105,11 @@
         flex-wrap: wrap;
 
         @include tablet {
-            margin-bottom: 24px;
+            margin-bottom: rem(24px);
         }
 
         @include phone {
-            margin-left: 52px;
+            margin-left: rem(52px);
         }
     }
 
@@ -119,14 +119,14 @@
         display: flex;
 
         @include tablet {
-            margin-top: 13px;
+            margin-top: rem(13px);
             display: flex;
             justify-content: center;
-            margin-left: 35px;
+            margin-left: rem(35px);
         }
 
         @include phone {
-            margin-left: 62px;
+            margin-left: rem(39px);
         }
 
         &:first-child {

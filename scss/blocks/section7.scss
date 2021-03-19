@@ -3,20 +3,20 @@
     color: $btnColorDark;
 
     @include phone {
-        min-height: 766px;
+        min-height: rem(766px);
     }
 
     &__container {
         position: relative;
-        padding: 57px 81px 84px;
+        padding: rem(57px) rem(81px) rem(84px);
         @include flexCol-JCsb-ALIfs($justify-content: flex-start, $align-items: center);
 
         @include tablet {
-            padding: 173px 147px 180px;
+            padding: rem(173px) rem(147px) rem(180px);
         }
 
         @include phone {
-            padding: 87px 10px 81px;
+            padding: rem(87px) rem(10px) rem(81px);
         }
 
         &::before {
@@ -52,7 +52,7 @@
 
         @include phone {
             @include H2font ($font-size: rem(40px), $line-height: rem(36px), $color: $btnColorLight);
-            margin-bottom: 39px;
+            margin-bottom: rem(39px);
         }
     }
 }

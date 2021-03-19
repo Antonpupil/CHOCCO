@@ -1,7 +1,6 @@
 .container{
     width: 100%;
     max-width: $containerWidth;
-    /* min-height: $sectionHeight; */
     margin: 0 auto;
     position: relative;
     @include tablet{

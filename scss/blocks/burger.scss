@@ -4,8 +4,8 @@
     margin-top: rem(20px);
 
     &__link {
-        width: 26px;
-        height: 24px;
+        width: rem(26px);
+        height: rem(24px);
         display: inline-flex;
         flex-direction: column;
         justify-content: space-between;
@@ -23,8 +23,8 @@
 
 
     &__plank {
-        height: 4.5px;
+        height: rem(4.5px);
         background: $light;
-        border-radius: 10px;
+        border-radius: rem(10px);
     }
 }
