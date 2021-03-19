@@ -939,7 +939,7 @@ ul li {
   justify-content: flex-start;
   align-items: flex-start;
   width: 100%;
-  background: url(../../img/background/layer2-1.png) right top 14% no-repeat, #F8FAF9;
+  background: url(../../../CHOCCOimg/background/layer2-1.png) right top 14% no-repeat, #F8FAF9;
   padding: 2.5555555556rem 0 2.5555555556rem 2.3333333333rem;
   position: relative;
 }
@@ -957,7 +957,7 @@ ul li {
 @media screen and (max-width: 480px) {
   .feedback {
     padding: 3.1111111111rem 1.8333333333rem 0.4444444444rem 1.3888888889rem;
-    background: url(../../img/background/layer2-1_480.png) right top 7% no-repeat, #F8FAF9;
+    background: url(../../../CHOCCOimg/background/layer2-1_480.png) right top 7% no-repeat, #F8FAF9;
   }
 }
 .feedback__icon {
@@ -1254,7 +1254,7 @@ ul li {
   }
 }
 .form::before {
-  content: url(../../img/background/ягода_1.png);
+  content: url(../../../CHOCCO/img/background/ягода_1.png);
   left: -3%;
   bottom: -6%;
   position: absolute;
@@ -1396,7 +1396,7 @@ ul li {
   margin-right: 0;
 }
 .form__btn::before {
-  content: url(../../img/background/лист-3_1.png);
+  content: url(../../../CHOCCO/img/background/лист-3_1.png);
   right: -16%;
   top: -174%;
   position: absolute;
