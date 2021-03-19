@@ -601,7 +601,6 @@ ul li {
   display: flex;
   justify-content: space-between;
   position: relative;
-  background: red;
 }
 @media screen and (max-width: 480px) {
   .features {
@@ -764,6 +763,7 @@ ul li {
 .section5 {
   position: relative;
   background: #FFFFFF;
+  height: 36.2222222222rem;
 }
 @media screen and (max-width: 768px) {
   .section5 {

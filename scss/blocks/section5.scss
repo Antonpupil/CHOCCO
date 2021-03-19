@@ -1,6 +1,7 @@
 .section5 {
     position: relative;
     background: $light;
+    height: rem(652px);
 
     @include tablet {
         height: rem(976px);
