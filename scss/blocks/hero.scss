@@ -1,14 +1,15 @@
 .hero {
-    max-height: rem(652px);
+    min-height: rem(652px);
     background-color: $firstBgrColor;
     position: relative;
 
     @include tablet {
-        max-height: rem(1000px);
+        min-height: rem(1000px);
     }
 
     @include phone {
         margin-bottom: 0;
+        min-height: rem(800px);
     }
 
     &__header {

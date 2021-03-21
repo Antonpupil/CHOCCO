@@ -40,18 +40,19 @@ ul li {
 }
 
 .hero {
-  max-height: 36.2222222222rem;
+  min-height: 36.2222222222rem;
   background-color: #61C4D9;
   position: relative;
 }
 @media screen and (max-width: 768px) {
   .hero {
-    max-height: 55.5555555556rem;
+    min-height: 55.5555555556rem;
   }
 }
 @media screen and (max-width: 480px) {
   .hero {
     margin-bottom: 0;
+    min-height: 44.4444444444rem;
   }
 }
 .hero__header {
@@ -236,7 +237,10 @@ ul li {
   }
 }
 
-/* @import "./blocks/section.scss"; */
+.section {
+  height: 100vh;
+}
+
 .header {
   width: 100%;
   display: flex;
