@@ -1,12 +1,12 @@
 .section1 {
-    height: rem(652px);
+    min-height: rem(652px);
 
     @include tablet {
-        height: rem(1000px);
+        min-height: rem(1000px);
     }
 
     @include phone {
-        height: rem(707px);
+        min-height: rem(707px);
     }
 
     &__container {

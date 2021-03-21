@@ -479,16 +479,16 @@ ul li {
 }
 
 .section1 {
-  height: 36.2222222222rem;
+  min-height: 36.2222222222rem;
 }
 @media screen and (max-width: 768px) {
   .section1 {
-    height: 55.5555555556rem;
+    min-height: 55.5555555556rem;
   }
 }
 @media screen and (max-width: 480px) {
   .section1 {
-    height: 39.2777777778rem;
+    min-height: 39.2777777778rem;
   }
 }
 .section1__container {
@@ -777,6 +777,7 @@ ul li {
     min-height: 45.3333333333rem;
   }
 }
+
 .section3 {
   min-height: 652px;
 }
