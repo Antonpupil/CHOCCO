@@ -1,6 +1,11 @@
 .section7 {
     background-color: $firstBgrColor;
     color: $btnColorDark;
+    min-height: rem(762px);
+
+    @include tablet {
+        min-height: rem(966px);
+    }
 
     @include phone {
         min-height: rem(766px);
@@ -48,6 +53,7 @@
 
         @include tablet {
             margin-bottom: rem(32px);
+            width: max-content;
         }
 
         @include phone {

@@ -16,7 +16,8 @@
         fill: $light;
         margin-right: rem(40px);
         width: 52.6px;
-        height: 38px;        
+        height: 38px;   
+        flex-shrink: 0;     
     }
 
     &__navbar {

@@ -1,14 +1,14 @@
 .section5 {
     position: relative;
     background: $light;
-    height: rem(652px);
+    min-height: rem(652px);
 
     @include tablet {
-        height: rem(976px);
+        min-height: rem(976px);
     }
 
     @include phone {
-        height: rem(800px);
+        min-height: rem(800px);
     }
 
     &::before {
@@ -117,6 +117,7 @@
         margin-bottom: rem(15px);
         overflow: hidden;
         position: relative;
+        flex-shrink: 0;
 
         @include tablet {
             margin-bottom: rem(32px);

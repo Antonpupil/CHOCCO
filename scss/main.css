@@ -269,6 +269,7 @@ ul li {
   margin-right: 2.2222222222rem;
   width: 52.6px;
   height: 38px;
+  flex-shrink: 0;
 }
 .header__navbar {
   margin-right: 2.2222222222rem;
@@ -539,6 +540,7 @@ ul li {
   }
 }
 .section1__content {
+  width: 100%;
   margin: 0 4.5555555556rem;
 }
 @media screen and (max-width: 768px) {
@@ -722,20 +724,20 @@ ul li {
 }
 .single-feature__img {
   margin: 25% auto;
+  /* &480 {
+      display: none;
+
+      @include phone {
+          display: block;
+          margin: 24% auto;
+          padding-left: rem(8px);
+      }
+
+  } */
 }
 @media screen and (max-width: 480px) {
   .single-feature__img {
-    display: none;
-  }
-}
-.single-feature__img480 {
-  display: none;
-}
-@media screen and (max-width: 480px) {
-  .single-feature__img480 {
-    display: block;
-    margin: 24% auto;
-    padding-left: 0.4444444444rem;
+    margin: 21% auto;
   }
 }
 .single-feature__text p {
@@ -806,16 +808,16 @@ ul li {
 .section5 {
   position: relative;
   background: #FFFFFF;
-  height: 36.2222222222rem;
+  min-height: 36.2222222222rem;
 }
 @media screen and (max-width: 768px) {
   .section5 {
-    height: 54.2222222222rem;
+    min-height: 54.2222222222rem;
   }
 }
 @media screen and (max-width: 480px) {
   .section5 {
-    height: 44.4444444444rem;
+    min-height: 44.4444444444rem;
   }
 }
 .section5::before {
@@ -935,6 +937,7 @@ ul li {
   margin-bottom: 0.8333333333rem;
   overflow: hidden;
   position: relative;
+  flex-shrink: 0;
   /* &::before {
       content: "";
       display: block;
@@ -1199,6 +1202,12 @@ ul li {
 .section7 {
   background-color: #61C4D9;
   color: #497870;
+  min-height: 42.3333333333rem;
+}
+@media screen and (max-width: 768px) {
+  .section7 {
+    min-height: 53.6666666667rem;
+  }
 }
 @media screen and (max-width: 480px) {
   .section7 {
@@ -1256,6 +1265,8 @@ ul li {
 @media screen and (max-width: 768px) {
   .section7__title {
     margin-bottom: 1.7777777778rem;
+    width: -webkit-max-content;
+    width: max-content;
   }
 }
 @media screen and (max-width: 480px) {
@@ -1383,7 +1394,7 @@ ul li {
 }
 .form__controll {
   display: flex;
-  flex-wrap: wrap;
+  white-space: nowrap;
 }
 @media screen and (max-width: 768px) {
   .form__controll {
