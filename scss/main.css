@@ -2,6 +2,11 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
 @import "./../css/reset.css";
 @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700;800&display=swap");
+@media print {
+  .form__input {
+    border: 3px solid black;
+  }
+}
 html {
   font-size: 18px;
 }

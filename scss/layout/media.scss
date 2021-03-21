@@ -1,3 +1,9 @@
 @function rem($px) {
     @return $px / $baseFontSize + 0rem;
 }
+
+@media print {
+    .form__input{
+        border: 3px solid black;
+    }
+}
