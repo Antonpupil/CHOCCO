@@ -12,8 +12,70 @@
         min-height: rem(800px);
     }
 
+    
+    &__container {
+        position: relative;
+        @include flexCol-JCsb-ALIfs;
+        padding: rem(23px) rem(80px) rem(52px);
+
+        @media screen and (min-width: $tablet) {
+            background:
+                url(../../img/pics/comp/Chocolates.png) right 5% bottom 58% no-repeat,
+                url(../../img/background/big-leaf.png) right top 50% no-repeat;
+
+
+            &::before {
+                content: url(../../img/pics/comp/berries1_1100.png);
+                position: absolute;
+                bottom: 5%;
+                right: 23%;
+            }
+
+            &::after {
+                content: url(../../img/pics/comp/leaf2_1100.png);
+                position: absolute;
+                top: 89%;
+                right: 25.5%;
+
+                @include tablet {
+                    display: none;
+                }
+            }
+        }
+
+
+        @include tablet {
+            background: url(../../img/background/big-leaf768.png) right top 26% no-repeat;
+            padding: 0;
+        }
+
+        @include phone {
+            background: url(../../img/background/big-leaf480.png) right top 17% no-repeat;
+        }
+
+        &::before {
+            
+            @include tablet {
+                content: url(../../img/pics/comp/comp768.png);
+                position: absolute;
+                top: 17.5%;
+                left: 19%;
+                padding: 0 rem(52px);
+            }
+
+            @include phone {
+                content: url(../../img/pics/comp/comp480.png);
+                position: absolute;
+                top: 12%;
+                left: 5%;
+                padding: 0 rem(52px);
+            }
+        }
+
+    }
+
     &__header {
-        margin-bottom: rem(85px);
+        /* margin-bottom: rem(31px); */
 
         @include tablet {
             margin-bottom: rem(482px);
@@ -26,85 +88,37 @@
         }
     }
 
-    &__btn {
-        position: absolute;
-        top: 64.5%;
-        display: inline-block;
-
-        @include tablet {
-            top: 77%;
-        }
-
-        @include phone {
-            top: 80.5%;
-        }
-    }
-
-    &__container {
-        position: relative;
-        @include flexCol-JCsb-ALIfs;
-        padding: rem(23px) rem(80px) rem(52px);
-        background: url(../../../CHOCCO/img/pics/comp/Ягоды1.png) right 29% top 91% no-repeat,
-            url(../../../CHOCCO/img/pics/comp/Chocolates.png) right 5% bottom 58% no-repeat,
-            url(../../../CHOCCO/img/background/big-leaf.png) right top 50% no-repeat;
-
-        @include tablet {
-            background: url(../../../CHOCCO/img/background/big-leaf768.png) right top 26% no-repeat;
-            padding: 0;
-        }
-
-        @include phone {
-            background: url(../../../CHOCCO/img/background/big-leaf480.png) right top 17% no-repeat;
-        }
-
-        &::before {
-            content: url(../../../CHOCCO/img/pics/comp/Лист1.png);
-            position: absolute;
-            top: 51%;
-            right: 1%;
-
-            @include tablet {
-                content: url(../../../CHOCCO/img/pics/comp/comp768.png);
-                position: absolute;
-                top: 17.5%;
-                left: 19%;
-                padding: 0 rem(52px);
-            }
-
-            @include phone {
-                content: url(../../../CHOCCO/img/pics/comp/comp480.png);
-                position: absolute;
-                top: 12%;
-                left: 5%;
-                padding: 0 rem(52px);
-            }
-        }
-
-    }
-
     &__content {
         min-height: rem(402px);
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 80px 0 49px 0;
 
-        &::before {
-            content: url(../../../CHOCCO/img/pics/comp/Лист2.png);
-            position: absolute;
-            top: 88%;
-            left: 62%;
+        @media screen and (min-width: $tablet) {
 
-            @include tablet {
-                content: "";
+            &::before {
+                content: url(../../img/pics/comp/leaf3_1100.png);
+                position: absolute;
+                top: 88%;
+                left: 3%;
             }
-        }
-
-        &::after {
-            content: url(../../../CHOCCO/img/pics/comp/Ягода2.png);
-            position: absolute;
-            top: 90%;
-            left: 82%;
-
+    
             @include tablet {
                 display: none;
-            }            
+            }
+    
+            &::after {
+                content: url(../../img/pics/comp/berries2_1100.png);
+                position: absolute;
+                top: 91%;
+                right: 8%;
+    
+                @include tablet {
+                    display: none;
+                }
+            }
         }
 
         @include tablet {
@@ -125,7 +139,7 @@
         @include H2font($line-height: rem(59px));
         width: 38%;
         text-transform: uppercase;
-        margin-bottom: rem(18px);
+        margin-bottom: rem(20px);
 
         @include tablet {
             width: auto;
@@ -141,6 +155,7 @@
     &__text {
         width: rem(371px);
         @include baseFont(rem(21px), 25px);
+        margin-bottom: 33px;
 
         @include tablet {
             margin-bottom: rem(256px);
@@ -153,11 +168,29 @@
         }
     }
 
-    &__icons {
-        position: relative;
+    &__btn {
+        display: inline-block;
+
+        @media screen and (min-width: $tablet) {
+            &::before {
+                content: url(../../img/pics/comp/leaf1_1100.png);
+                position: absolute;
+                top: 52%;
+                right: 1%;
+            }
+        }
 
         @include tablet {
-            display: none;
+            top: 77%;
         }
+
+        @include phone {
+            top: 80.5%;
+        }
+    }
+
+    &__icons {
+        position: relative;
+        margin-top: 65px;
     }
 }

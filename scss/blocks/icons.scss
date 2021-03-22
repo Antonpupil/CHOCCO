@@ -1,11 +1,4 @@
 .icons {
-    display: flex;
+    display: inline-flex;
     position: relative;
-
-    &::before {
-        content: url(../../../CHOCCO/img/background/leaf3.png);
-        position: absolute;
-        top: 45%;
-        left: -9%;
-    }
 }

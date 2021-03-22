@@ -1,8 +1,8 @@
 .infoItem {
     display: flex;
     margin-right: rem(8px);
-    max-width: rem(166px);
-    justify-content: flex-start;
+    /* max-width: rem(166px); */
+    justify-content: center;
     align-items: flex-start;
 
     &:last-child {
@@ -10,27 +10,63 @@
     }
 
     &__img {
-        margin-right: rem(11px);
+        margin-right: rem(13px);
 
-        /* &_listWhite {
-            width: 64px;
-            height: 37px;
+        &_listWhite {
+            width: rem(39px);
+            height: rem(37px);
             fill: $heroSpriteColor;
         }
+
         &_truckWhite {
-            width: 40px;
-            height: 32px;
+            width: rem(40px);
+            height: rem(32px);
             fill: $heroSpriteColor;
         }
+
         &_tapeWhite {
-            width: 37px;
-            height: 37px;
+            width: rem(37px);
+            height: rem(37px);
             fill: $heroSpriteColor;
-        } */
+        }
+
+        &_human {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: rem(68px);
+            height: rem(68px);
+            fill: $dark;
+/*             margin: 22% auto;
+ */        }
+
+        &_smile {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: rem(68px);
+            height: rem(68px);
+            fill: $dark;
+/*             margin: 22% auto;
+ */        }
+
+        &_arm {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: rem(68px);
+            height: rem(68px);
+            fill: $dark;
+/*             margin: 22% auto;
+ */        }
 
     }
 
     &__text {
+        width: rem(114px);
         @include baseFont(rem(16px), rem(19px), $color: $light);
         padding-right: rem(40px);
     }

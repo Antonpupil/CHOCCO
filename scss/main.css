@@ -60,8 +60,67 @@ ul li {
     min-height: 44.4444444444rem;
   }
 }
+.hero__container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1.2777777778rem 4.4444444444rem 2.8888888889rem;
+}
+@media screen and (min-width: 768px) {
+  .hero__container {
+    background: url(../../img/pics/comp/Chocolates.png) right 5% bottom 58% no-repeat, url(../../img/background/big-leaf.png) right top 50% no-repeat;
+  }
+  .hero__container::before {
+    content: url(../../img/pics/comp/berries1_1100.png);
+    position: absolute;
+    bottom: 5%;
+    right: 23%;
+  }
+  .hero__container::after {
+    content: url(../../img/pics/comp/leaf2_1100.png);
+    position: absolute;
+    top: 89%;
+    right: 25.5%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 768px) {
+  .hero__container::after {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero__container {
+    background: url(../../img/background/big-leaf768.png) right top 26% no-repeat;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .hero__container {
+    background: url(../../img/background/big-leaf480.png) right top 17% no-repeat;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero__container::before {
+    content: url(../../img/pics/comp/comp768.png);
+    position: absolute;
+    top: 17.5%;
+    left: 19%;
+    padding: 0 2.8888888889rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .hero__container::before {
+    content: url(../../img/pics/comp/comp480.png);
+    position: absolute;
+    top: 12%;
+    left: 5%;
+    padding: 0 2.8888888889rem;
+  }
+}
 .hero__header {
-  margin-bottom: 4.7222222222rem;
+  /* margin-bottom: rem(31px); */
 }
 @media screen and (max-width: 768px) {
   .hero__header {
@@ -75,86 +134,36 @@ ul li {
     padding-left: 0.5555555556rem;
   }
 }
-.hero__btn {
-  position: absolute;
-  top: 64.5%;
-  display: inline-block;
-}
-@media screen and (max-width: 768px) {
-  .hero__btn {
-    top: 77%;
-  }
-}
-@media screen and (max-width: 480px) {
-  .hero__btn {
-    top: 80.5%;
-  }
-}
-.hero__container {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 1.2777777778rem 4.4444444444rem 2.8888888889rem;
-  background: url(../../../CHOCCO/img/pics/comp/Ягоды1.png) right 29% top 91% no-repeat, url(../../../CHOCCO/img/pics/comp/Chocolates.png) right 5% bottom 58% no-repeat, url(../../../CHOCCO/img/background/big-leaf.png) right top 50% no-repeat;
-}
-@media screen and (max-width: 768px) {
-  .hero__container {
-    background: url(../../../CHOCCO/img/background/big-leaf768.png) right top 26% no-repeat;
-    padding: 0;
-  }
-}
-@media screen and (max-width: 480px) {
-  .hero__container {
-    background: url(../../../CHOCCO/img/background/big-leaf480.png) right top 17% no-repeat;
-  }
-}
-.hero__container::before {
-  content: url(../../../CHOCCO/img/pics/comp/Лист1.png);
-  position: absolute;
-  top: 51%;
-  right: 1%;
-}
-@media screen and (max-width: 768px) {
-  .hero__container::before {
-    content: url(../../../CHOCCO/img/pics/comp/comp768.png);
-    position: absolute;
-    top: 17.5%;
-    left: 19%;
-    padding: 0 2.8888888889rem;
-  }
-}
-@media screen and (max-width: 480px) {
-  .hero__container::before {
-    content: url(../../../CHOCCO/img/pics/comp/comp480.png);
-    position: absolute;
-    top: 12%;
-    left: 5%;
-    padding: 0 2.8888888889rem;
-  }
-}
 .hero__content {
   min-height: 22.3333333333rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px 0 49px 0;
 }
-.hero__content::before {
-  content: url(../../../CHOCCO/img/pics/comp/Лист2.png);
-  position: absolute;
-  top: 88%;
-  left: 62%;
-}
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .hero__content::before {
-    content: "";
+    content: url(../../img/pics/comp/leaf3_1100.png);
+    position: absolute;
+    top: 88%;
+    left: 3%;
   }
 }
-.hero__content::after {
-  content: url(../../../CHOCCO/img/pics/comp/Ягода2.png);
-  position: absolute;
-  top: 90%;
-  left: 82%;
+@media screen and (min-width: 768px) and (max-width: 768px) {
+  .hero__content {
+    display: none;
+  }
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
+  .hero__content::after {
+    content: url(../../img/pics/comp/berries2_1100.png);
+    position: absolute;
+    top: 91%;
+    right: 8%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 768px) {
   .hero__content::after {
     display: none;
   }
@@ -181,7 +190,7 @@ ul li {
   color: #FFFFFF;
   width: 38%;
   text-transform: uppercase;
-  margin-bottom: 1rem;
+  margin-bottom: 1.1111111111rem;
 }
 @media screen and (max-width: 768px) {
   .hero__title {
@@ -204,6 +213,7 @@ ul li {
   font-size: 1.1666666667rem;
   line-height: 25px;
   color: #FFFFFF;
+  margin-bottom: 33px;
 }
 @media screen and (max-width: 768px) {
   .hero__text {
@@ -220,16 +230,34 @@ ul li {
     margin-bottom: 10.1666666667rem;
   }
 }
-.hero__icons {
-  position: relative;
+.hero__btn {
+  display: inline-block;
+}
+@media screen and (min-width: 768px) {
+  .hero__btn::before {
+    content: url(../../img/pics/comp/leaf1_1100.png);
+    position: absolute;
+    top: 52%;
+    right: 1%;
+  }
 }
 @media screen and (max-width: 768px) {
-  .hero__icons {
-    display: none;
+  .hero__btn {
+    top: 77%;
   }
+}
+@media screen and (max-width: 480px) {
+  .hero__btn {
+    top: 80.5%;
+  }
+}
+.hero__icons {
+  position: relative;
+  margin-top: 65px;
 }
 
 .container {
+  height: 100%;
   width: 100%;
   max-width: 1100px;
   margin: 0 auto;
@@ -297,6 +325,7 @@ ul li {
 
 .navBar {
   padding-top: 0.2777777778rem;
+  min-height: 96px;
 }
 .navBar__list {
   display: flex;
@@ -420,45 +449,73 @@ ul li {
 }
 
 .icons {
-  display: flex;
+  display: inline-flex;
   position: relative;
-}
-.icons::before {
-  content: url(../../../CHOCCO/img/background/leaf3.png);
-  position: absolute;
-  top: 45%;
-  left: -9%;
 }
 
 .infoItem {
   display: flex;
   margin-right: 0.4444444444rem;
-  max-width: 9.2222222222rem;
-  justify-content: flex-start;
+  /* max-width: rem(166px); */
+  justify-content: center;
   align-items: flex-start;
 }
 .infoItem:last-child {
   margin-right: 0;
 }
 .infoItem__img {
-  margin-right: 0.6111111111rem;
-  /* &_listWhite {
-      width: 64px;
-      height: 37px;
-      fill: $heroSpriteColor;
-  }
-  &_truckWhite {
-      width: 40px;
-      height: 32px;
-      fill: $heroSpriteColor;
-  }
-  &_tapeWhite {
-      width: 37px;
-      height: 37px;
-      fill: $heroSpriteColor;
-  } */
+  margin-right: 0.7222222222rem;
+}
+.infoItem__img_listWhite {
+  width: 2.1666666667rem;
+  height: 2.0555555556rem;
+  fill: #C6F7FF;
+}
+.infoItem__img_truckWhite {
+  width: 2.2222222222rem;
+  height: 1.7777777778rem;
+  fill: #C6F7FF;
+}
+.infoItem__img_tapeWhite {
+  width: 2.0555555556rem;
+  height: 2.0555555556rem;
+  fill: #C6F7FF;
+}
+.infoItem__img_human {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 3.7777777778rem;
+  height: 3.7777777778rem;
+  fill: #292929;
+  /*             margin: 22% auto;
+   */
+}
+.infoItem__img_smile {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 3.7777777778rem;
+  height: 3.7777777778rem;
+  fill: #292929;
+  /*             margin: 22% auto;
+   */
+}
+.infoItem__img_arm {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 3.7777777778rem;
+  height: 3.7777777778rem;
+  fill: #292929;
+  /*             margin: 22% auto;
+   */
 }
 .infoItem__text {
+  width: 6.3333333333rem;
   font-weight: 400;
   font-size: 0.8888888889rem;
   line-height: 1.0555555556rem;
@@ -502,12 +559,12 @@ ul li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 5.4444444444rem 0 4.4444444444rem;
-  background: url(../../../CHOCCO/img/background/узор-лист-1.png) left top 58% no-repeat;
+  padding: 5.5555555556rem 0 0;
+  background: url(../../img/background/узор-лист-1.png) left top 51% no-repeat;
 }
 @media screen and (max-width: 768px) {
   .section1__container {
-    background: url(../../../CHOCCO/img/background/узор-лист-1.png) left -1% top 12% no-repeat;
+    background: url(../../img/background/узор-лист-1.png) left -1% top 12% no-repeat;
     padding: 15.5rem 0 14rem;
   }
 }
@@ -519,14 +576,14 @@ ul li {
   }
 }
 .section1__container::before {
-  content: url(../../../CHOCCO/img/background/малина-1.png);
+  content: url(../../img/background/малина-1.png);
   left: 0;
   bottom: -24.5%;
   position: absolute;
 }
 @media screen and (max-width: 768px) {
   .section1__container::before {
-    content: url(../../../CHOCCO/img/background/малина-1_768.png);
+    content: url(../../img/background/малина-1_768.png);
     bottom: -8%;
   }
 }
@@ -537,7 +594,7 @@ ul li {
 }
 .section1__headline {
   text-align: center;
-  margin-bottom: 2.5555555556rem;
+  margin-bottom: 2.7777777778rem;
 }
 @media screen and (max-width: 480px) {
   .section1__headline {
@@ -546,7 +603,7 @@ ul li {
 }
 .section1__content {
   width: 100%;
-  margin: 0 4.5555555556rem;
+  /* margin: 0 rem(82px); */
 }
 @media screen and (max-width: 768px) {
   .section1__content {
@@ -557,7 +614,7 @@ ul li {
   flex: 1;
   position: relative;
   /* &::before {
-      content: url(../../../CHOCCO/img/icons/features/Combined-shape-2204.png);
+      content: url(../../img/icons/features/Combined-shape-2204.png);
       position: absolute;
       top: 23%;
       right: -22%;
@@ -611,7 +668,7 @@ ul li {
   line-height: 3.2222222222rem;
   color: #292929;
   text-transform: uppercase;
-  margin: 0 0 1.1111111111rem 0;
+  /* margin: 0 0 rem(20px) 0; */
 }
 @media screen and (max-width: 768px) {
   .section1__title {
@@ -647,9 +704,11 @@ ul li {
 }
 
 .features {
+  width: auto;
   display: flex;
   justify-content: space-between;
   position: relative;
+  margin: 0 85px;
 }
 @media screen and (max-width: 480px) {
   .features {
@@ -827,7 +886,7 @@ ul li {
   }
 }
 .section5::before {
-  content: url(../../../CHOCCO/img/pics/decor/Ягоды2_1100.png);
+  content: url(../../img/pics/decor/Ягоды2_1100.png);
   top: 83.5%;
   right: 87.5%;
   position: absolute;
@@ -835,14 +894,14 @@ ul li {
 }
 @media screen and (max-width: 768px) {
   .section5::before {
-    content: url(../../../CHOCCO/img/pics/decor/Ягоды2_768.png);
+    content: url(../../img/pics/decor/Ягоды2_768.png);
     top: 86.5%;
     right: 88%;
   }
 }
 @media screen and (max-width: 480px) {
   .section5::before {
-    content: url(../../../CHOCCO/img/pics/decor/Ягоды2_480.png);
+    content: url(../../img/pics/decor/Ягоды2_480.png);
     top: 89.5%;
     right: 80%;
   }
@@ -867,14 +926,14 @@ ul li {
   }
 }
 .section5__container::before {
-  content: url(../../../CHOCCO/img/pics/decor/Узор1_1100.png);
+  content: url(../../img/pics/decor/Узор1_1100.png);
   top: 74%;
   left: 0%;
   position: absolute;
 }
 @media screen and (max-width: 768px) {
   .section5__container::before {
-    content: url(../../../CHOCCO/img/pics/decor/Узор1_768.png);
+    content: url(../../img/pics/decor/Узор1_768.png);
     top: 82%;
     left: 0%;
     position: absolute;
@@ -882,14 +941,14 @@ ul li {
 }
 @media screen and (max-width: 480px) {
   .section5__container::before {
-    content: url(../../../CHOCCO/img/pics/decor/Узор1-480.png);
+    content: url(../../img/pics/decor/Узор1-480.png);
     top: 84%;
     left: 0%;
     position: absolute;
   }
 }
 .section5__container::after {
-  content: url(../../../CHOCCO/img/pics/decor/Ягоды2_1100.png);
+  content: url(../../img/pics/decor/Ягоды2_1100.png);
   left: -185%;
   bottom: -207.5%;
   position: absolute;
@@ -920,21 +979,21 @@ ul li {
   }
 }
 .section5__title::before {
-  content: url(../../../CHOCCO/img/pics/decor/Ягода-3.png);
+  content: url(../../img/pics/decor/Ягода-3.png);
   top: -33%;
   right: -6%;
   position: absolute;
 }
 @media screen and (max-width: 768px) {
   .section5__title::before {
-    content: url(../../../CHOCCO/img/pics/decor/Ягода-3__768.png);
+    content: url(../../img/pics/decor/Ягода-3__768.png);
     top: -289%;
     right: -3%;
   }
 }
 @media screen and (max-width: 480px) {
   .section5__title::before {
-    content: url(../../../CHOCCO/img/pics/decor/Ягода-3__480.png);
+    content: url(../../img/pics/decor/Ягода-3__480.png);
     top: -214%;
     right: -2%;
   }
@@ -972,7 +1031,7 @@ ul li {
   justify-content: flex-start;
   align-items: flex-start;
   width: 100%;
-  background: url(../../../CHOCCO/img/background/layer2-1.png) right top 14% no-repeat, #F8FAF9;
+  background: url(../../img/background/layer2-1.png) right top 14% no-repeat, #F8FAF9;
   padding: 2.5555555556rem 0 2.5555555556rem 2.3333333333rem;
   position: relative;
 }
@@ -984,13 +1043,13 @@ ul li {
     justify-content: flex-start;
     align-items: center;
     padding: 3.1111111111rem 1.2777777778rem 1.4444444444rem;
-    background: url(../../../CHOCCO/img/background/layer2-1_768.png) right top 5% no-repeat, #F8FAF9;
+    background: url(../../img/background/layer2-1_768.png) right top 5% no-repeat, #F8FAF9;
   }
 }
 @media screen and (max-width: 480px) {
   .feedback {
     padding: 3.1111111111rem 1.8333333333rem 0.4444444444rem 1.3888888889rem;
-    background: url(../../../CHOCCOimg/background/layer2-1_480.png) right top 7% no-repeat, #F8FAF9;
+    background: url(../../img/background/layer2-1_480.png) right top 7% no-repeat, #F8FAF9;
   }
 }
 .feedback__icon {
@@ -1239,14 +1298,14 @@ ul li {
   }
 }
 .section7__container::before {
-  content: url(../../../CHOCCO/img/pics/decor/Ежевика_фото1.png);
+  content: url(../../img/pics/decor/Ежевика_фото1.png);
   right: 0;
   top: -25%;
   position: absolute;
 }
 @media screen and (max-width: 768px) {
   .section7__container::before {
-    content: url(../../../CHOCCO/img/pics/decor/Ежевика_фото1_768.png);
+    content: url(../../img/pics/decor/Ежевика_фото1_768.png);
     right: 0;
     top: -8.5%;
     position: absolute;
@@ -1254,7 +1313,7 @@ ul li {
 }
 @media screen and (max-width: 480px) {
   .section7__container::before {
-    content: url(../../../CHOCCO/img/pics/decor/Ежевика_фото1_480.png);
+    content: url(../../img/pics/decor/Ежевика_фото1_480.png);
     right: 0;
     top: -11%;
     position: absolute;
@@ -1295,7 +1354,7 @@ ul li {
   }
 }
 .form::before {
-  content: url(../../../CHOCCO/img/background/ягода_1.png);
+  content: url(../../img/background/ягода_1.png);
   left: -3%;
   bottom: -6%;
   position: absolute;
@@ -1437,7 +1496,7 @@ ul li {
   margin-right: 0;
 }
 .form__btn::before {
-  content: url(../../../CHOCCO/img/background/лист-3_1.png);
+  content: url(../../img/background/лист-3_1.png);
   right: -16%;
   top: -173%;
   position: absolute;
@@ -1475,7 +1534,7 @@ ul li {
 }
 .radio__checkbox .radio__visible::before {
   content: "";
-  background: url(../../../CHOCCO/img/icons/checkmark.png) center center no-repeat;
+  background: url(../../img/icons/checkmark.png) center center no-repeat;
   background-size: cover;
 }
 @media screen and (max-width: 480px) {

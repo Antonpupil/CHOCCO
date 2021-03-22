@@ -1,7 +1,9 @@
 .features{
+    width: auto;
     display: flex;
     justify-content: space-between;
     position: relative;
+    margin: 0 85px;
 
     
     @include phone {

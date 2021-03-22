@@ -12,11 +12,11 @@
     &__container {
         position: relative;
         @include flexCol-JCc-ALIfs($align-items: center);
-        padding: rem(98px) 0 rem(80px);
-        background: url(../../../CHOCCO/img/background/узор-лист-1.png) left top 58% no-repeat;
+        padding: rem(100px) 0 0;
+        background: url(../../img/background/узор-лист-1.png) left top 51% no-repeat;
 
         @include tablet {
-            background: url(../../../CHOCCO/img/background/узор-лист-1.png) left -1% top 12% no-repeat;
+            background: url(../../img/background/узор-лист-1.png) left -1% top 12% no-repeat;
             padding: rem(279px) 0 rem(252px);
         }
 
@@ -27,13 +27,13 @@
         }
 
         &::before {
-            content: url(../../../CHOCCO/img/background/малина-1.png);
+            content: url(../../img/background/малина-1.png);
             left: 0;
             bottom: -24.5%;
             position: absolute;
 
             @include tablet {
-                content: url(../../../CHOCCO/img/background/малина-1_768.png);
+                content: url(../../img/background/малина-1_768.png);
                 bottom: -8%;
             }
 
@@ -46,7 +46,7 @@
 
     &__headline {
         text-align: center;
-        margin-bottom: rem(46px);
+        margin-bottom: rem(50px);
 
         @include phone {
             margin-bottom: rem(53px);
@@ -55,7 +55,7 @@
 
     &__content {
         width: 100%;
-        margin: 0 rem(82px);
+        /* margin: 0 rem(82px); */
 
         @include tablet {
             margin: 0;
@@ -90,7 +90,7 @@
         }
 
         /* &::before {
-            content: url(../../../CHOCCO/img/icons/features/Combined-shape-2204.png);
+            content: url(../../img/icons/features/Combined-shape-2204.png);
             position: absolute;
             top: 23%;
             right: -22%;
@@ -120,7 +120,7 @@
     &__title {
         @include H2font($color: $dark);
         text-transform: uppercase;
-        margin: 0 0 rem(20px) 0;
+        /* margin: 0 0 rem(20px) 0; */
 
         @include tablet {
             margin: 0;
