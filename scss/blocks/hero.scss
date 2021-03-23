@@ -12,37 +12,14 @@
         min-height: rem(800px);
     }
 
-    
+
     &__container {
         position: relative;
         @include flexCol-JCsb-ALIfs;
         padding: rem(23px) rem(80px) rem(52px);
-
-        @media screen and (min-width: $tablet) {
-            background:
-                url(../../img/pics/comp/Chocolates.png) right 5% bottom 58% no-repeat,
-                url(../../img/background/big-leaf.png) right top 50% no-repeat;
-
-
-            &::before {
-                content: url(../../img/pics/comp/berries1_1100.png);
-                position: absolute;
-                bottom: 5%;
-                right: 23%;
-            }
-
-            &::after {
-                content: url(../../img/pics/comp/leaf2_1100.png);
-                position: absolute;
-                top: 89%;
-                right: 25.5%;
-
-                @include tablet {
-                    display: none;
-                }
-            }
-        }
-
+        background:
+            url(../../img/pics/comp/Chocolates.png) right 5% bottom 58% no-repeat,
+            url(../../img/background/big-leaf.png) right top 50% no-repeat;
 
         @include tablet {
             background: url(../../img/background/big-leaf768.png) right top 26% no-repeat;
@@ -53,24 +30,6 @@
             background: url(../../img/background/big-leaf480.png) right top 17% no-repeat;
         }
 
-        &::before {
-            
-            @include tablet {
-                content: url(../../img/pics/comp/comp768.png);
-                position: absolute;
-                top: 17.5%;
-                left: 19%;
-                padding: 0 rem(52px);
-            }
-
-            @include phone {
-                content: url(../../img/pics/comp/comp480.png);
-                position: absolute;
-                top: 12%;
-                left: 5%;
-                padding: 0 rem(52px);
-            }
-        }
 
     }
 
@@ -95,31 +54,9 @@
         flex-direction: column;
         justify-content: center;
         padding: 80px 0 49px 0;
+        position: relative;
 
-        @media screen and (min-width: $tablet) {
 
-            &::before {
-                content: url(../../img/pics/comp/leaf3_1100.png);
-                position: absolute;
-                top: 88%;
-                left: 3%;
-            }
-    
-            @include tablet {
-                display: none;
-            }
-    
-            &::after {
-                content: url(../../img/pics/comp/berries2_1100.png);
-                position: absolute;
-                top: 91%;
-                right: 8%;
-    
-                @include tablet {
-                    display: none;
-                }
-            }
-        }
 
         @include tablet {
             width: 100%;
@@ -156,6 +93,7 @@
         width: rem(371px);
         @include baseFont(rem(21px), 25px);
         margin-bottom: 33px;
+        position: relative; 
 
         @include tablet {
             margin-bottom: rem(256px);
@@ -170,27 +108,87 @@
 
     &__btn {
         display: inline-block;
+        position: relative;
 
-        @media screen and (min-width: $tablet) {
-            &::before {
-                content: url(../../img/pics/comp/leaf1_1100.png);
+        &::before {
+            content: url(../../img/pics/comp/berries1_1100.png);
+            position: absolute;
+            bottom: -230%;
+            right: 18%;
+
+            @include tablet {
+                content: url(../../img/pics/comp/comp768.png);
                 position: absolute;
-                top: 52%;
-                right: 1%;
+                top: 17.5%;
+                left: 19%;
+                padding: 0 rem(52px);
+            }
+
+            @include phone {
+                content: url(../../img/pics/comp/comp480.png);
+                position: absolute;
+                top: 12%;
+                left: 5%;
+                padding: 0 rem(52px);
             }
         }
 
-        @include tablet {
-            top: 77%;
+        &::after {
+            content: url(../../img/pics/comp/leaf2_1100.png);
+            position: absolute;
+            top: 259%;
+            right: 20.5%;
+
+            @include tablet {
+                display: none;
+            }
         }
 
-        @include phone {
-            top: 80.5%;
-        }
+
     }
 
     &__icons {
         position: relative;
         margin-top: 65px;
+
+        &::before {
+            content: url(../../img/pics/comp/leaf3_1100.png);
+            position: absolute;
+            top: 40%;
+            left: -5%;
+
+            @include tablet {
+                display: none;
+            }
+        }
+
+        &::after {
+            content: url(../../img/pics/comp/berries2_1100.png);
+            position: absolute;
+            top: 80%;
+            right: 1%;
+
+            @include tablet {
+                display: none;
+            }
+        }
+        &-list{
+            position: relative;
+
+            &::before {
+                content: url(../../img/pics/comp/leaf1_1100.png);
+                position: absolute;
+                bottom: 102%;
+            right: -8%;
+        
+                @include tablet {
+                    top: 77%;
+                }
+        
+                @include phone {
+                    top: 80.5%;
+                }
+            }
+        }
     }
 }

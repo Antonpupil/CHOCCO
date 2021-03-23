@@ -67,28 +67,7 @@ ul li {
   justify-content: space-between;
   align-items: flex-start;
   padding: 1.2777777778rem 4.4444444444rem 2.8888888889rem;
-}
-@media screen and (min-width: 768px) {
-  .hero__container {
-    background: url(../../img/pics/comp/Chocolates.png) right 5% bottom 58% no-repeat, url(../../img/background/big-leaf.png) right top 50% no-repeat;
-  }
-  .hero__container::before {
-    content: url(../../img/pics/comp/berries1_1100.png);
-    position: absolute;
-    bottom: 5%;
-    right: 23%;
-  }
-  .hero__container::after {
-    content: url(../../img/pics/comp/leaf2_1100.png);
-    position: absolute;
-    top: 89%;
-    right: 25.5%;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 768px) {
-  .hero__container::after {
-    display: none;
-  }
+  background: url(../../img/pics/comp/Chocolates.png) right 5% bottom 58% no-repeat, url(../../img/background/big-leaf.png) right top 50% no-repeat;
 }
 @media screen and (max-width: 768px) {
   .hero__container {
@@ -99,24 +78,6 @@ ul li {
 @media screen and (max-width: 480px) {
   .hero__container {
     background: url(../../img/background/big-leaf480.png) right top 17% no-repeat;
-  }
-}
-@media screen and (max-width: 768px) {
-  .hero__container::before {
-    content: url(../../img/pics/comp/comp768.png);
-    position: absolute;
-    top: 17.5%;
-    left: 19%;
-    padding: 0 2.8888888889rem;
-  }
-}
-@media screen and (max-width: 480px) {
-  .hero__container::before {
-    content: url(../../img/pics/comp/comp480.png);
-    position: absolute;
-    top: 12%;
-    left: 5%;
-    padding: 0 2.8888888889rem;
   }
 }
 .hero__header {
@@ -141,32 +102,7 @@ ul li {
   flex-direction: column;
   justify-content: center;
   padding: 80px 0 49px 0;
-}
-@media screen and (min-width: 768px) {
-  .hero__content::before {
-    content: url(../../img/pics/comp/leaf3_1100.png);
-    position: absolute;
-    top: 88%;
-    left: 3%;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 768px) {
-  .hero__content {
-    display: none;
-  }
-}
-@media screen and (min-width: 768px) {
-  .hero__content::after {
-    content: url(../../img/pics/comp/berries2_1100.png);
-    position: absolute;
-    top: 91%;
-    right: 8%;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 768px) {
-  .hero__content::after {
-    display: none;
-  }
+  position: relative;
 }
 @media screen and (max-width: 768px) {
   .hero__content {
@@ -214,6 +150,7 @@ ul li {
   line-height: 25px;
   color: #FFFFFF;
   margin-bottom: 33px;
+  position: relative;
 }
 @media screen and (max-width: 768px) {
   .hero__text {
@@ -232,28 +169,87 @@ ul li {
 }
 .hero__btn {
   display: inline-block;
+  position: relative;
 }
-@media screen and (min-width: 768px) {
-  .hero__btn::before {
-    content: url(../../img/pics/comp/leaf1_1100.png);
-    position: absolute;
-    top: 52%;
-    right: 1%;
-  }
+.hero__btn::before {
+  content: url(../../img/pics/comp/berries1_1100.png);
+  position: absolute;
+  bottom: -230%;
+  right: 18%;
 }
 @media screen and (max-width: 768px) {
-  .hero__btn {
-    top: 77%;
+  .hero__btn::before {
+    content: url(../../img/pics/comp/comp768.png);
+    position: absolute;
+    top: 17.5%;
+    left: 19%;
+    padding: 0 2.8888888889rem;
   }
 }
 @media screen and (max-width: 480px) {
-  .hero__btn {
-    top: 80.5%;
+  .hero__btn::before {
+    content: url(../../img/pics/comp/comp480.png);
+    position: absolute;
+    top: 12%;
+    left: 5%;
+    padding: 0 2.8888888889rem;
+  }
+}
+.hero__btn::after {
+  content: url(../../img/pics/comp/leaf2_1100.png);
+  position: absolute;
+  top: 259%;
+  right: 20.5%;
+}
+@media screen and (max-width: 768px) {
+  .hero__btn::after {
+    display: none;
   }
 }
 .hero__icons {
   position: relative;
   margin-top: 65px;
+}
+.hero__icons::before {
+  content: url(../../img/pics/comp/leaf3_1100.png);
+  position: absolute;
+  top: 40%;
+  left: -5%;
+}
+@media screen and (max-width: 768px) {
+  .hero__icons::before {
+    display: none;
+  }
+}
+.hero__icons::after {
+  content: url(../../img/pics/comp/berries2_1100.png);
+  position: absolute;
+  top: 80%;
+  right: 1%;
+}
+@media screen and (max-width: 768px) {
+  .hero__icons::after {
+    display: none;
+  }
+}
+.hero__icons-list {
+  position: relative;
+}
+.hero__icons-list::before {
+  content: url(../../img/pics/comp/leaf1_1100.png);
+  position: absolute;
+  bottom: 102%;
+  right: -8%;
+}
+@media screen and (max-width: 768px) {
+  .hero__icons-list::before {
+    top: 77%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .hero__icons-list::before {
+    top: 80.5%;
+  }
 }
 
 .container {
@@ -449,8 +445,7 @@ ul li {
 }
 
 .icons {
-  display: inline-flex;
-  position: relative;
+  display: flex;
 }
 
 .infoItem {
@@ -542,6 +537,24 @@ ul li {
 
 .section1 {
   min-height: 36.2222222222rem;
+  position: relative;
+}
+.section1::before {
+  content: url(../../img/background/raspberry1100.png);
+  left: 0;
+  top: 67.5%;
+  position: absolute;
+}
+@media screen and (max-width: 768px) {
+  .section1::before {
+    content: url(../../img/background/raspberry1100.png);
+    bottom: -8%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section1::before {
+    content: "";
+  }
 }
 @media screen and (max-width: 768px) {
   .section1 {
@@ -559,12 +572,12 @@ ul li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 5.5555555556rem 0 0;
-  background: url(../../img/background/узор-лист-1.png) left top 51% no-repeat;
+  padding: 0 0 0.8888888889rem;
+  background: url(../../img/background/layer_list1100.png) left top 51% no-repeat;
 }
 @media screen and (max-width: 768px) {
   .section1__container {
-    background: url(../../img/background/узор-лист-1.png) left -1% top 12% no-repeat;
+    background: url(../../img/background/layer_list1100.png) left -1% top 12% no-repeat;
     padding: 15.5rem 0 14rem;
   }
 }
@@ -573,23 +586,6 @@ ul li {
     background: none;
     box-sizing: border-box;
     padding: 2.9444444444rem 0;
-  }
-}
-.section1__container::before {
-  content: url(../../img/background/малина-1.png);
-  left: 0;
-  bottom: -24.5%;
-  position: absolute;
-}
-@media screen and (max-width: 768px) {
-  .section1__container::before {
-    content: url(../../img/background/малина-1_768.png);
-    bottom: -8%;
-  }
-}
-@media screen and (max-width: 480px) {
-  .section1__container::before {
-    content: "";
   }
 }
 .section1__headline {
@@ -605,28 +601,9 @@ ul li {
   width: 100%;
   /* margin: 0 rem(82px); */
 }
-@media screen and (max-width: 768px) {
-  .section1__content {
-    margin: 0;
-  }
-}
 .section1__item {
   flex: 1;
   position: relative;
-  /* &::before {
-      content: url(../../img/icons/features/Combined-shape-2204.png);
-      position: absolute;
-      top: 23%;
-      right: -22%;
-
-      @include tablet {
-          content: "";
-      }
-
-      @include phone {
-          content: "";
-      }
-  } */
 }
 @media screen and (max-width: 768px) {
   .section1__item {
@@ -906,13 +883,35 @@ ul li {
     right: 80%;
   }
 }
+.section5::after {
+  content: url(../../img/pics/decor/Узор1_1100.png);
+  top: 74%;
+  left: 0%;
+  position: absolute;
+}
+@media screen and (max-width: 768px) {
+  .section5::after {
+    content: url(../../img/pics/decor/Узор1_768.png);
+    top: 82%;
+    left: 0%;
+    position: absolute;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section5::after {
+    content: url(../../img/pics/decor/Узор1-480.png);
+    top: 84%;
+    left: 0%;
+    position: absolute;
+  }
+}
 .section5__container {
-  height: 36.2222222222rem;
+  /* height: rem(652px); */
   position: relative;
-  padding: 3.2777777778rem 4.3888888889rem 3.7222222222rem;
+  padding: 0 4.3888888889rem 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 @media screen and (max-width: 768px) {
@@ -924,34 +923,6 @@ ul li {
   .section5__container {
     padding: 5.3333333333rem 0.5555555556rem 4.5555555556rem;
   }
-}
-.section5__container::before {
-  content: url(../../img/pics/decor/Узор1_1100.png);
-  top: 74%;
-  left: 0%;
-  position: absolute;
-}
-@media screen and (max-width: 768px) {
-  .section5__container::before {
-    content: url(../../img/pics/decor/Узор1_768.png);
-    top: 82%;
-    left: 0%;
-    position: absolute;
-  }
-}
-@media screen and (max-width: 480px) {
-  .section5__container::before {
-    content: url(../../img/pics/decor/Узор1-480.png);
-    top: 84%;
-    left: 0%;
-    position: absolute;
-  }
-}
-.section5__container::after {
-  content: url(../../img/pics/decor/Ягоды2_1100.png);
-  left: -185%;
-  bottom: -207.5%;
-  position: absolute;
 }
 .section5__title {
   font-weight: bold;
@@ -1003,17 +974,6 @@ ul li {
   overflow: hidden;
   position: relative;
   flex-shrink: 0;
-  /* &::before {
-      content: "";
-      display: block;
-      position: absolute;
-      width: rem(83px);
-      height: rem(83px);
-      background: $light;
-      border-radius: 50%;
-      left: 45%;
-      top: -14%;
-  } */
 }
 @media screen and (max-width: 768px) {
   .section5__content {
@@ -1267,7 +1227,7 @@ ul li {
 .section7 {
   background-color: #61C4D9;
   color: #497870;
-  min-height: 42.3333333333rem;
+  min-height: 36.2222222222rem;
 }
 @media screen and (max-width: 768px) {
   .section7 {
@@ -1281,10 +1241,10 @@ ul li {
 }
 .section7__container {
   position: relative;
-  padding: 3.1666666667rem 4.5rem 4.6666666667rem;
+  padding: 0 4.5rem 1.2222222222rem;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
 }
 @media screen and (max-width: 768px) {
@@ -1297,28 +1257,6 @@ ul li {
     padding: 4.8333333333rem 0.5555555556rem 4.5rem;
   }
 }
-.section7__container::before {
-  content: url(../../img/pics/decor/Ежевика_фото1.png);
-  right: 0;
-  top: -25%;
-  position: absolute;
-}
-@media screen and (max-width: 768px) {
-  .section7__container::before {
-    content: url(../../img/pics/decor/Ежевика_фото1_768.png);
-    right: 0;
-    top: -8.5%;
-    position: absolute;
-  }
-}
-@media screen and (max-width: 480px) {
-  .section7__container::before {
-    content: url(../../img/pics/decor/Ежевика_фото1_480.png);
-    right: 0;
-    top: -11%;
-    position: absolute;
-  }
-}
 .section7__title {
   font-weight: bold;
   font-size: 2.6666666667rem;
@@ -1326,6 +1264,29 @@ ul li {
   color: #365A49;
   text-transform: uppercase;
   margin-bottom: 3.2222222222rem;
+  position: relative;
+}
+.section7__title::before {
+  content: url(../../img/pics/decor/Ежевика_фото1.png);
+  right: -66%;
+  top: -387%;
+  position: absolute;
+}
+@media screen and (max-width: 768px) {
+  .section7__title::before {
+    content: url(../../img/pics/decor/Ежевика_фото1_768.png);
+    right: 0;
+    top: -8.5%;
+    position: absolute;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section7__title::before {
+    content: url(../../img/pics/decor/Ежевика_фото1_480.png);
+    right: 0;
+    top: -11%;
+    position: absolute;
+  }
 }
 @media screen and (max-width: 768px) {
   .section7__title {
@@ -1472,7 +1433,7 @@ ul li {
   }
 }
 .form__btn {
-  margin-top: 2.6666666667rem;
+  margin-top: 2.5rem;
   position: relative;
   display: flex;
 }

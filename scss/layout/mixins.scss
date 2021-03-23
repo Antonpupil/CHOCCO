@@ -31,6 +31,7 @@
     justify-content: $justify-content;
     align-items: $align-items;
 }
+
 @mixin flexCol-JCc-ALIfs ($display: flex, $flex-direction: column, $justify-content: center, $align-items: flex-start) {
     display: $display;
     flex-direction: $flex-direction;
@@ -45,11 +46,18 @@
     overflow: $overflow;
 }
 
+@mixin tabletMin {
+    @media screen and (min-width: $tablet) {
+        @content;
+    }
+}
+
 @mixin tablet {
     @media screen and (max-width: $tablet) {
         @content;
     }
 }
+
 @mixin phone {
     @media screen and (max-width: $phone) {
         @content;

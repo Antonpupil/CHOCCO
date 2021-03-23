@@ -1,5 +1,22 @@
 .section1 {
     min-height: rem(652px);
+    position: relative;
+
+    &::before {
+        content: url(../../img/background/raspberry1100.png);
+        left: 0;
+        top: 67.5%;
+        position: absolute;
+
+        @include tablet {
+            content: url(../../img/background/raspberry1100.png);
+            bottom: -8%;
+        }
+
+        @include phone {
+            content: "";
+        }
+    }
 
     @include tablet {
         min-height: rem(1000px);
@@ -11,12 +28,12 @@
 
     &__container {
         position: relative;
-        @include flexCol-JCc-ALIfs($align-items: center);
-        padding: rem(100px) 0 0;
-        background: url(../../img/background/узор-лист-1.png) left top 51% no-repeat;
+        @include flexCol-JCc-ALIfs($justify-content: center, $align-items: center);
+        padding: 0 0 rem(16px);
+        background: url(../../img/background/layer_list1100.png) left top 51% no-repeat;
 
         @include tablet {
-            background: url(../../img/background/узор-лист-1.png) left -1% top 12% no-repeat;
+            background: url(../../img/background/layer_list1100.png) left -1% top 12% no-repeat;
             padding: rem(279px) 0 rem(252px);
         }
 
@@ -26,21 +43,7 @@
             padding: rem(53px) 0;
         }
 
-        &::before {
-            content: url(../../img/background/малина-1.png);
-            left: 0;
-            bottom: -24.5%;
-            position: absolute;
-
-            @include tablet {
-                content: url(../../img/background/малина-1_768.png);
-                bottom: -8%;
-            }
-
-            @include phone {
-                content: "";
-            }
-        }
+        
     }
 
 
@@ -56,10 +59,6 @@
     &__content {
         width: 100%;
         /* margin: 0 rem(82px); */
-
-        @include tablet {
-            margin: 0;
-        }
     }
 
 
@@ -88,21 +87,7 @@
                 display: none;
             }
         }
-
-        /* &::before {
-            content: url(../../img/icons/features/Combined-shape-2204.png);
-            position: absolute;
-            top: 23%;
-            right: -22%;
-
-            @include tablet {
-                content: "";
-            }
-
-            @include phone {
-                content: "";
-            }
-        } */
+       
 
         &:last-child {
             margin-right: 0;

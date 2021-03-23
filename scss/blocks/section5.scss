@@ -31,11 +31,32 @@
         }
     }
 
+    &::after {
+        content: url(../../img/pics/decor/Узор1_1100.png);
+        top: 74%;
+        left: 0%;
+        position: absolute;
+
+        @include tablet {
+            content: url(../../img/pics/decor/Узор1_768.png);
+            top: 82%;
+            left: 0%;
+            position: absolute;
+        }
+
+        @include phone {
+            content: url(../../img/pics/decor/Узор1-480.png);
+            top: 84%;
+            left: 0%;
+            position: absolute;
+        }
+    }
+
     &__container {
-        height: rem(652px);
+        /* height: rem(652px); */
         position: relative;
-        padding: rem(59px) rem(79px) rem(67px);
-        @include flexCol-JCsb-ALIfs($align-items: center);
+        padding: 0 rem(79px) 0;
+        @include flexCol-JCsb-ALIfs($justify-content:center, $align-items: center);
 
         @include tablet {
             padding: rem(180px) rem(22px);
@@ -43,36 +64,7 @@
 
         @include phone {
             padding: rem(96px) rem(10px) rem(82px);
-        }
-
-        &::before {
-            content: url(../../img/pics/decor/Узор1_1100.png);
-            top: 74%;
-            left: 0%;
-            position: absolute;
-
-            @include tablet {
-                content: url(../../img/pics/decor/Узор1_768.png);
-                top: 82%;
-                left: 0%;
-                position: absolute;
-            }
-
-            @include phone {
-                content: url(../../img/pics/decor/Узор1-480.png);
-                top: 84%;
-                left: 0%;
-                position: absolute;
-            }
-        }
-
-        &::after {
-            content: url(../../img/pics/decor/Ягоды2_1100.png);
-            left: -185%;
-            bottom: -207.5%;
-            position: absolute;
-        }
-
+        }    
     }
 
     &__title {
@@ -126,18 +118,5 @@
         @include phone {
             margin-bottom: rem(41px);
         }
-
-
-        /* &::before {
-            content: "";
-            display: block;
-            position: absolute;
-            width: rem(83px);
-            height: rem(83px);
-            background: $light;
-            border-radius: 50%;
-            left: 45%;
-            top: -14%;
-        } */
     }
 }
