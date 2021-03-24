@@ -24,6 +24,7 @@
 
         @include phone {
             @include baseFont($font-size: rem(19px), $line-height: rem(18px), $font-weight: 800, $color: $btnColorLight);
+            padding: 21px 37px;
         }
     }
 

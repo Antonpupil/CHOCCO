@@ -17,11 +17,11 @@
         @include flexCol-JCsb-ALIfs($justify-content: center, $align-items: center);
 
         @include tablet {
-            padding: rem(173px) rem(147px) rem(180px);
+            padding: rem(173px) 0 rem(180px);
         }
 
         @include phone {
-            padding: rem(87px) rem(10px) rem(81px);
+            padding: rem(87px) 0  rem(81px);
         }
     }
 
@@ -30,15 +30,40 @@
         text-transform: uppercase;
         margin-bottom: rem(58px);
         position: relative;
+        width: 100%;
+        text-align: center;
 
         @include tablet {
             margin-bottom: rem(32px);
-            width: max-content;
+            /* width: max-content; */
         }
 
         @include phone {
             @include H2font ($font-size: rem(40px), $line-height: rem(36px), $color: $btnColorLight);
             margin-bottom: rem(39px);
+        }
+
+        &::after {
+            content: url(../../img/pics/decor/Ежевика_фото1.png);
+            right: -9%;
+            top: -392%;
+            position: absolute;
+
+            @include tablet {
+                content: url(../../img/pics/decor/Ежевика_фото1_768.png);
+                /* right: 0;
+                top: -8.5%; */
+                right: 0;
+                top: -441%;
+                position: absolute;
+            }
+
+            @include phone {
+                content: url(../../img/pics/decor/Ежевика_фото1_480.png);
+                right: 0;
+                top: -480%;
+                position: absolute;
+            }
         }
     }
 
@@ -53,29 +78,6 @@
 
             @include tablet {
                 content: "";
-            }
-        }
-
-        &::after {
-            content: url(../../img/pics/decor/Ежевика_фото1.png);
-            right: -9%;
-            top: -88%;
-            position: absolute;
-
-            @include tablet {
-                content: url(../../img/pics/decor/Ежевика_фото1_768.png);
-                /* right: 0;
-                top: -8.5%; */
-                right: -147px;
-                top: -66%;
-                position: absolute;
-            }
-
-            @include phone {
-                content: url(../../img/pics/decor/Ежевика_фото1_480.png);
-                right: 0;
-                top: -11%;
-                position: absolute;
             }
         }
     }

@@ -8,14 +8,14 @@
         @include flexRow-JCfs-ALIc ($justify-content: space-between);
     }
     @include phone {
-        padding-right: rem(10px);
+        padding-right: rem(12px);
     }
 
 
     &__logo {
         fill: $light;
         margin-right: rem(40px);
-        width: 52.6px;
+        width: 53px;
         height: 38px;   
         flex-shrink: 0;     
     }

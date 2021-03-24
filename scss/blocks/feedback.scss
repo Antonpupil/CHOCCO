@@ -38,7 +38,8 @@
         position: relative;
 
         @include phone {
-            width: rem(224px);
+            /* width: rem(224px); */
+            width: 100%;
         }
     }
 
@@ -148,7 +149,7 @@
 
         @include phone {
             margin-left: rem(10px);
-            @include flexRow-JCfs-ALIc ($justify-content: space-between);
+            @include flexRow-JCfs-ALIc ($justify-content: center);
         }
     }
 

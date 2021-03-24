@@ -4,6 +4,10 @@
 
     @include tablet {
         flex-direction: column;
+        max-width: 468px;
+    }
+    @include phone {
+        max-width: 460px;
     }
 
     

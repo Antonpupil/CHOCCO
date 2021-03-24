@@ -33,19 +33,21 @@
 
 
     &__headline {
+        width: 100%;
         text-align: center;
         margin-bottom: rem(50px);
+        position: relative;
 
         &::before {
             content: url(../../img/background/raspberry1100.png);
             left: 0;
-            top: 67.5%;
+            top: 281.5%;
             position: absolute;
     
             @include tablet {
                 content: url(../../img/background/raspberry1100.png);
                 /* bottom: -8%; */
-                top: 76%;
+                top: 450%;
             }
     
             @include phone {
@@ -122,14 +124,16 @@
         @include baseFont($color: $baseFontColor);
         width: rem(436px);
         text-align: center;
-        margin: rem(20px) 0 0;
+        margin: rem(20px) auto 0;
 
         @include tablet {
-            margin: rem(6px) 0 0;
+            margin: rem(6px) auto 0;
         }
 
         @include phone {
-            margin: rem(12px) 0 0;
+            width: 100%;
+            margin: rem(12px) auto 0;
+            padding: 0 22px;
         }
     }
 }

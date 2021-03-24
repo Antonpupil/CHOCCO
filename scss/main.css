@@ -81,18 +81,19 @@ ul li {
   }
 }
 .hero__header {
-  /* margin-bottom: rem(31px); */
+  margin-bottom: 1.5rem;
 }
 @media screen and (max-width: 768px) {
   .hero__header {
     /* margin-bottom: rem(482px); */
-    margin-bottom: 22.2222222222rem;
+    margin-bottom: 17.1111111111rem;
     padding: 0 2rem 0 1.6666666667rem;
   }
 }
 @media screen and (max-width: 480px) {
   .hero__header {
-    margin-bottom: 20.5rem;
+    margin-bottom: 14.8888888889rem;
+    /* margin-bottom: rem(369px); */
     padding-left: 0.5555555556rem;
   }
 }
@@ -102,23 +103,52 @@ ul li {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 80px 0 49px 0;
+  /* padding: 16px 0 0 0; */
   position: relative;
 }
 @media screen and (max-width: 768px) {
   .hero__content {
-    min-height: none;
+    min-height: auto;
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     text-align: center;
+    /* padding: 0 0 49px 0; */
+    padding: 0;
   }
 }
 @media screen and (max-width: 480px) {
   .hero__content {
-    min-height: auto;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero__content::before {
+    content: url(../../img/pics/comp/comp768.png);
+    position: absolute;
+    /* top: 17.5%;
+    left: 19%; */
+    /* bottom: 80%;
+    left: 19%; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -136%);
+    /* padding: 0 rem(52px); */
+  }
+}
+@media screen and (max-width: 480px) {
+  .hero__content::before {
+    content: url(../../img/pics/comp/comp480.png);
+    position: absolute;
+    /* top: 12%;
+    left: 5%; */
+    /* bottom: 81%;
+    left: 15%; */
+    /* padding: 0 rem(52px); */
+    transform: translate(-48%, -138%);
+    padding: 0;
   }
 }
 .hero__title {
@@ -128,7 +158,7 @@ ul li {
   color: #FFFFFF;
   width: 38%;
   text-transform: uppercase;
-  margin-bottom: 1.1111111111rem;
+  margin: 0 0 19px;
 }
 @media screen and (max-width: 768px) {
   .hero__title {
@@ -162,12 +192,14 @@ ul li {
 }
 @media screen and (max-width: 480px) {
   .hero__text {
+    width: 16.4444444444rem;
     font-weight: 400;
     font-size: 1rem;
     line-height: 1.1111111111rem;
     color: #FFFFFF;
-    padding: 0 1.5555555556rem;
-    margin-bottom: 10.1666666667rem;
+    /* padding: 0 rem(28px); */
+    /* margin-bottom: rem(183px); */
+    margin: 0 auto 26px;
   }
 }
 .hero__btn {
@@ -182,22 +214,7 @@ ul li {
 }
 @media screen and (max-width: 768px) {
   .hero__btn::before {
-    content: url(../../img/pics/comp/comp768.png);
-    position: absolute;
-    /* top: 17.5%;
-    left: 19%; */
-    bottom: 445.5%;
-    left: -106%;
-    padding: 0 2.8888888889rem;
-  }
-}
-@media screen and (max-width: 480px) {
-  .hero__btn::before {
-    content: url(../../img/pics/comp/comp480.png);
-    position: absolute;
-    top: 12%;
-    left: 5%;
-    padding: 0 2.8888888889rem;
+    content: "";
   }
 }
 .hero__btn::after {
@@ -263,7 +280,7 @@ ul li {
 }
 
 .container {
-  height: 100%;
+  min-height: 100%;
   width: 100%;
   max-width: 1100px;
   margin: 0 auto;
@@ -298,13 +315,13 @@ ul li {
 }
 @media screen and (max-width: 480px) {
   .header {
-    padding-right: 0.5555555556rem;
+    padding-right: 0.6666666667rem;
   }
 }
 .header__logo {
   fill: #FFFFFF;
   margin-right: 2.2222222222rem;
-  width: 52.6px;
+  width: 53px;
   height: 38px;
   flex-shrink: 0;
 }
@@ -415,6 +432,7 @@ ul li {
     font-size: 1.0555555556rem;
     line-height: 1rem;
     color: #365A49;
+    padding: 21px 37px;
   }
 }
 .btn__theme_dark {
@@ -581,20 +599,22 @@ ul li {
   }
 }
 .section1__headline {
+  width: 100%;
   text-align: center;
   margin-bottom: 2.7777777778rem;
+  position: relative;
 }
 .section1__headline::before {
   content: url(../../img/background/raspberry1100.png);
   left: 0;
-  top: 67.5%;
+  top: 281.5%;
   position: absolute;
 }
 @media screen and (max-width: 768px) {
   .section1__headline::before {
     content: url(../../img/background/raspberry1100.png);
     /* bottom: -8%; */
-    top: 76%;
+    top: 450%;
   }
 }
 @media screen and (max-width: 480px) {
@@ -677,16 +697,18 @@ ul li {
   color: #666666;
   width: 24.2222222222rem;
   text-align: center;
-  margin: 1.1111111111rem 0 0;
+  margin: 1.1111111111rem auto 0;
 }
 @media screen and (max-width: 768px) {
   .section1__subtitle {
-    margin: 0.3333333333rem 0 0;
+    margin: 0.3333333333rem auto 0;
   }
 }
 @media screen and (max-width: 480px) {
   .section1__subtitle {
-    margin: 0.6666666667rem 0 0;
+    width: 100%;
+    margin: 0.6666666667rem auto 0;
+    padding: 0 22px;
   }
 }
 
@@ -877,49 +899,6 @@ ul li {
     min-height: 44.4444444444rem;
   }
 }
-.section5::before {
-  content: url(../../img/pics/decor/Ягоды2_1100.png);
-  top: 83.5%;
-  right: 87.5%;
-  position: absolute;
-  z-index: 1;
-}
-@media screen and (max-width: 768px) {
-  .section5::before {
-    content: url(../../img/pics/decor/Ягоды2_768.png);
-    top: 86.5%;
-    right: 88%;
-  }
-}
-@media screen and (max-width: 480px) {
-  .section5::before {
-    content: url(../../img/pics/decor/Ягоды2_480.png);
-    top: 89.5%;
-    right: 80%;
-  }
-}
-.section5::after {
-  content: url(../../img/pics/decor/Узор1_1100.png);
-  top: 74%;
-  left: 0%;
-  position: absolute;
-}
-@media screen and (max-width: 768px) {
-  .section5::after {
-    content: url(../../img/pics/decor/Узор1_768.png);
-    top: 82%;
-    left: 0%;
-    position: absolute;
-  }
-}
-@media screen and (max-width: 480px) {
-  .section5::after {
-    content: url(../../img/pics/decor/Узор1-480.png);
-    top: 84%;
-    left: 0%;
-    position: absolute;
-  }
-}
 .section5__container {
   /* height: rem(652px); */
   position: relative;
@@ -1000,6 +979,52 @@ ul li {
     margin-bottom: 2.2777777778rem;
   }
 }
+.section5__paginator {
+  position: relative;
+  width: 100%;
+}
+.section5__paginator::before {
+  content: url(../../img/pics/decor/Ягоды2_1100.png);
+  top: 39.5%;
+  left: -80px;
+  position: absolute;
+  z-index: 1;
+}
+@media screen and (max-width: 768px) {
+  .section5__paginator::before {
+    content: url(../../img/pics/decor/Ягоды2_768.png);
+    top: 163%;
+    right: 0;
+    left: -3%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section5__paginator::before {
+    content: url(../../img/pics/decor/Ягоды2_480.png);
+    top: 98%;
+    left: -3%;
+  }
+}
+.section5__paginator::after {
+  content: url(../../img/pics/decor/Узор1_1100.png);
+  top: -39%;
+  left: -9%;
+  position: absolute;
+}
+@media screen and (max-width: 768px) {
+  .section5__paginator::after {
+    content: url(../../img/pics/decor/Узор1_768.png);
+    top: 94%;
+    left: -3%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section5__paginator::after {
+    content: url(../../img/pics/decor/Узор1-480.png);
+    top: 29%;
+    left: -3%;
+  }
+}
 
 .feedback {
   display: flex;
@@ -1049,7 +1074,8 @@ ul li {
 }
 @media screen and (max-width: 480px) {
   .feedback__paginator {
-    width: 12.4444444444rem;
+    /* width: rem(224px); */
+    width: 100%;
   }
 }
 .feedback__img {
@@ -1180,7 +1206,7 @@ ul li {
   .feedback__list {
     margin-left: 0.5555555556rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
   }
 }
@@ -1197,7 +1223,7 @@ ul li {
   .interactive-avatar {
     width: 3.5555555556rem;
     height: 3.5555555556rem;
-    margin-right: 0;
+    margin-right: 10px;
     border: none;
   }
   .interactive-avatar:nth-of-type(1) {
@@ -1264,12 +1290,12 @@ ul li {
 }
 @media screen and (max-width: 768px) {
   .section7__container {
-    padding: 9.6111111111rem 8.1666666667rem 10rem;
+    padding: 9.6111111111rem 0 10rem;
   }
 }
 @media screen and (max-width: 480px) {
   .section7__container {
-    padding: 4.8333333333rem 0.5555555556rem 4.5rem;
+    padding: 4.8333333333rem 0 4.5rem;
   }
 }
 .section7__title {
@@ -1280,12 +1306,13 @@ ul li {
   text-transform: uppercase;
   margin-bottom: 3.2222222222rem;
   position: relative;
+  width: 100%;
+  text-align: center;
 }
 @media screen and (max-width: 768px) {
   .section7__title {
     margin-bottom: 1.7777777778rem;
-    width: -webkit-max-content;
-    width: max-content;
+    /* width: max-content; */
   }
 }
 @media screen and (max-width: 480px) {
@@ -1295,6 +1322,30 @@ ul li {
     line-height: 2rem;
     color: #365A49;
     margin-bottom: 2.1666666667rem;
+  }
+}
+.section7__title::after {
+  content: url(../../img/pics/decor/Ежевика_фото1.png);
+  right: -9%;
+  top: -392%;
+  position: absolute;
+}
+@media screen and (max-width: 768px) {
+  .section7__title::after {
+    content: url(../../img/pics/decor/Ежевика_фото1_768.png);
+    /* right: 0;
+    top: -8.5%; */
+    right: 0;
+    top: -441%;
+    position: absolute;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section7__title::after {
+    content: url(../../img/pics/decor/Ежевика_фото1_480.png);
+    right: 0;
+    top: -480%;
+    position: absolute;
   }
 }
 .section7__form {
@@ -1311,30 +1362,6 @@ ul li {
     content: "";
   }
 }
-.section7__form::after {
-  content: url(../../img/pics/decor/Ежевика_фото1.png);
-  right: -9%;
-  top: -88%;
-  position: absolute;
-}
-@media screen and (max-width: 768px) {
-  .section7__form::after {
-    content: url(../../img/pics/decor/Ежевика_фото1_768.png);
-    /* right: 0;
-    top: -8.5%; */
-    right: -147px;
-    top: -66%;
-    position: absolute;
-  }
-}
-@media screen and (max-width: 480px) {
-  .section7__form::after {
-    content: url(../../img/pics/decor/Ежевика_фото1_480.png);
-    right: 0;
-    top: -11%;
-    position: absolute;
-  }
-}
 
 .form {
   display: flex;
@@ -1343,6 +1370,12 @@ ul li {
 @media screen and (max-width: 768px) {
   .form {
     flex-direction: column;
+    max-width: 468px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .form {
+    max-width: 460px;
   }
 }
 .form__col {
