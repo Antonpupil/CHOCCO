@@ -88,7 +88,7 @@
         &::before {
             content: url(../../img/pics/decor/Ягоды2_1100.png);
             top: 39.5%;
-            left: -80px;
+            left: rem(-80px);
             position: absolute;
             z-index: 1;
 

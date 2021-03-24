@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     position: relative;
-    margin: 0 85px;
+    margin: 0 rem(85px);
 
     @include tablet {
         margin: 0;

@@ -56,7 +56,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        /* padding: 16px 0 0 0; */
+        /* padding: rem(16px) 0 0 0; */
         position: relative;
 
         @include tablet {
@@ -67,7 +67,7 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-            /* padding: 0 0 49px 0; */
+            /* padding: 0 0 rem(49px) 0; */
             padding: 0;
         }
 
@@ -108,7 +108,7 @@
         @include H2font($line-height: rem(59px));
         width: 38%;
         text-transform: uppercase;
-        margin: 0 0 19px;
+        margin: 0 0 rem(19px);
 
         @include tablet {
             width: auto;
@@ -124,12 +124,12 @@
     &__text {
         width: rem(371px);
         @include baseFont(rem(21px), 25px);
-        margin-bottom: 33px;
+        margin-bottom: rem(33px);
         position: relative;
 
         @include tablet {
             /* margin-bottom: rem(256px); */
-            margin: 0 auto 24px;
+            margin: 0 auto rem(24px);
         }
 
         @include phone {
@@ -137,7 +137,7 @@
             @include baseFont($line-height: rem(20px));
             /* padding: 0 rem(28px); */
             /* margin-bottom: rem(183px); */
-            margin: 0 auto 26px;
+            margin: 0 auto rem(26px);
         }
     }
 
@@ -175,7 +175,7 @@
 
     &__icons {
         position: relative;
-        margin-top: 65px;
+        margin-top: rem(65px);
 
         @include tablet {
             display: none;
