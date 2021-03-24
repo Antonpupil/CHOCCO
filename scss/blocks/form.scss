@@ -6,17 +6,7 @@
         flex-direction: column;
     }
 
-    &::before {
-        content: url(../../img/background/ягода_1.png);
-        left: -3%;
-        bottom: -6%;
-        position: absolute;
-
-        @include tablet {
-            content: "";
-        }
-    }
-
+    
     &__col {
         flex: 1;
         margin-right: rem(25px);

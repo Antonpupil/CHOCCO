@@ -539,23 +539,6 @@ ul li {
   min-height: 36.2222222222rem;
   position: relative;
 }
-.section1::before {
-  content: url(../../img/background/raspberry1100.png);
-  left: 0;
-  top: 67.5%;
-  position: absolute;
-}
-@media screen and (max-width: 768px) {
-  .section1::before {
-    content: url(../../img/background/raspberry1100.png);
-    bottom: -8%;
-  }
-}
-@media screen and (max-width: 480px) {
-  .section1::before {
-    content: "";
-  }
-}
 @media screen and (max-width: 768px) {
   .section1 {
     min-height: 55.5555555556rem;
@@ -591,6 +574,23 @@ ul li {
 .section1__headline {
   text-align: center;
   margin-bottom: 2.7777777778rem;
+}
+.section1__headline::before {
+  content: url(../../img/background/raspberry1100.png);
+  left: 0;
+  top: 67.5%;
+  position: absolute;
+}
+@media screen and (max-width: 768px) {
+  .section1__headline::before {
+    content: url(../../img/background/raspberry1100.png);
+    bottom: -8%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section1__headline::before {
+    content: "";
+  }
 }
 @media screen and (max-width: 480px) {
   .section1__headline {
@@ -1266,28 +1266,6 @@ ul li {
   margin-bottom: 3.2222222222rem;
   position: relative;
 }
-.section7__title::before {
-  content: url(../../img/pics/decor/Ежевика_фото1.png);
-  right: -66%;
-  top: -387%;
-  position: absolute;
-}
-@media screen and (max-width: 768px) {
-  .section7__title::before {
-    content: url(../../img/pics/decor/Ежевика_фото1_768.png);
-    right: 0;
-    top: -8.5%;
-    position: absolute;
-  }
-}
-@media screen and (max-width: 480px) {
-  .section7__title::before {
-    content: url(../../img/pics/decor/Ежевика_фото1_480.png);
-    right: 0;
-    top: -11%;
-    position: absolute;
-  }
-}
 @media screen and (max-width: 768px) {
   .section7__title {
     margin-bottom: 1.7777777778rem;
@@ -1304,6 +1282,42 @@ ul li {
     margin-bottom: 2.1666666667rem;
   }
 }
+.section7__form {
+  position: relative;
+}
+.section7__form::before {
+  content: url(../../img/background/ягода_1.png);
+  left: -3%;
+  bottom: -6%;
+  position: absolute;
+}
+@media screen and (max-width: 768px) {
+  .section7__form::before {
+    content: "";
+  }
+}
+.section7__form::after {
+  content: url(../../img/pics/decor/Ежевика_фото1.png);
+  right: -9%;
+  top: -88%;
+  position: absolute;
+}
+@media screen and (max-width: 768px) {
+  .section7__form::after {
+    content: url(../../img/pics/decor/Ежевика_фото1_768.png);
+    right: 0;
+    top: -8.5%;
+    position: absolute;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section7__form::after {
+    content: url(../../img/pics/decor/Ежевика_фото1_480.png);
+    right: 0;
+    top: -11%;
+    position: absolute;
+  }
+}
 
 .form {
   display: flex;
@@ -1312,17 +1326,6 @@ ul li {
 @media screen and (max-width: 768px) {
   .form {
     flex-direction: column;
-  }
-}
-.form::before {
-  content: url(../../img/background/ягода_1.png);
-  left: -3%;
-  bottom: -6%;
-  position: absolute;
-}
-@media screen and (max-width: 768px) {
-  .form::before {
-    content: "";
   }
 }
 .form__col {

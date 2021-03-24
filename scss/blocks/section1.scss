@@ -2,22 +2,6 @@
     min-height: rem(652px);
     position: relative;
 
-    &::before {
-        content: url(../../img/background/raspberry1100.png);
-        left: 0;
-        top: 67.5%;
-        position: absolute;
-
-        @include tablet {
-            content: url(../../img/background/raspberry1100.png);
-            bottom: -8%;
-        }
-
-        @include phone {
-            content: "";
-        }
-    }
-
     @include tablet {
         min-height: rem(1000px);
     }
@@ -50,6 +34,22 @@
     &__headline {
         text-align: center;
         margin-bottom: rem(50px);
+
+        &::before {
+            content: url(../../img/background/raspberry1100.png);
+            left: 0;
+            top: 67.5%;
+            position: absolute;
+    
+            @include tablet {
+                content: url(../../img/background/raspberry1100.png);
+                bottom: -8%;
+            }
+    
+            @include phone {
+                content: "";
+            }
+        }
 
         @include phone {
             margin-bottom: rem(53px);
