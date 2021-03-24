@@ -13,7 +13,7 @@
 
     &__container {
         position: relative;
-        padding:  0 rem(81px) rem(22px);
+        padding: 0 rem(81px) rem(22px);
         @include flexCol-JCsb-ALIfs($justify-content: center, $align-items: center);
 
         @include tablet {
@@ -42,7 +42,7 @@
         }
     }
 
-    &__form{
+    &__form {
         position: relative;
 
         &::before {
@@ -50,7 +50,7 @@
             left: -3%;
             bottom: -6%;
             position: absolute;
-    
+
             @include tablet {
                 content: "";
             }
@@ -64,8 +64,10 @@
 
             @include tablet {
                 content: url(../../img/pics/decor/Ежевика_фото1_768.png);
-                right: 0;
-                top: -8.5%;
+                /* right: 0;
+                top: -8.5%; */
+                right: -147px;
+                top: -66%;
                 position: absolute;
             }
 

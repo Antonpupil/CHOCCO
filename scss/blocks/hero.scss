@@ -37,7 +37,8 @@
         /* margin-bottom: rem(31px); */
 
         @include tablet {
-            margin-bottom: rem(482px);
+            /* margin-bottom: rem(482px); */
+            margin-bottom: rem(400px);
             padding: 0 rem(36px) 0 rem(30px);
         }
 
@@ -59,6 +60,7 @@
 
 
         @include tablet {
+            min-height: none;
             width: 100%;
             display: flex;
             flex-direction: column;
@@ -93,10 +95,11 @@
         width: rem(371px);
         @include baseFont(rem(21px), 25px);
         margin-bottom: 33px;
-        position: relative; 
+        position: relative;
 
         @include tablet {
-            margin-bottom: rem(256px);
+            /* margin-bottom: rem(256px); */
+            margin: 0 auto 24px;
         }
 
         @include phone {
@@ -119,8 +122,10 @@
             @include tablet {
                 content: url(../../img/pics/comp/comp768.png);
                 position: absolute;
-                top: 17.5%;
-                left: 19%;
+                /* top: 17.5%;
+                left: 19%; */
+                bottom: 445.5%;
+                left: -106%;
                 padding: 0 rem(52px);
             }
 
@@ -151,6 +156,10 @@
         position: relative;
         margin-top: 65px;
 
+        @include tablet {
+            display: none;
+        }
+
         &::before {
             content: url(../../img/pics/comp/leaf3_1100.png);
             position: absolute;
@@ -172,19 +181,20 @@
                 display: none;
             }
         }
-        &-list{
+
+        &-list {
             position: relative;
 
             &::before {
                 content: url(../../img/pics/comp/leaf1_1100.png);
                 position: absolute;
                 bottom: 102%;
-            right: -8%;
-        
+                right: -8%;
+
                 @include tablet {
                     top: 77%;
                 }
-        
+
                 @include phone {
                     top: 80.5%;
                 }
