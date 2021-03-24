@@ -67,17 +67,17 @@ ul li {
   justify-content: space-between;
   align-items: flex-start;
   padding: 1.2777777778rem 4.4444444444rem 2.8888888889rem;
-  background: url(../../img/pics/comp/Chocolates.png) right 5% bottom 58% no-repeat, url(../../img/background/big-leaf.png) right top 50% no-repeat;
+  background: url(../../../CHOCCO/img/pics/comp/Chocolates.png) right 5% bottom 58% no-repeat, url(../../../CHOCCO/img/background/big-leaf.png) right top 50% no-repeat;
 }
 @media screen and (max-width: 768px) {
   .hero__container {
-    background: url(../../img/background/big-leaf768.png) right top 26% no-repeat;
+    background: url(/img/background/big-leaf768.png) right top 26% no-repeat;
     padding: 0;
   }
 }
 @media screen and (max-width: 480px) {
   .hero__container {
-    background: url(../../img/background/big-leaf480.png) right top 17% no-repeat;
+    background: url(./../../img/background/big-leaf480.png) right top 17% no-repeat;
   }
 }
 .hero__header {
