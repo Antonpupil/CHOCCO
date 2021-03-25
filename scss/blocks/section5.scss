@@ -47,19 +47,19 @@
         }
 
         &::before {
-            content: url(../../img/pics/decor/Ягода-3.png);
+            content: url(../../../CHOCCO/img/pics/decor/Ягода-3.png);
             top: -33%;
             right: -6%;
             position: absolute;
 
             @include tablet {
-                content: url(../../img/pics/decor/Ягода-3__768.png);
+                content: url(../../../CHOCCO/img/pics/decor/Ягода-3__768.png);
                 top: -289%;
                 right: -3%;
             }
 
             @include phone {
-                content: url(../../img/pics/decor/Ягода-3__480.png);
+                content: url(../../../CHOCCO/img/pics/decor/Ягода-3__480.png);
                 top: -214%;
                 right: -2%;
             }
@@ -86,40 +86,40 @@
         width: 100%;
 
         &::before {
-            content: url(../../img/pics/decor/Ягоды2_1100.png);
+            content: url(../../../CHOCCO/img/pics/decor/Ягоды2_1100.png);
             top: 39.5%;
             left: rem(-80px);
             position: absolute;
             z-index: 1;
 
             @include tablet {
-                content: url(../../img/pics/decor/Ягоды2_768.png);
+                content: url(../../../CHOCCO/img/pics/decor/Ягоды2_768.png);
                 top: 163%;
                 right: 0;
                 left: -3%;
             }
 
             @include phone {
-                content: url(../../img/pics/decor/Ягоды2_480.png);
+                content: url(../../../CHOCCO/img/pics/decor/Ягоды2_480.png);
                 top: 98%;
                 left: -3%;
             }
         }
 
         &::after {
-            content: url(../../img/pics/decor/Узор1_1100.png);
+            content: url(../../../CHOCCO/img/pics/decor/Узор1_1100.png);
             top: -39%;
             left: -9%;
             position: absolute;
 
             @include tablet {
-                content: url(../../img/pics/decor/Узор1_768.png);
+                content: url(../../../CHOCCO/img/pics/decor/Узор1_768.png);
                 top: 94%;
                 left: -3%;
             }
 
             @include phone {
-                content: url(../../img/pics/decor/Узор1-480.png);
+                content: url(../../../CHOCCO/img/pics/decor/Узор1-480.png);
                 top: 29%;
                 left: -3%;
             }
