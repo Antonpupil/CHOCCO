@@ -71,13 +71,13 @@ ul li {
 }
 @media screen and (max-width: 768px) {
   .hero__container {
-    background: url(/img/background/big-leaf768.png) right top 26% no-repeat;
+    background: url(../../../CHOCCO/img/background/big-leaf768.png) right top 26% no-repeat;
     padding: 0;
   }
 }
 @media screen and (max-width: 480px) {
   .hero__container {
-    background: url(./../../img/background/big-leaf480.png) right top 17% no-repeat;
+    background: url(../../../CHOCCO/img/background/big-leaf480.png) right top 17% no-repeat;
   }
 }
 .hero__header {
@@ -126,7 +126,7 @@ ul li {
 }
 @media screen and (max-width: 768px) {
   .hero__content::before {
-    content: url(../../img/pics/comp/comp768.png);
+    content: url(../../../CHOCCO/img/pics/comp/comp768.png);
     position: absolute;
     /* top: 17.5%;
     left: 19%; */
@@ -140,7 +140,7 @@ ul li {
 }
 @media screen and (max-width: 480px) {
   .hero__content::before {
-    content: url(../../img/pics/comp/comp480.png);
+    content: url(../../../CHOCCO/img/pics/comp/comp480.png);
     position: absolute;
     /* top: 12%;
     left: 5%; */
@@ -207,7 +207,7 @@ ul li {
   position: relative;
 }
 .hero__btn::before {
-  content: url(../../img/pics/comp/berries1_1100.png);
+  content: url(../../../CHOCCO/img/pics/comp/berries1_1100.png);
   position: absolute;
   bottom: -230%;
   right: 18%;
@@ -218,7 +218,7 @@ ul li {
   }
 }
 .hero__btn::after {
-  content: url(../../img/pics/comp/leaf2_1100.png);
+  content: url(../../../CHOCCO/img/pics/comp/leaf2_1100.png);
   position: absolute;
   top: 259%;
   right: 20.5%;
@@ -238,7 +238,7 @@ ul li {
   }
 }
 .hero__icons::before {
-  content: url(../../img/pics/comp/leaf3_1100.png);
+  content: url(../../../CHOCCO/img/pics/comp/leaf3_1100.png);
   position: absolute;
   top: 40%;
   left: -5%;
@@ -249,7 +249,7 @@ ul li {
   }
 }
 .hero__icons::after {
-  content: url(../../img/pics/comp/berries2_1100.png);
+  content: url(../../../CHOCCO/img/pics/comp/berries2_1100.png);
   position: absolute;
   top: 80%;
   right: 1%;
@@ -263,7 +263,7 @@ ul li {
   position: relative;
 }
 .hero__icons-list::before {
-  content: url(../../img/pics/comp/leaf1_1100.png);
+  content: url(../../../CHOCCO/img/pics/comp/leaf1_1100.png);
   position: absolute;
   bottom: 102%;
   right: -8%;
@@ -582,11 +582,11 @@ ul li {
   justify-content: center;
   align-items: center;
   padding: 0 0 0.8888888889rem;
-  background: url(../../img/background/layer_list1100.png) left top 51% no-repeat;
+  background: url(../../../CHOCCO/img/background/layer_list1100.png) left top 51% no-repeat;
 }
 @media screen and (max-width: 768px) {
   .section1__container {
-    background: url(../../img/background/layer_list1100.png) left -1% top 12% no-repeat;
+    background: url(../../../CHOCCO/img/background/layer_list1100.png) left -1% top 12% no-repeat;
     /* padding: rem(279px) 0 rem(252px); */
     padding: 1.2777777778rem 0 0;
   }
@@ -605,14 +605,14 @@ ul li {
   position: relative;
 }
 .section1__headline::before {
-  content: url(../../img/background/raspberry1100.png);
+  content: url(../../../CHOCCO/img/background/raspberry1100.png);
   left: 0;
   top: 281.5%;
   position: absolute;
 }
 @media screen and (max-width: 768px) {
   .section1__headline::before {
-    content: url(../../img/background/raspberry1100.png);
+    content: url(../../../CHOCCO/img/background/raspberry1100.png);
     /* bottom: -8%; */
     top: 450%;
   }
@@ -944,21 +944,21 @@ ul li {
   }
 }
 .section5__title::before {
-  content: url(../../img/pics/decor/Ягода-3.png);
+  content: url(../../../CHOCCO/img/pics/decor/Ягода-3.png);
   top: -33%;
   right: -6%;
   position: absolute;
 }
 @media screen and (max-width: 768px) {
   .section5__title::before {
-    content: url(../../img/pics/decor/Ягода-3__768.png);
+    content: url(../../../CHOCCO/img/pics/decor/Ягода-3__768.png);
     top: -289%;
     right: -3%;
   }
 }
 @media screen and (max-width: 480px) {
   .section5__title::before {
-    content: url(../../img/pics/decor/Ягода-3__480.png);
+    content: url(../../../CHOCCO/img/pics/decor/Ягода-3__480.png);
     top: -214%;
     right: -2%;
   }
@@ -984,7 +984,7 @@ ul li {
   width: 100%;
 }
 .section5__paginator::before {
-  content: url(../../img/pics/decor/Ягоды2_1100.png);
+  content: url(../../../CHOCCO/img/pics/decor/Ягоды2_1100.png);
   top: 39.5%;
   left: -4.4444444444rem;
   position: absolute;
@@ -992,7 +992,7 @@ ul li {
 }
 @media screen and (max-width: 768px) {
   .section5__paginator::before {
-    content: url(../../img/pics/decor/Ягоды2_768.png);
+    content: url(../../../CHOCCO/img/pics/decor/Ягоды2_768.png);
     top: 163%;
     right: 0;
     left: -3%;
@@ -1000,27 +1000,27 @@ ul li {
 }
 @media screen and (max-width: 480px) {
   .section5__paginator::before {
-    content: url(../../img/pics/decor/Ягоды2_480.png);
+    content: url(../../../CHOCCO/img/pics/decor/Ягоды2_480.png);
     top: 98%;
     left: -3%;
   }
 }
 .section5__paginator::after {
-  content: url(../../img/pics/decor/Узор1_1100.png);
+  content: url(../../../CHOCCO/img/pics/decor/Узор1_1100.png);
   top: -39%;
   left: -9%;
   position: absolute;
 }
 @media screen and (max-width: 768px) {
   .section5__paginator::after {
-    content: url(../../img/pics/decor/Узор1_768.png);
+    content: url(../../../CHOCCO/img/pics/decor/Узор1_768.png);
     top: 94%;
     left: -3%;
   }
 }
 @media screen and (max-width: 480px) {
   .section5__paginator::after {
-    content: url(../../img/pics/decor/Узор1-480.png);
+    content: url(../../../CHOCCO/img/pics/decor/Узор1-480.png);
     top: 29%;
     left: -3%;
   }
@@ -1031,7 +1031,7 @@ ul li {
   justify-content: flex-start;
   align-items: flex-start;
   width: 100%;
-  background: url(../../img/background/layer2-1.png) right top 14% no-repeat, #F8FAF9;
+  background: url(../../../CHOCCO/img/background/layer2-1.png) right top 14% no-repeat, #F8FAF9;
   padding: 2.5555555556rem 0 2.5555555556rem 2.3333333333rem;
   position: relative;
 }
@@ -1043,13 +1043,13 @@ ul li {
     justify-content: flex-start;
     align-items: center;
     padding: 3.1111111111rem 1.2777777778rem 1.4444444444rem;
-    background: url(../../img/background/layer2-1_768.png) right top 5% no-repeat, #F8FAF9;
+    background: url(../../../CHOCCO/img/background/layer2-1_768.png) right top 5% no-repeat, #F8FAF9;
   }
 }
 @media screen and (max-width: 480px) {
   .feedback {
     padding: 3.1111111111rem 1.8333333333rem 0.4444444444rem 1.3888888889rem;
-    background: url(../../img/background/layer2-1_480.png) right top 7% no-repeat, #F8FAF9;
+    background: url(../../../CHOCCO/img/background/layer2-1_480.png) right top 7% no-repeat, #F8FAF9;
   }
 }
 .feedback__icon {
@@ -1325,14 +1325,14 @@ ul li {
   }
 }
 .section7__title::after {
-  content: url(../../img/pics/decor/Ежевика_фото1.png);
+  content: url(../../../CHOCCO/img/pics/decor/Ежевика_фото1.png);
   right: -9%;
   top: -392%;
   position: absolute;
 }
 @media screen and (max-width: 768px) {
   .section7__title::after {
-    content: url(../../img/pics/decor/Ежевика_фото1_768.png);
+    content: url(../../../CHOCCO/img/pics/decor/Ежевика_фото1_768.png);
     /* right: 0;
     top: -8.5%; */
     right: 0;
@@ -1342,7 +1342,7 @@ ul li {
 }
 @media screen and (max-width: 480px) {
   .section7__title::after {
-    content: url(../../img/pics/decor/Ежевика_фото1_480.png);
+    content: url(../../../CHOCCO/img/pics/decor/Ежевика_фото1_480.png);
     right: 0;
     top: -480%;
     position: absolute;
@@ -1352,7 +1352,7 @@ ul li {
   position: relative;
 }
 .section7__form::before {
-  content: url(../../img/background/ягода_1.png);
+  content: url(../../../CHOCCO/img/background/ягода_1.png);
   left: -3%;
   bottom: -6%;
   position: absolute;
@@ -1510,7 +1510,7 @@ ul li {
   margin-right: 0;
 }
 .form__btn::before {
-  content: url(../../img/background/лист-3_1.png);
+  content: url(../../../CHOCCO/img/background/лист-3_1.png);
   right: -16%;
   top: -173%;
   position: absolute;
@@ -1548,7 +1548,7 @@ ul li {
 }
 .radio__checkbox .radio__visible::before {
   content: "";
-  background: url(../../img/icons/checkmark.png) center center no-repeat;
+  background: url(../../../CHOCCO/img/icons/checkmark.png) center center no-repeat;
   background-size: cover;
 }
 @media screen and (max-width: 480px) {
