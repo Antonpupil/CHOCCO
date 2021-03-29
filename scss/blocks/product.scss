@@ -1,0 +1,6 @@
+.product {
+    &__title {
+        @include H2font ($font-size: rem(36px), $line-height: rem(43px), $color: $dark);
+        text-transform: uppercase;
+    }
+}

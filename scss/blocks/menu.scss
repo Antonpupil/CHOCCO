@@ -1,0 +1,23 @@
+.menu{
+    padding-bottom: 135px;
+    margin: 0 258px;
+    &__vertical{
+        @include flexCol-JCsb-ALIfs;
+        @include H2font ($font-size: rem(36px), $line-height: rem(72px), $font-weight: normal);
+
+
+    }
+    &__list{
+        @include flexRow-JCfs-ALIc ($justify-content: center);
+        flex-wrap: wrap;
+
+    }
+    &__item{
+
+    }
+
+    &__link{
+        text-decoration: none;
+        white-space: nowrap;
+    }
+}

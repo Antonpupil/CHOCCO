@@ -18,6 +18,7 @@
 
 
 //blocks
+@import "./blocks/maincontent.scss";
 @import "./blocks/hero.scss";
 @import "./blocks/container.scss";
 @import "./blocks/section.scss";
@@ -32,6 +33,9 @@
 @import "./blocks/features.scss";
 @import "./blocks/single-feature.scss";
 @import "./blocks/section2.scss";
+@import "./blocks/products-slider.scss";
+@import "./blocks/products.scss";
+@import "./blocks/product.scss";
 @import "./blocks/section3.scss";
 @import "./blocks/section4.scss";
 @import "./blocks/section5.scss";
@@ -42,3 +46,5 @@
 @import "./blocks/form.scss";
 @import "./blocks/radio.scss";
 @import "./blocks/fixed-menu.scss";
+@import "./blocks/menu.scss";
+@import "./blocks/fullscreen-menu.scss";
