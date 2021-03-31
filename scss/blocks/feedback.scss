@@ -1,7 +1,7 @@
 .feedback {
     @include flexRow-JCfs-ALIc($align-items: flex-start);
     width: 100%;
-    background: url(./img/background/layer2-1.png) right top 14% no-repeat, $forthBgrColor;
+    background: url(../../../CHOCCO/img/background/layer2-1.png) right top 14% no-repeat, $forthBgrColor;
     padding: rem(46px)  0 rem(46px) rem(42px);
     position: relative;
 
@@ -9,12 +9,12 @@
         min-width: 100%;
         @include flexCol-JCsb-ALIfs ($justify-content: flex-start, $align-items: center);
         padding: rem(56px) rem(23px) rem(26px);
-        background: url(../../img/background/layer2-1_768.png) right top 5% no-repeat, #F8FAF9;
+        background: url(../../../CHOCCO/img/background/layer2-1_768.png) right top 5% no-repeat, #F8FAF9;
     }
 
     @include phone {
         padding: rem(56px) rem(33px) rem(8px) rem(25px);
-        background: url(./img/background/layer2-1_480.png) right  top 7% no-repeat, #F8FAF9;
+        background: url(../../../CHOCCO/img/background/layer2-1_480.png) right  top 7% no-repeat, #F8FAF9;
     }
 
 
