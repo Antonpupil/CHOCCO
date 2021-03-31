@@ -66,6 +66,10 @@
             border: rem(3px) solid $borderColor;
             outline: none;
         }
+
+        &_error{
+            border: 1px solid red;
+        }
     }
 
     &__input-textarea {
@@ -142,5 +146,9 @@
             }
         }
 
+    }
+
+    &__error{
+        color: red;
     }
 }

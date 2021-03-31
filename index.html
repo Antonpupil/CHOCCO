@@ -76,7 +76,6 @@
                             </ul>
                         </div>                      
                     </div>
-                    
                 </div>
             </section>
             <section class="section1 section">
@@ -228,40 +227,42 @@
             <section class="section7 section">
                 <div class="container section7__container">
                     <h2 class="section7__title">закажите доставку</h2>
-                    <form action="" class="form section7__form">
+                    <form action="" class="form section7__form" id="order-form">
                         <div class="form__col">
                             <div class="form__row">
                                 <label class="form__block">
                                     <div class="form__title">Имя</div>
-                                    <input type="text" required formmethod="post"formmethod="post"  class="form__input" placeholder="Введите имя">
+                                    <input type="text" required formmethod="post" name="name" class="form__input" placeholder="Введите имя">
+                                    <div class="form__error"></div>
                                 </label>
                                 <label class="form__block">
                                     <div class="form__title">Телефон</div>
-                                    <input type="tel" required formmethod="post" class="form__input" placeholder="Введите номер телефона">
+                                    <input type="tel" required formmethod="post" name="phone" class="form__input" placeholder="Введите номер телефона">
+                                    <div class="form__error"></div>
                                 </label>
                             </div>
                             <div class="form__row">
                                 <label class="form__block">
                                     <div class="form__title">Улица</div>
-                                    <input type="text" required formmethod="post" class="form__input" placeholder="Введите название улицы">
+                                    <input type="text" formmethod="post" class="form__input" placeholder="Введите название улицы">
                                 </label>                                
                             </div>
                             <div class="form__row">
                                 <label class="form__block">
                                     <div class="form__title">Дом</div>
-                                    <input type="number" required formmethod="post" class="form__input">
+                                    <input type="number" formmethod="post" class="form__input">
                                 </label>
                                 <label class="form__block">
                                     <div class="form__title">Корпус</div>
-                                    <input type="text" required formmethod="post" class="form__input">
+                                    <input type="text" formmethod="post" class="form__input">
                                 </label>
                                 <label class="form__block">
                                     <div class="form__title">Квартира</div>
-                                    <input type="number" required formmethod="post" class="form__input">
+                                    <input type="number" formmethod="post" class="form__input">
                                 </label>
                                 <label class="form__block">
                                     <div class="form__title">Этаж</div>
-                                    <input type="number" required formmethod="post" maxlength="3" class="form__input">
+                                    <input type="number" formmethod="post" maxlength="3" class="form__input">
                                 </label>
                             </div>
                         </div>
@@ -269,7 +270,8 @@
                             <div class="form__row">
                                 <label class="form__block">
                                     <div class="form__title">Комментарий</div>
-                                    <textarea class="form__input  form__input-textarea"name="" id="" cols="30" rows="10"></textarea>
+                                    <textarea class="form__input form__input-textarea" name="comment"  cols="30" rows="10" required></textarea>
+                                    <div class="form__error"></div>
                                 </label>                                
                             </div>
                             <div class="form__controlls">
@@ -293,7 +295,7 @@
                                     </label>                                
                                 </div>
                             </div>
-                            <div class="form__btn">
+                            <div class="form__btn form__submit">
                                 <input type="submit" value="Заказать" class="btn btn__theme_dark">
                                 <input type="reset" value="Очистить" class="btn btn__theme_transparent">
                             </div>                         
@@ -305,7 +307,7 @@
             </section>
         </div>
     </div>
-    <div class="fullscreen-menu active">
+    <!-- <div class="fullscreen-menu active">
         <a href="" class="fullscreen-menu__close"></a>
         <nav class="menu menu__vertical">
             <ul class="menu__list">
@@ -346,9 +348,10 @@
             <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
             <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
         </ul>
-    </nav>
-    <script src="./JS/menu.js"></script>
-    <script type="text/javascript"></script>
+    </nav> -->
+    <!-- <script src="./JS/menu.js"></script>
+    <script type="text/javascript"></script> -->
+    <script src="./JS/validateForm.js"></script>
     
 </body>
 </html>
