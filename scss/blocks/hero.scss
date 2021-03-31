@@ -18,8 +18,10 @@
         @include flexCol-JCsb-ALIfs;
         padding: rem(23px) rem(80px) rem(52px);
         background:
-            url(../../../CHOCCO/img/pics/comp/Chocolates.png) right 5% bottom 58% no-repeat,
-            url(../../../CHOCCO/img/background/big-leaf.png) right top 50% no-repeat;
+            url(../../img/pics/comp/Chocolates.png) right 5% bottom 58% no-repeat,
+            url(/img/background/big-leaf.png) right top 50% no-repeat;
+            /* url(../../../CHOCCO/img/pics/comp/Chocolates.png) right 5% bottom 58% no-repeat,
+            url(../../../CHOCCO/img/background/big-leaf.png) right top 50% no-repeat; */
 
         @include tablet {
             background: url(../../../CHOCCO/img/background/big-leaf768.png) right top 26% no-repeat;
