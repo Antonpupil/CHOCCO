@@ -19,17 +19,15 @@
         padding: rem(23px) rem(80px) rem(52px);
         background:
             url(../../img/pics/comp/Chocolates.png) right 5% bottom 58% no-repeat,
-            url(/img/background/big-leaf.png) right top 50% no-repeat;
-            /* url(../../../CHOCCO/img/pics/comp/Chocolates.png) right 5% bottom 58% no-repeat,
-            url(../../../CHOCCO/img/background/big-leaf.png) right top 50% no-repeat; */
+            url(../../img/background/big-leaf.png) right top 50% no-repeat;
 
         @include tablet {
-            background: url(../../../CHOCCO/img/background/big-leaf768.png) right top 26% no-repeat;
+            background: url(../../img/background/big-leaf768.png) right top 26% no-repeat;
             padding: 0;
         }
 
         @include phone {
-            background: url(../../../CHOCCO/img/background/big-leaf480.png) right top 17% no-repeat;
+            background: url(../../img/background/big-leaf480.png) right top 17% no-repeat;
         }
 
 
@@ -80,7 +78,7 @@
         &::before {
 
             @include tablet {
-                content: url(../../../CHOCCO/img/pics/comp/comp768.png);
+                content: url(../../img/pics/comp/comp768.png);
                 position: absolute;
                 /* top: 17.5%;
                 left: 19%; */
@@ -93,7 +91,7 @@
             }
 
             @include phone {
-                content: url(../../../CHOCCO/img/pics/comp/comp480.png);
+                content: url(../../img/pics/comp/comp480.png);
                 position: absolute;
                 /* top: 12%;
                 left: 5%; */
@@ -148,7 +146,7 @@
         position: relative;
 
         &::before {
-            content: url(../../img/pics/comp/berries1_1100.png);/* ../../../CHOCCO/img/pics/comp/berries1_1100.png */
+            content: url(../../img/pics/comp/berries1_1100.png);
             position: absolute;
             bottom: -230%;
             right: 18%;
@@ -162,7 +160,7 @@
         }
 
         &::after {
-            content: url(/img/pics/comp/leaf2_1100.png);/* ../../../CHOCCO/img/pics/comp/leaf2_1100.png */
+            content: url(../../img/pics/comp/leaf2_1100.png);
             position: absolute;
             top: 259%;
             right: 20.5%;
@@ -184,7 +182,7 @@
         }
 
         &::before {
-            content: url(../../../CHOCCO/img/pics/comp/leaf3_1100.png);
+            content: url(../../img/pics/comp/leaf3_1100.png);
             position: absolute;
             top: 40%;
             left: -5%;
@@ -195,7 +193,7 @@
         }
 
         &::after {
-            content: url(../../../CHOCCO/img/pics/comp/berries2_1100.png);
+            content: url(../../img/pics/comp/berries2_1100.png);
             position: absolute;
             top: 80%;
             right: 1%;
@@ -209,7 +207,7 @@
             position: relative;
 
             &::before {
-                content: url(../../../CHOCCO/img/pics/comp/leaf1_1100.png);
+                content: url(../../img/pics/comp/leaf1_1100.png);
                 position: absolute;
                 bottom: 102%;
                 right: -8%;
