@@ -148,7 +148,7 @@
         position: relative;
 
         &::before {
-            content: url(../../../CHOCCO/img/pics/comp/berries1_1100.png);
+            content: url(../../img/pics/comp/berries1_1100.png);/* ../../../CHOCCO/img/pics/comp/berries1_1100.png */
             position: absolute;
             bottom: -230%;
             right: 18%;
@@ -162,7 +162,7 @@
         }
 
         &::after {
-            content: url(../../../CHOCCO/img/pics/comp/leaf2_1100.png);
+            content: url(/img/pics/comp/leaf2_1100.png);/* ../../../CHOCCO/img/pics/comp/leaf2_1100.png */
             position: absolute;
             top: 259%;
             right: 20.5%;
