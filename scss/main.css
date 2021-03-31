@@ -44,13 +44,12 @@ ul li {
   list-style: none;
 }
 
-.maincontent {
-  transform: translateY(-100%);
-  height: 100%;
-  transition: transform 1s;
-  will-change: transform;
-}
-
+/* .maincontent{
+    transform: translateY(-100%);
+    height: 100%;
+    transition: transform 1s;
+    will-change: transform;
+} */
 .hero {
   min-height: 36.2222222222rem;
   background-color: #61C4D9;
@@ -74,7 +73,9 @@ ul li {
   justify-content: space-between;
   align-items: flex-start;
   padding: 1.2777777778rem 4.4444444444rem 2.8888888889rem;
-  background: url(../../../CHOCCO/img/pics/comp/Chocolates.png) right 5% bottom 58% no-repeat, url(../../../CHOCCO/img/background/big-leaf.png) right top 50% no-repeat;
+  background: url(../../img/pics/comp/Chocolates.png) right 5% bottom 58% no-repeat, url(/img/background/big-leaf.png) right top 50% no-repeat;
+  /* url(../../../CHOCCO/img/pics/comp/Chocolates.png) right 5% bottom 58% no-repeat,
+  url(../../../CHOCCO/img/background/big-leaf.png) right top 50% no-repeat; */
 }
 @media screen and (max-width: 768px) {
   .hero__container {
@@ -1463,6 +1464,9 @@ ul li {
   border: 0.1666666667rem solid #DEE2BD;
   outline: none;
 }
+.form__input_error {
+  border: 1px solid red;
+}
 .form__input-textarea {
   height: 8.6666666667rem;
   resize: none;
@@ -1538,6 +1542,9 @@ ul li {
   .form__btn::before {
     content: "";
   }
+}
+.form__error {
+  color: red;
 }
 
 .radio {
