@@ -35,7 +35,7 @@
     }
 
     &__block {
-        @include flexCol-JCsb-ALIfs;
+        @include flexCol-JCsb-ALIfs ($justify-content: flex-start);
         flex: 1;
         margin-right: rem(16px);
 

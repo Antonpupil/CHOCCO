@@ -1424,7 +1424,7 @@ ul li {
 .form__block {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-start;
   flex: 1;
   margin-right: 0.8888888889rem;
