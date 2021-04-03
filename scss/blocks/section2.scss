@@ -1,5 +1,6 @@
 .section2{
     min-height: rem(642px);
+    background-color: $forthBgrColor;
 
     @include tablet {
         min-height: rem(816px);

@@ -1,7 +1,6 @@
 .features{
+    @include flexRow-JCfs-ALIc ($justify-content: space-between);
     width: auto;
-    display: flex;
-    justify-content: space-between;
     position: relative;
     margin: 0 rem(85px);
 
@@ -10,5 +9,14 @@
     }
     @include phone {
         flex-direction: column;
+        /* flex: 1; */
+        min-height: 565px;
+        margin-top: 0;
+        padding: 53px 0;
+
+        @include flexCol-JCsb-ALIfs ($justify-content: space-around);
+        min-height: 565px;
+        margin-top: 0;
+        padding: 37px 0;
     }
 }

@@ -145,31 +145,68 @@
                     </div>
                 </div>
             </section>
-            <section class="section2 section">
-                <div class="container section2__container">
-                    <div class="products-slider">
-                        <div class="products-slider__arrows">
-                            <a href="#" class="products-slider__arrow products-slider__arrow_direction-left"></a>
-                            <a href="#" class="products-slider__arrow products-slider__arrow_direction-right"></a>
-
-                        </div>
-                        <ul class="products">
-                            <li class="products-item product">
-                                <div class="product__container">
-                                    <div class="product__col"></div>
-                                    <div class="product__col">
-                                        <div class="product__ingredients"></div>
-                                        <h2 class="product__title">Батончик <q>Гранола виноград</q></h2>
+            <section class="section2 section slider">
+                <div class="container slider__container">
+                    <div class="slider__controls">
+                        <a href="#" class="slider__btn slider__btn_direction-left">
+                            <svg alt="arrowLeft" class="slider__arrow">
+                                <use xlink:href="./scss/layout/sprite.svg#arrowLeft"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="slider__btn slider__btn_direction-right">
+                            <svg alt="arrowRight" class="slider__arrow">
+                                <use xlink:href="./scss/layout/sprite.svg#arrowRight"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="slider__list_wrap">
+                        <ul class="slider__list">
+                            <li class="slider__item slide">
+                                <div class="slide__picture">
+                                    <div class="slide__img_wrap">
+                                        <!-- <img src="../CHOCCO/img/background/ellipse_light1100.png" alt="" class="slide__img_ellipse_light">
+                                        <img src="../CHOCCO/img/background/ellipse_dark1100.png" alt="" class="slide__img_ellipse_dark">
+                                        <img src="../CHOCCO/img/background/battons1100.png" alt="" class="slide__img"> -->
                                     </div>
-                                    <div class="product__text">
-                                        <p>Гранола из винограда, грецкого ореха и кунжутных семечек. В состав также входят: сухое молоко, заменитель сахара и какао бобы.</p>
+                                </div>
+                                <div class="slide__info">
+                                    <div class="slide__additional">
+                                        <svg alt="arm" class="slide__additional_icon">
+                                            <use xlink:href="./scss/layout/sprite.svg#product"></use>
+                                        </svg>
+                                        <div class="slide__additional-title">состав</div>
                                     </div>
-                                    <table class="product__values"></table>
+                                    <div class="slide__desc">
+                                        <div class="slide__title_wrap">
+                                            <h2 class="slide__title">Батончик <q>Гранола виноград</q></h2>
+                                        </div>
+                                        <div class="slide__desc_text">
+                                            Гранола из винограда, грецкого ореха и кунжутных семечек. В состав также входят: сухое молоко, заменитель сахара и какао бобы.
+                                        </div>
+                                        <div class="slide__values">
+                                            <div class="slide__values_row_tech">
+                                                <div class="slide__values_content">
+                                                    <div class="slide__values_label">Калорийность</div>
+                                                    <div class="slide__values_number">110 ккал</div>
+                                                </div>
+                                                <div class="slide__values_content">
+                                                    <div class="slide__values_label">Вес</div>
+                                                    <div class="slide__values_number">95 грамм</div>
+                                                </div>
+                                            </div>
+                                            <div class="slide__values_row">
+                                                <div class="slide__values_order">
+                                                    <h3 class="slide__values_price">140 ₽</h3>
+                                                    <div class="slide__btn btn btn__theme_dark">Заказать</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
 
                                 </div>
                             </li>
                         </ul>
-
                     </div>
                 </div>
             </section>
@@ -352,5 +389,6 @@
     <!-- <script src="./JS/menu.js"></script>
     <script type="text/javascript"></script> -->
     <script src="./JS/validateForm.js"></script>
+    <script src="./JS/slider.js"></script>
 </body>
 </html>

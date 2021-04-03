@@ -59,7 +59,7 @@
     };
 
     function validate(element) {
-        if (!element.checkValidity()) {
+        if (!element.val()) {
             element.value.trim();
             element.nextElementSibling.textContent = element.validationMessage;
             element.style.border = "1px solid red";

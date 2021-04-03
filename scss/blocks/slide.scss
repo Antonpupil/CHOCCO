@@ -1,0 +1,237 @@
+.slide {
+    @include flexRow-JCfs-ALIc ($justify-content: flex-start, $align-items: none);
+
+    @include tablet {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__picture {
+        flex: 1;
+        height: 100%;
+
+        @include tablet {
+            width: -webkit-fill-available;
+        }
+    }
+
+    &__info {
+        flex: 1;
+        text-align: center;
+        height: 100%;
+        padding-top: 100px;
+
+        @include tablet {
+            padding-top: 0px;
+        }
+
+        @include phone {
+            margin-top: -100px;
+        }
+    }
+
+    &__img {
+        &_wrap {
+            position: relative;
+            min-height: 100%;
+            background:
+                url(./../../img/background/battons1100.png) top 38% right 28% no-repeat,
+                url(./../../img/background/ellipse_dark1100.png) top 52% right 18% no-repeat,
+                url(./../../img/background/ellipse_light1100.png) top 63% right 16% no-repeat;
+            /* url(./../../img/pics/decor/leaf_contains1100.png) top 37% right 82% no-repeat; */
+
+            @include tablet {
+                background:
+                    url(./../../img/background/battons768.png) top 82% right 52% no-repeat, url(./../../img/background/ellipse_dark768.png) top 89% right 49% no-repeat, url(./../../img/background/ellipse_light768.png) top 96% right 49% no-repeat;
+            }
+
+            @include phone {
+                background:
+                    url(./../../img/background/battons480.png) top 47% right 57% no-repeat, url(./../../img/background/ellipse_dark480.png) top 60% right 52% no-repeat, url(./../../img/background/ellipse_light480.png) top 69% right 51% no-repeat;
+            }
+
+            &::before {
+                content: url(../../img/pics/decor/leaf_contains1100.png);
+                position: absolute;
+                top: 33%;
+                left: 16%;
+
+                @include tablet {
+                    content: url(../../img/pics/decor/leaf_contains768.png);
+                    top: 41%;
+                    left: 25%;
+                }
+
+                @include phone {
+                    content: url(../../img/pics/decor/leaf_contains480.png);
+                    top: 29%;
+                    left: 6%;
+                }
+            }
+
+            &::after {
+                content: url(../../img/pics/decor/leaf2_contains1100.png);
+                position: absolute;
+                top: 71%;
+                left: 81%;
+
+                @include tablet {
+                    content: url(../../img/pics/decor/leaf2_contains768.png);
+                    top: 90.5%;
+                    left: 62%;
+                }
+
+                @include phone {
+                    content: url(../../img/pics/decor/leaf2_contains480.png);
+                    top: 72.5%;
+                    left: 71%;
+                }
+            }
+        }
+    }
+
+    &__additional {
+        @include tablet {
+            display: none;
+        }
+
+        &_icon {
+            width: 46px;
+            height: 46px;
+        }
+    }
+
+    &__title {
+        @include H2font ($font-size: rem(36px), $line-height: rem(43px), $color: $dark);
+        text-transform: uppercase;
+
+        @include tablet {
+            @include H2font ($font-size: rem(30px), $line-height: rem(36px), $color: $black);
+            margin-left: -8px;
+        }
+
+        @include phone {
+            display: flex;
+            flex-direction: column;
+        }
+
+        & q {
+            quotes: "\201c""\201d";
+        }
+
+        &_wrap {
+            /* margin-bottom: 27px; */
+            display: flex;
+            flex-wrap: wrap;
+            min-height: 111px;
+
+            @include tablet {
+                margin-top: 35px;
+                margin-bottom: 16px;
+                min-height: 0;
+            }
+
+            @include phone {
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    &__desc {
+        text-align: left;
+        padding-left: 69px;
+        @include flexCol-JCsb-ALIfs;
+
+        @include tablet {
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            text-align: center;
+        }
+
+        &_text {
+            @include baseFont ($color: $baseFontColor);
+            padding-right: 121px;
+            margin-bottom: 24px;
+            position: relative;
+
+            @include tablet {
+                padding: 0 114px;
+                margin-bottom: 24px;
+            }
+
+            @include phone {
+                padding: 0 24px;
+            }
+        }
+    }
+
+
+
+    &__values {
+        position: relative;
+
+        &_content {
+            @include phone {
+                margin-right: 45px;
+            }
+        }
+
+        @include phone {
+            @include flexCol-JCsb-ALIfs ($justify-content: flex-start, $align-items: center);
+            width: 100%;
+        }
+
+        &_row {
+            display: flex;
+
+            &_tech {
+                margin-bottom: 25px;
+                display: flex;
+
+                @include tablet {
+                    margin-left: 26px;
+                }
+
+                @include phone {
+                    display: flex;
+                    text-align: left;
+                    width: 100%;
+                    margin-left: 202px;
+                }
+            }
+        }
+
+        &_number {
+            @include baseFont ($font-weight: bold, $color: $baseFontColor);
+
+            @include phone {
+                @include baseFont ($color: $black);
+            }
+        }
+
+        &_price {
+            @include H3font ($font-size: rem(60px), $line-height: rem(60px), $font-weight: 300, $color: $priceColor);
+            text-transform: uppercase;
+            margin-right: 32px;
+        }
+
+        &_order {
+            display: flex;
+        }
+
+        &_content {
+            @include baseFont ($color: $baseFontColor);
+            margin-right: 45px;
+
+            @include tablet {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+            }
+        }
+    }
+}

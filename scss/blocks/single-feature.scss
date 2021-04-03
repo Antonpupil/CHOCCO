@@ -1,7 +1,6 @@
 .single-feature {
-    display: flex;
+    @include flexRow-JCfs-ALIc ($display: flex, $justify-content: flex-start, $align-items: center);
     flex-direction: column;
-    align-items: center;
     max-width: rem(276px);
     position: relative;
 
@@ -11,18 +10,22 @@
 
     @include phone {
         flex-direction: row;
-        width: auto;
-        align-items: flex-end;
+        width: 100%;
         max-width: none;
+        @include flexRow-JCfs-ALIc ($align-items: flex-start);
+        margin-bottom: 0;
+        flex: 0;
     }
 
-    &__description{
+    &__description {
         text-align: center;
 
         @include phone {
             text-align: left;
             padding-bottom: rem(20px);
             padding-right: rem(32px);
+            @include flexCol-JCsb-ALIfs ($justify-content: flex-start);
+            padding-top: 6px;
         }
     }
 
@@ -91,7 +94,7 @@
             }
 
             @include phone {
-                @include baseFont( $line-height: rem(20px), $color: $baseFontColor);
+                @include baseFont($line-height: rem(20px), $color: $baseFontColor);
                 padding: 0;
                 margin-bottom: 0;
                 text-align: left;

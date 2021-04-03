@@ -8,6 +8,7 @@
 
     @include phone {
         min-height: rem(707px);
+        margin-bottom: 0;
     }
 
     &__container {
@@ -25,7 +26,7 @@
         @include phone {
             background: none;
             box-sizing: border-box;
-            padding: rem(53px) 0;
+            padding: rem(50px) 0 0 0;
         }
 
         
@@ -56,7 +57,7 @@
         }
 
         @include phone {
-            margin-bottom: rem(53px);
+            margin-bottom: 0;
         }
     }
 
@@ -132,7 +133,7 @@
 
         @include phone {
             width: 100%;
-            margin: rem(12px) auto 0;
+            margin: rem(7px) auto 0;
             padding: 0 rem(22px);
         }
     }

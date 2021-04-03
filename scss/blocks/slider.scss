@@ -1,0 +1,109 @@
+.slider {
+    &__container {
+        display: flex;
+        justify-content: center;
+
+        @include tablet {
+
+        }
+
+        @include phone {
+            padding: 0 10px;
+        }
+    }
+
+    &__controls {
+        width: 100%;
+        top: 47%;
+        position: absolute;
+        @include flexRow-JCfs-ALIc ($justify-content: space-between);
+        padding: 0 5%;
+
+        @include tablet {
+            top: 29%;
+            padding: 0 20%;
+        }
+
+        @include phone {
+            top: 25%;
+            padding: 0px 2%;
+        }
+    }
+
+    &__item {
+        position: relative;
+        width: 100%;
+
+        &::before {
+            content: url(../../img/background/leaf_battons1100.png);
+            top: 65.5%;
+            right: 0%;
+            position: absolute;
+
+            @include tablet {
+                content: url(../../img/background/leaf_battons768.png);
+                top: 71.5%;
+
+            }
+
+            @include phone {
+                content: url(../../img/background/leaf_battons480.png);
+                top: 74.5%;
+                right: -2%;
+            }
+        }
+
+        &::after {
+            content: url(../../img/pics/decor/blueberry1100.png);
+            top: 95%;
+            right: 1.5%;
+            position: absolute;
+
+            @include tablet {
+                content: url(../../img/pics/decor/blueberry768.png);
+                top: 89%;
+                right: 1%;
+            }
+
+            @include phone {
+                content: url(../../img/pics/decor/blueberry480.png);
+                top: 92%;
+                right: -2%;
+            }
+        }
+    }
+
+    &__list {
+        display: flex;
+        position: relative;
+        transition: right 1s;
+        will-change: right;
+        min-height: 100%;
+
+        &_wrap {
+            /* overflow: hidden; */
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &__btn {
+        z-index: 1;
+        display: flex;
+
+        &_direction-right {
+            left: 932px;
+        }
+
+        &_direction-left {
+            right: -9px;
+        }
+    }
+
+    &__arrow {
+        width: rem(24px);
+        height: rem(40px);
+        stroke: $black;
+        fill: none;
+    }
+}
