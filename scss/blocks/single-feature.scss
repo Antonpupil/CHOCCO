@@ -25,7 +25,7 @@
             padding-bottom: rem(20px);
             padding-right: rem(32px);
             @include flexCol-JCsb-ALIfs ($justify-content: flex-start);
-            padding-top: 6px;
+            padding-top: rem(6px);
         }
     }
 

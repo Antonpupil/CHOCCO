@@ -19,14 +19,14 @@
         flex: 1;
         text-align: center;
         height: 100%;
-        padding-top: 100px;
+        padding-top: rem(100px);
 
         @include tablet {
-            padding-top: 0px;
+            padding-top: rem(0px);
         }
 
         @include phone {
-            margin-top: -100px;
+            margin-top: rem(-100px);
         }
     }
 
@@ -96,8 +96,8 @@
         }
 
         &_icon {
-            width: 46px;
-            height: 46px;
+            width: rem(46px);
+            height: rem(46px);
         }
     }
 
@@ -107,7 +107,7 @@
 
         @include tablet {
             @include H2font ($font-size: rem(30px), $line-height: rem(36px), $color: $black);
-            margin-left: -8px;
+            margin-left: rem(-8px);
         }
 
         @include phone {
@@ -120,26 +120,26 @@
         }
 
         &_wrap {
-            /* margin-bottom: 27px; */
+            /* margin-bottom: rem(27px); */
             display: flex;
             flex-wrap: wrap;
-            min-height: 111px;
+            min-height: rem(111px);
 
             @include tablet {
-                margin-top: 35px;
-                margin-bottom: 16px;
+                margin-top: rem(35px);
+                margin-bottom: rem(16px);
                 min-height: 0;
             }
 
             @include phone {
-                margin-bottom: 10px;
+                margin-bottom: rem(10px);
             }
         }
     }
 
     &__desc {
         text-align: left;
-        padding-left: 69px;
+        padding-left: rem(69px);
         @include flexCol-JCsb-ALIfs;
 
         @include tablet {
@@ -153,17 +153,17 @@
 
         &_text {
             @include baseFont ($color: $baseFontColor);
-            padding-right: 121px;
-            margin-bottom: 24px;
+            padding-right: rem(121px);
+            margin-bottom: rem(24px);
             position: relative;
 
             @include tablet {
-                padding: 0 114px;
-                margin-bottom: 24px;
+                padding: 0 rem(114px);
+                margin-bottom: rem(24px);
             }
 
             @include phone {
-                padding: 0 24px;
+                padding: 0 rem(24px);
             }
         }
     }
@@ -175,7 +175,7 @@
 
         &_content {
             @include phone {
-                margin-right: 45px;
+                margin-right: rem(45px);
             }
         }
 
@@ -188,18 +188,18 @@
             display: flex;
 
             &_tech {
-                margin-bottom: 25px;
+                margin-bottom: rem(25px);
                 display: flex;
 
                 @include tablet {
-                    margin-left: 26px;
+                    margin-left: rem(26px);
                 }
 
                 @include phone {
                     display: flex;
                     text-align: left;
                     width: 100%;
-                    margin-left: 202px;
+                    margin-left: rem(202px);
                 }
             }
         }
@@ -215,7 +215,7 @@
         &_price {
             @include H3font ($font-size: rem(60px), $line-height: rem(60px), $font-weight: 300, $color: $priceColor);
             text-transform: uppercase;
-            margin-right: 32px;
+            margin-right: rem(32px);
         }
 
         &_order {
@@ -224,7 +224,7 @@
 
         &_content {
             @include baseFont ($color: $baseFontColor);
-            margin-right: 45px;
+            margin-right: rem(45px);
 
             @include tablet {
                 display: flex;

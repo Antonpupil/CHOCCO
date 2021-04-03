@@ -1,6 +1,6 @@
 .menu{
-    padding-bottom: 135px;
-    margin: 0 258px;
+    padding-bottom: rem(135px);
+    margin: 0 rem(258px);
     &__vertical{
         @include flexCol-JCsb-ALIfs;
         @include H2font ($font-size: rem(36px), $line-height: rem(72px), $font-weight: normal);
