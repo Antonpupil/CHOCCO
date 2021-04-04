@@ -40,6 +40,10 @@
 
     send.addEventListener("click", (e) => {
         e.preventDefault();
+        let isValid = validateForm(orderForm);
+        if(!isValid){
+            return;
+        }
     });
 
     function validateForm(orderForm) {
@@ -59,9 +63,9 @@
     };
 
     function validate(element) {
-        if (!element.val()) {
-            element.value.trim();
-            element.nextElementSibling.textContent = element.validationMessage;
+        let validationMessage = "Введите значение";
+        if (!element.value.length) {
+            element.nextElementSibling.textContent = validationMessage;
             element.style.border = "1px solid red";
             return false;
         } else {

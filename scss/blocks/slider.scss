@@ -2,6 +2,50 @@
     &__container {
         display: flex;
         justify-content: center;
+        align-items: center;
+        position: relative;
+
+        &::before {
+            content: url(../../img/background/leaf_battons1100.png);
+            top: 55.5%;
+            right: 0%;
+            position: absolute;
+    
+            @include tablet {
+                content: url(../../img/background/leaf_battons768.png);
+                top: 71.5%;
+    
+            }
+    
+            @include phone {
+                content: url(../../img/background/leaf_battons480.png);
+                top: 74.5%;
+                right: -2%;
+            }
+        }
+    
+        &::after {
+            content: url(../../img/pics/decor/blueberry1100.png);
+            top: 81%;
+            right: 1.5%;
+            position: absolute;
+    
+            @include tablet {
+                content: url(../../img/pics/decor/blueberry768.png);
+                top: 89%;
+                right: 1%;
+            }
+    
+            @include phone {
+                content: url(../../img/pics/decor/blueberry480.png);
+                top: 92%;
+                right: -2%;
+            }
+        }
+    
+        @include tablet {
+            min-height: rem(816px);
+        }   
 
         @include tablet {
 
@@ -14,7 +58,7 @@
 
     &__controls {
         width: 100%;
-        top: 47%;
+        top: 40%;
         position: absolute;
         @include flexRow-JCfs-ALIc ($justify-content: space-between);
         padding: 0 5%;
@@ -33,44 +77,6 @@
     &__item {
         position: relative;
         width: 100%;
-
-        &::before {
-            content: url(../../img/background/leaf_battons1100.png);
-            top: 65.5%;
-            right: 0%;
-            position: absolute;
-
-            @include tablet {
-                content: url(../../img/background/leaf_battons768.png);
-                top: 71.5%;
-
-            }
-
-            @include phone {
-                content: url(../../img/background/leaf_battons480.png);
-                top: 74.5%;
-                right: -2%;
-            }
-        }
-
-        &::after {
-            content: url(../../img/pics/decor/blueberry1100.png);
-            top: 95%;
-            right: 1.5%;
-            position: absolute;
-
-            @include tablet {
-                content: url(../../img/pics/decor/blueberry768.png);
-                top: 89%;
-                right: 1%;
-            }
-
-            @include phone {
-                content: url(../../img/pics/decor/blueberry480.png);
-                top: 92%;
-                right: -2%;
-            }
-        }
     }
 
     &__list {
@@ -78,13 +84,14 @@
         position: relative;
         transition: right 1s;
         will-change: right;
-        min-height: 100%;
+        min-height: 642px;
+        
 
         &_wrap {
-            /* overflow: hidden; */
+            overflow: hidden;
             display: flex;
             align-items: center;
-            width: 1100px;
+            padding-bottom: 111px;
         }
     }
 

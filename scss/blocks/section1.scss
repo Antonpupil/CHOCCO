@@ -44,6 +44,7 @@
             left: 0;
             top: 281.5%;
             position: absolute;
+            z-index: 100;
     
             @include tablet {
                 content: url(../../img/background/raspberry1100.png);

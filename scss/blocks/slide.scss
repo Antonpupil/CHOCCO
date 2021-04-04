@@ -1,6 +1,7 @@
 .slide {
     @include flexRow-JCfs-ALIc ($justify-content: flex-start);
-    width: 1100px;
+    /* width: 1100px; */
+    flex-shrink: 0;
 
     @include tablet {
         flex-direction: column;
@@ -114,7 +115,7 @@
             transform: translate(46%, 26%);
         }
 
-        &-title{
+        &-title {
             padding-top: 57px;
         }
     }
@@ -122,7 +123,7 @@
     &__title {
         @include H2font ($font-size: rem(36px), $line-height: rem(43px), $color: $dark);
         text-transform: uppercase;
-        
+
 
         @include tablet {
             @include H2font ($font-size: rem(30px), $line-height: rem(36px), $color: $black);
