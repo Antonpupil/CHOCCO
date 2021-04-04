@@ -1,6 +1,6 @@
 .slide {
     @include flexRow-JCfs-ALIc ($justify-content: flex-start);
-    /* width: 1100px; */
+    /* width: rem(1100px); */
     flex-shrink: 0;
 
     @include tablet {
@@ -94,13 +94,13 @@
     }
 
     &__additional {
-        width: 91px;
-        height: 91px;
+        width: rem(91px);
+        height: rem(91px);
         background-color: $secondBgrColor;
-        border-radius: 4px;
+        border-radius: rem(4px);
         position: relative;
-        margin-left: 70px;
-        margin-bottom: 24px;
+        margin-left: rem(70px);
+        margin-bottom: rem(24px);
 
         @include tablet {
             display: none;
@@ -116,7 +116,7 @@
         }
 
         &-title {
-            padding-top: 57px;
+            padding-top: rem(57px);
         }
     }
 

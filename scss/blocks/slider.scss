@@ -38,10 +38,10 @@
         position: relative;
         transition: right 1s;
         will-change: right;
-        min-height: 642px;
+        min-height: rem(642px);
 
         @include tablet {
-            min-height: 816px;
+            min-height: rem(816px);
         }
         
 
@@ -49,7 +49,7 @@
             overflow: hidden;
             display: flex;
             align-items: center;
-            padding-bottom: 111px;
+            padding-bottom: rem(111px);
 
             @include tablet {
                 padding-bottom: 0;
