@@ -45,7 +45,7 @@
 
             @include tablet {
                 background:
-                    url(./../../img/background/battons768.png) top 82% right 52% no-repeat, url(./../../img/background/ellipse_dark768.png) top 89% right 49% no-repeat, url(./../../img/background/ellipse_light768.png) top 96% right 49% no-repeat;
+                url(./../../img/background/battons768.png) top 83% right 52% no-repeat, url(./../../img/background/ellipse_dark768.png) top 89% right 49% no-repeat, url(./../../img/background/ellipse_light768.png) top 94% right 49% no-repeat;
             }
 
             @include phone {
@@ -144,6 +144,8 @@
             display: flex;
             flex-wrap: wrap;
             min-height: rem(111px);
+            justify-content: center;
+            width: 100%;
 
             @include tablet {
                 margin-top: rem(35px);

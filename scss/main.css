@@ -882,56 +882,56 @@ ul li {
   background-color: #F8FAF9;
   position: relative;
 }
-
-.slider__container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+@media screen and (max-width: 768px) {
+  .section2 {
+    min-height: 45.3333333333rem;
+  }
 }
-.slider__container::before {
+.section2::before {
   content: url(../../img/background/leaf_battons1100.png);
   top: 55.5%;
   right: 0%;
   position: absolute;
 }
 @media screen and (max-width: 768px) {
-  .slider__container::before {
+  .section2::before {
     content: url(../../img/background/leaf_battons768.png);
     top: 71.5%;
   }
 }
 @media screen and (max-width: 480px) {
-  .slider__container::before {
+  .section2::before {
     content: url(../../img/background/leaf_battons480.png);
     top: 74.5%;
-    right: -2%;
+    right: 0%;
   }
 }
-.slider__container::after {
+.section2::after {
   content: url(../../img/pics/decor/blueberry1100.png);
   top: 81%;
   right: 1.5%;
   position: absolute;
 }
 @media screen and (max-width: 768px) {
-  .slider__container::after {
+  .section2::after {
     content: url(../../img/pics/decor/blueberry768.png);
     top: 89%;
     right: 1%;
   }
 }
 @media screen and (max-width: 480px) {
-  .slider__container::after {
+  .section2::after {
     content: url(../../img/pics/decor/blueberry480.png);
     top: 92%;
-    right: -2%;
+    right: 0%;
   }
 }
-@media screen and (max-width: 768px) {
-  .slider__container {
-    min-height: 45.3333333333rem;
-  }
+
+.slider__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 @media screen and (max-width: 480px) {
   .slider__container {
@@ -970,11 +970,21 @@ ul li {
   will-change: right;
   min-height: 642px;
 }
+@media screen and (max-width: 768px) {
+  .slider__list {
+    min-height: 816px;
+  }
+}
 .slider__list_wrap {
   overflow: hidden;
   display: flex;
   align-items: center;
   padding-bottom: 111px;
+}
+@media screen and (max-width: 768px) {
+  .slider__list_wrap {
+    padding-bottom: 0;
+  }
 }
 .slider__btn {
   z-index: 1;
@@ -1041,7 +1051,7 @@ ul li {
 }
 @media screen and (max-width: 768px) {
   .slide__img_wrap {
-    background: url(./../../img/background/battons768.png) top 82% right 52% no-repeat, url(./../../img/background/ellipse_dark768.png) top 89% right 49% no-repeat, url(./../../img/background/ellipse_light768.png) top 96% right 49% no-repeat;
+    background: url(./../../img/background/battons768.png) top 83% right 52% no-repeat, url(./../../img/background/ellipse_dark768.png) top 89% right 49% no-repeat, url(./../../img/background/ellipse_light768.png) top 94% right 49% no-repeat;
   }
 }
 @media screen and (max-width: 480px) {
@@ -1144,6 +1154,8 @@ ul li {
   display: flex;
   flex-wrap: wrap;
   min-height: 6.1666666667rem;
+  justify-content: center;
+  width: 100%;
 }
 @media screen and (max-width: 768px) {
   .slide__title_wrap {
