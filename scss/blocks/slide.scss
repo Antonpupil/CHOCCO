@@ -1,5 +1,6 @@
 .slide {
-    @include flexRow-JCfs-ALIc ($justify-content: flex-start, $align-items: none);
+    @include flexRow-JCfs-ALIc ($justify-content: flex-start);
+    width: 1100px;
 
     @include tablet {
         flex-direction: column;
@@ -19,7 +20,8 @@
         flex: 1;
         text-align: center;
         height: 100%;
-        padding-top: rem(100px);
+        padding-top: rem(66px);
+        position: relative;
 
         @include tablet {
             padding-top: rem(0px);
@@ -91,6 +93,14 @@
     }
 
     &__additional {
+        width: 91px;
+        height: 91px;
+        background-color: $secondBgrColor;
+        border-radius: 4px;
+        position: relative;
+        margin-left: 70px;
+        margin-bottom: 24px;
+
         @include tablet {
             display: none;
         }
@@ -98,12 +108,21 @@
         &_icon {
             width: rem(46px);
             height: rem(46px);
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: translate(46%, 26%);
+        }
+
+        &-title{
+            padding-top: 57px;
         }
     }
 
     &__title {
         @include H2font ($font-size: rem(36px), $line-height: rem(43px), $color: $dark);
         text-transform: uppercase;
+        
 
         @include tablet {
             @include H2font ($font-size: rem(30px), $line-height: rem(36px), $color: $black);
