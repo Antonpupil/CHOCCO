@@ -1,8 +1,7 @@
 // normalize
 @import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
 
-//reset
-@import "./../css/reset.css";
+
 
 //scss
 @import "./layout/variables.scss";
@@ -12,6 +11,7 @@
 //layout
 @import "./layout/layout.scss";
 @import "./layout/base.scss";
+@import "./layout/reset.scss";
 
 //font
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700;800&display=swap');
