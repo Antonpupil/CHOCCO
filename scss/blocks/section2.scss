@@ -29,7 +29,7 @@
 
     &::after {
         content: url(../../img/pics/decor/blueberry1100.png);
-        top: 81%;
+        top: 95%;
         right: 1.5%;
         position: absolute;
 
@@ -41,7 +41,7 @@
 
         @include phone {
             content: url(../../img/pics/decor/blueberry480.png);
-            top: 92%;
+            top: 93%;
             right: 0%;
         }
     }

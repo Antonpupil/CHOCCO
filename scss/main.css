@@ -659,7 +659,7 @@ ul li {
 .section1__item-icon {
   flex: 0;
   margin: 0;
-  padding-top: 3.6111111111rem;
+  padding-bottom: 6.9444444444rem;
 }
 @media screen and (max-width: 768px) {
   .section1__item-icon {
@@ -908,7 +908,7 @@ ul li {
 }
 .section2::after {
   content: url(../../img/pics/decor/blueberry1100.png);
-  top: 81%;
+  top: 95%;
   right: 1.5%;
   position: absolute;
 }
@@ -922,7 +922,7 @@ ul li {
 @media screen and (max-width: 480px) {
   .section2::after {
     content: url(../../img/pics/decor/blueberry480.png);
-    top: 92%;
+    top: 93%;
     right: 0%;
   }
 }
@@ -940,22 +940,24 @@ ul li {
 }
 .slider__controls {
   width: 100%;
-  top: 40%;
+  top: 43%;
   position: absolute;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 5%;
+  z-index: 100;
+  transform: translate(0, -50%);
 }
 @media screen and (max-width: 768px) {
   .slider__controls {
-    top: 29%;
+    top: 32%;
     padding: 0 20%;
   }
 }
 @media screen and (max-width: 480px) {
   .slider__controls {
-    top: 25%;
+    top: 27%;
     padding: 0rem 2%;
   }
 }
@@ -987,15 +989,12 @@ ul li {
   }
 }
 .slider__btn {
-  z-index: 1;
+  /* z-index: 1; */
   display: flex;
-  transform: translate(-50%, 0);
+  /* transform: translate(-50%, 0); */
 }
 .slider__btn_direction-right {
   left: 51.7777777778rem;
-}
-.slider__btn_direction-left {
-  right: -0.5rem;
 }
 .slider__arrow {
   width: 1.3333333333rem;
