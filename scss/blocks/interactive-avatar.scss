@@ -15,13 +15,16 @@
         &:nth-of-type(2) { order: 1; }
         &:nth-of-type(3) { order: 3; }
 
-        &:hover {
+        /* &:hover {
             border: rem(4px) solid $btnColorLight;
-
-        }
+        } */
     }
 
     &:hover {
+        border: rem(4px) solid $btnColorLight;
+    }
+
+    &__active{
         border: rem(4px) solid $btnColorLight;
     }
 

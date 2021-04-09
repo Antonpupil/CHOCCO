@@ -94,6 +94,7 @@
     }
 
     &__additional {
+        cursor: pointer;
         width: rem(91px);
         height: rem(91px);
         background-color: $secondBgrColor;

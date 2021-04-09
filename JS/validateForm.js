@@ -35,15 +35,29 @@
             e.target.nextElementSibling.textContent = error.message;
             e.preventDefault();
         };
-
     });
 
     send.addEventListener("click", (e) => {
         e.preventDefault();
         let isValid = validateForm(orderForm);
-        if(!isValid){
+        const data = {
+            name:orderForm.elements.name.value,
+            phone:orderForm.elements.phone.value,
+            comment:orderForm.elements.comment.value,
+        };
+        console.log(data);
+
+        if (isValid){
+            const xhr = new XMLHttpRequest();
+            xhr.open('POST', 'https://webdev-api.loftschool.com/sendmail');
+            xhr.send(JSON.stringify(data));
+        } else {
+            return
+        };
+
+        /* if(!isValid){
             return;
-        }
+        } */
     });
 
     function validateForm(orderForm) {
