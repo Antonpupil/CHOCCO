@@ -1,0 +1,108 @@
+.team {
+    @include flexRow-JCfs-ALIc ($justify-content: space-between, $align-items: flex-start);
+
+    @include tablet {
+        @include flexCol-JCc-ALIfs ($align-items: center);
+        padding: 0 10%;
+    }
+
+    @include phone {}
+
+    &__version {
+        &__1100 {
+            margin: 0 78px;
+
+            @include tablet {
+                display: none;
+            }
+
+            .team__content {
+                position: absolute;
+                top: 100%;
+            }
+        }
+
+        &__780 {
+            display: none;
+
+            @include tablet {
+                display: flex;
+            }
+
+            .team__item {
+                margin-bottom: 10px;
+
+                @include tablet {
+                    margin-bottom: 6px;
+                }
+            }
+        }
+    }
+
+    &__item {
+        flex: 1;
+        text-align: center;
+        margin-right: 20px;
+        max-width: 220px;
+        position: relative;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        @include tablet {
+            flex: initial;
+            margin-right: 0;
+        }
+    }
+
+    &__member {
+        max-height: 290px;
+        margin-bottom: 21px;
+
+        @include tablet {
+            margin-bottom: 22px;
+        }
+    }
+
+    &__title {
+        @include flexRow-JCfs-ALIc ($display: inline-flex, $justify-content: center, $align-items: center);
+        @include H3font ($font-size: rem(21px), $line-height: rem(25px), $color: $dark);
+        margin-bottom: 8px;
+        border: none;
+        background: transparent;
+        outline: none;
+        cursor: pointer;
+
+        &::after{
+            content: "";
+            border: 6px solid transparent;
+            border-bottom-width: 0;
+            border-top-color: $btnColorLight;
+            margin-left: 4px;
+        }
+
+        @include tablet {
+            margin-bottom: 11px;
+            padding: 0;
+        }
+    }
+
+    &__content {
+        overflow: hidden;
+        transition: height 0.3s;
+        height: 0;
+    }
+
+    &__content-block {
+        text-align: center;
+
+        &__title {
+            @include H3font ($font-size: rem(18px), $line-height: rem(22px));
+        }
+
+        &__content {
+            @include baseFont ($font-weight: 300, $color: $baseFontColor);
+        }
+    }
+}
