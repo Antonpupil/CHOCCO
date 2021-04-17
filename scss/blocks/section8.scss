@@ -1,0 +1,12 @@
+.section8 {
+    min-height: $sectionHeight;
+
+    &__container {
+        position: relative;
+    }
+
+    &__map {
+        height: 652px;
+        width: 100%;
+    }
+}

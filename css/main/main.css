@@ -2530,3 +2530,14 @@ table {
 .modal.fancybox-button {
   display: none;
 }
+
+.section8 {
+  min-height: 642px;
+}
+.section8__container {
+  position: relative;
+}
+.section8__map {
+  height: 652px;
+  width: 100%;
+}
