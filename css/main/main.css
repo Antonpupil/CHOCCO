@@ -1573,10 +1573,10 @@ table {
 .section5__container {
   /* height: rem(652px); */
   position: relative;
-  padding: 0 4.3888888889rem 0;
+  padding: 60px 4.3888888889rem 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 @media screen and (max-width: 768px) {
@@ -1594,7 +1594,7 @@ table {
   font-size: 2.6666666667rem;
   line-height: 3.2222222222rem;
   color: #292929;
-  margin-bottom: 1.3888888889rem;
+  margin-bottom: 1.5555555556rem;
   text-transform: uppercase;
   position: relative;
   width: 100%;
@@ -1721,7 +1721,7 @@ table {
   /* @include flexRow-JCfs-ALIc($align-items: flex-start); */
   width: 100%;
   background: url(../../img/background/layer2-1.png) right top 14% no-repeat, #F8FAF9;
-  padding: 2.5555555556rem 0 2.5555555556rem 2.3333333333rem;
+  padding: 2.5555555556rem 0 1.6111111111rem 2.3333333333rem;
   position: relative;
 }
 @media screen and (max-width: 768px) {
@@ -1815,7 +1815,7 @@ table {
   font-size: 1.5rem;
   line-height: 1.7777777778rem;
   color: #000000;
-  margin-bottom: 0.8333333333rem;
+  margin-bottom: 0.6111111111rem;
 }
 @media screen and (max-width: 768px) {
   .feedback__title {
@@ -1964,6 +1964,137 @@ table {
   .section6 {
     min-height: 28.7777777778rem;
   }
+}
+.section6__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 62px;
+  margin-bottom: 31px;
+}
+.section6__container::before {
+  content: "";
+  background: url(../../img/pics/decor/leafS6_1100.png) no-repeat;
+  background-size: contain;
+  width: 5rem;
+  height: 4.27778rem;
+  position: absolute;
+  top: 13%;
+  right: 9%;
+}
+.section6__container::after {
+  content: "";
+  background: url(../../img/pics/decor/leafS6-2_1100.png) no-repeat;
+  background-size: contain;
+  width: 4rem;
+  height: 7.5rem;
+  position: absolute;
+  top: 69%;
+  left: 9%;
+}
+.section6__title {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2.6666666667rem;
+  line-height: 3.2222222222rem;
+  color: #292929;
+  margin-bottom: 31px;
+}
+
+.player__wrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.player__wrapper::before {
+  content: "";
+}
+.player__wrapper.active .player__splash {
+  display: none;
+}
+.player__wrapper.paused .player__start {
+  width: 14px;
+  height: 22px;
+  border: none;
+}
+.player__wrapper.paused .player__start::after, .player__wrapper.paused .player__start::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  top: 0;
+  bottom: 0;
+  background: #626262;
+}
+.player__wrapper.paused .player__start::after {
+  right: 0;
+}
+.player__wrapper.paused .player__start::before {
+  left: 0;
+}
+.player__splash {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  cursor: pointer;
+  background: url(../../img/fonts/splashscreen.png) center center/cover no-repeat;
+}
+.player__controls {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25px;
+  background: #404040;
+}
+.player__playback {
+  width: 446px;
+  height: 16px;
+  position: relative;
+}
+.player__playback::before {
+  content: "";
+  height: 4px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  background: #626262;
+}
+.player__playback-button {
+  background: #626262;
+  border-radius: 50px;
+  border: none;
+  width: 15px;
+  height: 15px;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.controls__play {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+}
+.controls__play-icon {
+  fill: #626262;
+}
+.controls__pause-icon {
+  fill: #626262;
+  display: none;
 }
 
 .section7 {
@@ -2361,4 +2492,41 @@ table {
   overflow: hidden;
   z-index: 10000;
   background: #333537;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  display: none;
+  background-color: #333537;
+  transition: opacity 0.3s;
+}
+.modal__container {
+  background: #FFFFFF;
+  padding: 35px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.modal__content {
+  margin-bottom: 18px;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.3333333333rem;
+  color: #000000;
+}
+.modal.error-modal .modal__content {
+  color: red;
+}
+.modal.fancybox-content {
+  padding: 0 !important;
+}
+.modal.fancybox-button {
+  display: none;
 }

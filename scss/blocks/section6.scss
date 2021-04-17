@@ -8,4 +8,38 @@
     @include phone {
         min-height: rem(518px);
     }
+
+    &__container {
+        @include flexCol-JCc-ALIfs ($justify-content: flex-start, $align-items: center);
+        padding-top: 62px;
+        margin-bottom: 31px;
+
+        &::before {
+            content: "";
+            background: url(../../img/pics/decor/leafS6_1100.png) no-repeat;
+            background-size: contain;
+            width: 5rem;
+            height: 4.27778rem;
+            position: absolute;
+            top: 13%;
+            right: 9%;
+        }
+
+        &::after {
+            content: "";
+            background: url(../../img/pics/decor/leafS6-2_1100.png) no-repeat;
+            background-size: contain;
+            width: 4rem;
+            height: 7.5rem;
+            position: absolute;
+            top: 69%;
+            left: 9%;
+        }
+    }
+
+    &__title {
+        text-transform: uppercase;
+        @include H2font ($color: $dark);
+        margin-bottom: 31px;
+    }
 }

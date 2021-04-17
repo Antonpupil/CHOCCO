@@ -16,8 +16,8 @@
     &__container {
         /* height: rem(652px); */
         position: relative;
-        padding: 0 rem(79px) 0;
-        @include flexCol-JCsb-ALIfs($justify-content:center, $align-items: center);
+        padding: 60px rem(79px) 0;
+        @include flexCol-JCsb-ALIfs($justify-content: flex-start, $align-items: center);
 
         @include tablet {
             padding: rem(180px) rem(22px);
@@ -30,7 +30,7 @@
 
     &__title {
         @include H2font($color: $dark);
-        margin-bottom: rem(25px);
+        margin-bottom: rem(28px);
         text-transform: uppercase;
         position: relative;
         width: 100%;

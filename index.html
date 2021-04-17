@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"><!-- shrink-to-fit для safari -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
     <link rel="stylesheet" href="./css/main/main.css">
     <title>CHOCCO</title>
 </head>
@@ -471,29 +472,91 @@
             </section>
             <section class="section6 section">
                 <div class="container section6__container">
+                    <H2 class="section6__title">как мы работаем</H2>
+                    <div class="section6__player player">
+                        <div class="player__wrapper">
+                            <div class="player__container">
+                                <div id="yt-player" class="player__elem"></div>
+                                <div class="player__splash"></div>
+                            </div>
+                            <div class="player__controls controls">
+                                <div class="player__start controls__start">
+                                    <a href="#" class="controls__play">
+                                        <svg width="12" height="17" class="controls__play-icon" alt="play">
+                                            <use xlink:href="./scss/layout/sprite.svg#play"></use>
+                                        </svg>
+                                        <svg width="24" height="24" class="controls__pause-icon" alt="pause">
+                                            <use xlink:href="./scss/layout/sprite.svg#pause"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <!-- <button class="player__start"></button> -->
+                                <div class="player__playback">
+                                    <button class="player__playback-button"></button>
+                                </div>
+                                <div class="player__duration">
+                                    <span class="player__duration-completed">0:00</span> :
+                                    <span class="player__duration-estimate">0:00</span>
+                                </div>
+                            </div>
+
+                            <!-- <div class="player__controls controls">
+                                <div class="controls__wrap">
+                                    <a href="#" class="controls__play">
+                                        <svg width="12" height="17" class="controls__play-icon">
+                                            <use xlink:href="./images/icons/sprite.svg#play"></use>
+                                        </svg>
+
+                                        <svg width="24" height="24" class="controls__pause-icon">
+                                            <use xlink:href="./images/icons/sprite.svg#pause"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="controls__wrap controls__wrap_type--progress">
+                                    <input class="controls__range" type="range" min="0" max="100" step="1" name="range" value="0">
+                                </div>
+                                <div class="controls__wrap">
+                                    <a href="#" class="controls__volume">
+                                        <svg width="24" height="24" class="controls__volume-icon controls__volume-icon_on">
+                                            <use xlink:href="./images/icons/sprite.svg#volume-up"></use>
+                                        </svg>
+
+                                        <svg width="24" height="24" class="controls__volume-icon controls__volume-icon_off">
+                                            <use xlink:href="./images/icons/sprite.svg#volume-off"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="controls__wrap controls__wrap_type--volume">
+                                    <input class="controls__range" type="range" min="0" max="1" step="0.1" name="volume" value="1">
+                                </div>
+                            </div> -->
+
+                        </div>
+                    </div>
                 </div>
             </section>
             <section class="section7 section">
                 <div class="container section7__container">
                     <h2 class="section7__title">закажите доставку</h2>
                     <form action="#" class="form section7__form" id="order-form">
+                        <input type="hidden" name="to" value="SW@mail.com">
                         <div class="form__col">
                             <div class="form__row">
                                 <label class="form__block">
                                     <div class="form__title">Имя</div>
-                                    <input type="text" required formmethod="post" name="name" class="form__input" placeholder="Введите имя">
+                                    <input type="text" required name="name" class="form__input" placeholder="Введите имя">
                                     <div class="form__error"></div>
                                 </label>
                                 <label class="form__block">
                                     <div class="form__title">Телефон</div>
-                                    <input type="tel" required formmethod="post" name="phone" id="phone-number" class="form__input" placeholder="Введите номер телефона">
+                                    <input type="tel" required name="phone" id="phone-number" class="form__input" placeholder="Введите номер телефона">
                                     <div class="form__error"></div>
                                 </label>
                             </div>
                             <div class="form__row">
                                 <label class="form__block">
                                     <div class="form__title">Улица</div>
-                                    <input type="text" formmethod="post" class="form__input" placeholder="Введите название улицы">
+                                    <input type="text" class="form__input" placeholder="Введите название улицы">
                                 </label>                                
                             </div>
                             <div class="form__row">
@@ -554,6 +617,14 @@
             </section>
         </div>
     </div>
+    <div id="modal" class="modal">
+        <div class="modal__container">
+            <div class="modal__content">
+                Cообщение отправлено
+            </div>
+            <div class="btn app-submit-btn btn__theme_dark">Закрыть</div>
+        </div>
+    </div>
     <!-- <div class="fullscreen-menu active">
         <a href="" class="fullscreen-menu__close"></a>
         <nav class="menu menu__vertical">
@@ -596,12 +667,17 @@
             <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
         </ul>
     </nav> -->
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.5/jquery.fancybox.min.js"></script>
     <!-- <script src="./JS/menu.js"></script>
     <script type="text/javascript"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./JS/slider.js"></script>
     <script src="./JS/accordeon.js"></script>
     <script src="./JS/tabs.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="./JS/player.js"></script>
+    <script src="./JS/modal.js"></script>
     <script src="./JS/validateForm.js"></script>
     
 </body>
