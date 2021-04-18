@@ -12,7 +12,7 @@
         flex-direction: row;
         width: 100%;
         max-width: none;
-        @include flexRow-JCfs-ALIc ($align-items: flex-start);
+        @include flexRow-JCfs-ALIc;
         margin-bottom: 0;
         flex: 0;
     }

@@ -53,6 +53,7 @@
         @include tablet {
             flex: initial;
             margin-right: 0;
+            max-width: 256px;
         }
     }
 
@@ -62,6 +63,11 @@
 
         @include tablet {
             margin-bottom: 22px;
+            /* новое */
+            margin-top: 12px;
+            width: 138px;
+            Height: 180px;
+            margin-bottom: 17px;
         }
     }
 
@@ -74,7 +80,7 @@
         outline: none;
         cursor: pointer;
 
-        &::after{
+        &::after {
             content: "";
             border: 6px solid transparent;
             border-bottom-width: 0;
@@ -86,6 +92,10 @@
             margin-bottom: 11px;
             padding: 0;
         }
+
+        @include phone {
+            margin-bottom: 0;
+        }
     }
 
     &__content {
@@ -96,6 +106,11 @@
 
     &__content-block {
         text-align: center;
+
+        /* новое */
+        @include phone {
+            @include flexCol-JCsb-ALIfs ($justify-content: center, $align-items: center);
+        }
 
         &__title {
             @include H3font ($font-size: rem(18px), $line-height: rem(22px));

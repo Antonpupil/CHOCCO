@@ -1,6 +1,5 @@
 .slide {
     @include flexRow-JCfs-ALIc ($justify-content: flex-start);
-    /* width: rem(1100px); */
     flex-shrink: 0;
 
     @include tablet {
@@ -186,7 +185,7 @@
             }
 
             @include phone {
-                padding: 0 rem(24px);
+                padding: 2px rem(24px);
             }
         }
     }

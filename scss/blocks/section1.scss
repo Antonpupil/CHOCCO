@@ -1,6 +1,35 @@
 .section1 {
     min-height: rem(652px);
     position: relative;
+    background: url(../../img/background/layer_list1100.png) left top 51% no-repeat;
+
+    @include tablet {
+        background: url(../../img/background/layer_list1100.png) left -1% top 12% no-repeat;
+        padding: rem(279px) 0 0;
+    }
+
+    @include phone {
+        background: none;
+        box-sizing: border-box;
+        padding: rem(50px) 0 0 0;
+    }
+
+    &::before {
+        content: url(../../img/background/raspberry1100.png);
+        left: 0;
+        top: 68.5%;
+        position: absolute;
+        z-index: 100;
+
+        @include tablet {
+            content: url(../../img/background/raspberry1100.png);
+            top: 76%;
+        }
+
+        @include phone {
+            content: "";
+        }
+    }
 
     @include tablet {
         min-height: rem(1000px);
@@ -13,23 +42,12 @@
 
     &__container {
         position: relative;
-        @include flexCol-JCc-ALIfs($justify-content: center, $align-items: center);
+        @include flexCol-JCc-ALIfs($justify-content: flex-start, $align-items: center);
         padding: 0 0 rem(16px);
-        background: url(../../img/background/layer_list1100.png) left top 51% no-repeat;
 
         @include tablet {
-            background: url(../../img/background/layer_list1100.png) left -1% top 12% no-repeat;
-            /* padding: rem(279px) 0 rem(252px); */
-            padding: rem(23px) 0 0;
+            padding: 0;
         }
-
-        @include phone {
-            background: none;
-            box-sizing: border-box;
-            padding: rem(50px) 0 0 0;
-        }
-
-        
     }
 
 
@@ -39,24 +57,6 @@
         margin-bottom: rem(50px);
         position: relative;
 
-        &::before {
-            content: url(../../img/background/raspberry1100.png);
-            left: 0;
-            top: 281.5%;
-            position: absolute;
-            z-index: 100;
-    
-            @include tablet {
-                content: url(../../img/background/raspberry1100.png);
-                /* bottom: -8%; */
-                top: 450%;
-            }
-    
-            @include phone {
-                content: "";
-            }
-        }
-
         @include phone {
             margin-bottom: 0;
         }
@@ -64,7 +64,6 @@
 
     &__content {
         width: 100%;
-        /* margin: 0 rem(82px); */
     }
 
 
@@ -80,11 +79,11 @@
             margin-bottom: rem(36px);
         }
 
-        &-img{
+        &-img {
             max-width: none;
         }
 
-        &-icon{
+        &-icon {
             flex: 0;
             margin: 0;
             padding-bottom: rem(125px);
@@ -93,7 +92,7 @@
                 display: none;
             }
         }
-       
+
 
         &:last-child {
             margin-right: 0;
@@ -111,7 +110,6 @@
     &__title {
         @include H2font($color: $dark);
         text-transform: uppercase;
-        /* margin: 0 0 rem(20px) 0; */
 
         @include tablet {
             margin: 0;
@@ -135,7 +133,7 @@
         @include phone {
             width: 100%;
             margin: rem(7px) auto 0;
-            padding: 0 rem(22px);
+            padding: 6px rem(22px) 0;
         }
     }
 }

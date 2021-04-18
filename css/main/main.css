@@ -649,6 +649,38 @@ table {
 .section1 {
   min-height: 36.2222222222rem;
   position: relative;
+  background: url(../../img/background/layer_list1100.png) left top 51% no-repeat;
+}
+@media screen and (max-width: 768px) {
+  .section1 {
+    background: url(../../img/background/layer_list1100.png) left -1% top 12% no-repeat;
+    padding: 15.5rem 0 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section1 {
+    background: none;
+    box-sizing: border-box;
+    padding: 2.7777777778rem 0 0 0;
+  }
+}
+.section1::before {
+  content: url(../../img/background/raspberry1100.png);
+  left: 0;
+  top: 68.5%;
+  position: absolute;
+  z-index: 100;
+}
+@media screen and (max-width: 768px) {
+  .section1::before {
+    content: url(../../img/background/raspberry1100.png);
+    top: 76%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section1::before {
+    content: "";
+  }
 }
 @media screen and (max-width: 768px) {
   .section1 {
@@ -665,23 +697,13 @@ table {
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   padding: 0 0 0.8888888889rem;
-  background: url(../../img/background/layer_list1100.png) left top 51% no-repeat;
 }
 @media screen and (max-width: 768px) {
   .section1__container {
-    background: url(../../img/background/layer_list1100.png) left -1% top 12% no-repeat;
-    /* padding: rem(279px) 0 rem(252px); */
-    padding: 1.2777777778rem 0 0;
-  }
-}
-@media screen and (max-width: 480px) {
-  .section1__container {
-    background: none;
-    box-sizing: border-box;
-    padding: 2.7777777778rem 0 0 0;
+    padding: 0;
   }
 }
 .section1__headline {
@@ -690,25 +712,6 @@ table {
   margin-bottom: 2.7777777778rem;
   position: relative;
 }
-.section1__headline::before {
-  content: url(../../img/background/raspberry1100.png);
-  left: 0;
-  top: 281.5%;
-  position: absolute;
-  z-index: 100;
-}
-@media screen and (max-width: 768px) {
-  .section1__headline::before {
-    content: url(../../img/background/raspberry1100.png);
-    /* bottom: -8%; */
-    top: 450%;
-  }
-}
-@media screen and (max-width: 480px) {
-  .section1__headline::before {
-    content: "";
-  }
-}
 @media screen and (max-width: 480px) {
   .section1__headline {
     margin-bottom: 0;
@@ -716,7 +719,6 @@ table {
 }
 .section1__content {
   width: 100%;
-  /* margin: 0 rem(82px); */
 }
 .section1__item {
   flex: 1;
@@ -762,7 +764,6 @@ table {
   line-height: 3.2222222222rem;
   color: #292929;
   text-transform: uppercase;
-  /* margin: 0 0 rem(20px) 0; */
 }
 @media screen and (max-width: 768px) {
   .section1__title {
@@ -795,7 +796,7 @@ table {
   .section1__subtitle {
     width: 100%;
     margin: 0.3888888889rem auto 0;
-    padding: 0 1.2222222222rem;
+    padding: 6px 1.2222222222rem 0;
   }
 }
 
@@ -849,7 +850,7 @@ table {
     max-width: none;
     display: flex;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
     margin-bottom: 0;
     flex: 0;
   }
@@ -1086,7 +1087,6 @@ table {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  /* width: rem(1100px); */
   flex-shrink: 0;
 }
 @media screen and (max-width: 768px) {
@@ -1283,7 +1283,7 @@ table {
 }
 @media screen and (max-width: 480px) {
   .slide__desc_text {
-    padding: 0 1.3333333333rem;
+    padding: 2px 1.3333333333rem;
   }
 }
 .slide__values {
@@ -1421,8 +1421,8 @@ table {
     font-size: 2.2222222222rem;
     line-height: 2rem;
     color: #000000;
-    border: 1px solid #000000;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding-top: 113px;
   }
 }
 
@@ -1482,6 +1482,7 @@ table {
   .team__item {
     flex: initial;
     margin-right: 0;
+    max-width: 256px;
   }
 }
 .team__member {
@@ -1491,6 +1492,11 @@ table {
 @media screen and (max-width: 768px) {
   .team__member {
     margin-bottom: 22px;
+    /* новое */
+    margin-top: 12px;
+    width: 138px;
+    Height: 180px;
+    margin-bottom: 17px;
   }
 }
 .team__title {
@@ -1520,6 +1526,11 @@ table {
     padding: 0;
   }
 }
+@media screen and (max-width: 480px) {
+  .team__title {
+    margin-bottom: 0;
+  }
+}
 .team__content {
   overflow: hidden;
   transition: height 0.3s;
@@ -1527,6 +1538,15 @@ table {
 }
 .team__content-block {
   text-align: center;
+  /* новое */
+}
+@media screen and (max-width: 480px) {
+  .team__content-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .team__content-block__title {
   font-weight: bold;
@@ -2137,6 +2157,16 @@ table {
   padding-top: 62px;
   margin-bottom: 31px;
 }
+@media screen and (max-width: 768px) {
+  .section6__container {
+    padding-top: 68px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section6__container {
+    padding-top: 112px;
+  }
+}
 .section6__container::before {
   content: "";
   background: url(../../img/pics/decor/leafS6_1100.png) no-repeat;
@@ -2146,6 +2176,20 @@ table {
   position: absolute;
   top: 13%;
   right: 9%;
+}
+@media screen and (max-width: 768px) {
+  .section6__container::before {
+    top: 20%;
+    right: 4%;
+    width: 75px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section6__container::before {
+    top: 26%;
+    right: 1%;
+    width: 60px;
+  }
 }
 .section6__container::after {
   content: "";
@@ -2157,6 +2201,18 @@ table {
   top: 69%;
   left: 9%;
 }
+@media screen and (max-width: 768px) {
+  .section6__container::after {
+    top: 55%;
+    left: -2%;
+    height: 112px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section6__container::after {
+    top: 64%;
+  }
+}
 .section6__title {
   text-transform: uppercase;
   font-weight: bold;
@@ -2164,6 +2220,19 @@ table {
   line-height: 3.2222222222rem;
   color: #292929;
   margin-bottom: 31px;
+}
+@media screen and (max-width: 768px) {
+  .section6__title {
+    margin-bottom: 41px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section6__title {
+    font-weight: bold;
+    font-size: 2.2222222222rem;
+    line-height: 2rem;
+    color: #292929;
+  }
 }
 
 .player__wrapper {
@@ -2704,10 +2773,20 @@ table {
 .section8 {
   min-height: 642px;
 }
+@media screen and (max-width: 480px) {
+  .section8 {
+    min-height: 482px;
+  }
+}
 .section8__container {
   position: relative;
 }
 .section8__map {
   height: 652px;
   width: 100%;
+}
+@media screen and (max-width: 480px) {
+  .section8__map {
+    height: 482px;
+  }
 }

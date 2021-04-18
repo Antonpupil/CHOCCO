@@ -1,6 +1,10 @@
 .section8 {
     min-height: $sectionHeight;
 
+    @include phone {
+        min-height: 482px;
+    }
+
     &__container {
         position: relative;
     }
@@ -8,5 +12,9 @@
     &__map {
         height: 652px;
         width: 100%;
+
+        @include phone {
+            height: 482px;
+        }
     }
 }
