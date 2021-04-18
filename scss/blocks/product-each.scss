@@ -1,0 +1,98 @@
+.product-each {
+    display: flex;
+    background: $black;
+    opacity: 0.7;
+    z-index: 1;
+    height: 100%;
+
+
+    &__link {
+        min-width: rem(102px);
+        position: relative;
+
+        @include tablet{
+            min-width: rem(99px);
+        }
+
+        @include phone{
+             min-width: 90px;
+        }
+    }
+
+    &__title {
+        white-space: nowrap;
+        transform: rotate(-90deg);
+        transform-origin: left;
+        display: block;
+        position: absolute;
+        bottom: 7px;
+        left: 50%;
+        margin: 0;
+        text-transform: none;
+        @include H2font;
+
+        @include tablet{
+            bottom: 11px;
+            left: 55%;
+        }
+
+        @include phone{
+            @include  H2font ($font-size: rem(40px), $line-height: rem(48px));
+            bottom: 16px;
+        }
+    }
+
+    &__content {
+        max-width: 500px;
+        background: rgba(51, 53, 55, 0.9);
+        position: relative;
+        color: $light;
+        width: 0;
+        overflow: hidden;
+        transition: width 0.3s;
+      }
+
+      &__text {
+        @include baseFont ($font-size: rem(16px), $line-height: rem(24px));
+        padding: rem(30px) rem(80px) rem(38px) rem(40px);
+      }
+
+      &__close {
+        fill: $cross;
+        position: absolute;
+        top: 2%;
+        right: 5%;
+      }
+
+      &_one &__link {
+        background: linear-gradient(to right, rgba(0,0,0,.5), rgba(0,0,0,.5)), url("../../img/background/milk1100.png") no-repeat center;
+        background-size: cover;
+      }
+    
+      &_two &__link {
+        background: linear-gradient(to right, rgba(0,0,0,.5), rgba(0,0,0,.5)), url("../../img/background/fruits1100.png") no-repeat center;
+        background-size: cover;
+      }
+    
+      &_three &__link {
+        background: linear-gradient(to right, rgba(0,0,0,.5), rgba(0,0,0,.5)), url("../../img/background/berries1100.png") no-repeat center;
+        background-size: cover;
+      }
+
+      &:not(.active) {
+        @include phone {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          z-index: 0;
+        }
+      }
+    
+      &.active &__link {
+        @include phone {
+          transform: translateX(0) !important;
+        }
+      }
+    
+
+}

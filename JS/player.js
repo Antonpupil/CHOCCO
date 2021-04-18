@@ -1,4 +1,5 @@
 let player;
+
 const playerContainer = $(".player__wrapper");
 
 let eventsInit = () => {

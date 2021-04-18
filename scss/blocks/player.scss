@@ -90,4 +90,12 @@
             cursor: pointer;
         }
     }
+
+    &.played .controls__play-icon {
+        display: none;
+    }
+    
+    &.played .controls__pause-icon {
+        display: block;
+    }
 }

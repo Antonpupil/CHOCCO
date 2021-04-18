@@ -1,4 +1,8 @@
-.section4{
+.section4 {
+    background: url(../../img/background/menu1100.png) center center/cover no-repeat;
+    background-color: $black;
+    position: relative;
+    opacity: 0.8;
 
     min-height: $sectionHeight +10px;
 
@@ -8,5 +12,57 @@
 
     @include phone {
         min-height: rem(634px);
+    }
+
+    &__title {
+        @include H2font;
+        text-align: left;
+        padding: 111px 84px 0;
+        text-transform: uppercase;
+
+        @include tablet{
+        padding: 84px 40px 0;
+        }
+
+        @include phone{
+            @include H2font ($font-size: rem(40px), $line-height: rem(36px));
+            padding: 75px 10px 0;
+        }
+    }
+
+    &__menu {
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        @include flexRow-JCfs-ALIc ($justify-content: flex-end, $align-items: center);
+        width: 100%;
+    }
+
+    &::before {
+        content: "";
+        background: url("../../img/pics/decor/Ягода-2-1.png") no-repeat;
+        background-size: 100%;
+        width: rem(104px);
+        height: rem(114px);
+        position: absolute;
+        top: 0;
+        left: 3%;
+        transform: translateY(-50%);
+        z-index: 1;
+
+        @include tablet{
+            width: rem(87px);
+            height: rem(104px);
+            top: -11px;
+            left: 5%;
+        }
+
+        @include phone {
+            width: rem(89px);
+            height: rem(98px);
+            top: 5px;
+            left: 1%;
+        }
     }
 }

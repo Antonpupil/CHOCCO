@@ -1542,6 +1542,10 @@ table {
 }
 
 .section4 {
+  background: url(../../img/background/menu1100.png) center center/cover no-repeat;
+  background-color: #000000;
+  position: relative;
+  opacity: 0.8;
   min-height: 652px;
 }
 @media screen and (max-width: 768px) {
@@ -1552,6 +1556,166 @@ table {
 @media screen and (max-width: 480px) {
   .section4 {
     min-height: 35.2222222222rem;
+  }
+}
+.section4__title {
+  font-weight: bold;
+  font-size: 2.6666666667rem;
+  line-height: 3.2222222222rem;
+  color: #FFFFFF;
+  text-align: left;
+  padding: 111px 84px 0;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 768px) {
+  .section4__title {
+    padding: 84px 40px 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section4__title {
+    font-weight: bold;
+    font-size: 2.2222222222rem;
+    line-height: 2rem;
+    color: #FFFFFF;
+    padding: 75px 10px 0;
+  }
+}
+.section4__menu {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+.section4::before {
+  content: "";
+  background: url("../../img/pics/decor/Ягода-2-1.png") no-repeat;
+  background-size: 100%;
+  width: 5.7777777778rem;
+  height: 6.3333333333rem;
+  position: absolute;
+  top: 0;
+  left: 3%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+@media screen and (max-width: 768px) {
+  .section4::before {
+    width: 4.8333333333rem;
+    height: 5.7777777778rem;
+    top: -11px;
+    left: 5%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section4::before {
+    width: 4.9444444444rem;
+    height: 5.4444444444rem;
+    top: 5px;
+    left: 1%;
+  }
+}
+
+.product-each {
+  display: flex;
+  background: #000000;
+  opacity: 0.7;
+  z-index: 1;
+  height: 100%;
+}
+.product-each__link {
+  min-width: 5.6666666667rem;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .product-each__link {
+    min-width: 5.5rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .product-each__link {
+    min-width: 90px;
+  }
+}
+.product-each__title {
+  white-space: nowrap;
+  transform: rotate(-90deg);
+  transform-origin: left;
+  display: block;
+  position: absolute;
+  bottom: 7px;
+  left: 50%;
+  margin: 0;
+  text-transform: none;
+  font-weight: bold;
+  font-size: 2.6666666667rem;
+  line-height: 3.2222222222rem;
+  color: #FFFFFF;
+}
+@media screen and (max-width: 768px) {
+  .product-each__title {
+    bottom: 11px;
+    left: 55%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .product-each__title {
+    font-weight: bold;
+    font-size: 2.2222222222rem;
+    line-height: 2.6666666667rem;
+    color: #FFFFFF;
+    bottom: 16px;
+  }
+}
+.product-each__content {
+  max-width: 500px;
+  background: rgba(51, 53, 55, 0.9);
+  position: relative;
+  color: #FFFFFF;
+  width: 0;
+  overflow: hidden;
+  transition: width 0.3s;
+}
+.product-each__text {
+  font-weight: 400;
+  font-size: 0.8888888889rem;
+  line-height: 1.3333333333rem;
+  color: #FFFFFF;
+  padding: 1.6666666667rem 4.4444444444rem 2.1111111111rem 2.2222222222rem;
+}
+.product-each__close {
+  fill: #0D0E0F;
+  position: absolute;
+  top: 2%;
+  right: 5%;
+}
+.product-each_one .product-each__link {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/background/milk1100.png") no-repeat center;
+  background-size: cover;
+}
+.product-each_two .product-each__link {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/background/fruits1100.png") no-repeat center;
+  background-size: cover;
+}
+.product-each_three .product-each__link {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/background/berries1100.png") no-repeat center;
+  background-size: cover;
+}
+@media screen and (max-width: 480px) {
+  .product-each:not(.active) {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .product-each.active .product-each__link {
+    transform: translateX(0) !important;
   }
 }
 
@@ -2080,6 +2244,12 @@ table {
   left: 0;
   transform: translate(-50%, -50%);
   cursor: pointer;
+}
+.player.played .controls__play-icon {
+  display: none;
+}
+.player.played .controls__pause-icon {
+  display: block;
 }
 
 .controls__play {
