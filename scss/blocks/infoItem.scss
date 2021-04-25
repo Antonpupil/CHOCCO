@@ -38,8 +38,9 @@
             width: rem(68px);
             height: rem(68px);
             fill: $dark;
-/*             margin: 22% auto;
- */        }
+            /*             margin: 22% auto;
+ */
+        }
 
         &_smile {
             position: absolute;
@@ -49,25 +50,32 @@
             width: rem(68px);
             height: rem(68px);
             fill: $dark;
-/*             margin: 22% auto;
- */        }
 
-        &_arm {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: rem(68px);
-            height: rem(68px);
-            fill: $dark;
-/*             margin: 22% auto;
- */        }
+            /* @include phone {
+                top: 43%;
+                left: 51%;
+            } */
+                /*             margin: 22% auto;
+ */
+            }
 
+            &_arm {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: rem(68px);
+                height: rem(68px);
+                fill: $dark;
+                /*             margin: 22% auto;
+ */
+            }
+
+        }
+
+        &__text {
+            width: rem(114px);
+            @include baseFont(rem(16px), rem(19px), $color: $light);
+            padding-right: rem(40px);
+        }
     }
-
-    &__text {
-        width: rem(114px);
-        @include baseFont(rem(16px), rem(19px), $color: $light);
-        padding-right: rem(40px);
-    }
-}

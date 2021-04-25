@@ -1,9 +1,21 @@
 .controls {
+    &__start{
+        margin-right: 20px;
+    }
     &__play {
         @include flexRow-JCfs-ALIc ($justify-content: center);
         width: 24px;
         height: 24px;
 
+        &-icon {
+            fill: $playerElements;
+        }
+    }
+
+    &__volume{
+        @include flexRow-JCfs-ALIc ($justify-content: center);
+        width: 24px;
+        height: 24px;
         &-icon {
             fill: $playerElements;
         }

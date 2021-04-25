@@ -5,13 +5,16 @@
 
     @include tablet {
         background: url(../../img/background/layer_list1100.png) left -1% top 12% no-repeat;
-        padding: rem(279px) 0 0;
+        /* padding: rem(279px) 0 0; */
+        min-height: rem(1000px);
     }
 
     @include phone {
         background: none;
         box-sizing: border-box;
-        padding: rem(50px) 0 0 0;
+        /* padding: rem(50px) 0 0 0; */
+        min-height: rem(707px);
+        margin-bottom: 0;
     }
 
     &::before {
@@ -31,14 +34,14 @@
         }
     }
 
-    @include tablet {
+    /* @include tablet {
         min-height: rem(1000px);
     }
 
     @include phone {
         min-height: rem(707px);
         margin-bottom: 0;
-    }
+    } */
 
     &__container {
         position: relative;
@@ -56,9 +59,15 @@
         text-align: center;
         margin-bottom: rem(50px);
         position: relative;
+        padding-top: 101px;
+
+        @include tablet {
+            padding-top: 279px;
+        }
 
         @include phone {
             margin-bottom: 0;
+            padding-top: 51px;
         }
     }
 

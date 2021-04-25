@@ -1,0 +1,68 @@
+.footer {
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: $light;
+    padding-top: rem(16px);
+    padding-bottom: rem(16px);
+
+    @include tablet {
+        padding: rem(24px);
+    }
+
+    @include phone {
+        padding: rem(20px) 0 rem(35px);
+    }
+
+    &__row {
+        @include flexRow-JCfs-ALIc ($justify-content: space-between);
+        padding: 0 71px 0 87px;
+
+        @include tablet {
+            padding: 0 13px 0 7px;
+        }
+
+        @include phone {
+            @include flexCol-JCc-ALIfs ($align-items: center);
+            text-align: center;
+        }
+    }
+
+    &__address {
+        font-size: rem(21px);
+        color: $dark;
+        font-style: normal;
+
+        @include phone {
+            margin-bottom: rem(8px);
+        }
+    }
+
+    &__phone {
+        position: relative;
+
+        @include phone {
+            margin-bottom: rem(6px);
+        }
+
+        &-icon {
+            width: 18px;
+            height: 18px;
+            fill: $btnColorDark;
+            padding-right: rem(6px);
+        }
+
+        &-link {
+            font-size: rem(21px);
+            color: $btnColorDark;
+            @include flexRow-JCfs-ALIc;
+            text-decoration: none;
+
+            @include phone {
+                justify-content: center;
+            }
+        }
+    }
+}

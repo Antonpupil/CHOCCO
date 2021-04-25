@@ -55,8 +55,8 @@
         bottom: 0;
         right: 0;
         height: 35px;
-        @include flexRow-JCfs-ALIc ($justify-content: space-between, $align-items: center);
-        padding: 0 25px;
+        @include flexRow-JCfs-ALIc ($align-items: center);
+        padding: 0 10px;
         background: $playerControls;
     }
 
@@ -64,10 +64,11 @@
         width: 446px;
         height: 16px;
         position: relative;
+        margin-right: 37px;
 
         &::before {
             content: "";
-            height: 4px;
+            height: 6px;
             position: absolute;
             top: 50%;
             left: 0;
@@ -80,8 +81,8 @@
             background: $playerElements;
             border-radius: 50px;
             border: none;
-            width: 15px;
-            height: 15px;
+            width: 11px;
+            height: 11px;
             padding: 0;
             position: absolute;
             top: 50%;
@@ -91,10 +92,43 @@
         }
     }
 
+    &__volume {
+        margin-right: 20px;
+        &-playback {
+            width: 55px;
+            height: 16px;
+            position: relative;
+
+            &::before {
+                content: "";
+                height: 6px;
+                position: absolute;
+                top: 50%;
+                left: 0;
+                right: 0;
+                transform: translateY(-50%);
+                background: $playerElements;
+            }
+            &-button {
+                background: $playerElements;
+                border-radius: 50px;
+                border: none;
+                width: 11px;
+                height: 11px;
+                padding: 0;
+                position: absolute;
+                top: 50%;
+                right: -8px;
+                transform: translate(-50%, -50%);
+                cursor: pointer;
+            }
+        }
+    }
+
     &.played .controls__play-icon {
         display: none;
     }
-    
+
     &.played .controls__pause-icon {
         display: block;
     }
