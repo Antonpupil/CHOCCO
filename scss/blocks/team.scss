@@ -62,12 +62,14 @@
         margin-bottom: 21px;
 
         @include tablet {
+            display: flex;
+            justify-content: center;
             margin-bottom: 22px;
             /* новое */
-            margin-top: 12px;
-            width: 138px;
-            height: 180px;
             margin-bottom: 17px;
+        }
+        @include phone{
+            max-width: 138px
         }
     }
 

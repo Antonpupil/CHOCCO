@@ -1502,12 +1502,16 @@ table {
 }
 @media screen and (max-width: 768px) {
   .team__member {
+    display: flex;
+    justify-content: center;
     margin-bottom: 22px;
     /* новое */
-    margin-top: 12px;
-    width: 138px;
-    height: 180px;
     margin-bottom: 17px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .team__member {
+    max-width: 138px;
   }
 }
 .team__title {
@@ -2246,7 +2250,26 @@ table {
   }
 }
 
+.player {
+  width: 100%;
+}
+.player__container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0px;
+}
+.player__elem {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 .player__wrapper {
+  position: relative;
+  height: 100%;
+  max-width: 600px;
+  margin: auto;
   position: relative;
   height: 100%;
   width: 100%;
