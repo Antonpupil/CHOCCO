@@ -1,3 +1,12 @@
 .section{
     height: 100vh;
+    display: flex;
+    min-height: 642px;
+
+    @include tablet{
+        min-height: 606px;
+    }
+    @include phone{
+        min-height: 511px;
+    }
 }

@@ -123,12 +123,14 @@ table {
     scroll-behavior: auto !important;
   }
 }
-/* .maincontent{
-    transform: translateY(-100%);
-    height: 100%;
-    transition: transform 1s;
-    will-change: transform;
-} */
+.maincontent {
+  /* transform: translateY(-100%); */
+  /* transform: translateY(0%); */
+  height: 100%;
+  transition: transform 1s;
+  will-change: transform;
+}
+
 .hero {
   min-height: 36.2222222222rem;
   background-color: #61C4D9;
@@ -378,6 +380,18 @@ table {
 
 .section {
   height: 100vh;
+  display: flex;
+  min-height: 642px;
+}
+@media screen and (max-width: 768px) {
+  .section {
+    min-height: 606px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section {
+    min-height: 511px;
+  }
 }
 
 .header {
