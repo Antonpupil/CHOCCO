@@ -3,25 +3,28 @@
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: 40px;
     background: $light;
-    padding-top: rem(16px);
-    padding-bottom: rem(16px);
 
     @include tablet {
+        bottom: 24px;
+    }
+
+    /* padding-top: rem(16px);
+    padding-bottom: rem(16px); */
+
+    /* @include tablet {
         padding: rem(24px);
     }
 
-    @include phone {
-        padding: rem(20px) 0 rem(35px);
-    }
+    } */
 
     &__row {
         @include flexRow-JCfs-ALIc ($justify-content: space-between);
         padding: 0 71px 0 87px;
 
         @include tablet {
-            padding: 0 13px 0 7px;
+            padding: 0 39px 1px 29px;
         }
 
         @include phone {

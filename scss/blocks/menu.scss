@@ -1,14 +1,14 @@
 .menu{
-    padding-bottom: rem(135px);
-    margin: 0 rem(258px);
     &__vertical{
-        @include flexCol-JCsb-ALIfs;
         @include H2font ($font-size: rem(36px), $line-height: rem(72px), $font-weight: normal);
+        padding-top: 135px;
+        margin: 0 auto;
+        min-height: 100%;
 
 
     }
     &__list{
-        @include flexRow-JCfs-ALIc ($justify-content: center);
+        @include flexCol-JCsb-ALIfs ($justify-content: flex-start, $align-items: center);
         flex-wrap: wrap;
 
     }

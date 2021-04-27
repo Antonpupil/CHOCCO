@@ -11,13 +11,12 @@
 <body>
     <div class="wrapper">
         <div class="maincontent">
-            <section class="hero section">
+            <section data-section-id = "hero" class="hero section">
                 <div class="container hero__container">
                     <div class="header hero__header">
                         <svg alt="Logo" class="logo header__logo">
                             <use xlink:href="./scss/layout/sprite.svg#logo"></use>
                         </svg>
-                        <!-- <img src="./img/icons/Logo.svg" alt="Logo" class="logo header__logo"> -->
                         <nav class="navBar header__navbar">
                             <ul class="navBar__list">
                                 <li class="navBar__item"><a href="" class="navBar__link">О нас</a></li>
@@ -79,7 +78,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section1 section">
+            <section data-section-id = "section1" class="section1 section">
                 <div class="container section1__container">
                     <div class="headline section1__headline">
                         <h2 class="section1__title headline__title">почему chocco?</h2>
@@ -146,7 +145,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section2 section slider">
+            <section data-section-id = "section2" class="section2 section slider">
                 <div class="container slider__container">
                     <div class="slider__controls">
                         <a href="#" class="slider__btn slider__btn_direction-left">
@@ -256,7 +255,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section3 section">
+            <section data-section-id = "section3" class="section3 section">
                 <div class="container section3__container">
                     <h2 class="section3__title">команда</h2>
                     <ul class="team team__version__1100">
@@ -361,7 +360,7 @@
                     </ul>
                 </div>
             </section>
-            <section class="section4 section" data-section-id="products">
+            <section data-section-id = "section4" class="section4 section" data-section-id="products">
                 <div class="container section4__container">
                     <h2 class="section4__title">Меню</h2>
                     <ul class="section4__menu">
@@ -425,7 +424,7 @@
                     </ul>
                 </div>
             </section>
-            <section class="section5 section">
+            <section data-section-id = "section5" class="section5 section">
                 <div class="container section5__container">
                     <h2 class="section5__title">отзывы</h2>
                     <div class="section5__content feedback">
@@ -530,7 +529,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section6 section">
+            <section data-section-id = "section6" class="section6 section">
                 <div class="container section6__container">
                     <H2 class="section6__title">как мы работаем</H2>
                     <div class="section6__player player">
@@ -538,6 +537,11 @@
                             <div class="player__container">
                                 <div id="yt-player" class="player__elem"></div>
                                 <div class="player__splash"></div>
+                                <div class="player__layer">
+                                    <svg width="76" height="110" class="player__layer-icon">
+                                        <use xlink:href="./scss/layout/sprite.svg#playBig"></use>
+                                    </svg>
+                                </div>
                             </div>
                             <div class="player__controls controls">
                                 <div class="player__start controls__start">
@@ -572,7 +576,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section7 section">
+            <section data-section-id = "section7" class="section7 section">
                 <div class="container section7__container">
                     <h2 class="section7__title">закажите доставку</h2>
                     <form action="#" class="form section7__form" id="order-form">
@@ -652,7 +656,7 @@
                     </form>
                 </div>
             </section>
-            <section class="section8 section">
+            <section data-section-id = "section8" class="section8 section">
                 <div class="container section8__container">
                     <div class="section8__map" id="map"></div>
                     <footer class="footer">
@@ -705,19 +709,7 @@
                         </div>
                     </footer>
                 </div>
-            </div>
-            <!-- <section class="footer section">
-                <div class="footer__container container">
-                    <div class="footer__contacts">
-                        <div class="footer__address">Москва, ул.Новый Арбат, д.31/12</div>
-                        <div class="footer__phone">
-                            <img src="" alt="" class="footer__phone_img">
-                            <div class="footer__phone_number"></div>
-                        </div>
-                    </div>
-                    <div class="footer__messangers"></div>
-                </div>
-            </section> -->
+            </section>
         </div>
     </div>
     <div id="modal" class="modal">
@@ -728,34 +720,37 @@
             <div class="btn app-submit-btn btn__theme_dark">Закрыть</div>
         </div>
     </div>
-    <!-- <div class="fullscreen-menu active">
-        <a href="" class="fullscreen-menu__close"></a>
+    <div class="fullscreen-menu">
+        <a href="" class="fullscreen-menu__close">
+            <svg alt="cross" class="fullscreen-menu__close_img">
+                <use xlink:href="./scss/layout/sprite.svg#cross"></use>
+            </svg>
+        </a>
         <nav class="menu menu__vertical">
             <ul class="menu__list">
                 <li class="menu__item">
-                    <a href="#" class="menu__link">О нас</a>
+                    <a href="#" data-scroll-to="section1" class="menu__link">О нас</a>
                 </li>
                 <li class="menu__item">
-                    <a href="#" class="menu__link">Батончики</a>
+                    <a href="#" data-scroll-to="section2" class="menu__link">Батончики</a>
                 </li>
                 <li class="menu__item">
-                    <a href="#" class="menu__link">Команда</a>
+                    <a href="#" data-scroll-to="section3" class="menu__link">Команда</a>
                 </li>
                 <li class="menu__item">
-                    <a href="#" class="menu__link">Меню</a>
+                    <a href="#" data-scroll-to="section4" class="menu__link">Меню</a>
                 </li>
                 <li class="menu__item">
-                    <a href="#" class="menu__link">Отзывы</a>
+                    <a href="#" data-scroll-to="section5" class="menu__link">Отзывы</a>
                 </li>
                 <li class="menu__item">
-                    <a href="#" class="menu__link">>Как мы работаем</a>
+                    <a href="#" data-scroll-to="section6" class="menu__link">Как мы работаем</a>
                 </li>
                 <li class="menu__item">
-                    <a href="#" class="menu__link">Контакты</a>
+                    <a href="#" data-scroll-to="section8" class="menu__link">Контакты</a>
                 </li>
             </ul>
         </nav>
-        
     </div>
     <nav class="fixed-menu">
         <ul class="fixed-menu__list">
@@ -769,12 +764,13 @@
             <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
             <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
         </ul>
-    </nav> -->
+    </nav>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.5/jquery.fancybox.min.js"></script>
     <!-- <script src="./JS/menu.js"></script>
     <script type="text/javascript"></script> -->
+    <script src="./JS/hamburger.js"></script>
     <script src="./JS/slider.js"></script>
     <script src="./JS/accordeon.js"></script>
     <script src="./JS/tabs.js"></script>

@@ -3,7 +3,7 @@
 
     &__container {
         position: relative;
-        padding-bottom: 56.25%;
+        padding-bottom: 58.25%;
         height: 0px;
     }
 
@@ -12,14 +12,23 @@
         top: 0;
         left: 0;
         width: 100%;
-        height: 100%;
+        height: 92%;
     }
 
     &__wrapper {
         position: relative;
         height: 100%;
-        max-width: 600px;
+        width: 100%;
+        max-width: 662px;
         margin: auto;
+
+        @include tablet {
+            max-width: 594px;
+        }
+
+        @include phone {
+            max-width: 394px;
+        }
 
         &::before {
             content: "";
@@ -43,7 +52,7 @@
                 &::before {
                     content: "";
                     position: absolute;
-                    width: 5px;
+                    width: 0px;
                     top: 0;
                     bottom: 0;
                     background: $playerElements;
@@ -70,15 +79,52 @@
         background: url(../../img/fonts/splashscreen.png) center center/cover no-repeat;
     }
 
+    &__layer {
+        position: absolute;
+        top: 0;
+        bottom: 31px;
+        right: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.3);
+        @include flexCol-JCc-ALIfs ($align-items: center);
+        cursor: pointer;
+        opacity: 1;
+        transition: 0.3s;
+
+        @include tablet {
+            bottom: 27px;
+        }
+
+        @include phone {
+            bottom: 18px;
+        }
+
+        &-icon {
+            fill: $light;
+
+            @include tablet {
+                width: 68px;
+            }
+
+            @include phone {
+                width: 46px;
+            }
+        }
+    }
+
     &__controls {
         position: absolute;
         left: 0;
-        bottom: 0;
+        top: 92%;
         right: 0;
         height: 35px;
         @include flexRow-JCfs-ALIc ($align-items: center);
-        padding: 0 10px;
+        padding: 0 0 0 10px;
         background: $playerControls;
+
+        @include phone {
+            height: 23px;
+        }
     }
 
     &__playback {
@@ -86,6 +132,10 @@
         height: 16px;
         position: relative;
         margin-right: 37px;
+
+        @include tablet {
+            margin-right: 31px;
+        }
 
         &::before {
             content: "";
@@ -110,16 +160,32 @@
             left: 0;
             transform: translate(-50%, -50%);
             cursor: pointer;
+
+            @include phone {
+                width: 9px;
+                height: 9px;
+            }
         }
     }
 
     &__volume {
         margin-right: 20px;
 
+        @include tablet {
+            margin-right: 18px;
+        }
+
         &-playback {
             width: 55px;
             height: 16px;
             position: relative;
+
+            @include tablet {
+                margin-right: 23px;
+            }
+            @include phone {
+                margin-right: 16px;
+            }
 
             &::before {
                 content: "";
@@ -144,6 +210,11 @@
                 right: -8px;
                 transform: translate(-50%, -50%);
                 cursor: pointer;
+
+                @include phone {
+                    width: 9px;
+                    height: 9px;
+                }
             }
         }
     }

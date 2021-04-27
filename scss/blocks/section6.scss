@@ -39,7 +39,7 @@
             }
 
             @include phone {
-                top: 26%;
+                top: 28%;
                 right: 1%;
                 width: 60px;
             }
@@ -62,7 +62,8 @@
             }
 
             @include phone {
-                top: 64%;
+                top: 70%;
+                left: -3%;
             }
         }
     }

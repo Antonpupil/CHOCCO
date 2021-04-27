@@ -19,12 +19,14 @@
         text-align: left;
         padding: 111px 84px 0;
         text-transform: uppercase;
+        z-index: 1;
+        position: relative;
 
-        @include tablet{
-        padding: 84px 40px 0;
+        @include tablet {
+            padding: 84px 40px 0;
         }
 
-        @include phone{
+        @include phone {
             @include H2font ($font-size: rem(40px), $line-height: rem(36px));
             padding: 75px 10px 0;
         }
@@ -51,7 +53,7 @@
         transform: translateY(-50%);
         z-index: 1;
 
-        @include tablet{
+        @include tablet {
             width: rem(87px);
             height: rem(104px);
             top: -11px;
@@ -64,5 +66,15 @@
             top: 5px;
             left: 1%;
         }
+    }
+
+    &::after {
+        content: "";
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        position: absolute;
+        background: rgba(0, 0, 0, 0.3);
     }
 }

@@ -65,8 +65,6 @@
             display: flex;
             justify-content: center;
             margin-bottom: 22px;
-            /* новое */
-            margin-bottom: 17px;
         }
         @include phone{
             max-width: 138px
@@ -104,6 +102,10 @@
         overflow: hidden;
         transition: height 0.3s;
         height: 0;
+
+        @include phone {
+            margin-top: 12px;
+        }
     }
 
     &__content-block {

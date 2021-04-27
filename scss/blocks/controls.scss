@@ -1,21 +1,34 @@
 .controls {
-    &__start{
+    &__start {
         margin-right: 20px;
     }
+
     &__play {
         @include flexRow-JCfs-ALIc ($justify-content: center);
         width: 24px;
         height: 24px;
 
+        @include phone {
+            width: 8px;
+            height: 20px;
+        }
+
         &-icon {
             fill: $playerElements;
+
         }
     }
 
-    &__volume{
+    &__volume {
         @include flexRow-JCfs-ALIc ($justify-content: center);
         width: 24px;
         height: 24px;
+
+        @include phone {
+            width: 8px;
+            height: 10px;
+        }
+
         &-icon {
             fill: $playerElements;
         }
@@ -23,8 +36,8 @@
 
     &__pause {
         &-icon {
-        fill: #626262;
-        display: none;
+            fill: #626262;
+            display: none;
         }
     }
 }

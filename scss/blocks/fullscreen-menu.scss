@@ -1,11 +1,28 @@
 .fullscreen-menu {
+    display: none;
     position: fixed;
     top: 0;
     bottom: 0;
     right: 0;
     left: 0;
-    @include flexCol-JCsb-ALIfs ($justify-content: center, $align-items: center);
     overflow: hidden;
     z-index: 10000;
     background: $menu;
+    min-height: 973px;
+
+    &_active{
+        @include flexCol-JCsb-ALIfs ($justify-content: center, $align-items: center);
+    }
+
+    &__close {
+        position: absolute;
+        top: 4%;
+        right: 4%;
+
+        &_img {
+            fill: $light;
+            width: 24px;
+            height: 24px;
+        }
+    }
 }
