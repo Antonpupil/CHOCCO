@@ -383,17 +383,13 @@ table {
   /* height: 100vh; */
   height: 100%;
   display: flex;
-  min-height: 642px;
-}
-@media screen and (max-width: 768px) {
-  .section {
-    min-height: 606px;
+  /* min-height: 642px; */
+  /* @include tablet{
+      min-height: 606px;
   }
-}
-@media screen and (max-width: 480px) {
-  .section {
-    min-height: 511px;
-  }
+  @include phone{
+      min-height: 511px;
+  } */
 }
 
 .header {

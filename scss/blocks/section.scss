@@ -2,12 +2,12 @@
     /* height: 100vh; */
     height: 100%;
     display: flex;
-    min-height: 642px;
+    /* min-height: 642px; */
 
-    @include tablet{
+    /* @include tablet{
         min-height: 606px;
     }
     @include phone{
         min-height: 511px;
-    }
+    } */
 }
