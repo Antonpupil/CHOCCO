@@ -2,6 +2,7 @@
     min-height: rem(652px);
     background-color: $firstBgrColor;
     position: relative;
+    height: 100%;
 
     @include tablet {
         min-height: rem(1000px);

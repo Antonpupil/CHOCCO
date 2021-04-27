@@ -135,6 +135,7 @@ table {
   min-height: 36.2222222222rem;
   background-color: #61C4D9;
   position: relative;
+  height: 100%;
 }
 @media screen and (max-width: 768px) {
   .hero {
@@ -379,7 +380,8 @@ table {
 }
 
 .section {
-  height: 100vh;
+  /* height: 100vh; */
+  height: 100%;
   display: flex;
   min-height: 642px;
 }
@@ -2934,6 +2936,9 @@ table {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.fixed-menu_shadowed {
+  color: #292929;
+}
 
 .menu__vertical {
   font-weight: normal;
@@ -3037,6 +3042,7 @@ table {
 }
 .section8__container {
   position: relative;
+  max-width: none;
 }
 .section8__map {
   height: 652px;
