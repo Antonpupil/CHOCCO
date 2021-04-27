@@ -44,18 +44,17 @@
 
         @include tablet {
             min-height: rem(816px);
-        }
-        
+        }        
+    }
 
-        &_wrap {
-            overflow: hidden;
-            display: flex;
-            align-items: center;
-            padding-bottom: rem(111px);
+    &__wrap {
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        padding-bottom: rem(111px);
 
-            @include tablet {
-                padding-bottom: 0;
-            }
+        @include tablet {
+            padding-bottom: 0;
         }
     }
 

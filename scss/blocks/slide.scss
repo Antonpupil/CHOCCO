@@ -118,6 +118,10 @@
         &-title {
             padding-top: rem(57px);
         }
+
+        &:hover > .slide__dropdown {
+            display: flex;
+        }
     }
 
     &__title {
@@ -177,7 +181,6 @@
             @include baseFont ($color: $baseFontColor);
             padding-right: rem(121px);
             margin-bottom: rem(24px);
-            position: relative;
 
             @include tablet {
                 padding: 0 rem(114px);
@@ -193,7 +196,6 @@
 
 
     &__values {
-        position: relative;
 
         &_content {
             @include phone {

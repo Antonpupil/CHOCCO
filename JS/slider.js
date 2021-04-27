@@ -8,6 +8,7 @@
     let currentRight = 0;
 
     console.log(sliderList);
+
     sliderList.style.right = currentRight;
 
     window.addEventListener("resize", () => {
@@ -18,10 +19,11 @@
         e.preventDefault();
         console.log("right");
         changeSlide(e, "right");
-        
     });
+
     leftBtn.addEventListener("click", (e) => {
         e.preventDefault();
+        console.log("left");
         changeSlide(e, "left");
     });
 
@@ -34,7 +36,7 @@
             };
             if (currentRight == maxRight) {
                 currentRight = 0;
-                sliderList.style.right = "0px";
+                sliderList.style.right = `${currentRight}px`;
             };
         } else {
             if (currentRight >= 0) {
@@ -49,7 +51,7 @@
     };
 
     function setCurrentWidth() {
-        let itemWidth = document.querySelector(".slider__list_wrap").clientWidth;
+        let itemWidth = document.querySelector(".slider__wrap").clientWidth;
         items.forEach(item => {
             item.style.width = `${itemWidth}px`;
         });
