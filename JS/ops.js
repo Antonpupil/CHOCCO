@@ -11,7 +11,7 @@ const performTransition = sectionEq => {
         inScroll = true;
         const position = sectionEq * -100;
 
-        const currentSection = sections.eq(sectionsEq);
+        const currentSection = sections.eq(sectionEq);
         const menyTheme = currentSection.attr('data-swither-theme');
         const sideMenu = $('.fixed-menu');
 
@@ -25,7 +25,7 @@ const performTransition = sectionEq => {
             transform: `translateY(${position}%)`
         });
 
-        sections.eq(seectionEq).addClass('active').siblings().removeClass('active');
+        sections.eq(sectionEq).addClass('active').siblings().removeClass('active');
 
 
         setTimeout(() => {
@@ -34,14 +34,14 @@ const performTransition = sectionEq => {
                 .find('.fixed-menu__item')
                 .eq(sectionEq)
                 .addClass('fixed-menu__item_active')
-                .sublings()
+                .siblings()
                 .removeClass('fixed-menu__item_active');
         }, 1300);
     }
 };
 
 const scrollViewport = direction => {
-    const activeSection = sections.filter('active');
+    const activeSection = sections.filter('.active');
     const nextSection = activeSection.next();
     const prevSection = activeSection.prev();
 
@@ -92,7 +92,7 @@ $(window).on('keydown', e => {
 
 $('wrapper').on('touchmove', e => e.preventDefault());
 
-$(['data-scroll-to']).click(e => {
+$('[data-scroll-to]').click(e => {
     e.preventDefault();
 
     const $this = $(e.currentTarget);
@@ -102,7 +102,7 @@ $(['data-scroll-to']).click(e => {
     console.log(reqSection.index());
 });
 
-if(isMobile){
+if (isMobile) {
     $("body").swipe({
         swipe: function (event, direction) {
             const scroller = viewportScroller();

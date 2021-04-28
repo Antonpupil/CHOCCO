@@ -3,6 +3,7 @@
     background-color: $firstBgrColor;
     position: relative;
     height: 100%;
+    /* height: 100vh; */
 
     @include tablet {
         min-height: rem(1000px);
