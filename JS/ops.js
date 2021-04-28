@@ -36,7 +36,7 @@ const performTransition = sectionEq => {
                 .addClass('fixed-menu__item_active')
                 .siblings()
                 .removeClass('fixed-menu__item_active');
-        }, 1300);
+        }, 1);
     }
 };
 

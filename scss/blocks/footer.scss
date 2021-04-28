@@ -3,7 +3,7 @@
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 40px;
+    bottom: 0;
     background: $light;
 
     @include tablet {
@@ -18,6 +18,10 @@
     }
 
     } */
+
+    &__container{
+        height: 100%;
+    }
 
     &__row {
         @include flexRow-JCfs-ALIc ($justify-content: space-between);
