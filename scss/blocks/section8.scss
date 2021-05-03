@@ -6,7 +6,7 @@
     }
 
     @include phone {
-        min-height: 631px;
+        min-height: rem(631px);
     }
 
     &__container {
@@ -15,15 +15,15 @@
     }
 
     &__map {
-        height: 652px;
+        height: rem(652px);
         width: 100%;
 
         @include tablet{
-           height: 526px;
+           height: rem(526px);
         }
 
         @include phone {
-            height: 482px;
+            height: rem(482px);
         }
     }
 }

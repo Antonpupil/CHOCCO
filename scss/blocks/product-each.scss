@@ -15,7 +15,7 @@
         }
 
         @include phone{
-             min-width: 90px;
+             min-width: rem(90px);
         }
     }
 
@@ -25,25 +25,25 @@
         transform-origin: left;
         display: block;
         position: absolute;
-        bottom: 7px;
+        bottom: rem(7px);
         left: 50%;
         margin: 0;
         text-transform: none;
         @include H2font;
 
         @include tablet{
-            bottom: 11px;
+            bottom: rem(11px);
             left: 55%;
         }
 
         @include phone{
             @include  H2font ($font-size: rem(40px), $line-height: rem(48px));
-            bottom: 16px;
+            bottom: rem(16px);
         }
     }
 
     &__content {
-        max-width: 500px;
+        max-width: rem(500px);
         background: rgba(51, 53, 55, 0.9);
         position: relative;
         color: $light;

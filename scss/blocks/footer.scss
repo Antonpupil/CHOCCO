@@ -3,11 +3,11 @@
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: rem(237px);
     background: $light;
 
     @include tablet {
-        bottom: 24px;
+        bottom: rem(366px);
     }
 
     /* padding-top: rem(16px);
@@ -25,10 +25,10 @@
 
     &__row {
         @include flexRow-JCfs-ALIc ($justify-content: space-between);
-        padding: 0 71px 0 87px;
+        padding: 0 rem(71px) 0 rem(87px);
 
         @include tablet {
-            padding: 0 39px 1px 29px;
+            padding: 0 rem(39px) rem(1px) rem(29px);
         }
 
         @include phone {
@@ -55,8 +55,8 @@
         }
 
         &-icon {
-            width: 18px;
-            height: 18px;
+            width: rem(18px);
+            height: rem(18px);
             fill: $btnColorDark;
             padding-right: rem(6px);
         }

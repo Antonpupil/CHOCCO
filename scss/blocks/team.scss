@@ -10,7 +10,7 @@
 
     &__version {
         &__1100 {
-            margin: 0 78px;
+            margin: 0 rem(78px);
 
             @include tablet {
                 display: none;
@@ -30,10 +30,10 @@
             }
 
             .team__item {
-                margin-bottom: 10px;
+                margin-bottom: rem(10px);
 
                 @include tablet {
-                    margin-bottom: 6px;
+                    margin-bottom: rem(6px);
                 }
             }
         }
@@ -42,8 +42,8 @@
     &__item {
         flex: 1;
         text-align: center;
-        margin-right: 20px;
-        max-width: 220px;
+        margin-right: rem(20px);
+        max-width: rem(220px);
         position: relative;
 
         &:last-child {
@@ -53,28 +53,28 @@
         @include tablet {
             flex: initial;
             margin-right: 0;
-            max-width: 256px;
+            max-width: rem(256px);
         }
     }
 
     &__member {
-        max-height: 290px;
-        margin-bottom: 21px;
+        max-height: rem(290px);
+        margin-bottom: rem(21px);
 
         @include tablet {
             display: flex;
             justify-content: center;
-            margin-bottom: 22px;
+            margin-bottom: rem(22px);
         }
         @include phone{
-            max-width: 138px
+            max-width: rem(138px)
         }
     }
 
     &__title {
         @include flexRow-JCfs-ALIc ($display: inline-flex, $justify-content: center, $align-items: center);
         @include H3font ($font-size: rem(21px), $line-height: rem(25px), $color: $dark);
-        margin-bottom: 8px;
+        margin-bottom: rem(8px);
         border: none;
         background: transparent;
         outline: none;
@@ -82,14 +82,14 @@
 
         &::after {
             content: "";
-            border: 6px solid transparent;
+            border: rem(6px) solid transparent;
             border-bottom-width: 0;
             border-top-color: $btnColorLight;
-            margin-left: 4px;
+            margin-left: rem(4px);
         }
 
         @include tablet {
-            margin-bottom: 11px;
+            margin-bottom: rem(11px);
             padding: 0;
         }
 
@@ -104,7 +104,7 @@
         height: 0;
 
         @include phone {
-            margin-top: 12px;
+            margin-top: rem(12px);
         }
     }
 

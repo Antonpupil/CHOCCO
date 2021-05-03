@@ -4,6 +4,27 @@
     color: $btnColorDark;
     min-height: rem(652px);
 
+    &::after {
+        content: url(../../img/pics/decor/Ежевика_фото1.png);
+        right: 0;
+        top: 674%;
+        position: absolute;
+
+        @include tablet {
+            content: url(../../img/pics/decor/Ежевика_фото1_768.png);
+            right: 0;
+            top: 692%;
+            position: absolute;
+        }
+
+        @include phone {
+            content: url(../../img/pics/decor/Ежевика_фото1_480.png);
+            right: 0;
+            top: -480%;
+            position: absolute;
+        }
+    }
+    
     @include tablet {
         min-height: rem(966px);
     }
@@ -44,28 +65,7 @@
             margin-bottom: rem(39px);
         }
 
-        &::after {
-            content: url(../../img/pics/decor/Ежевика_фото1.png);
-            right: -9%;
-            top: -392%;
-            position: absolute;
-
-            @include tablet {
-                content: url(../../img/pics/decor/Ежевика_фото1_768.png);
-                /* right: 0;
-                top: -8.5%; */
-                right: 0;
-                top: -441%;
-                position: absolute;
-            }
-
-            @include phone {
-                content: url(../../img/pics/decor/Ежевика_фото1_480.png);
-                right: 0;
-                top: -480%;
-                position: absolute;
-            }
-        }
+        
     }
 
     &__form {

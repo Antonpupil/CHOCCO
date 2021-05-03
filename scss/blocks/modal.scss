@@ -8,16 +8,18 @@
     display: none;
     background-color: $menu;
     transition: opacity 0.3s;
+    backface-visibility: visible;
+    opacity: 0.5;
 
     &__container {
         background: $light;
-        padding: 35px 60px;
+        padding: rem(35px) rem(60px);
         @include flexCol-JCc-ALIfs ($align-items: center);
         margin: auto;
     }
 
     &__content{
-        margin-bottom: 18px;
+        margin-bottom: rem(18px);
         @include baseFont ($line-height: rem(24px), $font-weight: 500, $color: $black)
     }
 

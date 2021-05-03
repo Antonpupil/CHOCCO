@@ -11,12 +11,49 @@
         min-height: rem(800px);
     }
 
+    &::before {
+        content: url(../../img/pics/decor/Ягоды2_1100.png);
+        top: 87%;
+        left: 0;
+        position: absolute;
+        z-index: 1;
 
+        @include tablet {
+            content: url(../../img/pics/decor/Ягоды2_768.png);
+            top: 90%;
+            left: 0;
+        }
+
+        @include phone {
+            content: url(../../img/pics/decor/Ягоды2_480.png);
+            top: 90%;
+            left: 0;
+        }
+    }
+
+    &::after {
+        content: url(../../img/pics/decor/Узор1_1100.png);
+        top: 80%;
+        left: 0%;
+        position: absolute;
+
+        @include tablet {
+            content: url(../../img/pics/decor/Узор1_768.png);
+            top: 85%;
+            left: 0%;
+        }
+
+        @include phone {
+            content: url(../../img/pics/decor/Узор1-480.png);
+            top: 86%;
+            left: 0%;
+        }
+    }
 
     &__container {
         /* height: rem(652px); */
         position: relative;
-        padding: 60px rem(79px) 0;
+        padding: rem(60px) rem(79px) 0;
         @include flexCol-JCsb-ALIfs($justify-content: flex-start, $align-items: center);
 
         @include tablet {
@@ -85,44 +122,6 @@
         position: relative;
         width: 100%;
 
-        &::before {
-            content: url(../../img/pics/decor/Ягоды2_1100.png);
-            top: 39.5%;
-            left: rem(-80px);
-            position: absolute;
-            z-index: 1;
 
-            @include tablet {
-                content: url(../../img/pics/decor/Ягоды2_768.png);
-                top: 163%;
-                right: 0;
-                left: -3%;
-            }
-
-            @include phone {
-                content: url(../../img/pics/decor/Ягоды2_480.png);
-                top: 98%;
-                left: -3%;
-            }
-        }
-
-        &::after {
-            content: url(../../img/pics/decor/Узор1_1100.png);
-            top: -39%;
-            left: -9%;
-            position: absolute;
-
-            @include tablet {
-                content: url(../../img/pics/decor/Узор1_768.png);
-                top: 94%;
-                left: -3%;
-            }
-
-            @include phone {
-                content: url(../../img/pics/decor/Узор1-480.png);
-                top: 29%;
-                left: -3%;
-            }
-        }
     }
 }

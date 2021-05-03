@@ -1,16 +1,16 @@
 .controls {
     &__start {
-        margin-right: 20px;
+        margin-right: rem(20px);
     }
 
     &__play {
         @include flexRow-JCfs-ALIc ($justify-content: center);
-        width: 24px;
-        height: 24px;
+        width: rem(24px);
+        height: rem(24px);
 
         @include phone {
-            width: 8px;
-            height: 20px;
+            width: rem(8px);
+            height: rem(20px);
         }
 
         &-icon {
@@ -21,12 +21,12 @@
 
     &__volume {
         @include flexRow-JCfs-ALIc ($justify-content: center);
-        width: 24px;
-        height: 24px;
+        width: rem(24px);
+        height: rem(24px);
 
         @include phone {
-            width: 8px;
-            height: 10px;
+            width: rem(8px);
+            height: rem(10px);
         }
 
         &-icon {

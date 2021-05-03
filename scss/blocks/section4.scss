@@ -14,21 +14,25 @@
         min-height: rem(634px);
     }
 
+    &__container{
+        max-width: none;
+    }
+
     &__title {
         @include H2font;
         text-align: left;
-        padding: 111px 84px 0;
+        padding: rem(111px) rem(84px) 0;
         text-transform: uppercase;
         z-index: 1;
         position: relative;
 
         @include tablet {
-            padding: 84px 40px 0;
+            padding: rem(84px) rem(40px) 0;
         }
 
         @include phone {
             @include H2font ($font-size: rem(40px), $line-height: rem(36px));
-            padding: 75px 10px 0;
+            padding: rem(75px) rem(10px) 0;
         }
     }
 
@@ -56,14 +60,14 @@
         @include tablet {
             width: rem(87px);
             height: rem(104px);
-            top: -11px;
+            top: rem(-11px);
             left: 5%;
         }
 
         @include phone {
             width: rem(89px);
             height: rem(98px);
-            top: 5px;
+            top: rem(5px);
             left: 1%;
         }
     }

@@ -2,5 +2,6 @@
     "liveServer.settings.port": 8800,
     "liveServer.settings.CustomBrowser": "chrome",
     "liveServer.settings.fullReload": true,
-    "liveServer.settings.useWebExt": true
+    "liveServer.settings.useWebExt": true,
+    "compile-hero.disable-compile-files-on-did-save-code": true
 }

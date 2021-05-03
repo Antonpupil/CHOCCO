@@ -11,15 +11,15 @@
 
     &__container {
         @include flexCol-JCc-ALIfs ($justify-content: flex-start, $align-items: center);
-        padding-top: 62px;
-        margin-bottom: 31px;
+        padding-top: rem(62px);
+        margin-bottom: rem(31px);
 
         @include tablet {
-            padding-top: 68px;
+            padding-top: rem(68px);
         }
 
         @include phone {
-            padding-top: 112px;
+            padding-top: rem(112px);
         }
 
         &::before {
@@ -33,15 +33,15 @@
             right: 9%;
 
             @include tablet {
-                top: 20%;
+                top: 11%;
                 right: 4%;
-                width: 75px;
+                width: rem(75px);
             }
 
             @include phone {
-                top: 28%;
+                top: 19%;
                 right: 1%;
-                width: 60px;
+                width: rem(60px);
             }
         }
 
@@ -56,13 +56,13 @@
             left: 9%;
 
             @include tablet {
-                top: 55%;
+                top: 35%;
                 left: -2%;
-                height: 112px;
+                height: rem(112px);
             }
 
             @include phone {
-                top: 70%;
+                top: 43%;
                 left: -3%;
             }
         }
@@ -71,10 +71,10 @@
     &__title {
         text-transform: uppercase;
         @include H2font ($color: $dark);
-        margin-bottom: 31px;
+        margin-bottom: rem(31px);
 
         @include tablet {
-            margin-bottom: 41px;
+            margin-bottom: rem(41px);
         }
 
         @include phone {

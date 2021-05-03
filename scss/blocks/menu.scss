@@ -1,7 +1,7 @@
 .menu{
     &__vertical{
         @include H2font ($font-size: rem(36px), $line-height: rem(72px), $font-weight: normal);
-        padding-top: 135px;
+        padding-top: rem(135px);
         margin: 0 auto;
         min-height: 100%;
 

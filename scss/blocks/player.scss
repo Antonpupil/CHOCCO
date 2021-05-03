@@ -4,7 +4,7 @@
     &__container {
         position: relative;
         padding-bottom: 58.25%;
-        height: 0px;
+        height: rem(0px);
     }
 
     &__elem {
@@ -19,15 +19,15 @@
         position: relative;
         height: 100%;
         width: 100%;
-        max-width: 662px;
+        max-width: rem(662px);
         margin: auto;
 
         @include tablet {
-            max-width: 594px;
+            max-width: rem(594px);
         }
 
         @include phone {
-            max-width: 394px;
+            max-width: rem(394px);
         }
 
         &::before {
@@ -44,15 +44,15 @@
 
         &.paused {
             .player__start {
-                width: 14px;
-                height: 22px;
+                width: rem(14px);
+                height: rem(22px);
                 border: none;
 
                 &::after,
                 &::before {
                     content: "";
                     position: absolute;
-                    width: 0px;
+                    width: rem(0px);
                     top: 0;
                     bottom: 0;
                     background: $playerElements;
@@ -82,7 +82,7 @@
     &__layer {
         position: absolute;
         top: 0;
-        bottom: 31px;
+        bottom: rem(31px);
         right: 0;
         left: 0;
         background: rgba(0, 0, 0, 0.3);
@@ -92,22 +92,22 @@
         transition: 0.3s;
 
         @include tablet {
-            bottom: 27px;
+            bottom: rem(27px);
         }
 
         @include phone {
-            bottom: 18px;
+            bottom: rem(18px);
         }
 
         &-icon {
             fill: $light;
 
             @include tablet {
-                width: 68px;
+                width: rem(68px);
             }
 
             @include phone {
-                width: 46px;
+                width: rem(46px);
             }
         }
     }
@@ -117,29 +117,29 @@
         left: 0;
         top: 92%;
         right: 0;
-        height: 35px;
+        height: rem(35px);
         @include flexRow-JCfs-ALIc ($align-items: center);
-        padding: 0 0 0 10px;
+        padding: 0 0 0 rem(10px);
         background: $playerControls;
 
         @include phone {
-            height: 23px;
+            height: rem(23px);
         }
     }
 
     &__playback {
-        width: 446px;
-        height: 16px;
+        width: rem(446px);
+        height: rem(16px);
         position: relative;
-        margin-right: 37px;
+        margin-right: rem(37px);
 
         @include tablet {
-            margin-right: 31px;
+            margin-right: rem(31px);
         }
 
         &::before {
             content: "";
-            height: 6px;
+            height: rem(6px);
             position: absolute;
             top: 50%;
             left: 0;
@@ -150,10 +150,10 @@
 
         &-button {
             background: $playerElements;
-            border-radius: 50px;
+            border-radius: rem(50px);
             border: none;
-            width: 11px;
-            height: 11px;
+            width: rem(11px);
+            height: rem(11px);
             padding: 0;
             position: absolute;
             top: 50%;
@@ -162,34 +162,34 @@
             cursor: pointer;
 
             @include phone {
-                width: 9px;
-                height: 9px;
+                width: rem(9px);
+                height: rem(9px);
             }
         }
     }
 
     &__volume {
-        margin-right: 20px;
+        margin-right: rem(20px);
 
         @include tablet {
-            margin-right: 18px;
+            margin-right: rem(18px);
         }
 
         &-playback {
-            width: 55px;
-            height: 16px;
+            width: rem(55px);
+            height: rem(16px);
             position: relative;
 
             @include tablet {
-                margin-right: 23px;
+                margin-right: rem(23px);
             }
             @include phone {
-                margin-right: 16px;
+                margin-right: rem(16px);
             }
 
             &::before {
                 content: "";
-                height: 6px;
+                height: rem(6px);
                 position: absolute;
                 top: 50%;
                 left: 0;
@@ -200,20 +200,20 @@
 
             &-button {
                 background: $playerElements;
-                border-radius: 50px;
+                border-radius: rem(50px);
                 border: none;
-                width: 11px;
-                height: 11px;
+                width: rem(11px);
+                height: rem(11px);
                 padding: 0;
                 position: absolute;
                 top: 50%;
-                right: -8px;
+                right: rem(-8px);
                 transform: translate(-50%, -50%);
                 cursor: pointer;
 
                 @include phone {
-                    width: 9px;
-                    height: 9px;
+                    width: rem(9px);
+                    height: rem(9px);
                 }
             }
         }

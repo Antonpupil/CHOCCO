@@ -1,17 +1,24 @@
 .hero {
     min-height: rem(652px);
-    background-color: $firstBgrColor;
     position: relative;
     height: 100%;
     /* height: 100vh; */
+    background:
+        url(../../img/pics/comp/Chocolates.png) right 5% bottom 58% no-repeat,
+        url(../../img/background/big-leaf.png) right top 50% no-repeat;
+    background-color: $firstBgrColor;
 
     @include tablet {
         min-height: rem(1000px);
+        background: url(../../img/background/big-leaf768.png) right top 26% no-repeat;
+        background-color: $firstBgrColor;
     }
 
     @include phone {
         margin-bottom: 0;
         min-height: rem(800px);
+        background: url(../../img/background/big-leaf480.png) right top 17% no-repeat;
+        background-color: $firstBgrColor;
     }
 
 
@@ -19,18 +26,18 @@
         position: relative;
         @include flexCol-JCsb-ALIfs;
         padding: rem(23px) rem(80px) rem(52px);
-        background:
+        /* background:
             url(../../img/pics/comp/Chocolates.png) right 5% bottom 58% no-repeat,
-            url(../../img/background/big-leaf.png) right top 50% no-repeat;
+            url(../../img/background/big-leaf.png) right top 50% no-repeat; */
 
         @include tablet {
-            background: url(../../img/background/big-leaf768.png) right top 26% no-repeat;
+            /* background: url(../../img/background/big-leaf768.png) right top 26% no-repeat; */
             padding: 0;
         }
 
-        @include phone {
+        /* @include phone {
             background: url(../../img/background/big-leaf480.png) right top 17% no-repeat;
-        }
+        } */
 
 
     }
@@ -42,7 +49,7 @@
             /* margin-bottom: rem(482px); */
             margin-bottom: rem(308px);
             padding: 0 rem(36px) 0 rem(30px);
-            
+
         }
 
         @include phone {

@@ -188,7 +188,7 @@
             }
 
             @include phone {
-                padding: 2px rem(24px);
+                padding: rem(2px) rem(24px);
             }
         }
     }

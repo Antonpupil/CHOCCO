@@ -8,7 +8,7 @@
     overflow: hidden;
     z-index: 10000;
     background: $menu;
-    min-height: 973px;
+    min-height: rem(973px);
 
     &_active{
         @include flexCol-JCsb-ALIfs ($justify-content: center, $align-items: center);
@@ -21,8 +21,8 @@
 
         &_img {
             fill: $light;
-            width: 24px;
-            height: 24px;
+            width: rem(24px);
+            height: rem(24px);
         }
     }
 }

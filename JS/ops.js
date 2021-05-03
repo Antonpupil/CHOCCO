@@ -1,92 +1,117 @@
 const sections = $('section');
 const display = $('.maincontent');
+
 let inScroll = false;
 const mobileDetect = new MobileDetect(window.navigator.userAgent);
 const isMobile = mobileDetect.mobile();
+const sideMenu = $('.fixed-menu');
+const menuItem = sideMenu.find('.fixed-menu__item');
 
 sections.first().addClass('active');
 
-const performTransition = sectionEq => {
-    if (inScroll == false) {
-        inScroll = true;
-        const position = sectionEq * -100;
+const countsectionPosition = sectionEq => {
+    const position = sectionEq * -100;
 
-        const currentSection = sections.eq(sectionEq);
-        const menyTheme = currentSection.attr('data-swither-theme');
-        const sideMenu = $('.fixed-menu');
+    if (isNaN(position)) {
+        console.error('передано не верное значение в countsectionPosition')
+        return 0;
+    };
 
-        if (menyTheme == 'black') {
-            sideMenu.addClass('fixed-menu_shadowed');
-        } else {
-            sideMenu.removeClass('fixed-menu_shadowed');
-        }
+    return position;
+}
 
-        display.css({
-            transform: `translateY(${position}%)`
-        });
+const changeMenuThemeForSection = sectionEq => {
+    const currentSection = sections.eq(sectionEq);
+    const menuTheme = currentSection.attr('data-sidemenu-theme');
+    const activeClass = 'fixed-menu_shadowed';
 
-        sections.eq(sectionEq).addClass('active').siblings().removeClass('active');
-
-
-        setTimeout(() => {
-            inScroll = false;
-            sideMenu
-                .find('.fixed-menu__item')
-                .eq(sectionEq)
-                .addClass('fixed-menu__item_active')
-                .siblings()
-                .removeClass('fixed-menu__item_active');
-        }, 1);
+    if (menuTheme === 'black') {
+        sideMenu.addClass(activeClass);
+    } else {
+        sideMenu.removeClass(activeClass);
     }
+}
+
+const resetActiveClassForItem = (items, itemEq, activeClass) => {
+    items.eq(itemEq).addClass(activeClass).siblings().removeClass(activeClass);
+}
+
+const performTransition = sectionEq => {
+    if (inScroll) return;
+
+    const transitionOver = 1000;
+    const mouseTransitionOver = 300;
+
+    inScroll = true;
+    const position = countsectionPosition(sectionEq);
+
+    changeMenuThemeForSection(sectionEq);
+
+    display.css({
+        transform: `translateY(${position}%)`
+    });
+
+    resetActiveClassForItem(sections, sectionEq, 'active');
+
+
+    setTimeout(() => {
+        inScroll = false;
+        resetActiveClassForItem(menuItem, sectionEq, 'fixed-menu__item_active');
+    }, transitionOver + mouseTransitionOver);
 };
 
-const scrollViewport = direction => {
+const viewportScroller = () => {
     const activeSection = sections.filter('.active');
     const nextSection = activeSection.next();
     const prevSection = activeSection.prev();
 
-
-    if (direction == "next" && nextSection.length) {
-        performTransition(nextSection.index());
+    return {
+        next() {
+            if (nextSection.length) {
+                performTransition(nextSection.index());
+            }
+        },
+        prev() {
+            if (prevSection.length) {
+                performTransition(prevSection.index());
+            }
+        }
     }
-    if (direction == "prev" && prevSection.length) {
-        performTransition(prevSection.index());
-    }
-
 };
 
 $(window).on('wheel', e => {
-    /* console.log(e); */
 
     const deltaY = e.originalEvent.deltaY;
+
+    const scroller = viewportScroller();
 
     console.log('wheeeel!');
 
     if (deltaY > 0) {
-        /* performTransition(2); */
-        scrollViewport('next');
+        scroller.next();
     };
     if (deltaY < 0) {
-        scrollViewport('prev');
+        scroller.prev();
     };
 
     console.log(deltaY);
 });
 
 $(window).on('keydown', e => {
-    /* console.log(e.keyCode); */
 
     const tagName = e.target.tagName.toLowerCase();
+    const userTypingInInput = tagName == 'input' || tagName == 'textarea';
+    const scroller = viewportScroller();
 
-    if (tagName != 'input' && tagName != 'textarea') {
-        switch (e.leyCode) {
-            case 38:
-                scrollViewport('prev');
-                break;
-            case 40:
-                scrollViewport('next');
-                break;
-        }
+    if (userTypingInInput) return;
+
+    switch (e.leyCode) {
+        case 38:
+            scroller.prev();
+            break;
+        case 40:
+            scroller.next();
+            break;
     }
 });
 
@@ -112,8 +137,7 @@ if (isMobile) {
             if (direction == 'down') scrollDirection = 'prev';
 
             scroller[scrollDirection]();
-            /* alert(direction); */
         },
     });
 }
-
+ 
