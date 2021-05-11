@@ -11,7 +11,7 @@ const validateFields = (form, fieldsArray) => {
     return errorFields.length == 0;
 }
 
-$("#order-form").submit(e => {
+$("#order-form").submit((e) => {
     e.preventDefault();
     const form = $(e.currentTarget);
     const name = form.find("[name='name']");
@@ -59,7 +59,7 @@ $("#order-form").submit(e => {
     }
 });
 
-$('.app-submit-btn').click(e => {
+$('.app-submit-btn').click((e) => {
     e.preventDefault();
 
     $.fancybox.close();

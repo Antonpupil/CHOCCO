@@ -1,9 +1,9 @@
 (function () {
     const orderForm = document.querySelector("#order-form");
-    const send = document.querySelector(".form__submit");
+    const send = document.querySelector(".btn__submit");
     const phone = document.querySelector("#phone-number");
-    console.log(orderForm);
-    console.log(send);
+    /* console.log(orderForm);
+    console.log(send); */
 
     phone.addEventListener("keydown", (e) => {
         try {
@@ -37,6 +37,14 @@
         };
     });
 
+    /* send.addEventListener("click", (e) => {
+        e.preventDefault();
+        if(validateForm(orderForm)){
+            console.log('Отправляем на сервер');
+        } else{
+            console.log('Не отправляем на сервер');
+        }
+    }); */
     send.addEventListener("click", (e) => {
         e.preventDefault();
         let isValid = validateForm(orderForm);
@@ -44,6 +52,7 @@
             name:orderForm.elements.name.value,
             phone:orderForm.elements.phone.value,
             comment:orderForm.elements.comment.value,
+            to:orderForm.elements.to.value,
         };
         console.log(data);
 
@@ -55,13 +64,13 @@
             return
         };
 
-        /* if(!isValid){
+        if(!isValid){
             return;
-        } */
+        }
     });
 
     function validateForm(orderForm) {
-        console.log(orderForm);
+        /* console.log(orderForm); */
         let valid = true;
 
         if (!validate(orderForm.elements.name)) {
